@@ -41,7 +41,7 @@ flowchart TD
     end
 
     subgraph Deliverables["Outputs for Review"]
-        R1["Fraud Risk Score (0 to 100%)"]
+        R1["Fraud Risk Score\n(0 to 100%)"]
         R2["Human-Readable Explanation\nfor Compliance Auditors"]
         R3["Performance Benchmarks\n(PR-AUC, Recall, FPR)"]
     end
@@ -52,19 +52,19 @@ flowchart TD
     X --> R2
     X --> R3
 
-    style DataSources fill:#F0F4F8,stroke:#90A4AE,stroke-width:1px
-    style MicroPipeline fill:#F9FBE7,stroke:#AFB42B,stroke-width:1px
-    style Deliverables fill:#FCE4EC,stroke:#D81B60,stroke-width:1px
+    style DataSources fill:none,stroke:#0288D1,stroke-width:2px
+    style MicroPipeline fill:none,stroke:#43A047,stroke-width:2px
+    style Deliverables fill:none,stroke:#E53935,stroke-width:2px
 
-    style D1 fill:#E1F5FE,stroke:#0288D1,stroke-width:2px,color:#01579B
-    style D2 fill:#E8EAF6,stroke:#3949AB,stroke-width:2px,color:#1A237E
-    style P fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
-    style S fill:#FFF8E1,stroke:#FFA000,stroke-width:2px,color:#E65100
-    style M fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
-    style X fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#006064
-    style R1 fill:#FFEBEE,stroke:#E53935,stroke-width:2px,color:#B71C1C
-    style R2 fill:#E8F8F5,stroke:#16A085,stroke-width:2px,color:#0E6251
-    style R3 fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,color:#E65100
+    style D1 fill:#0288D1,stroke:#01579B,stroke-width:2px,color:#ffffff
+    style D2 fill:#283593,stroke:#1A237E,stroke-width:2px,color:#ffffff
+    style P fill:#2E7D32,stroke:#1B5E20,stroke-width:2px,color:#ffffff
+    style S fill:#EF6C00,stroke:#E65100,stroke-width:2px,color:#ffffff
+    style M fill:#6A1B9A,stroke:#4A148C,stroke-width:2px,color:#ffffff
+    style X fill:#00838F,stroke:#006064,stroke-width:2px,color:#ffffff
+    style R1 fill:#C62828,stroke:#B71C1C,stroke-width:2px,color:#ffffff
+    style R2 fill:#00695C,stroke:#004D40,stroke-width:2px,color:#ffffff
+    style R3 fill:#D84315,stroke:#BF360C,stroke-width:2px,color:#ffffff
 ```
 
 ---

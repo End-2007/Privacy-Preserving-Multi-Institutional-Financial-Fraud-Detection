@@ -36,16 +36,16 @@ flowchart TD
     M2 --> XAI
     XAI --> OUT
 
-    style D1 fill:#E1F5FE,stroke:#0288D1,stroke-width:2px,color:#01579B
-    style D2 fill:#E8EAF6,stroke:#3949AB,stroke-width:2px,color:#1A237E
-    style P1 fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
-    style P2 fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
-    style S1 fill:#FFF8E1,stroke:#FFA000,stroke-width:2px,color:#E65100
-    style S2 fill:#FFF8E1,stroke:#FFA000,stroke-width:2px,color:#E65100
-    style M1 fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
-    style M2 fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
-    style XAI fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#006064
-    style OUT fill:#FFEBEE,stroke:#E53935,stroke-width:2px,color:#B71C1C
+    style D1 fill:#0288D1,stroke:#01579B,stroke-width:2px,color:#ffffff
+    style D2 fill:#283593,stroke:#1A237E,stroke-width:2px,color:#ffffff
+    style P1 fill:#2E7D32,stroke:#1B5E20,stroke-width:2px,color:#ffffff
+    style P2 fill:#2E7D32,stroke:#1B5E20,stroke-width:2px,color:#ffffff
+    style S1 fill:#EF6C00,stroke:#E65100,stroke-width:2px,color:#ffffff
+    style S2 fill:#EF6C00,stroke:#E65100,stroke-width:2px,color:#ffffff
+    style M1 fill:#6A1B9A,stroke:#4A148C,stroke-width:2px,color:#ffffff
+    style M2 fill:#6A1B9A,stroke:#4A148C,stroke-width:2px,color:#ffffff
+    style XAI fill:#00838F,stroke:#006064,stroke-width:2px,color:#ffffff
+    style OUT fill:#C62828,stroke:#B71C1C,stroke-width:2px,color:#ffffff
 ```
 
 ---
@@ -91,11 +91,11 @@ flowchart LR
     A -->|"Option 1"| B --> C
     A -->|"FedGuard Approach"| D --> E
 
-    style A fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#F57F17
-    style B fill:#FFCDD2,stroke:#E53935,stroke-width:2px,color:#B71C1C
-    style C fill:#FFEBEE,stroke:#D32F2F,stroke-width:2px,color:#B71C1C
-    style D fill:#C8E6C9,stroke:#43A047,stroke-width:2px,color:#1B5E20
-    style E fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20
+    style A fill:#EF6C00,stroke:#E65100,stroke-width:2px,color:#ffffff
+    style B fill:#C62828,stroke:#B71C1C,stroke-width:2px,color:#ffffff
+    style C fill:#880E4F,stroke:#4A148C,stroke-width:2px,color:#ffffff
+    style D fill:#2E7D32,stroke:#1B5E20,stroke-width:2px,color:#ffffff
+    style E fill:#00695C,stroke:#004D40,stroke-width:2px,color:#ffffff
 ```
 
 Rather than discarding legitimate transactions through random undersampling, the pipeline applies:
@@ -116,9 +116,9 @@ flowchart TD
 
     T --> S --> J
 
-    style T fill:#E1F5FE,stroke:#0288D1,stroke-width:2px,color:#01579B
-    style S fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
-    style J fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20
+    style T fill:#0288D1,stroke:#01579B,stroke-width:2px,color:#ffffff
+    style S fill:#6A1B9A,stroke:#4A148C,stroke-width:2px,color:#ffffff
+    style J fill:#2E7D32,stroke:#1B5E20,stroke-width:2px,color:#ffffff
 ```
 
 This ensures every flagged decision complies with audit and transparency requirements under RBI guidelines and data protection regulations.
@@ -150,8 +150,8 @@ flowchart LR
 
     S1 --> S2 --> S3 --> S4
 
-    style S1 fill:#E8F5E9,stroke:#00C853,stroke-width:2px,color:#1B5E20
-    style S2 fill:#FFFDE7,stroke:#FDD835,stroke-width:2px,color:#F57F17
-    style S3 fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,color:#E65100
-    style S4 fill:#FFEBEE,stroke:#E53935,stroke-width:2px,color:#B71C1C
+    style S1 fill:#2E7D32,stroke:#1B5E20,stroke-width:2px,color:#ffffff
+    style S2 fill:#F57F17,stroke:#E65100,stroke-width:2px,color:#ffffff
+    style S3 fill:#D84315,stroke:#BF360C,stroke-width:2px,color:#ffffff
+    style S4 fill:#C62828,stroke:#B71C1C,stroke-width:2px,color:#ffffff
 ```
