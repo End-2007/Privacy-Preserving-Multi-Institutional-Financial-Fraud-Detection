@@ -1,155 +1,167 @@
-# 🛡️ FedGuard: Banking Fraud Detection System
+# FedGuard: Banking Fraud Detection System
 ### Privacy-Preserving Multi-Institutional Financial Fraud Detection Using Machine Learning and Explainable AI
 
-[![Micro Project Stage](https://img.shields.io/badge/Stage-🟢_MICRO_IDEA_&_DESIGN-brightgreen?style=for-the-badge)](#-project-overview--idea-introduction)
-[![Academic Project](https://img.shields.io/badge/Academic-BVCOE_CSE_2026--27-blue.svg?style=for-the-badge)](#-academic-context)
+<p align="center">
+  <img src="https://img.shields.io/badge/Project_Stage-🟢_MICRO_PROJECT_(ACTIVE)-00C853?style=for-the-badge" alt="Micro Project Stage" />
+  <img src="https://img.shields.io/badge/Academic_Year-2026--2027-2979FF?style=for-the-badge" alt="Academic Year" />
+  <img src="https://img.shields.io/badge/Domain-FinTech_&_Security-AA00FF?style=for-the-badge" alt="Domain" />
+  <img src="https://img.shields.io/badge/Affiliation-BVCOE_New_Delhi-FF6D00?style=for-the-badge" alt="Affiliation" />
+</p>
 
 ---
 
-## 📌 Project Overview & Idea Introduction
+## 1. Project Overview and Core Idea
 
-**FedGuard** is a multi-institutional fraud detection concept designed to address two conflicting banking imperatives:
-1. **The need for collective intelligence:** Financial fraud patterns (specifically money-laundering "mule" chains) routinely span multiple banks and payment processors. No single institution sees the complete fraud pattern in isolation.
-2. **Strict data privacy compliance:** Regulations like RBI's Master Directions on Fraud Risk Management, India's **DPDP Act (2023)**, and the **EU GDPR** prohibit banks from pooling raw customer transaction data with one another.
+Digital banking and instant payment systems have expanded exponentially. Concurrently, organized fraud rings execute coordinated multi-hop transactions (such as money-mule networks) across **multiple independent banks and payment processors**. 
 
-### 🎯 Long-term Vision vs. Micro Project Focus
-* **Long-Term Vision (Mini → Minor → Major):** Build a distributed Federated Learning system with Differential Privacy and Secure Multi-Party Aggregation so banks train a unified defense model without ever sharing raw customer data.
-* **🟢 Current Focus — MICRO PROJECT (The Foundation):**
-  * Establish the **centralized, empirical proof-of-concept**.
-  * Acquire and prepare two distinct institutional datasets (**PaySim** for mobile money, **IEEE-CIS** for card/e-commerce).
-  * Design the class-imbalance correction framework using **SMOTE / SMOTE-ENN**.
-  * Formulate independent centralized benchmark classifiers (**XGBoost / LightGBM**).
-  * Design a **SHAP Explainable AI (XAI)** auditing mechanism that produces human-readable justifications for every flagged transaction.
-  * Plan a lightweight monitoring dashboard for compliance officers.
+Because each financial institution only observes its own siloed records, no single bank captures the global fraud pattern.
 
----
+```mermaid
+flowchart LR
+    subgraph Problem["The Modern Banking Dilemma"]
+        direction TB
+        A["Institution A\n(Mobile Wallet)"] -->|"Sees partial transfer"| M["Money-Mule Ring\n(Cross-Bank Scheme)"]
+        B["Institution B\n(Commercial Bank)"] -->|"Sees partial cash-out"| M
+        C["Privacy Laws\n(RBI Directions, DPDP 2023, GDPR)"] -.->|"Legally blocks data pooling"| D["No Shared Raw Data Allowed"]
+    end
 
-## 🏛️ Micro Project Workflow & Proposed Architecture
+    subgraph Solution["FedGuard Micro Strategy"]
+        direction TB
+        S1["Heterogeneous Datasets\n(PaySim + IEEE-CIS)"] --> S2["SMOTE / SMOTE-ENN\nImbalance Correction"]
+        S2 --> S3["Independent Boosted Classifiers\n(XGBoost / LightGBM)"]
+        S3 --> S4["TreeSHAP Explainable AI\n(Audit-Ready Rationale)"]
+    end
 
-The diagram below outlines the full proposed workflow of the **Micro Project**:
-
-```
-═════════════════════════════════════════════════════════════════════════════════
-                       FEDGUARD — MICRO PROJECT PIPELINE
-═════════════════════════════════════════════════════════════════════════════════
-
-  [ INSTITUTION 1: Mobile Money ]               [ INSTITUTION 2: Card / E-commerce ]
-       PaySim Dataset (~471 MB)                     IEEE-CIS Dataset (~677 MB)
-     (data/raw/PS_..._log.csv)                     (data/raw/train_transaction.csv +
-         [ 6.3M Transactions ]                      data/raw/train_identity.csv)
-                   │                                             │
-                   ▼                                             ▼
-  ┌─────────────────────────────────┐           ┌─────────────────────────────────┐
-  │   1. Data Cleaning & Encoding   │           │   1. Data Cleaning & Encoding   │
-  │   • Feature Engg (Balance Errs) │           │   • Merge transaction & identity│
-  │   • Drop identifier strings     │           │   • Impute sparse V-features    │
-  │   • Encode transaction types    │           │   • Encode card, email, device  │
-  └────────────────┬────────────────┘           └────────────────┬────────────────┘
-                   │                                             │
-                   ▼                                             ▼
-  ┌─────────────────────────────────┐           ┌─────────────────────────────────┐
-  │   2. Class-Imbalance Handling   │           │   2. Class-Imbalance Handling   │
-  │   • Original fraud: ~0.13%      │           │   • Original fraud: ~3.5%       │
-  │   • SMOTE / SMOTE-ENN synthesis │           │   • SMOTE / SMOTE-ENN synthesis │
-  └────────────────┬────────────────┘           └────────────────┬────────────────┘
-                   │                                             │
-                   ▼                                             ▼
-  ┌─────────────────────────────────┐           ┌─────────────────────────────────┐
-  │   3. Centralized ML Modeling    │           │   3. Centralized ML Modeling    │
-  │   • XGBoost / LightGBM Baseline │           │   • XGBoost / LightGBM Baseline │
-  │   • Stratified Train/Val/Test   │           │   • Stratified Train/Val/Test   │
-  └────────────────┬────────────────┘           └────────────────┬────────────────┘
-                   │                                             │
-                   └──────────────────────┬──────────────────────┘
-                                          │
-                                          ▼
-                      ┌────────────────────────────────────────┐
-                      │    4. Explainable AI (SHAP Layer)      │
-                      │   • TreeSHAP Exact Attributions        │
-                      │   • Natural Language Decision Rationale│
-                      └───────────────────┬────────────────────┘
-                                          │
-                                          ▼
-                      ┌────────────────────────────────────────┐
-                      │  5. Proposed Monitoring Dashboard      │
-                      │   • Real-Time Risk Gauge (0-100%)      │
-                      │   • Plain-English Audit Justification  │
-                      │   • Cross-Institution Benchmark Metrics│
-                      └────────────────────────────────────────┘
+    style Problem fill:#FFF3E0,stroke:#E65100,stroke-width:2px
+    style Solution fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
+    style A fill:#FFE082,stroke:#FFA000,stroke-width:2px,color:#000
+    style B fill:#FFE082,stroke:#FFA000,stroke-width:2px,color:#000
+    style C fill:#FFCDD2,stroke:#C62828,stroke-width:2px,color:#000
+    style D fill:#FF8A80,stroke:#B71C1C,stroke-width:2px,color:#000
+    style S1 fill:#81D4FA,stroke:#0277BD,stroke-width:2px,color:#000
+    style S2 fill:#FFCC80,stroke:#EF6C00,stroke-width:2px,color:#000
+    style S3 fill:#CE93D8,stroke:#6A1B9A,stroke-width:2px,color:#000
+    style S4 fill:#A5D6A7,stroke:#2E7D32,stroke-width:2px,color:#000
 ```
 
+> [!IMPORTANT]
+> **Current Submission Scope:** This repository covers the foundational **MICRO PROJECT** — establishing empirical centralized baselines, resolving extreme class imbalance, and integrating human-readable SHAP explanations ahead of future federated learning extensions.
+
 ---
 
-## 🔬 Dataset Rationale & Defense for Review
+## 2. Micro Project Workflow Architecture
 
-A common reviewer question during project evaluation:
+The flowchart below details the end-to-end data pipeline, modeling, and explainability layer planned for the **Micro Project**:
+
+```mermaid
+flowchart TD
+    classDef mobile fill:#00B0FF,stroke:#01579B,stroke-width:3px,color:#ffffff,font-weight:bold;
+    classDef card fill:#2979FF,stroke:#0D47A1,stroke-width:3px,color:#ffffff,font-weight:bold;
+    classDef clean fill:#00E676,stroke:#007E33,stroke-width:2px,color:#000000,font-weight:bold;
+    classDef smote fill:#FFAB00,stroke:#FF6D00,stroke-width:2px,color:#000000,font-weight:bold;
+    classDef ml fill:#AA00FF,stroke:#4A148C,stroke-width:3px,color:#ffffff,font-weight:bold;
+    classDef xai fill:#00C853,stroke:#1B5E20,stroke-width:3px,color:#ffffff,font-weight:bold;
+    classDef ui fill:#FF1744,stroke:#B71C1C,stroke-width:3px,color:#ffffff,font-weight:bold;
+
+    subgraph DataIngestion["STAGE 1: Dual-Institution Data Ingestion"]
+        P["PaySim Mobile Dataset\n(6.3M records | 11 columns)\nBalance changes & P2P transfers"]:::mobile
+        I["IEEE-CIS Card Dataset\n(~590K records | 435 columns)\nTransaction & Identity relational join"]:::card
+    end
+
+    subgraph Preprocessing["STAGE 2: Cleaning & Feature Engineering"]
+        P_Prep["PaySim Pipeline\n• Balance Error: errorBalOrig/errorBalDest\n• Label Encode 'type' (TRANSFER, etc.)\n• Drop non-predictive name strings"]:::clean
+        I_Prep["IEEE-CIS Pipeline\n• Relational join on TransactionID\n• Impute sparse Vesta V-features\n• Encode card, email domain & device info"]:::clean
+    end
+
+    subgraph Imbalance["STAGE 3: Class-Imbalance Correction"]
+        P_Smote["SMOTE / SMOTE-ENN\nRaw fraud: ~0.13%\nMinority synthetic interpolation"]:::smote
+        I_Smote["SMOTE / SMOTE-ENN\nRaw fraud: ~3.5%\nBorderline sample cleaning"]:::smote
+    end
+
+    subgraph Modeling["STAGE 4: Centralized Baseline Classifiers"]
+        M1["PaySim XGBoost / LightGBM\nIndependent Tree Baseline\nStratified Train/Val/Test Split"]:::ml
+        M2["IEEE-CIS XGBoost / LightGBM\nIndependent Tree Baseline\nStratified Train/Val/Test Split"]:::ml
+    end
+
+    subgraph XAI["STAGE 5: Explainable AI Layer (SHAP)"]
+        S["TreeSHAP Exact Feature Attribution\nCalculates Shapley impact values per feature\nGenerates audit-ready plain-language justifications"]:::xai
+    end
+
+    subgraph Dashboard["STAGE 6: Compliance Monitoring Prototype"]
+        UI["Compliance Audit Dashboard\n• Real-Time Risk Probability (0-100%)\n• Natural Language Decision Rationale\n• PR-AUC & FPR Benchmark Comparison"]:::ui
+    end
+
+    P --> P_Prep --> P_Smote --> M1 --> S
+    I --> I_Prep --> I_Smote --> M2 --> S
+    S --> UI
+
+    linkStyle default stroke:#37474F,stroke-width:2px;
+```
+
+---
+
+## 3. Dataset Strategy: Why Standard PCA Datasets Fail
+
+During review evaluations, examiners frequently ask:
 > *"Why not use the popular Kaggle European Credit Card dataset?"*
 
-```
-Typical Kaggle Credit Card Dataset:
-┌───────────┬───────────┬───────────┬───────────┐
-│    V1     │    V2     │    ...    │    V28    │ ───► SHAP: "Flagged because V14 = -4.2"
-└───────────┴───────────┴───────────┴───────────┘      ❌ Meaningless to bank compliance auditors!
+```mermaid
+flowchart TD
+    classDef bad fill:#FFCDD2,stroke:#B71C1C,stroke-width:2px,color:#B71C1C;
+    classDef good fill:#C8E6C9,stroke:#1B5E20,stroke-width:2px,color:#1B5E20;
 
-FedGuard Dataset Design (PaySim + IEEE-CIS):
-┌───────────┬───────────┬───────────┬───────────┐
-│ Tx Type   │ Old Bal   │ Dest Bal  │ Device    │ ───► SHAP: "Flagged: Entire account balance
-└───────────┴───────────┴───────────┴───────────┘      emptied via TRANSFER to new zero-balance dest"
-                                                       ✅ Human-readable & regulatory audit-ready!
+    subgraph TypicalDataset["Traditional Anonymized Kaggle Dataset"]
+        direction LR
+        K1["Feature V1, V2 ... V28\n(Anonymized PCA)"] --> K2["SHAP Output:\n'Flagged because V14 = -4.2'"]
+        K2 --> K3["Unusable for Bank Compliance & RBI Audits"]
+    end
+
+    subgraph FedGuardStrategy["FedGuard Human-Readable Strategy"]
+        direction LR
+        F1["PaySim + IEEE-CIS Features\n(Balances, Card Type, Device)"] --> F2["SHAP Output:\n'TRANSFER + emptied balance to new account'"]
+        F2 --> F3["Audit-Ready for RBI & DPDP Compliance"]
+    end
+
+    TypicalDataset:::bad
+    FedGuardStrategy:::good
 ```
 
-1. **Human-Readable Schema:** The Kaggle European dataset replaces feature names with anonymous PCA components ($V_1$ to $V_{28}$). Explaining fraud as *"feature $V_{14}$ was low"* is useless for bank risk officers and regulatory audits. PaySim and IEEE-CIS maintain real attributes (balances, transaction types, card types, device IDs).
-2. **Authentic Cross-Institution Heterogeneity (Non-IID):** Rather than artificially splitting a single dataset, FedGuard models two distinct financial environments:
-   * **PaySim:** Simulates a **Mobile Money / P2P Wallet** institution.
-   * **IEEE-CIS:** Simulates a **Commercial Card Issuer / E-commerce Gateway**.
+### Institutional Simulation Breakdown
+| Institution Simulated | Dataset Selected | Characteristics | Role in Micro Pipeline |
+|----------------------|------------------|-----------------|------------------------|
+| **Mobile Money Operator** | **PaySim** (471 MB) | Step, Amount, Old/New Balances, P2P Transfers | Evaluates account-drainage and mule cash-outs |
+| **Card Network / Gateway** | **IEEE-CIS** (~677 MB) | Card Network, Email Domain, Device OS, TransactionAmt | Evaluates card-not-present and identity spoofing |
 
 ---
 
-## 📋 Micro Project Deliverables & Scope Boundary
+## 4. Specialized Fraud Evaluation Framework
 
-| Component | In Micro Scope? | Proposed Approach |
-|-----------|:---------------:|-------------------|
-| **Dataset Ingestion & Cleaning** | ✅ **YES** | Multi-table join, missing value imputation, schema alignment |
-| **Class Imbalance Correction** | ✅ **YES** | SMOTE & SMOTE-ENN applied independently per institution |
-| **Centralized Baseline Classifiers** | ✅ **YES** | Logistic Regression, Random Forest, XGBoost/LightGBM |
-| **Explainable AI (SHAP)** | ✅ **YES** | TreeSHAP feature attributions converted to plain-English justification |
-| **Monitoring Dashboard** | ✅ **YES** | Lightweight Streamlit dashboard for audit & benchmark review |
-| **Federated Learning (Flower)** | ❌ *Mini Scope* | Documented as future progression roadmap |
-| **Differential Privacy (Opacus)** | ❌ *Minor Scope* | Documented as future progression roadmap |
-| **Secure Aggregation (HE/SMPC)** | ❌ *Major Scope* | Documented as future progression roadmap |
+Traditional machine learning relies on accuracy, but financial fraud is an **extreme needle-in-a-haystack problem** ($<1\%$ fraud). FedGuard's evaluation framework prioritizes:
+
+```mermaid
+quadrantChart
+    title Operational Fraud Evaluation Matrix
+    x-axis "Low Business Impact" --> "High Business Impact"
+    y-axis "Misleading on Skewed Data" --> "Reliable on Skewed Data"
+    quadrant-1 "Primary Focus (PR-AUC, Recall)"
+    quadrant-2 "Secondary Check (F1-Score)"
+    quadrant-3 "Misleading (Raw Accuracy)"
+    quadrant-4 "Operational Cost (False Positive Rate)"
+    "Raw Accuracy": [0.2, 0.15]
+    "ROC-AUC": [0.45, 0.45]
+    "Precision": [0.7, 0.75]
+    "Recall (TPR)": [0.85, 0.85]
+    "PR-AUC": [0.9, 0.95]
+    "False Positive Rate": [0.85, 0.4]
+```
+
+* **PR-AUC (Precision-Recall Area Under Curve):** The decisive metric for highly imbalanced fraud datasets; completely immune to majority-class inflation.
+* **Recall (True Positive Rate):** Measures the direct proportion of financial fraud detected.
+* **False Positive Rate (FPR):** Controls operational overhead — preventing legitimate customer cards and transactions from being erroneously blocked.
 
 ---
 
-## 📈 Evaluation Framework (Fraud-Specific Metrics)
-
-Financial fraud requires specialized evaluation criteria because fraud makes up **$< 1\%$** of all transactions:
-
-```
-                  ┌──────────────────────────────────────────────┐
-                  │          Model Evaluation Strategy           │
-                  ├──────────────────────┬───────────────────────┤
-                  │  Metric              │  Why It Matters       │
-                  ├──────────────────────┼───────────────────────┤
-                  │  PR-AUC              │  Critical for severe  │
-                  │  (Precision-Recall)  │  imbalance; unaffected│
-                  │                      │  by true-negative skew│
-                  ├──────────────────────┼───────────────────────┤
-                  │  Recall (TPR)        │  Directly reflects    │
-                  │                      │  prevented financial  │
-                  │                      │  losses               │
-                  ├──────────────────────┼───────────────────────┤
-                  │  False Positive Rate │  Minimizes operational│
-                  │  (FPR)               │  friction & false     │
-                  │                      │  customer freezes     │
-                  ├──────────────────────┼───────────────────────┤
-                  │  F1-Score / ROC-AUC  │  Overall baseline     │
-                  │                      │  discrimination       │
-                  └──────────────────────┴───────────────────────┘
-```
-
----
-
-## 📁 Repository Structure
+## 5. Repository Structure
 
 ```
 FedGuard/
@@ -159,40 +171,47 @@ FedGuard/
 ├── .gitignore                          # Strict gitignore protecting repository from large data
 ├── data/
 │   ├── README.md                       # Dataset overview and setup details
-│   ├── raw/                            # 📁 Contains PaySim & IEEE-CIS CSVs (git-ignored)
-│   ├── processed/                      # 📁 Cleaned & resampled datasets (git-ignored)
-│   └── sample/                         # 📁 Placeholder for small demo batches
+│   ├── raw/                            # Contains PaySim & IEEE-CIS CSVs (git-ignored)
+│   ├── processed/                      # Cleaned & resampled datasets (git-ignored)
+│   └── sample/                         # Placeholder for small demo batches
 └── docs/                               # Project documentation & review materials
 ```
 
 ---
 
-## 🗺️ Future Roadmap Beyond Micro (Brief Overview)
+## 6. Full Four-Stage Project Roadmap
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                          FUTURE STAGES AT A GLANCE                          │
-├───────────────┬───────────────────────────────┬─────────────────────────────┤
-│ Stage         │ Key Technical Addition        │ Research Objective          │
-├───────────────┼───────────────────────────────┼─────────────────────────────┤
-│ 🟡 MINI       │ Federated Learning (Flower)   │ Train shared model via      │
-│               │ & Full-Stack UI               │ FedAvg across institutions  │
-├───────────────┼───────────────────────────────┼─────────────────────────────┤
-│ 🟠 MINOR      │ Differential Privacy (Opacus) │ Privacy budget (ε) vs       │
-│               │ & PostgreSQL DB               │ accuracy trade-off analysis │
-├───────────────┼───────────────────────────────┼─────────────────────────────┤
-│ 🔴 MAJOR      │ Secure Aggregation (HE/SMPC)  │ Cryptographic protection of │
-│               │ & Production Deployment       │ plaintext model weights     │
-└───────────────┴───────────────────────────────┴─────────────────────────────┘
+While our current deliverable is strictly the **Micro Project**, the full technical trajectory progresses across all four academic phases:
+
+```mermaid
+timeline
+    title FedGuard Academic Progression Roadmap
+    section 🟢 MICRO (Current Active)
+        Centralized Benchmarks : Ingestion of PaySim & IEEE-CIS
+        Class Imbalance : Independent SMOTE & SMOTE-ENN
+        Explainable AI : TreeSHAP plain-language decision rationale
+        Interface : Lightweight monitoring dashboard prototype
+    section 🟡 MINI (Planned)
+        Federated Learning : Flower (flwr) FedAvg across simulated bank nodes
+        Full-Stack Migration : FastAPI backend + React frontend with auth
+        Benchmark Comparison : Centralized vs. Federated performance evaluation
+    section 🟠 MINOR (Planned)
+        Differential Privacy : Opacus PyTorch DP on model gradient updates
+        Privacy-Utility Curve : Rigorous epsilon budget vs. recall trade-off analysis
+        Production Database : Migration to PostgreSQL / Supabase
+    section 🔴 MAJOR (Planned)
+        Secure Aggregation : Cryptographic Homomorphic Encryption / SMPC
+        Regulatory Validation : RBI Fraud Management & DPDP Act compliance audit
+        Research Publication : Scopus-indexed conference paper submission
 ```
 
 ---
 
-## 👥 Academic & Team Details
+## Academic and Team Details
 
 * **Project Title:** Privacy-Preserving Multi-Institutional Financial Fraud Detection Using Federated Learning and Explainable AI
-* **Project Name:** FedGuard
-* **Institution:** Bharati Vidyapeeth's College of Engineering, New Delhi
+* **Short Title:** FedGuard
+* **College:** Bharati Vidyapeeth's College of Engineering, New Delhi
 * **Department:** Department of Computer Science and Engineering
 * **Project Mentor:** Prof. Mohit Tiwari, Assistant Professor, Dept. of CSE
 * **Team Members:**

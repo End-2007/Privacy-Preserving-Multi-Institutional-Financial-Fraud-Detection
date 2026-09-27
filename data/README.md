@@ -1,6 +1,7 @@
-# 📂 Data Directory
+# Data Directory
 
-> ⚠️ **Datasets are NOT committed to Git.** They are excluded via `.gitignore` due to their large size.
+> [!NOTE]
+> **Datasets are not committed to Git.** They are excluded via `.gitignore` due to their large size.
 
 ## Download Instructions
 
