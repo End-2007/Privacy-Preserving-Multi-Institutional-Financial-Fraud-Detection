@@ -1,0 +1,104 @@
+# ============================================================
+# FedGuard .gitignore
+# ============================================================
+
+# -------------------- Datasets (DO NOT COMMIT LARGE DATA) --------------------
+# Keep data folder structure tracked in git, but ignore all contents
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/sample/*
+!data/sample/.gitkeep
+
+# Exclude large data files everywhere
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# -------------------- Office & Binary Documents --------------------
+# Keeps local presentation and submission documents off GitHub
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.xlsx
+*.xls
+*.pdf
+
+# -------------------- Model Artifacts --------------------
+models/*
+!models/.gitkeep
+*.joblib
+*.model
+*.bin
+*.pt
+*.pth
+*.onnx
+*.pmml
+
+# -------------------- Python Cache & Builds --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# -------------------- Virtual Environments --------------------
+venv/
+env/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# -------------------- Jupyter Notebooks --------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# -------------------- IDE & Editor Configs --------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# -------------------- OS Generated Files --------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# -------------------- Experiment Tracking --------------------
+wandb/
+mlruns/
+*.wandb
+
+# -------------------- Logs & Temporary Files --------------------
+logs/
+*.log
+tmp/
+temp/
+
+# -------------------- Environment Variables --------------------
+.env
+.env.local
+.env.production
