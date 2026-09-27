@@ -51,6 +51,20 @@ flowchart TD
     X --> R1
     X --> R2
     X --> R3
+
+    style DataSources fill:#F0F4F8,stroke:#90A4AE,stroke-width:1px
+    style MicroPipeline fill:#F9FBE7,stroke:#AFB42B,stroke-width:1px
+    style Deliverables fill:#FCE4EC,stroke:#D81B60,stroke-width:1px
+
+    style D1 fill:#E1F5FE,stroke:#0288D1,stroke-width:2px,color:#01579B
+    style D2 fill:#E8EAF6,stroke:#3949AB,stroke-width:2px,color:#1A237E
+    style P fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+    style S fill:#FFF8E1,stroke:#FFA000,stroke-width:2px,color:#E65100
+    style M fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style X fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#006064
+    style R1 fill:#FFEBEE,stroke:#E53935,stroke-width:2px,color:#B71C1C
+    style R2 fill:#E8F8F5,stroke:#16A085,stroke-width:2px,color:#0E6251
+    style R3 fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,color:#E65100
 ```
 
 ---
@@ -73,12 +87,12 @@ This allows the **SHAP** explainability layer to generate clear, plain-language 
 
 The project is structured across four academic stages, with **Micro** as the current active foundation:
 
-| Stage | Focus | What Is Built |
-|---|---|---|
-| **Micro (Current)** | Centralized Baselines & Explainability | Data cleaning, SMOTE, XGBoost/LightGBM baselines, and SHAP decision explanations |
-| **Mini (Planned)** | Federated Learning | Cross-institution collaborative training using Flower (FedAvg) without sharing raw records |
-| **Minor (Planned)** | Differential Privacy | Privacy budget constraints (epsilon, delta) applied via Opacus to protect model updates |
-| **Major (Planned)** | Secure Aggregation | Cryptographic protection (HE / SMPC) so the central server never sees plaintext updates |
+| Stage | Status | Focus Area | Planned Deliverables |
+|---|:---:|---|---|
+| <img src="https://img.shields.io/badge/Stage-Micro-00C853?style=for-the-badge" alt="Micro" /> | <img src="https://img.shields.io/badge/Status-ACTIVE-00C853?style=flat-square" alt="Active" /> | **Centralized Baselines & Explainability** | Data cleaning, SMOTE rebalancing, XGBoost/LightGBM baselines, and SHAP decision explanations |
+| <img src="https://img.shields.io/badge/Stage-Mini-FBC02D?style=for-the-badge" alt="Mini" /> | <img src="https://img.shields.io/badge/Status-PLANNED-FBC02D?style=flat-square" alt="Planned" /> | **Federated Learning** | Cross-institution collaborative training using Flower (FedAvg) without sharing raw customer data |
+| <img src="https://img.shields.io/badge/Stage-Minor-FB8C00?style=for-the-badge" alt="Minor" /> | <img src="https://img.shields.io/badge/Status-PLANNED-FB8C00?style=flat-square" alt="Planned" /> | **Differential Privacy** | Mathematical privacy guarantees ($\varepsilon, \delta$) via Opacus to protect model update gradients |
+| <img src="https://img.shields.io/badge/Stage-Major-E53935?style=for-the-badge" alt="Major" /> | <img src="https://img.shields.io/badge/Status-PLANNED-E53935?style=flat-square" alt="Planned" /> | **Secure Aggregation** | Cryptographic protection (HE / SMPC) so the central server never sees plaintext model weights |
 
 For complete technical specifications and data flow mechanics, refer to [ARCHITECTURE.md](ARCHITECTURE.md).
 

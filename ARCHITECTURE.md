@@ -35,11 +35,29 @@ flowchart TD
     M1 --> XAI
     M2 --> XAI
     XAI --> OUT
+
+    style D1 fill:#E1F5FE,stroke:#0288D1,stroke-width:2px,color:#01579B
+    style D2 fill:#E8EAF6,stroke:#3949AB,stroke-width:2px,color:#1A237E
+    style P1 fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+    style P2 fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+    style S1 fill:#FFF8E1,stroke:#FFA000,stroke-width:2px,color:#E65100
+    style S2 fill:#FFF8E1,stroke:#FFA000,stroke-width:2px,color:#E65100
+    style M1 fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style M2 fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style XAI fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#006064
+    style OUT fill:#FFEBEE,stroke:#E53935,stroke-width:2px,color:#B71C1C
 ```
 
 ---
 
 ## 2. Data Processing and Feature Engineering
+
+### Dataset Specifications
+
+| Dataset | Institution Type | Volume | Key Engineered Signals |
+|---|:---:|:---:|---|
+| <img src="https://img.shields.io/badge/Dataset-PaySim-0288D1?style=for-the-badge" alt="PaySim" /> | Mobile Money (P2P) | ~6.3M rows | `errorBalanceOrig`, `errorBalanceDest`, transaction type encoding |
+| <img src="https://img.shields.io/badge/Dataset-IEEE--CIS-3949AB?style=for-the-badge" alt="IEEE-CIS" /> | Card / E-Commerce Gateway | ~590K rows | Relational join on `TransactionID`, device OS, email risk |
 
 ### PaySim (Mobile Money)
 - **Characteristics:** Agent-based simulation based on real mobile money transaction logs (~6.3 million rows, 11 columns).
@@ -72,6 +90,12 @@ flowchart LR
 
     A -->|"Option 1"| B --> C
     A -->|"FedGuard Approach"| D --> E
+
+    style A fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#F57F17
+    style B fill:#FFCDD2,stroke:#E53935,stroke-width:2px,color:#B71C1C
+    style C fill:#FFEBEE,stroke:#D32F2F,stroke-width:2px,color:#B71C1C
+    style D fill:#C8E6C9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+    style E fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20
 ```
 
 Rather than discarding legitimate transactions through random undersampling, the pipeline applies:
@@ -91,6 +115,10 @@ flowchart TD
     J["Plain-Language Audit Justification\n'Flagged because account was emptied via TRANSFER to a new zero-balance account'"]
 
     T --> S --> J
+
+    style T fill:#E1F5FE,stroke:#0288D1,stroke-width:2px,color:#01579B
+    style S fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style J fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20
 ```
 
 This ensures every flagged decision complies with audit and transparency requirements under RBI guidelines and data protection regulations.
@@ -99,12 +127,15 @@ This ensures every flagged decision complies with audit and transparency require
 
 ## 5. Evaluation Strategy
 
-Because fraud datasets are severely skewed, traditional accuracy is uninformative. The system is evaluated using:
+Because fraud datasets are severely skewed, traditional accuracy is uninformative. The system is evaluated using the following operational hierarchy:
 
-- **PR-AUC (Precision-Recall Area Under Curve):** Primary benchmark metric. Unaffected by the large volume of true negatives.
-- **Recall (True Positive Rate):** Measures the proportion of actual fraud detected, directly minimizing financial losses.
-- **False Positive Rate (FPR):** Measures legitimate transactions incorrectly flagged, minimizing customer friction and operational alert fatigue.
-- **F1-Score and ROC-AUC:** Reported for standard baseline reference.
+| Metric | Priority | Operational Significance |
+|---|:---:|---|
+| **PR-AUC (Precision-Recall AUC)** | <img src="https://img.shields.io/badge/Priority-CRITICAL-E53935?style=flat-square" alt="Critical" /> | Immune to true-negative inflation; the definitive measure for extreme class imbalance |
+| **Recall (True Positive Rate)** | <img src="https://img.shields.io/badge/Priority-CRITICAL-E53935?style=flat-square" alt="Critical" /> | Quantifies the direct volume of fraudulent capital prevented from escaping |
+| **False Positive Rate (FPR)** | <img src="https://img.shields.io/badge/Priority-HIGH-FB8C00?style=flat-square" alt="High" /> | Minimizes legitimate customer friction and reduces operational alert fatigue |
+| **Precision & F1-Score** | <img src="https://img.shields.io/badge/Priority-STANDARD-1E88E5?style=flat-square" alt="Standard" /> | Harmonic balance between alert volume and detection accuracy |
+| **ROC-AUC** | <img src="https://img.shields.io/badge/Priority-BASELINE-757575?style=flat-square" alt="Baseline" /> | Threshold-independent discrimination baseline for literature comparison |
 
 ---
 
@@ -118,4 +149,9 @@ flowchart LR
     S4["Stage 4: Major (Planned)\n- Secure Aggregation (HE / SMPC)\n- Real-time pipeline\n- Regulatory audit validation"]
 
     S1 --> S2 --> S3 --> S4
+
+    style S1 fill:#E8F5E9,stroke:#00C853,stroke-width:2px,color:#1B5E20
+    style S2 fill:#FFFDE7,stroke:#FDD835,stroke-width:2px,color:#F57F17
+    style S3 fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,color:#E65100
+    style S4 fill:#FFEBEE,stroke:#E53935,stroke-width:2px,color:#B71C1C
 ```
