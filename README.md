@@ -102,16 +102,30 @@ For complete technical specifications and data flow mechanics, refer to [ARCHITE
 
 ```
 FedGuard/
-├── README.md             # Project idea, overview, and roadmap
-├── ARCHITECTURE.md       # Technical system flow and design details
-├── requirements.txt      # List of dependencies
-├── .gitignore            # Git rules excluding datasets and local documents
+├── README.md
+├── ARCHITECTURE.md
+├── requirements.txt
+├── .gitignore
 ├── data/
-│   ├── README.md         # Dataset descriptions and download instructions
-│   ├── raw/              # Stored dataset CSVs (excluded from Git)
-│   └── processed/        # Preprocessed data directory
-└── docs/                 # Project documentation and review materials
+│   ├── README.md
+│   ├── raw/              # Raw dataset files; excluded from Git
+│   ├── processed/        # Prepared splits and matrices; excluded from Git
+│   └── sample/
+├── docs/
+│   ├── HANDOVER.md       # Stage 1 results and team handoff
+│   ├── stage1_plan.md
+│   ├── decisions.md
+│   ├── data_card_paysim.md
+│   ├── data_card_ieee_cis.md
+│   └── reference/        # Existing presentation, reports, and viva guide
+├── models/               # Fitted models and preprocessors; excluded from Git
+├── reports/              # Metrics, audit/EDA summaries, and figures
+├── scripts/              # Audit, preprocessing, training, and comparison entry points
+├── src/common/           # Shared pipeline and model utilities
+└── wandb/                # Offline experiment logs; excluded from Git
 ```
+
+For the completed centralized training stage, start with [the Stage 1 handover](docs/HANDOVER.md). Stage 1 run details are in [the plan](docs/stage1_plan.md); SHAP and Streamlit are planned as follow-on work. The local `stage1_transfer/` folder is ignored by Git and must be shared separately with teammates who need the large data and model artifacts.
 
 ---
 

@@ -92,6 +92,10 @@ wandb/
 mlruns/
 *.wandb
 
+# -------------------- Stage 1 Handover Bundle --------------------
+# Large local transfer package; share separately, never commit it.
+/stage1_transfer/
+
 # -------------------- Logs & Temporary Files --------------------
 logs/
 *.log
