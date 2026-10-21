@@ -1,0 +1,584 @@
+{
+  "comparison": [
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "model": "logistic_regression",
+      "params": {
+        "C": 0.0745934328572655,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.06960583604855684,
+        "fn": 25,
+        "fp": 32242,
+        "fpr": 0.03382635900298166,
+        "pr_auc": 0.5948536208573629,
+        "precision": 0.036084785793297255,
+        "recall": 0.9797077922077922,
+        "roc_auc": 0.9954151943740938,
+        "threshold": 0.5,
+        "tn": 920920,
+        "tp": 1207
+      }
+    },
+    {
+      "candidate": 6,
+      "compute_device": "cpu",
+      "model": "random_forest",
+      "params": {
+        "max_depth": 12,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 200
+      },
+      "resampling": {
+        "after": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.9995939910678034,
+        "fn": 1,
+        "fp": 0,
+        "fpr": 0.0,
+        "pr_auc": 0.9998856617580468,
+        "precision": 1.0,
+        "recall": 0.9991883116883117,
+        "roc_auc": 0.9999998279819811,
+        "threshold": 0.5,
+        "tn": 953162,
+        "tp": 1231
+      }
+    },
+    {
+      "candidate": 7,
+      "compute_device": "cuda",
+      "model": "xgboost",
+      "params": {
+        "colsample_bytree": 0.9,
+        "learning_rate": 0.025043908574120786,
+        "max_depth": 7,
+        "min_child_weight": 10,
+        "n_estimators": 200,
+        "reg_lambda": 4.638630972397279,
+        "subsample": 1.0
+      },
+      "resampling": {
+        "after": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.956150562669771,
+        "fn": 0,
+        "fp": 113,
+        "fpr": 0.00011855277486932966,
+        "pr_auc": 0.999958727712965,
+        "precision": 0.9159851301115242,
+        "recall": 1.0,
+        "roc_auc": 0.9999999437960929,
+        "threshold": 0.5,
+        "tn": 953049,
+        "tp": 1232
+      }
+    },
+    {
+      "candidate": 15,
+      "compute_device": "cpu",
+      "model": "lightgbm",
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.07804189087710861,
+        "max_depth": 8,
+        "min_child_samples": 100,
+        "n_estimators": 500,
+        "num_leaves": 15,
+        "reg_lambda": 0.5832486597608726,
+        "subsample": 1.0
+      },
+      "resampling": {
+        "after": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.9983779399837794,
+        "fn": 1,
+        "fp": 3,
+        "fpr": 3.1474188018406104e-06,
+        "pr_auc": 0.999986396285279,
+        "precision": 0.9975688816855753,
+        "recall": 0.9991883116883117,
+        "roc_auc": 0.9999999821169385,
+        "threshold": 0.5,
+        "tn": 953159,
+        "tp": 1231
+      }
+    },
+    {
+      "candidate": 3,
+      "compute_device": "cpu",
+      "model": "logistic_regression",
+      "params": {
+        "C": 4.5705630998014515,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 114980,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.11098059484095288,
+        "fn": 51,
+        "fp": 18870,
+        "fpr": 0.01979726426357744,
+        "pr_auc": 0.6365796843272069,
+        "precision": 0.05889980549598524,
+        "recall": 0.9586038961038961,
+        "roc_auc": 0.9960175239831268,
+        "threshold": 0.5,
+        "tn": 934292,
+        "tp": 1181
+      }
+    },
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "model": "random_forest",
+      "params": {
+        "max_depth": 16,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 150
+      },
+      "resampling": {
+        "after": {
+          "negative": 114980,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.976984126984127,
+        "fn": 1,
+        "fp": 57,
+        "fpr": 5.98009572349716e-05,
+        "pr_auc": 0.999909164588225,
+        "precision": 0.9557453416149069,
+        "recall": 0.9991883116883117,
+        "roc_auc": 0.9999998697091242,
+        "threshold": 0.5,
+        "tn": 953105,
+        "tp": 1231
+      }
+    },
+    {
+      "candidate": 8,
+      "compute_device": "cuda",
+      "model": "xgboost",
+      "params": {
+        "colsample_bytree": 0.9,
+        "learning_rate": 0.04921421964961083,
+        "max_depth": 5,
+        "min_child_weight": 5,
+        "n_estimators": 350,
+        "reg_lambda": 1.0968217207529523,
+        "subsample": 0.9
+      },
+      "resampling": {
+        "after": {
+          "negative": 114980,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.9557796741660202,
+        "fn": 0,
+        "fp": 114,
+        "fpr": 0.0001196019144699432,
+        "pr_auc": 0.9999698856964456,
+        "precision": 0.9153046062407132,
+        "recall": 1.0,
+        "roc_auc": 0.9999999599760054,
+        "threshold": 0.5,
+        "tn": 953048,
+        "tp": 1232
+      }
+    },
+    {
+      "candidate": 9,
+      "compute_device": "cpu",
+      "model": "lightgbm",
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1864724270356296,
+        "max_depth": 8,
+        "min_child_samples": 50,
+        "n_estimators": 350,
+        "num_leaves": 31,
+        "reg_lambda": 7.133747470888435,
+        "subsample": 1.0
+      },
+      "resampling": {
+        "after": {
+          "negative": 114980,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.9816733067729083,
+        "fn": 0,
+        "fp": 46,
+        "fpr": 4.8260421628222694e-05,
+        "pr_auc": 0.9999825928638478,
+        "precision": 0.9640062597809077,
+        "recall": 1.0,
+        "roc_auc": 0.9999999770074925,
+        "threshold": 0.5,
+        "tn": 953116,
+        "tp": 1232
+      }
+    },
+    {
+      "candidate": 2,
+      "compute_device": "cpu",
+      "model": "logistic_regression",
+      "params": {
+        "C": 56.69849511478853,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 112237,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote_enn",
+        "seed": 42
+      },
+      "strategy": "cap_smote_enn",
+      "validation": {
+        "f1": 0.10391421846395257,
+        "fn": 40,
+        "fp": 20518,
+        "fpr": 0.02152624632538855,
+        "pr_auc": 0.6243341716447355,
+        "precision": 0.05490557346844772,
+        "recall": 0.9675324675324676,
+        "roc_auc": 0.9962279705720157,
+        "threshold": 0.5,
+        "tn": 932644,
+        "tp": 1192
+      }
+    },
+    {
+      "candidate": 5,
+      "compute_device": "cpu",
+      "model": "random_forest",
+      "params": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 5,
+        "n_estimators": 200
+      },
+      "resampling": {
+        "after": {
+          "negative": 112237,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote_enn",
+        "seed": 42
+      },
+      "strategy": "cap_smote_enn",
+      "validation": {
+        "f1": 0.9494793675279599,
+        "fn": 1,
+        "fp": 130,
+        "fpr": 0.00013638814807975978,
+        "pr_auc": 0.999814494057085,
+        "precision": 0.9044819985304923,
+        "recall": 0.9991883116883117,
+        "roc_auc": 0.9999996968395309,
+        "threshold": 0.5,
+        "tn": 953032,
+        "tp": 1231
+      }
+    },
+    {
+      "candidate": 5,
+      "compute_device": "cuda",
+      "model": "xgboost",
+      "params": {
+        "colsample_bytree": 0.9,
+        "learning_rate": 0.031674063118237505,
+        "max_depth": 7,
+        "min_child_weight": 1,
+        "n_estimators": 500,
+        "reg_lambda": 5.2466345336252855,
+        "subsample": 1.0
+      },
+      "resampling": {
+        "after": {
+          "negative": 112237,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote_enn",
+        "seed": 42
+      },
+      "strategy": "cap_smote_enn",
+      "validation": {
+        "f1": 0.9531914893617022,
+        "fn": 0,
+        "fp": 121,
+        "fpr": 0.00012694589167423797,
+        "pr_auc": 0.9999479530009923,
+        "precision": 0.9105691056910569,
+        "recall": 1.0,
+        "roc_auc": 0.9999999284677545,
+        "threshold": 0.5,
+        "tn": 953041,
+        "tp": 1232
+      }
+    },
+    {
+      "candidate": 15,
+      "compute_device": "cpu",
+      "model": "lightgbm",
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.07804189087710861,
+        "max_depth": 8,
+        "min_child_samples": 100,
+        "n_estimators": 500,
+        "num_leaves": 15,
+        "reg_lambda": 0.5832486597608726,
+        "subsample": 1.0
+      },
+      "resampling": {
+        "after": {
+          "negative": 112237,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote_enn",
+        "seed": 42
+      },
+      "strategy": "cap_smote_enn",
+      "validation": {
+        "f1": 0.9647611589663273,
+        "fn": 0,
+        "fp": 90,
+        "fpr": 9.442256405521832e-05,
+        "pr_auc": 0.9999440825024387,
+        "precision": 0.9319213313161876,
+        "recall": 1.0,
+        "roc_auc": 0.9999999225067341,
+        "threshold": 0.5,
+        "tn": 953072,
+        "tp": 1232
+      }
+    }
+  ],
+  "compute_device": "cpu",
+  "compute_plan": {
+    "lightgbm": "cpu, all logical threads (installed build has no GPU entry point)",
+    "logistic_regression": "cpu",
+    "random_forest": "cpu, all logical threads",
+    "xgboost": "cuda"
+  },
+  "created_utc": "2026-10-21T00:56:10.816331+00:00",
+  "dataset": "paysim",
+  "evaluated_test_once": true,
+  "lr_scaler": "models\\paysim\\lr_scaler.joblib",
+  "model": "lightgbm",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0"
+  },
+  "params": {
+    "colsample_bytree": 1.0,
+    "learning_rate": 0.07804189087710861,
+    "max_depth": 8,
+    "min_child_samples": 100,
+    "n_estimators": 500,
+    "num_leaves": 15,
+    "reg_lambda": 0.5832486597608726,
+    "subsample": 1.0
+  },
+  "preprocessor": "models\\paysim\\preprocessor.joblib",
+  "resampling_counts": {
+    "after": {
+      "negative": 4448084,
+      "positive": 5749
+    },
+    "before": {
+      "negative": 4448084,
+      "positive": 5749
+    },
+    "method": "class_weight"
+  },
+  "seed": 42,
+  "strategies": [
+    "class_weight",
+    "cap_smote",
+    "cap_smote_enn"
+  ],
+  "strategy": "class_weight",
+  "test_metrics": {
+    "f1": 0.9851703406813628,
+    "fn": 3,
+    "fp": 34,
+    "fpr": 3.567078384449217e-05,
+    "pr_auc": 0.9979683280418113,
+    "precision": 0.9730799683293745,
+    "recall": 0.997564935064935,
+    "roc_auc": 0.9986911599315942,
+    "threshold": 0.05680120406971255,
+    "tn": 953127,
+    "tp": 1229
+  },
+  "threshold": 0.05680120406971255,
+  "threshold_rule": "maximize recall subject to FPR <= 0.01",
+  "tuning_budgets": {
+    "lightgbm": 15,
+    "logistic_regression": 3,
+    "random_forest": 6,
+    "xgboost": 15
+  },
+  "validation_metric": "pr_auc",
+  "validation_metrics": {
+    "f1": 0.9915492957746479,
+    "fn": 0,
+    "fp": 21,
+    "fpr": 2.2031931612884275e-05,
+    "pr_auc": 0.999986396285279,
+    "precision": 0.9832402234636871,
+    "recall": 1.0,
+    "roc_auc": 0.9999999821169385,
+    "threshold": 0.05680120406971255,
+    "tn": 953141,
+    "tp": 1232
+  }
+}
