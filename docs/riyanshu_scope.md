@@ -1,8 +1,7 @@
-# Anvi contribution to the shared handoff
+# Anvi contribution and Riyanshu handoff status
 
-This branch contains Anvi's completed contribution to the shared handoff. The
-split is intentional so the remaining account-level and release-level tasks
-stay with their assigned owner.
+This note records Anvi's contribution to the shared handoff and the later
+status of the account-level and release-level tasks.
 
 ## Completed on this branch
 
@@ -16,7 +15,7 @@ stay with their assigned owner.
 - Preserved the team decisions: LightGBM is the selected model for both
   datasets, and IEEE-CIS selects class weights rather than SMOTE.
 
-## Deliberately left for Riyanshu
+## Open at the time of Anvi's contribution
 
 - Create the W&B project and invite the two teammates using the team account.
 - Authenticate and perform the actual W&B offline-run sync.
@@ -24,6 +23,17 @@ stay with their assigned owner.
   protection/reviewer rules if required by the team.
 - Review this branch, make any final edits, and perform the final push/merge
   decision under Riyanshu's own account.
+
+## Status at the Stage 1 handoff
+
+- Naman created the W&B project, handled teammate invitations, and added four
+  saved-metric summary runs per dataset. No training was repeated for this.
+- The older PaySim W&B entries were removed after the summaries were verified;
+  their offline `.wandb` files remain outside the repository.
+- GitHub labels and branch protection remain remote settings to verify only if
+  the team requires them.
+- Naman's final source/documentation commit, push, and separate transfer-bundle
+  ZIP remain to be completed.
 
 ## Not part of this split
 

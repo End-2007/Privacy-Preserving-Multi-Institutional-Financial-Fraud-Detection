@@ -2,6 +2,8 @@
 
 Team: Naman Dugar, Anvi Tyagi, Riyanshu. Guide: Prof. Mohit Tiwari.
 
+**Final status (2026-10-25):** Both dataset pipelines, comparisons, selected-model evaluations, saved artifacts, reports, and W&B summaries are complete. The Stage 1 results-summary requirement is covered in `docs/HANDOVER.md`. Naman's final commit/push and zipping/sharing the separate transfer bundle remain.
+
 ## 1. How the work is split in time
 
 | Window | Who | What |
@@ -162,10 +164,10 @@ Write `docs/HANDOVER.md` containing:
 | Review IEEE-CIS PRs | Riyanshu |
 | Unit tests for `compute_metrics` and `pipeline_utils` | Riyanshu |
 | Branch protection, PR template, CONTRIBUTING, issue labels | Riyanshu |
-| W&B project, invites, sync offline runs | Riyanshu |
+| W&B project, invites, saved-result summaries | Naman (completed; see `docs/github_and_wandb.md`) |
 | `docs/schema_alignment.md` | Anvi |
 | `src/common/model_interface.py` (reads `metadata.json`) | Anvi |
-| `reports/stage1_results.md` from the two metrics JSONs | Anvi |
+| Stage 1 results summary from the two metrics JSONs (included in `docs/HANDOVER.md`) | Anvi |
 | README and progress-report cleanup | Both, split by section |
 | Optional follow-up: IEEE-CIS temporal check, readable-only feature comparison, or expanded RF tuning | Agree at handover meeting |
 
@@ -200,11 +202,12 @@ Naman reviews their PRs and stays available for pipeline questions.
 
 ## 10. Definition of done at handover
 
-- [ ] Both datasets regenerate from raw with one command each
-- [ ] Resampling only on train; transformers fitted on train only; test untouched
-- [ ] LR, RF, XGBoost and LightGBM trained per dataset with at least strategies A and B
-- [ ] Metrics JSON per dataset from the shared `compute_metrics`
-- [ ] Best model, preprocessor and `metadata.json` saved per dataset
-- [ ] Data cards, `decisions.md`, `HANDOVER.md` written
-- [ ] Git version control completed after both dataset training runs finish
-- [ ] Open-task list handed to Anvi and Riyanshu
+- [x] Both datasets can be prepared from raw inputs with the documented commands
+- [x] Resampling is train-only; transformers are fitted on train only; validation and test remain untouched
+- [x] LR, RF, XGBoost and LightGBM were compared per dataset using the planned strategies
+- [x] Metrics JSON exists for each dataset and records the shared evaluation metrics
+- [x] Selected model, preprocessor and `metadata.json` are saved per dataset
+- [x] Data cards, `decisions.md`, and `HANDOVER.md` are written
+- [ ] Naman's final Git commit/push is pending after this review
+- [x] Remaining Stage 2 work is listed for Anvi and Riyanshu in `docs/HANDOVER.md`
+- [ ] Zip and share the separate `D:\MICRO\stage1_transfer` bundle with teammates who need the large artifacts

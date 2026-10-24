@@ -125,7 +125,7 @@ FedGuard/
 └── wandb/                # Offline experiment logs; excluded from Git
 ```
 
-For the completed centralized training stage, start with [the Stage 1 handover](docs/HANDOVER.md). Stage 1 run details are in [the plan](docs/stage1_plan.md); SHAP and Streamlit are planned as follow-on work. The local `stage1_transfer/` folder is ignored by Git and must be shared separately with teammates who need the large data and model artifacts.
+For the completed centralized training stage, start with [the Stage 1 handover](docs/HANDOVER.md). Stage 1 run details are in [the plan](docs/stage1_plan.md); SHAP and Streamlit are planned as follow-on work. The transfer bundle is maintained outside this checkout and must be zipped and shared separately with teammates who need the large data and model artifacts; it must not be committed to Git.
 
 ---
 

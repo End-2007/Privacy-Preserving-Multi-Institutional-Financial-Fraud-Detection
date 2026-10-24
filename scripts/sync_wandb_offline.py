@@ -15,17 +15,19 @@ def main() -> None:
     if not args.directory.is_dir():
         raise SystemExit(f"Offline run directory does not exist: {args.directory}")
 
-    run_files = sorted(args.directory.rglob("*.wandb"))
+    run_files = sorted(
+        run_file
+        for run_file in args.directory.rglob("*.wandb")
+        if run_file.parent.name.startswith("offline-run-")
+    )
     if not run_files:
-        raise SystemExit(f"No W&B run files found under: {args.directory}")
+        raise SystemExit(f"No offline W&B run files found under: {args.directory}")
 
     for run_file in run_files:
         subprocess.run(
             [
                 "wandb",
                 "sync",
-                "--include-offline",
-                "--no-include-online",
                 "--project",
                 args.project,
                 str(run_file),

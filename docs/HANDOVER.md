@@ -2,14 +2,14 @@
 
 **Prepared by:** Naman Dugar  
 **Status:** Stage 1 training and evaluation complete; SHAP and Streamlit are later-stage work.  
-**Git status:** Work is prepared locally and is not committed or pushed.  
+**Git status:** Final commit and push are pending Naman's review. Local `main` has commit `b785e7e` ahead of `origin/main`; the W&B sync helper and final handoff-document updates are uncommitted.
 **Recipients:** Anvi Tyagi and Riyanshu (Riya).
 
 ## Handover summary
 
 Naman completed data audit, exploratory analysis, split/preprocessing, model tuning, imbalance-strategy comparisons, selected-model evaluation, and saved per-family comparison models for both PaySim and IEEE-CIS. Both datasets use the same seed (42), stratified 70/15/15 split, train-only preprocessing/resampling, validation PR-AUC model selection, and validation threshold selection subject to FPR at most 1%. The selected model for each dataset was evaluated once on its held-out test split.
 
-Stage 1 did **not** include SHAP or Streamlit. Those are the next stage's deliverables. No Git commit or push has been made; once the team reviews this handoff and the local files, Naman can commit the source, docs, and small reports.
+Stage 1 did **not** include SHAP or Streamlit. Those are later-stage deliverables. The training, evaluation, W&B summaries, and transfer bundle are complete. Naman's remaining repository task is to review, commit, and push the final source and documentation changes.
 
 ## Deliverable status
 
@@ -27,9 +27,10 @@ Stage 1 did **not** include SHAP or Streamlit. Those are the next stage's delive
 | Selected models and preprocessing artifacts | Done locally | `models/paysim/stage1/`, `models/ieee_cis/stage1/` |
 | Four-family comparison models | Done locally | `models/{paysim,ieee_cis}/comparison/`; these were selected/refit on train and checked on validation only, not test |
 | PR curve figures | Done | `reports/figures/paysim_pr_curves.png`, `reports/figures/ieee_cis_pr_curves.png` |
+| W&B comparison summaries | Done | Four per-model summary runs for each dataset in the `fedguard-stage1` project; see `docs/github_and_wandb.md` |
 | SHAP explanations | Not started | Planned after Stage 1 |
 | Streamlit app | Not started | Planned after Stage 1 |
-| Git commit/push | Not done by design | Naman performs the version-control step after reviewing the package; no commit was made during training |
+| Final Git commit/push | Pending Naman | One earlier local commit is ahead of `origin/main`; the sync helper and final documentation updates still need review and commit |
 
 ## Results snapshot
 
@@ -114,11 +115,11 @@ python scripts\run_ieee_cis_smote_enn_validation.py
 | PR curve | `reports/figures/paysim_pr_curves.png` | `reports/figures/ieee_cis_pr_curves.png` |
 | Prepared matrices, splits, feature mapping | `data/processed/paysim/` | `data/processed/ieee_cis/` |
 
-`.gitignore` excludes raw and processed data and everything under `models/`, including model binaries and their metadata. A separate ignored bundle is prepared at `stage1_transfer/`; it includes the raw training inputs used, both datasets' processed splits and feature maps, all saved model artifacts, and the reference documents. It does not include the unused unlabeled IEEE-CIS competition test files. Share this folder through the team's approved storage; do not add it to Git. The checksum list is `stage1_transfer/MANIFEST.sha256`.
+`.gitignore` excludes raw and processed data and everything under `models/`, including model binaries and their metadata. The transfer bundle is at `D:\MICRO\stage1_transfer`, outside this Git checkout. It includes the raw training inputs used, both datasets' processed splits and feature maps, all saved model artifacts, and the reference documents. It does not include the unused unlabeled IEEE-CIS competition test files. The bundle has a `MANIFEST.sha256` checksum list. It still needs to be zipped and shared separately; do not add it to Git.
 
 The reports, code, requirements, and Stage 1 documentation are intended for Git. **GitHub will not contain the fitted models, transformers, splits, or feature metadata.**
 
-When committing, first review `git status` and ensure it contains only intended source, docs, requirements, and compact reports. No commit hash exists yet. If a commit reference is required in model metadata, follow the project plan: create the source/report commit first, then add that hash in a follow-up metadata-only commit; do not retrain solely to add the reference.
+Before the final commit, review `git status` and ensure it contains only intended source, docs, requirements, and compact reports. The current local `main` already contains commit `b785e7e`, which is one commit ahead of `origin/main`; pushing `main` will publish it too. The current model metadata predates the final source commit. Do not retrain solely to add a Git reference.
 
 ## Caveats and follow-up ownership
 
@@ -128,7 +129,7 @@ When committing, first review `git status` and ensure it contains only intended 
 - IEEE-CIS test FPR was 1.0178%, slightly over the 1% validation constraint. The threshold was chosen without test data; do not tune on test to force the test FPR under 1%.
 - No temporal split/check was performed. A temporal robustness analysis is an optional follow-up, separate from the completed stratified Stage 1 comparison.
 - The saved per-family comparison refits were assessed on validation only. Only the selected LightGBM for each dataset received the final test evaluation.
-- Naman: review the Stage 1 changes and perform the requested Git commit after team review; no commit has been made in this handoff.
-- Anvi: own schema alignment and the shared model interface that reads metadata; prepare the Stage 1 results summary and coordinate the SHAP/Streamlit follow-on.
-- Riya/Riyanshu: own validation tests, GitHub workflow/repository setup, and W&B access/sync as agreed by the team.
+- Naman: review, commit, and push the remaining source/documentation changes; zip and share `D:\MICRO\stage1_transfer` separately.
+- Anvi: schema alignment and the shared model interface remain follow-on tasks; the Stage 1 results snapshot is documented above.
+- Riyanshu: validation tests and GitHub workflow/repository setup are present in the repository; GitHub labels and branch protection remain to verify only if the team requires them. W&B project setup and invitations were handled by Naman.
 - Anvi and Riya/Riyanshu: agree who leads the Stage 2 SHAP implementation and who leads Streamlit integration; define those responsibilities at handover.
