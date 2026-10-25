@@ -22,6 +22,22 @@ DATASET_LABELS = {
     "ieee_cis": "IEEE-CIS",
 }
 EXCLUDED_COLUMNS = {"isFraud", "row_id", "TransactionID"}
+USER_INPUT_FIELDS = {
+    "paysim": {
+        "numeric_nonnegative": (
+            "amount",
+            "oldbalanceOrg",
+            "newbalanceOrig",
+            "oldbalanceDest",
+            "newbalanceDest",
+        ),
+        "required": ("type",),
+    },
+    "ieee_cis": {
+        "numeric_nonnegative": ("TransactionAmt", "card1"),
+        "required": ("ProductCD", "card4", "P_emaildomain", "R_emaildomain"),
+    },
+}
 
 
 @st.cache_resource(show_spinner=False)
@@ -131,6 +147,32 @@ def _safe_float(value: object, default: float = 0.0) -> float:
     return default if math.isnan(number) else number
 
 
+def validate_transaction_input(dataset: str, transaction: pd.Series) -> list[str]:
+    """Return user-facing validation messages before model inference."""
+    if dataset not in USER_INPUT_FIELDS:
+        return [f"Unsupported dataset: {dataset}"]
+
+    errors: list[str] = []
+    rules = USER_INPUT_FIELDS[dataset]
+    for field in rules["required"]:
+        value = transaction.get(field)
+        if value is None or not str(value).strip():
+            errors.append(f"{field} is required.")
+
+    for field in rules["numeric_nonnegative"]:
+        value = transaction.get(field)
+        try:
+            number = float(value)
+        except (TypeError, ValueError):
+            errors.append(f"{field} must be a number.")
+            continue
+        if not math.isfinite(number):
+            errors.append(f"{field} must be finite.")
+        elif number < 0:
+            errors.append(f"{field} cannot be negative.")
+    return errors
+
+
 def _derive_paysim_features(transaction: pd.Series) -> pd.Series:
     """Keep engineered PaySim fields consistent with user-entered balances."""
     amount = _safe_float(transaction.get("amount"))
@@ -148,6 +190,13 @@ def _derive_paysim_features(transaction: pd.Series) -> pd.Series:
 
 
 def _score_transaction_tab(dataset: str, transaction: pd.Series) -> None:
+    validation_errors = validate_transaction_input(dataset, transaction)
+    if validation_errors:
+        st.error("Please correct the following input(s):")
+        for error in validation_errors:
+            st.write(f"- {error}")
+        return
+
     try:
         artifacts = cached_artifacts(dataset)
         result = predict_transaction(dataset, transaction, artifacts=artifacts)
