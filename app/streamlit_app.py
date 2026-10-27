@@ -103,7 +103,7 @@ def _render_explanation(dataset: str, transaction: pd.Series, artifacts: Dataset
     try:
         module = importlib.import_module("src.common.explain")
         explain_transaction = getattr(module, "explain_transaction")
-    except (ModuleNotFoundError, AttributeError):
+    except (ImportError, AttributeError):
         st.info(
             "SHAP explanation module is not available yet. "
             "The risk score above is still available."
@@ -129,14 +129,43 @@ def _render_explanation(dataset: str, transaction: pd.Series, artifacts: Dataset
 
     contributions = getattr(explanation, "contributions", ())
     if contributions:
-        chart = pd.DataFrame(
-            {
-                "feature": [item.source_feature for item in contributions],
-                "SHAP value": [item.shap_value for item in contributions],
-            }
-        ).set_index("feature")
         st.subheader("Top feature contributions")
-        st.bar_chart(chart)
+        chart_text = _signed_contribution_bars(contributions)
+        if chart_text:
+            # Use Streamlit's plain text renderer here: chart components rely on
+            # lazily loaded browser bundles, which failed in the local demo and
+            # took the page connection down. The exact values remain visible in
+            # the labels, while the signed bars preserve direction and scale.
+            st.text(chart_text)
+        else:
+            st.info("No finite SHAP contributions were available to display.")
+
+
+def _signed_contribution_bars(contributions, *, bar_width: int = 20) -> str:
+    """Format local SHAP values as dependency-light, signed text bars."""
+    rows = []
+    for item in contributions:
+        try:
+            feature = str(item.source_feature)
+            value = float(item.shap_value)
+        except (AttributeError, TypeError, ValueError):
+            continue
+        if not math.isfinite(value):
+            continue
+        rows.append((feature, value))
+
+    if not rows:
+        return ""
+
+    largest = max(abs(value) for _, value in rows) or 1.0
+    lines = ["Negative contributions  ←       0       →  Positive contributions"]
+    for feature, value in rows:
+        width = max(1, int(round(abs(value) / largest * bar_width)))
+        bar = "█" * min(width, bar_width)
+        left = bar.rjust(bar_width) if value < 0 else " " * bar_width
+        right = " " * bar_width if value < 0 else bar.ljust(bar_width)
+        lines.append(f"{feature[:32]:32} {left}|{right} {value:+.4f}")
+    return "\n".join(lines)
 
 
 def _safe_float(value: object, default: float = 0.0) -> float:
