@@ -97,7 +97,12 @@ def test_explanation_contract_rank_probability_and_additivity(dataset, monkeypat
     assert result.fraud_probability == pytest.approx(0.82)
     assert result.base_value == pytest.approx(0.2)
     assert result.output_value == pytest.approx(-0.05)
-    assert result.plain_language_reasons == ()
+    assert result.plain_language_reasons == (
+        "Feature 'type' (observed value 'TRANSFER') contributed to a lower "
+        "model fraud-risk score (SHAP value -0.4).",
+        "Feature 'amount' (observed value 100.0) contributed to a higher "
+        "model fraud-risk score (SHAP value +0.1).",
+    )
 
     assert len(result.contributions) == 2
     first, second = result.contributions
@@ -243,6 +248,76 @@ def test_unmapped_feature_keeps_transformed_name_and_has_no_value(monkeypatch):
     )
     assert item.source_feature == "unmapped__feature"
     assert item.value is None
+    assert any(
+        "Model feature 'unmapped__feature'" in reason
+        and "observed input value unavailable" in reason
+        for reason in result.plain_language_reasons
+    )
+
+
+def test_anonymized_feature_reason_uses_name_without_inventing_meaning():
+    contribution = explain_module.FeatureContribution(
+        feature_name="numeric__C1",
+        source_feature="C1",
+        value=12.0,
+        shap_value=0.42,
+        direction="increases_risk",
+        rank=1,
+    )
+
+    reason = explain_module._reason_for_contribution(contribution)
+
+    assert reason == (
+        "Feature 'C1' (observed value 12.0) contributed to a higher model "
+        "fraud-risk score (SHAP value +0.42)."
+    )
+    assert "balance" not in reason.lower()
+    assert "confirmed fraud" not in reason.lower()
+
+
+def test_empty_and_short_contribution_lists_produce_matching_reason_lists():
+    assert explain_module._plain_language_reasons(()) == ()
+
+    one_contribution = explain_module.FeatureContribution(
+        feature_name="numeric__amount",
+        source_feature="amount",
+        value=250000,
+        shap_value=0.42,
+        direction="increases_risk",
+        rank=1,
+    )
+    reasons = explain_module._plain_language_reasons((one_contribution,))
+
+    assert len(reasons) == 1
+    assert "amount" in reasons[0]
+    assert "250000" in reasons[0]
+
+
+def test_reasons_are_sorted_by_rank_and_zero_effect_is_neutral():
+    later = explain_module.FeatureContribution(
+        feature_name="numeric__D1",
+        source_feature="D1",
+        value=np.nan,
+        shap_value=0.0,
+        direction="no_effect",
+        rank=2,
+    )
+    earlier = explain_module.FeatureContribution(
+        feature_name="numeric__C1",
+        source_feature="C1",
+        value=3,
+        shap_value=-0.2,
+        direction="decreases_risk",
+        rank=1,
+    )
+
+    reasons = explain_module._plain_language_reasons((later, earlier))
+
+    assert reasons[0].startswith("Feature 'C1'")
+    assert "lower model fraud-risk score" in reasons[0]
+    assert reasons[1].startswith("Feature 'D1'")
+    assert "observed input value unavailable" in reasons[1]
+    assert "no measurable directional effect" in reasons[1]
 
 
 def test_tree_shap_additivity_mismatch_is_rejected(monkeypatch):
