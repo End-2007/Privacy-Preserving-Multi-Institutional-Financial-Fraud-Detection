@@ -211,6 +211,64 @@ def _positive_class_base_value(value: Any) -> float:
     return result
 
 
+def _format_reason_value(value: Any) -> str | None:
+    """Format an observed input value without inventing a missing value."""
+    if isinstance(value, np.generic):
+        value = value.item()
+    if value is None:
+        return None
+
+    try:
+        missing = pd.isna(value)
+    except (TypeError, ValueError):
+        missing = False
+    if isinstance(missing, (bool, np.bool_)) and missing:
+        return None
+
+    rendered = repr(value) if isinstance(value, str) else str(value)
+    if len(rendered) > 80:
+        rendered = f"{rendered[:77]}..."
+    return rendered
+
+
+def _reason_for_contribution(contribution: FeatureContribution) -> str:
+    """Describe a local model contribution using only observed evidence."""
+    if contribution.source_feature == contribution.feature_name and "__" in contribution.feature_name:
+        feature_label = f"Model feature {contribution.feature_name!r}"
+    else:
+        feature_label = f"Feature {contribution.source_feature!r}"
+
+    value = _format_reason_value(contribution.value)
+    value_text = (
+        f" (observed value {value})"
+        if value is not None
+        else " (observed input value unavailable)"
+    )
+
+    effect_text = {
+        "increases_risk": "contributed to a higher model fraud-risk score",
+        "decreases_risk": "contributed to a lower model fraud-risk score",
+        "no_effect": "had no measurable directional effect on the model score",
+    }.get(contribution.direction)
+    if effect_text is None:
+        raise ValueError(
+            f"Unsupported contribution direction: {contribution.direction!r}"
+        )
+
+    return (
+        f"{feature_label}{value_text} {effect_text} "
+        f"(SHAP value {contribution.shap_value:+.4g})."
+    )
+
+
+def _plain_language_reasons(
+    contributions: tuple[FeatureContribution, ...],
+) -> tuple[str, ...]:
+    """Create rank-ordered audit text without assigning semantics to features."""
+    ranked = sorted(contributions, key=lambda contribution: contribution.rank)
+    return tuple(_reason_for_contribution(item) for item in ranked)
+
+
 def explain_transaction(
     dataset: str,
     transaction: Mapping[str, Any] | pd.Series | pd.DataFrame,
@@ -348,5 +406,5 @@ def explain_transaction(
         base_value=base_value,
         output_value=output_value,
         contributions=tuple(contributions),
-        plain_language_reasons=(),
+        plain_language_reasons=_plain_language_reasons(tuple(contributions)),
     )
