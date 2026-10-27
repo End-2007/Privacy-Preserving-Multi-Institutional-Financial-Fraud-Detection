@@ -43,7 +43,47 @@ def test_shap_integration_consumes_agreed_result_contract(monkeypatch):
     )
     monkeypatch.setitem(sys.modules, "src.common.explain", module)
     monkeypatch.setattr(streamlit_app.st, "subheader", lambda *args, **kwargs: None)
+    rendered = []
     monkeypatch.setattr(streamlit_app.st, "write", lambda *args, **kwargs: None)
-    monkeypatch.setattr(streamlit_app.st, "bar_chart", lambda *args, **kwargs: None)
+    monkeypatch.setattr(streamlit_app.st, "text", rendered.append)
+    monkeypatch.setattr(
+        streamlit_app.st,
+        "bar_chart",
+        lambda *args, **kwargs: pytest.fail("SHAP should use the stable text renderer"),
+    )
 
     streamlit_app._render_explanation("paysim", pd.Series({"amount": 100}), SimpleNamespace())
+
+    assert len(rendered) == 1
+    assert "amount" in rendered[0]
+    assert "+0.4200" in rendered[0]
+    assert "-0.0800" in rendered[0]
+    assert "Positive contributions" in rendered[0]
+
+
+def test_explanation_failure_is_reported_without_crashing(monkeypatch):
+    def fail_explanation(*args, **kwargs):
+        raise RuntimeError("SHAP backend unavailable")
+
+    module = SimpleNamespace(explain_transaction=fail_explanation)
+    monkeypatch.setitem(sys.modules, "src.common.explain", module)
+    warnings = []
+    monkeypatch.setattr(streamlit_app.st, "warning", warnings.append)
+
+    streamlit_app._render_explanation("paysim", pd.Series({"amount": 100}), SimpleNamespace())
+
+    assert warnings == ["Explanation could not be generated: SHAP backend unavailable"]
+
+
+def test_signed_bars_skip_malformed_and_non_finite_values():
+    contributions = (
+        SimpleNamespace(source_feature="good", shap_value=0.5),
+        SimpleNamespace(source_feature="nan", shap_value=float("nan")),
+        SimpleNamespace(source_feature="missing value"),
+    )
+
+    rendered = streamlit_app._signed_contribution_bars(contributions)
+
+    assert "good" in rendered
+    assert "nan" not in rendered
+    assert "+0.5000" in rendered
