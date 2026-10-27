@@ -29,7 +29,6 @@ def test_load_metrics_rejects_unknown_dataset():
     with pytest.raises(ValueError, match="Unsupported dataset"):
         load_metrics("unknown")
 
-
 def test_paysim_input_validation_rejects_negative_amount_and_missing_type():
     transaction = pd.Series({"amount": -10, "oldbalanceOrg": 0, "newbalanceOrig": 0,
                              "oldbalanceDest": 0, "newbalanceDest": 0, "type": ""})
@@ -70,4 +69,3 @@ def test_shap_integration_consumes_agreed_result_contract(monkeypatch):
     monkeypatch.setattr(streamlit_app.st, "bar_chart", lambda *args, **kwargs: None)
 
     streamlit_app._render_explanation("paysim", pd.Series({"amount": 100}), SimpleNamespace())
-
