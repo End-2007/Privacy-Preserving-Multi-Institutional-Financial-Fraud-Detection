@@ -848,6 +848,19 @@ def _load_explanation(dataset: str, transaction: pd.Series, artifacts: DatasetAr
         raise RuntimeError("The SHAP explanation module is unavailable.") from exc
 
 
+def _load_explanation_or_report(
+    dataset: str,
+    transaction: pd.Series,
+    artifacts: DatasetArtifacts,
+):
+    """Keep prediction available when the optional SHAP explanation fails."""
+    try:
+        return _load_explanation(dataset, transaction, artifacts)
+    except Exception as exc:
+        st.warning(f"SHAP explanation could not be generated: {exc}")
+        return None
+
+
 def _show_explanation(explanation) -> None:
     if explanation is None:
         st.info("The score is available, but a SHAP explanation could not be generated.")
@@ -920,11 +933,7 @@ def _score_transaction(
         st.error(f"Prediction failed: {exc}")
         return
 
-    try:
-        explanation = _load_explanation(dataset, transaction, artifacts)
-    except Exception as exc:
-        explanation = None
-        st.warning(f"SHAP explanation could not be generated: {exc}")
+    explanation = _load_explanation_or_report(dataset, transaction, artifacts)
 
     st.session_state[f"fedguard_result_{dataset}"] = {
         "dataset": dataset,

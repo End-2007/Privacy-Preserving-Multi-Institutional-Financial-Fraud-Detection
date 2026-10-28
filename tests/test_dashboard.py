@@ -107,34 +107,56 @@ def test_input_validation_rejects_unknown_dataset():
 
 def test_shap_integration_consumes_agreed_result_contract(monkeypatch):
     contributions = (
-        SimpleNamespace(source_feature="amount", shap_value=0.42),
-        SimpleNamespace(source_feature="type_TRANSFER", shap_value=-0.08),
+        SimpleNamespace(
+            feature_name="numeric__amount",
+            source_feature="amount",
+            value=100,
+            shap_value=0.42,
+            direction="increases_risk",
+        ),
+        SimpleNamespace(
+            feature_name="categorical__type_TRANSFER",
+            source_feature="type_TRANSFER",
+            value=1,
+            shap_value=-0.08,
+            direction="decreases_risk",
+        ),
     )
     explanation = SimpleNamespace(
+        base_value=-0.2,
         plain_language_reasons=("The amount is unusually high for this transaction type.",),
         contributions=contributions,
     )
+    calls = []
     module = SimpleNamespace(
-        explain_transaction=lambda *args, **kwargs: explanation,
+        explain_transaction=lambda *args, **kwargs: calls.append((args, kwargs)) or explanation,
     )
     monkeypatch.setitem(sys.modules, "src.common.explain", module)
     monkeypatch.setattr(streamlit_app.st, "subheader", lambda *args, **kwargs: None)
-    rendered = []
     monkeypatch.setattr(streamlit_app.st, "write", lambda *args, **kwargs: None)
-    monkeypatch.setattr(streamlit_app.st, "text", rendered.append)
+    rendered = []
+    monkeypatch.setattr(streamlit_app.st, "caption", rendered.append)
     monkeypatch.setattr(
         streamlit_app.st,
-        "bar_chart",
-        lambda *args, **kwargs: pytest.fail("SHAP should use the stable text renderer"),
+        "markdown",
+        lambda body, **kwargs: rendered.append(body),
     )
+    monkeypatch.setattr(streamlit_app.st, "dataframe", lambda *args, **kwargs: None)
+    transaction = pd.Series({"amount": 100})
+    artifacts = SimpleNamespace()
 
-    streamlit_app._render_explanation("paysim", pd.Series({"amount": 100}), SimpleNamespace())
+    result = streamlit_app._load_explanation("paysim", transaction, artifacts)
+    streamlit_app._show_explanation(result)
 
-    assert len(rendered) == 1
-    assert "amount" in rendered[0]
-    assert "+0.4200" in rendered[0]
-    assert "-0.0800" in rendered[0]
-    assert "Positive contributions" in rendered[0]
+    assert result is explanation
+    assert calls == [
+        (("paysim", transaction), {"artifacts": artifacts, "max_features": 10})
+    ]
+    chart = next(value for value in rendered if isinstance(value, str) and "fg-shap-card" in value)
+    assert "amount" in chart
+    assert "+0.4200" in chart
+    assert "-0.0800" in chart
+    assert "Negative contributions" in chart
 
 
 def test_explanation_failure_is_reported_without_crashing(monkeypatch):
@@ -146,9 +168,14 @@ def test_explanation_failure_is_reported_without_crashing(monkeypatch):
     warnings = []
     monkeypatch.setattr(streamlit_app.st, "warning", warnings.append)
 
-    streamlit_app._render_explanation("paysim", pd.Series({"amount": 100}), SimpleNamespace())
+    result = streamlit_app._load_explanation_or_report(
+        "paysim", pd.Series({"amount": 100}), SimpleNamespace()
+    )
 
-    assert warnings == ["Explanation could not be generated: SHAP backend unavailable"]
+    assert result is None
+    assert warnings == [
+        "SHAP explanation could not be generated: SHAP backend unavailable"
+    ]
 
 
 def test_signed_bars_skip_malformed_and_non_finite_values():
