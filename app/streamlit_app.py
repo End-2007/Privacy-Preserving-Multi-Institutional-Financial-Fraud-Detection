@@ -158,10 +158,10 @@ def validation_comparison_table() -> pd.DataFrame:
 
 def _risk_label(score: float, threshold: float) -> str:
     if score >= threshold:
-        return "High risk - flagged for review"
+        return "High"
     if score >= threshold * 0.5:
-        return "Medium risk - monitor"
-    return "Low risk - not flagged"
+        return "Medium"
+    return "Low"
 
 
 def _render_explanation(dataset: str, transaction: pd.Series, artifacts: DatasetArtifacts) -> None:
@@ -188,7 +188,7 @@ def _render_explanation(dataset: str, transaction: pd.Series, artifacts: Dataset
 
     reasons = getattr(explanation, "plain_language_reasons", ())
     if reasons:
-        st.subheader("Why this transaction was flagged")
+        st.subheader("Explanation of this prediction")
         for reason in reasons:
             st.write(f"- {reason}")
 
@@ -319,7 +319,8 @@ def _score_transaction_tab(dataset: str, transaction: pd.Series) -> None:
         st.subheader("Risk result")
         st.metric("Fraud model score (uncalibrated)", f"{result.fraud_probability:.4f}")
         st.metric("Validation-selected threshold", f"{result.threshold:.4f}")
-        st.write(_risk_label(result.fraud_probability, result.threshold))
+        st.metric("Interface category (heuristic)", _risk_label(result.fraud_probability, result.threshold))
+        st.caption("Heuristic presentation category based on the validation threshold; not a calibrated risk band.")
         st.write(
             "Predicted class: "
             + ("Flagged for review" if result.predicted_label else "Not flagged")
@@ -397,7 +398,7 @@ def _render_ieee_tab() -> None:
 
 
 def main() -> None:
-    st.set_page_config(page_title="FedGuard", page_icon="🛡️", layout="wide")
+    st.set_page_config(page_title="FedGuard", layout="wide")
     st.title("FedGuard")
     st.caption(
         "Micro Project demo: centralized fraud-risk scoring with explainable outputs. "
