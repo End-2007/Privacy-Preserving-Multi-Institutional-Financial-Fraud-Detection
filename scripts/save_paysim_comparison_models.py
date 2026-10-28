@@ -99,7 +99,7 @@ def main() -> None:
         }
         (family_dir / "metadata.json").write_text(json.dumps(metadata, indent=2, sort_keys=True), encoding="utf-8")
         saved.append({"model": family, "strategy": strategy, **validation_metrics, "model_path": str(family_dir / "best_model.joblib")})
-        print(f"Saved {family}: validation PR-AUC={validation_metrics['pr_auc']:.6f}; path={family_dir}", flush=True)
+        print(f"Saved {family}: validation Average Precision (AP)={validation_metrics['pr_auc']:.6f}; path={family_dir}", flush=True)
         del model, X_fit, X_fit_tree, y_fit, validation_scores
 
     summary_path = out_dir / "comparison_summary.json"

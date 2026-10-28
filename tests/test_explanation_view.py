@@ -73,8 +73,8 @@ def test_render_explanation_shows_score_chart_reasons_and_limitations(
     explanation_view.render_explanation(result)
 
     metric_args, metric_kwargs = ui_calls["metric"][0]
-    assert metric_kwargs["label"] == "Model-estimated fraud probability"
-    assert metric_kwargs["value"] == "87.0%"
+    assert metric_kwargs["label"] == "Fraud model score (uncalibrated)"
+    assert metric_kwargs["value"] == "0.8700"
     assert "confirmed fraud finding" in ui_calls["info"][0][0][0]
     assert "do not prove causation" in ui_calls["info"][0][0][0]
     assert "anonymized" in ui_calls["info"][0][0][0]

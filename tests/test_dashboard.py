@@ -7,7 +7,12 @@ import pandas as pd
 import pytest
 
 from app import streamlit_app
-from app.streamlit_app import load_metrics, metrics_table, validate_transaction_input
+from app.streamlit_app import (
+    load_metrics,
+    metrics_table,
+    validate_transaction_input,
+    validation_comparison_table,
+)
 
 
 def test_metrics_table_contains_both_datasets_and_required_metrics():
@@ -18,11 +23,28 @@ def test_metrics_table_contains_both_datasets_and_required_metrics():
         "Precision",
         "Recall",
         "F1",
-        "PR-AUC",
+        "Average Precision (AP)",
         "ROC-AUC",
         "FPR",
     }.issubset(table.columns)
-    assert table["Threshold"].notna().all()
+    assert table["Validation-selected threshold"].notna().all()
+
+
+def test_validation_comparison_table_has_four_families_per_dataset():
+    table = validation_comparison_table()
+
+    assert len(table) == 8
+    assert table.groupby("Dataset")["Model"].nunique().to_dict() == {
+        "IEEE-CIS": 4,
+        "PaySim": 4,
+    }
+    assert {
+        "Best validation strategy",
+        "Validation Average Precision (AP)",
+        "Validation ROC-AUC",
+    }.issubset(table.columns)
+    assert table["Validation Average Precision (AP)"].between(0, 1).all()
+    assert table["Validation ROC-AUC"].between(0, 1).all()
 
 
 def test_load_metrics_rejects_unknown_dataset():
@@ -45,6 +67,38 @@ def test_ieee_input_validation_accepts_complete_nonnegative_input():
                              "P_emaildomain": "example.com", "R_emaildomain": "example.com"})
 
     assert validate_transaction_input("ieee_cis", transaction) == []
+
+
+def test_ieee_input_validation_allows_naturally_missing_categorical_fields():
+    transaction = pd.Series({
+        "TransactionAmt": 25.0,
+        "card1": 1234,
+        "ProductCD": "W",
+        "card4": pd.NA,
+        "P_emaildomain": pd.NA,
+        "R_emaildomain": pd.NA,
+    })
+
+    assert validate_transaction_input("ieee_cis", transaction) == []
+
+
+@pytest.mark.parametrize("product_code", ["", None, float("nan"), pd.NA])
+def test_ieee_input_validation_still_requires_product_code(product_code):
+    transaction = pd.Series({
+        "TransactionAmt": 25.0,
+        "card1": 1234,
+        "ProductCD": product_code,
+        "card4": "visa",
+        "P_emaildomain": "example.com",
+        "R_emaildomain": "example.com",
+    })
+
+    assert validate_transaction_input("ieee_cis", transaction) == ["ProductCD is required."]
+
+
+@pytest.mark.parametrize("value", [None, float("nan"), pd.NA])
+def test_missing_ieee_text_defaults_render_as_blank(value):
+    assert streamlit_app._text_input_default(value) == ""
 
 
 def test_input_validation_rejects_unknown_dataset():

@@ -175,7 +175,7 @@ def main() -> None:
             experiment["candidate_results"].append(row)
             print(
                 f"[{fit_number}/{total_fits}] {model_name}/cap_smote_enn candidate "
-                f"{candidate_index}/{len(candidates)}: validation PR-AUC={metrics['pr_auc']:.6f}, "
+                f"{candidate_index}/{len(candidates)}: validation Average Precision (AP)={metrics['pr_auc']:.6f}, "
                 f"elapsed={row['elapsed_minutes']:.1f} min, device={row['compute_device']}",
                 flush=True,
             )
@@ -229,7 +229,7 @@ def main() -> None:
         experiment["completed_families"] = len(experiment["family_best"])
         report_path.write_text(json.dumps(experiment, indent=2, sort_keys=True), encoding="utf-8")
         print(
-            f"Saved validation-best {model_name}: PR-AUC={validation_metrics['pr_auc']:.6f}; "
+            f"Saved validation-best {model_name}: Average Precision (AP)={validation_metrics['pr_auc']:.6f}; "
             f"path={model_path}",
             flush=True,
         )

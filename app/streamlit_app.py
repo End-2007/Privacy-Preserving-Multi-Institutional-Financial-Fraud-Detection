@@ -21,6 +21,17 @@ DATASET_LABELS = {
     "paysim": "PaySim",
     "ieee_cis": "IEEE-CIS",
 }
+MODEL_LABELS = {
+    "logistic_regression": "Logistic Regression",
+    "random_forest": "Random Forest",
+    "xgboost": "XGBoost",
+    "lightgbm": "LightGBM",
+}
+STRATEGY_LABELS = {
+    "class_weight": "Class weights",
+    "cap_smote": "Capped SMOTE",
+    "cap_smote_enn": "Capped SMOTE-ENN",
+}
 EXCLUDED_COLUMNS = {"isFraud", "row_id", "TransactionID"}
 USER_INPUT_FIELDS = {
     "paysim": {
@@ -35,7 +46,8 @@ USER_INPUT_FIELDS = {
     },
     "ieee_cis": {
         "numeric_nonnegative": ("TransactionAmt", "card1"),
-        "required": ("ProductCD", "card4", "P_emaildomain", "R_emaildomain"),
+        # Email domains and card network are naturally missing in IEEE-CIS.
+        "required": ("ProductCD",),
     },
 }
 
@@ -79,11 +91,11 @@ def metrics_table() -> pd.DataFrame:
             {
                 "Dataset": DATASET_LABELS[dataset],
                 "Model": report.get("model", "unknown"),
-                "Threshold": report.get("threshold", metrics.get("threshold")),
+                "Validation-selected threshold": report.get("threshold", metrics.get("threshold")),
                 "Precision": metrics.get("precision"),
                 "Recall": metrics.get("recall"),
                 "F1": metrics.get("f1"),
-                "PR-AUC": metrics.get("pr_auc"),
+                "Average Precision (AP)": metrics.get("pr_auc"),
                 "ROC-AUC": metrics.get("roc_auc"),
                 "FPR": metrics.get("fpr"),
             }
@@ -91,10 +103,63 @@ def metrics_table() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def _risk_label(probability: float, threshold: float) -> str:
-    if probability >= threshold:
+def validation_comparison_table() -> pd.DataFrame:
+    """Return the best validation-ranking result per model family and dataset.
+
+    Average Precision and ROC-AUC do not depend on the candidate's 0.5
+    classification threshold. Final thresholded metrics are shown separately.
+    """
+    rows = []
+    model_order = tuple(MODEL_LABELS)
+    for dataset, dataset_label in DATASET_LABELS.items():
+        comparison = load_metrics(dataset).get("comparison", [])
+        best_by_model = {}
+        for candidate in comparison:
+            model = candidate.get("model")
+            validation = candidate.get("validation", {})
+            if model not in MODEL_LABELS:
+                continue
+            try:
+                average_precision = float(validation["pr_auc"])
+                roc_auc = float(validation["roc_auc"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if not math.isfinite(average_precision) or not math.isfinite(roc_auc):
+                continue
+            current = best_by_model.get(model)
+            if current is None or average_precision > current["average_precision"]:
+                best_by_model[model] = {
+                    "average_precision": average_precision,
+                    "roc_auc": roc_auc,
+                    "strategy": candidate.get("strategy", "unknown"),
+                }
+
+        missing_models = [model for model in model_order if model not in best_by_model]
+        if missing_models:
+            raise ValueError(
+                f"Validation comparison is incomplete for {dataset}: {', '.join(missing_models)}"
+            )
+
+        for model in model_order:
+            result = best_by_model[model]
+            rows.append(
+                {
+                    "Dataset": dataset_label,
+                    "Model": MODEL_LABELS[model],
+                    "Best validation strategy": STRATEGY_LABELS.get(
+                        result["strategy"], str(result["strategy"])
+                    ),
+                    "Validation Average Precision (AP)": result["average_precision"],
+                    "Validation ROC-AUC": result["roc_auc"],
+                }
+            )
+    return pd.DataFrame(rows)
+
+
+def _risk_label(score: float, threshold: float) -> str:
+    if score >= threshold:
         return "High risk - flagged for review"
-    if probability >= threshold * 0.5:
+    if score >= threshold * 0.5:
         return "Medium risk - monitor"
     return "Low risk - not flagged"
 
@@ -176,6 +241,16 @@ def _safe_float(value: object, default: float = 0.0) -> float:
     return default if math.isnan(number) else number
 
 
+def _text_input_default(value: object) -> str:
+    """Render missing source values as blank instead of the text ``<NA>``."""
+    try:
+        if value is None or pd.isna(value):
+            return ""
+    except (TypeError, ValueError):
+        pass
+    return str(value)
+
+
 def validate_transaction_input(dataset: str, transaction: pd.Series) -> list[str]:
     """Return user-facing validation messages before model inference."""
     if dataset not in USER_INPUT_FIELDS:
@@ -185,7 +260,7 @@ def validate_transaction_input(dataset: str, transaction: pd.Series) -> list[str
     rules = USER_INPUT_FIELDS[dataset]
     for field in rules["required"]:
         value = transaction.get(field)
-        if value is None or not str(value).strip():
+        if not _text_input_default(value).strip():
             errors.append(f"{field} is required.")
 
     for field in rules["numeric_nonnegative"]:
@@ -237,13 +312,13 @@ def _score_transaction_tab(dataset: str, transaction: pd.Series) -> None:
     with left:
         st.subheader("Transaction details")
         preview = transaction.head(30).rename("value").to_frame()
-        st.dataframe(preview, use_container_width=True)
+        st.dataframe(preview, width="stretch")
         if len(transaction) > 30:
             st.caption(f"Showing 30 of {len(transaction)} model input fields.")
     with right:
         st.subheader("Risk result")
-        st.metric("Fraud probability", f"{result.fraud_probability:.2%}")
-        st.metric("Decision threshold", f"{result.threshold:.2%}")
+        st.metric("Fraud model score (uncalibrated)", f"{result.fraud_probability:.4f}")
+        st.metric("Validation-selected threshold", f"{result.threshold:.4f}")
         st.write(_risk_label(result.fraud_probability, result.threshold))
         st.write(
             "Predicted class: "
@@ -301,17 +376,21 @@ def _render_ieee_tab() -> None:
     )
     transaction = samples.loc[selected].copy()
     st.caption("Enter the main card/e-commerce details. Less visible model fields remain from the selected reference example.")
+    st.caption("Leave optional fields blank when the reference transaction has no value; missing values are passed through the saved preprocessing.")
     with st.form("ieee_form"):
         col1, col2, col3 = st.columns(3)
         with col1:
             transaction["TransactionAmt"] = st.number_input("Transaction amount", min_value=0.0, value=_safe_float(transaction.get("TransactionAmt")), step=10.0)
-            transaction["ProductCD"] = st.text_input("Product code", value=str(transaction.get("ProductCD", "")))
+            transaction["ProductCD"] = st.text_input("Product code", value=_text_input_default(transaction.get("ProductCD", "")))
         with col2:
             transaction["card1"] = st.number_input("Card identifier", min_value=0.0, value=_safe_float(transaction.get("card1")), step=1.0)
-            transaction["card4"] = st.text_input("Card network", value=str(transaction.get("card4", "")))
+            card4_value = st.text_input("Card network", value=_text_input_default(transaction.get("card4", "")))
+            transaction["card4"] = card4_value.strip() or pd.NA
         with col3:
-            transaction["P_emaildomain"] = st.text_input("Purchaser email domain", value=str(transaction.get("P_emaildomain", "")))
-            transaction["R_emaildomain"] = st.text_input("Recipient email domain", value=str(transaction.get("R_emaildomain", "")))
+            purchaser_domain = st.text_input("Purchaser email domain", value=_text_input_default(transaction.get("P_emaildomain", "")))
+            recipient_domain = st.text_input("Recipient email domain", value=_text_input_default(transaction.get("R_emaildomain", "")))
+            transaction["P_emaildomain"] = purchaser_domain.strip() or pd.NA
+            transaction["R_emaildomain"] = recipient_domain.strip() or pd.NA
         submitted = st.form_submit_button("Check IEEE-CIS risk")
     if submitted:
         _score_transaction_tab("ieee_cis", transaction)
@@ -332,26 +411,49 @@ def main() -> None:
         _render_ieee_tab()
 
     st.divider()
-    st.subheader("Centralized model performance")
+    st.subheader("Validation-only model-family comparison")
+    st.caption(
+        "Each family is represented by its strategy with the highest validation Average Precision. "
+        "These ranking metrics are not held-out test results."
+    )
+    try:
+        validation_table = validation_comparison_table()
+        st.dataframe(
+            validation_table.style.format(
+                {
+                    "Validation Average Precision (AP)": "{:.4f}",
+                    "Validation ROC-AUC": "{:.4f}",
+                }
+            ),
+            width="stretch",
+        )
+    except Exception as exc:
+        st.warning(f"Validation comparison could not be loaded: {exc}")
+
+    st.subheader("Selected-model held-out test results")
     try:
         table = metrics_table()
         st.dataframe(
             table.style.format(
                 {
-                    "Threshold": "{:.2%}",
+                    "Validation-selected threshold": "{:.4f}",
                     "Precision": "{:.3f}",
                     "Recall": "{:.3f}",
                     "F1": "{:.3f}",
-                    "PR-AUC": "{:.3f}",
+                    "Average Precision (AP)": "{:.3f}",
                     "ROC-AUC": "{:.3f}",
                     "FPR": "{:.3%}",
                 }
             ),
-            use_container_width=True,
+            width="stretch",
         )
     except Exception as exc:
         st.warning(f"Metrics could not be loaded: {exc}")
 
+    st.caption(
+        "This table reports the final LightGBM test evaluation for each dataset. "
+        "Model and threshold selection used validation data; the test split was evaluated once."
+    )
     st.caption(
         "The dashboard uses validation samples for demonstration. "
         "The held-out test split is not used for interactive selection or tuning."
@@ -360,4 +462,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

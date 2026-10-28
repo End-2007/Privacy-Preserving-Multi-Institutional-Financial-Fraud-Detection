@@ -1,142 +1,127 @@
 # FedGuard
 
-### Privacy-Preserving Financial Fraud Detection Using Machine Learning and Explainable AI
+## Privacy-Preserving Multi-Institutional Financial Fraud Detection Using Federated Learning and Explainable AI
 
----
+FedGuard is an academic project exploring fraud-risk modeling and explainability across two simulated financial-institution settings. The completed **Micro Project** trains and evaluates separate centralized models for PaySim mobile-money transactions and IEEE-CIS card/e-commerce transactions, then demonstrates single-transaction scoring and local SHAP explanations in Streamlit.
 
-## 1. Project Idea and Motivation
+The current Micro Project is a **centralized research demonstration**. It does not train a federated model, connect to real financial institutions, block transactions, or make customer decisions. Federated learning and privacy mechanisms are future stages.
 
-Financial fraud schemes—especially money-laundering "mule" networks—routinely operate across multiple banks and payment processors. Because each financial institution only monitors its own transactions, no single bank has full visibility into the fraud chain.
+## Current Micro Project
 
-At the same time, privacy regulations (such as Reserve Bank of India directions, the Digital Personal Data Protection Act 2023, and GDPR) strictly prohibit banks from pooling raw customer transaction records.
+The end-to-end workflow is:
 
-**FedGuard** addresses this challenge in stages. While the long-term vision incorporates Federated Learning across institutions, the **Micro Project** establishes the foundational machine learning and explainability layer.
+1. Audit and prepare each dataset independently.
+2. Make a stratified train/validation/test split and fit preprocessing on training rows only.
+3. Compare Logistic Regression, Random Forest, XGBoost, and LightGBM with documented imbalance strategies.
+4. Select the model and decision threshold using validation data.
+5. Evaluate each selected model once on its untouched held-out test split.
+6. Use saved local artifacts for inference, thresholding, and single-transaction SHAP explanations.
+7. Review the results and demo through a local Streamlit application.
 
----
+The threshold rule for both datasets is to maximize recall subject to a validation false-positive rate (FPR) no greater than 1%. Validation comparisons are distinct from final test results.
 
-## 2. Micro Project Overview
+## Datasets
 
-In the Micro Project, we simulate two distinct financial institutions using public, human-readable datasets:
-- **Institution 1 (Mobile Money):** Simulated using the **PaySim** dataset (peer-to-peer transfers and cash-out operations).
-- **Institution 2 (Card / E-Commerce):** Simulated using the **IEEE-CIS** dataset (card transactions, identity attributes, and device info).
+| Dataset | Simulated institution | Characteristics |
+| --- | --- | --- |
+| PaySim | Mobile money | Synthetic transactions with transaction types, amounts, and account-balance fields. |
+| IEEE-CIS | Card/e-commerce | Labeled transaction data joined with identity data; many fields are coded or anonymized. |
 
-The diagram below illustrates how transactions flow through the Micro Project pipeline:
+The datasets have separate feature pipelines, saved models, thresholds, and reports. IEEE-CIS feature names such as C*, D*, V*, and id_* are retained as supplied; the project does not assign undocumented business meanings to them.
 
-```mermaid
-flowchart TD
-    subgraph DataSources["Simulated Financial Institutions"]
-        D1["Institution 1: Mobile Money\n(PaySim Dataset)"]
-        D2["Institution 2: Card / E-Commerce\n(IEEE-CIS Dataset)"]
-    end
+## Selected model results
 
-    subgraph MicroPipeline["FedGuard Micro Pipeline"]
-        P["1. Data Cleaning and Preprocessing"]
-        S["2. Imbalance Handling (SMOTE)"]
-        M["3. Machine Learning Baselines\n(XGBoost / LightGBM)"]
-        X["4. Explainable AI Layer\n(SHAP Decision Attributions)"]
+The selected model for both datasets is LightGBM with class weights. The saved reports use the key pr_auc; the project presents this measure as **Average Precision (AP)**. FPR below is expressed as a percentage.
 
-        P --> S
-        S --> M
-        M --> X
-    end
+| Dataset | Threshold selected on validation | Validation AP | Test AP | Test ROC-AUC | Test precision | Test recall | Test F1 | Test FPR |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| PaySim | 0.0568012 | 0.999986 | 0.997968 | 0.998691 | 0.973080 | 0.997565 | 0.985170 | 0.003567% |
+| IEEE-CIS | 0.7675237 | 0.758107 | 0.756757 | 0.959075 | 0.710193 | 0.687964 | 0.698902 | 1.017758% |
 
-    subgraph Deliverables["Outputs for Review"]
-        R1["Fraud Risk Score\n(0 to 100%)"]
-        R2["Human-Readable Explanation\nfor Compliance Auditors"]
-        R3["Performance Benchmarks\n(PR-AUC, Recall, FPR)"]
-    end
+The IEEE-CIS test FPR is slightly above the 1% validation target. The threshold was selected without test data and must not be tuned using the test result. Only the selected LightGBM model for each dataset has final test metrics; the four-family model comparison is validation-only.
 
-    D1 --> P
-    D2 --> P
-    X --> R1
-    X --> R2
-    X --> R3
+Full metrics, threshold-selected validation comparisons, audit summaries, and precision-recall figures are available in the reports directory:
+- PaySim: reports/paysim_metrics.json and reports/figures/paysim_pr_curves.png
+- IEEE-CIS: reports/ieee_cis_metrics.json and reports/figures/ieee_cis_pr_curves.png
+- IEEE-CIS validation-only SMOTE-ENN experiment: reports/ieee_cis_smote_enn_validation.json
 
-    style DataSources fill:none,stroke:#0288D1,stroke-width:2px
-    style MicroPipeline fill:none,stroke:#43A047,stroke-width:2px
-    style Deliverables fill:none,stroke:#E53935,stroke-width:2px
+## Inference, SHAP, and dashboard
 
-    style D1 fill:#0288D1,stroke:#01579B,stroke-width:2px,color:#ffffff
-    style D2 fill:#283593,stroke:#1A237E,stroke-width:2px,color:#ffffff
-    style P fill:#2E7D32,stroke:#1B5E20,stroke-width:2px,color:#ffffff
-    style S fill:#EF6C00,stroke:#E65100,stroke-width:2px,color:#ffffff
-    style M fill:#6A1B9A,stroke:#4A148C,stroke-width:2px,color:#ffffff
-    style X fill:#00838F,stroke:#006064,stroke-width:2px,color:#ffffff
-    style R1 fill:#C62828,stroke:#B71C1C,stroke-width:2px,color:#ffffff
-    style R2 fill:#00695C,stroke:#004D40,stroke-width:2px,color:#ffffff
-    style R3 fill:#D84315,stroke:#BF360C,stroke-width:2px,color:#ffffff
-```
+The shared inference interface loads the selected dataset-specific model, preprocessor, threshold, and feature metadata from local artifacts. It validates a one-transaction input, applies the saved preprocessing, calculates a model score, and compares it with the saved validation-selected threshold.
 
----
+The SHAP explanation layer reports the strongest local feature contributions, their directions, supplied source-feature names, and evidence-based reasons. SHAP values describe how features affected this model's output for one transaction; they do not prove fraud or establish causation. Anonymized IEEE-CIS fields remain identified by their supplied names.
 
-## 3. Why These Datasets?
+The Streamlit demo has separate PaySim and IEEE-CIS tabs:
+- PaySim lets a user choose a validation example and edit transaction type, amount, and balances. Related engineered balance features are recalculated before scoring.
+- IEEE-CIS lets a user choose a validation example and edit selected card/e-commerce fields; the remaining model inputs stay from the chosen example.
+- Both flows display the score, validation-selected threshold, prediction/flag, and SHAP explanation when available.
+- The app labels its final LightGBM results as held-out test metrics. Interactive examples come from validation data; the test split is evaluated once and is not used for model or threshold selection.
+- The dashboard keeps the four-family validation ranking comparison separate from the selected models' held-out test results.
 
-Many academic papers rely on the Kaggle European Credit Card dataset. However, that dataset anonymizes all feature names into mathematical principal components (`V1` through `V28`). 
+The demo is for review and education. Scores are **not calibrated real-world fraud probabilities**, and the interface is not a production transaction-scoring service.
 
-If a model flags a transaction and explains it as `"V14 was -4.2"`, a compliance officer cannot understand or defend that flag in an audit.
+## Run locally
 
-FedGuard deliberately uses **PaySim** and **IEEE-CIS** because they retain real, human-readable attributes:
-- **PaySim:** Account balances, transaction types (`TRANSFER`, `CASH_OUT`), and amount shifts.
-- **IEEE-CIS:** Card networks, transaction amounts, email domains, and device types.
+A fresh Git clone does not contain the large model, preprocessor, feature-metadata, or processed-data artifacts. Obtain the separately shared Stage 1 transfer bundle and copy its models and data/processed subfolders into the matching locations under the repository root. Keep these generated artifacts out of Git.
 
-This allows the **SHAP** explainability layer to generate clear, plain-language audit trails (e.g., *"Entire sender balance transferred out to an account with zero prior history"*).
+From PowerShell at the repository root:
 
----
+    python -m venv .venv
+    .\.venv\Scripts\Activate.ps1
+    python -m pip install -r requirements.txt
+    python -m streamlit run app\streamlit_app.py
 
-## 4. Multi-Stage Roadmap
+The dashboard requires the selected model artifacts and the processed validation examples. See docs/micro_demo_runbook.md for setup and demonstration guidance.
 
-The project is structured across four academic stages, with **Micro** as the current active foundation:
+## Repository map
 
-| Stage | Status | Focus Area | Planned Deliverables |
-|---|:---:|---|---|
-| <img src="https://img.shields.io/badge/Stage-Micro-00C853?style=for-the-badge" alt="Micro" /> | <img src="https://img.shields.io/badge/Status-ACTIVE-00C853?style=flat-square" alt="Active" /> | **Centralized Baselines & Explainability** | Data cleaning, SMOTE rebalancing, XGBoost/LightGBM baselines, and SHAP decision explanations |
-| <img src="https://img.shields.io/badge/Stage-Mini-FBC02D?style=for-the-badge" alt="Mini" /> | <img src="https://img.shields.io/badge/Status-PLANNED-FBC02D?style=flat-square" alt="Planned" /> | **Federated Learning** | Cross-institution collaborative training using Flower (FedAvg) without sharing raw customer data |
-| <img src="https://img.shields.io/badge/Stage-Minor-FB8C00?style=for-the-badge" alt="Minor" /> | <img src="https://img.shields.io/badge/Status-PLANNED-FB8C00?style=flat-square" alt="Planned" /> | **Differential Privacy** | Mathematical privacy guarantees ($\varepsilon, \delta$) via Opacus to protect model update gradients |
-| <img src="https://img.shields.io/badge/Stage-Major-E53935?style=for-the-badge" alt="Major" /> | <img src="https://img.shields.io/badge/Status-PLANNED-E53935?style=flat-square" alt="Planned" /> | **Secure Aggregation** | Cryptographic protection (HE / SMPC) so the central server never sees plaintext model weights |
+    app/                 Streamlit application and explanation view
+    data/                Raw/processed local data; excluded from Git
+    docs/                Data cards, decisions, handoff, and demo runbook
+    models/              Trained models and preprocessors; excluded from Git
+    reports/             Metrics, audits, EDA summaries, and figures
+    scripts/             Audit, preparation, training, and validation scripts
+    src/common/          Shared preprocessing, inference, evaluation, and SHAP code
+    tests/               Unit and integration-contract tests
+    .github/workflows/   Automated test workflow
 
-For complete technical specifications and data flow mechanics, refer to [ARCHITECTURE.md](ARCHITECTURE.md).
+## Scope, limitations, and future work
 
----
+- **PaySim is synthetic.** Its very high scores do not establish performance on real payment activity. Its post-transaction balance fields make the demo retrospective, not pre-transaction fraud prevention.
+- **IEEE-CIS features are partly anonymized.** Explanations can show model contributions but cannot supply business meaning absent from the source documentation.
+- **The displayed outputs are model scores.** No calibration study is documented; do not call them calibrated fraud probabilities.
+- **The current Micro Project is centralized.** It does not implement federated learning, differential privacy, or secure aggregation.
+- **The dashboard is a local research demonstration.** It does not block transactions or make customer decisions. The repository does not establish a public hosted deployment.
 
-## 5. Repository Structure
+Future stages may explore federated learning across simulated institutions, differential privacy, and secure aggregation. Those are planned research directions, not completed Micro Project results.
 
-```
-FedGuard/
-├── README.md
-├── ARCHITECTURE.md
-├── requirements.txt
-├── .gitignore
-├── data/
-│   ├── README.md
-│   ├── raw/              # Raw dataset files; excluded from Git
-│   ├── processed/        # Prepared splits and matrices; excluded from Git
-│   └── sample/
-├── docs/
-│   ├── HANDOVER.md       # Stage 1 results and team handoff
-│   ├── stage1_plan.md
-│   ├── decisions.md
-│   ├── data_card_paysim.md
-│   ├── data_card_ieee_cis.md
-│   └── reference/        # Existing presentation, reports, and viva guide
-├── models/               # Fitted models and preprocessors; excluded from Git
-├── reports/              # Metrics, audit/EDA summaries, and figures
-├── scripts/              # Audit, preprocessing, training, and comparison entry points
-├── src/common/           # Shared pipeline and model utilities
-└── wandb/                # Offline experiment logs; excluded from Git
-```
+## Project roadmap
 
-For the completed centralized training stage, start with [the Stage 1 handover](docs/HANDOVER.md). Stage 1 run details are in [the plan](docs/stage1_plan.md); SHAP and Streamlit are planned as follow-on work. The transfer bundle is maintained outside this checkout and must be zipped and shared separately with teammates who need the large data and model artifacts; it must not be committed to Git.
+| Stage | Status | Focus |
+| --- | --- | --- |
+| Micro | Complete | Centralized dataset preparation, four-family model comparisons, selected-model evaluation, inference, SHAP, and local Streamlit demonstration. |
+| Mini | Planned | Federated learning experiments across simulated institutions. |
+| Minor | Planned | Differential privacy experiments and privacy-budget analysis. |
+| Major | Planned | Secure aggregation research and broader system hardening. |
 
----
+## Documentation and experiment tracking
 
-## Academic and Team Details
+- System and design decisions: ARCHITECTURE.md and docs/decisions.md
+- Stage 1 training protocol and handoff: docs/stage1_plan.md and docs/HANDOVER.md
+- Local demonstration instructions: docs/micro_demo_runbook.md
+- Dataset descriptions: docs/data_card_paysim.md and docs/data_card_ieee_cis.md
+- Final threshold audit: docs/final_threshold_validation.md
+- W&B experiment project: https://forge.coreweave.com/wandb/ndugar007-bharati-vidyapeeths-college-of-engineering/fedguard-stage1
 
-- **Project Title:** Privacy-Preserving Multi-Institutional Financial Fraud Detection Using Federated Learning and Explainable AI
+## Team
+
+- Naman Dugar — data audit, preparation, training, model comparisons, threshold validation, and result documentation.
+- Anvi Tyagi — shared model inference interface, Streamlit integration, and demo hardening.
+- Riyanshu — SHAP explanation core, evidence-based reasons, and explanation-view component.
+
+## Academic details
+
 - **College:** Bharati Vidyapeeth's College of Engineering, New Delhi
 - **Department:** Department of Computer Science and Engineering
 - **Mentor:** Prof. Mohit Tiwari, Assistant Professor
-- **Team Members:**
-  - Naman Dugar (05911502724)
-  - Anvi Tyagi (00211502724)
-  - Riyanshu (05711502724) 
-
+- **Project title:** Privacy-Preserving Multi-Institutional Financial Fraud Detection Using Federated Learning and Explainable AI
