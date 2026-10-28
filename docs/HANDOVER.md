@@ -9,7 +9,7 @@
 
 The Micro Project combines Stage 1 training/evaluation with the later inference, SHAP, and Streamlit implementation. The current application is a local research demonstration using centralized, dataset-specific LightGBM models. It is not a federated-learning deployment, does not connect to real institutions, and does not block or approve transactions.
 
-The merged project history in the checked repository includes Naman's threshold-validation and dashboard-fix work, Anvi's inference interface, Streamlit integration and demo hardening, and Riyanshu's SHAP core, plain-language reasons, and explanation-view work. The final documentation PR should keep this handover aligned with the code and mentor's reporting guidance.
+The merged project history in the checked repository includes Naman's threshold-validation and dashboard-fix work, Anvi's inference interface, Streamlit integration and demo hardening, and Riyanshu's SHAP core, plain-language reasons, and explanation-view work. This handover summarizes the current code and the mentor's Git and dashboard guidance.
 
 ## Deliverable status
 
@@ -87,7 +87,7 @@ The Streamlit application is app/streamlit_app.py. Its sidebar selects the datas
 
 The selected dataset-specific model and threshold are loaded from local artifacts. The dashboard presents the four-family validation ranking comparison separately from the selected models' held-out test results. The demo displays the output score, threshold decision, and local explanation when available. Validation examples are used for interaction; held-out test rows are not offered as demo inputs. Low, medium, and high labels in the interface are heuristic presentation categories based on the validation threshold; they are not calibrated risk bands.
 
-The SHAP core ranks local feature effects and maps transformed fields to source fields where possible. It reports contribution direction and evidence-based statements, not causality or proof of fraud. The standalone Matplotlib explanation view exists, but the current app shell renders compact signed text bars.
+The SHAP core ranks local feature effects and maps transformed fields to source fields where possible. It reports contribution direction and evidence-based statements, not causality or proof of fraud. The current app renders a signed HTML/CSS contribution chart and a detailed table. The reusable Matplotlib explanation view remains available as a separate component.
 
 ## Local artifacts and running the demo
 

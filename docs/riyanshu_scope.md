@@ -20,4 +20,4 @@ Large model/data artifacts remain in the separately shared transfer bundle and a
 
 ## Remaining project direction
 
-This final documentation PR aligns README.md, ARCHITECTURE.md, the runbook, and this handoff with the merged code. Federated learning, differential privacy, and secure aggregation remain future research stages. GitHub labels and branch protection are repository settings; this note does not assert that they have been configured.
+This note aligns README.md, ARCHITECTURE.md, the runbook, and the handoff with the merged code. Federated learning, differential privacy, and secure aggregation remain future research stages. GitHub labels and branch protection are repository settings; this note does not assert that they have been configured.

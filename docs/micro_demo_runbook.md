@@ -42,4 +42,4 @@ The app expects model bundles under `models/<dataset>`, feature metadata, and va
 - **Missing validation examples:** confirm that data/processed/paysim/validation.parquet and data/processed/ieee_cis/validation.parquet exist.
 - **Prediction error:** confirm the selected dataset’s model, preprocessor, metadata, and feature metadata all belong to the same bundle and that its Python environment matches the saved artifacts.
 - **Explanation error:** the app reports a warning and leaves the risk output visible. Continue by explaining the score and threshold; do not present a missing explanation as a successful SHAP result.
-- **Browser disconnect or frontend rendering failure:** confirm the Streamlit process is still running in the terminal. The current app shell uses text-based signed contribution bars to avoid relying on the older lazily loaded browser chart path.
+- **Browser disconnect or frontend rendering failure:** confirm the Streamlit process is still running in the terminal. The current app uses a self-contained HTML/CSS signed-contribution chart rather than the older lazily loaded Plotly chart path.
