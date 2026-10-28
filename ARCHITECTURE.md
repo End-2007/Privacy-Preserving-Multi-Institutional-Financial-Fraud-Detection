@@ -10,14 +10,50 @@ The longer-term project explores cross-institution fraud detection. Federated le
 
 ## 2. End-to-end flow
 
-Dataset preparation and evaluation:
+Dataset preparation and evaluation use separate pipelines for each dataset. Preprocessing and resampling are fit or applied only to training data; validation is used for model and threshold selection, and the held-out test split is evaluated once afterward.
 
-    PaySim source data ──> PaySim cleaning/features ──> train-only preprocessing/resampling ──> four model-family comparison ──> validation selection and threshold ──> one selected-model test evaluation
-    IEEE-CIS transaction + identity data ──> left join and train-only feature filtering ──> train-only preprocessing/resampling ──> four model-family comparison ──> validation selection and threshold ──> one selected-model test evaluation
+```mermaid
+flowchart TB
+    subgraph PaySim[PaySim pipeline]
+        PData[PaySim source data] --> PPrep[Clean and engineer PaySim features]
+        PPrep --> PSplit[Stratified train, validation, and test split]
+        PSplit --> PTrain[Fit preprocessing and compare four model families on training data]
+        PTrain --> PSelect[Choose model and threshold on validation data]
+        PSelect --> PTest[Evaluate selected model once on held-out test data]
+        PSelect --> PBundle[Save PaySim model, preprocessor, threshold, and feature metadata locally]
+    end
+    subgraph IEEE[IEEE-CIS pipeline]
+        IData[Transaction and identity source data] --> IPrep[Left join, filter columns, and prepare IEEE-CIS features]
+        IPrep --> ISplit[Stratified train, validation, and test split]
+        ISplit --> ITrain[Fit preprocessing and compare four model families on training data]
+        ITrain --> ISelect[Choose model and threshold on validation data]
+        ISelect --> ITest[Evaluate selected model once on held-out test data]
+        ISelect --> IBundle[Save IEEE-CIS model, preprocessor, threshold, and feature metadata locally]
+    end
+    PTest --> Reports[Dataset-specific evaluation reports]
+    ITest --> Reports
+```
 
-Local demonstration:
+Runtime scoring and explanation path:
 
-    One validation reference row ──> saved dataset preprocessor ──> selected LightGBM model ──> uncalibrated score and validation threshold decision ──> local TreeSHAP contributions and reasons ──> Streamlit display
+```mermaid
+flowchart LR
+    Input[One transaction row] --> Schema[Validate dataset-specific input]
+    Schema --> Transform[Apply saved dataset preprocessor]
+    Transform --> Model[Selected LightGBM model]
+    Model --> Score[Uncalibrated model score]
+    Score --> Threshold[Compare with validation-selected threshold]
+    Transform --> Explain[TreeSHAP local contributions and evidence-based reasons]
+    Model --> Explain
+    Score --> View[Streamlit dataset tab]
+    Threshold --> View
+    Explain --> View
+    Bundle[(Local model and metadata bundle)] --> Transform
+    Bundle --> Model
+    Bundle --> Threshold
+```
+
+The saved bundles, data, and preprocessing artifacts are local and excluded from Git. PaySim and IEEE-CIS have distinct bundles and reports. The application does not send transaction data to a federated service.
 
 PaySim and IEEE-CIS retain separate features, preprocessing artifacts, models, thresholds, and reports.
 

@@ -20,6 +20,26 @@ The end-to-end workflow is:
 
 The threshold rule for both datasets is to maximize recall subject to a validation false-positive rate (FPR) no greater than 1%. Validation comparisons are distinct from final test results.
 
+```mermaid
+flowchart LR
+    P[PaySim data] --> PPrep[PaySim-specific preparation and split]
+    I[IEEE-CIS transaction and identity data] --> IPrep[IEEE-CIS-specific join, filtering, and split]
+    PPrep --> PTrain[Train and compare four model families]
+    IPrep --> ITrain[Train and compare four model families]
+    PTrain --> PVal[Select model and threshold on validation data]
+    ITrain --> IVal[Select model and threshold on validation data]
+    PVal --> PTest[Evaluate selected model once on held-out test data]
+    IVal --> ITest[Evaluate selected model once on held-out test data]
+    PVal --> PArtifacts[PaySim model and preprocessing artifacts]
+    IVal --> IArtifacts[IEEE-CIS model and preprocessing artifacts]
+    PArtifacts --> App[Local Streamlit demo: score and explain one transaction]
+    IArtifacts --> App
+    PTest --> Reports[Dataset-specific reports]
+    ITest --> Reports
+```
+
+PaySim and IEEE-CIS stay separate throughout preparation, model selection, scoring, and reporting. The final test split is held out from model and threshold selection.
+
 ## Datasets
 
 | Dataset | Simulated institution | Characteristics |
