@@ -131,21 +131,21 @@ The app displays the model score, threshold decision, local explanation when ava
 
 ## 8. Selected model results
 
-### 🟨 Validation-selected operating points
+### Validation-selected operating points
 
-| 🧩 Dataset | 🧠 Selected model / strategy | 🎯 Threshold | 📈 Validation AP |
+| Dataset | Selected model / strategy | Threshold | Validation AP |
 | --- | --- | ---: | ---: |
 | [![PaySim](https://img.shields.io/badge/PaySim-DATASET-2563EB?style=flat-square)](docs/data_card_paysim.md) | LightGBM / class weights | 0.0568012 | **0.999986** |
 | [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-DATASET-9333EA?style=flat-square)](docs/data_card_ieee_cis.md) | LightGBM / class weights | 0.7675237 | **0.758107** |
 
-### 🟩 Held-out test performance
+### Held-out test performance
 
-| 🧩 Dataset | 📊 Average Precision | 📉 ROC-AUC | Precision | Recall | F1 | FPR |
+| Dataset | Average Precision | ROC-AUC | Precision | Recall | F1 | FPR |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [![PaySim](https://img.shields.io/badge/PaySim-DATASET-2563EB?style=flat-square)](docs/data_card_paysim.md) | **0.997968** | **0.998691** | 0.973080 | 0.997565 | 0.985170 | 0.003567% |
 | [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-DATASET-9333EA?style=flat-square)](docs/data_card_ieee_cis.md) | **0.756757** | **0.959075** | 0.710193 | 0.687964 | 0.698902 | 1.017758% |
 
-**Dataset color key:** 🔵 PaySim · 🟣 IEEE-CIS. Validation thresholds and final held-out test metrics are shown separately to make the evaluation boundary explicit.
+**Dataset color key:** PaySim is blue; IEEE-CIS is purple. Validation thresholds and final held-out test metrics are shown separately to make the evaluation boundary explicit.
 
 The validation FPR ceiling is 1%. IEEE-CIS test FPR is 1.017758%; report it as observed rather than tuning against the test result. Full validation family comparisons and confusion counts are in the reports and project handover.
 

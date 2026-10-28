@@ -70,21 +70,21 @@ The datasets have separate feature pipelines, saved models, thresholds, and repo
 
 The selected model for both datasets is LightGBM with class weights. The saved reports use the key pr_auc; the project presents this measure as **Average Precision (AP)**. FPR below is expressed as a percentage.
 
-### 🟨 Validation-selected operating points
+### Validation-selected operating points
 
-| 🧩 Dataset | 🧠 Selected model | 🎯 Threshold | 📈 Validation AP |
+| Dataset | Selected model | Threshold | Validation AP |
 | --- | --- | ---: | ---: |
 | [![PaySim](https://img.shields.io/badge/PaySim-DATASET-2563EB?style=flat-square)](docs/data_card_paysim.md) | LightGBM · class weights | 0.0568012 | **0.999986** |
 | [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-DATASET-9333EA?style=flat-square)](docs/data_card_ieee_cis.md) | LightGBM · class weights | 0.7675237 | **0.758107** |
 
-### 🟩 Held-out test performance
+### Held-out test performance
 
-| 🧩 Dataset | 📊 Average Precision | 📉 ROC-AUC | Precision | Recall | F1 | FPR |
+| Dataset | Average Precision | ROC-AUC | Precision | Recall | F1 | FPR |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [![PaySim](https://img.shields.io/badge/PaySim-DATASET-2563EB?style=flat-square)](docs/data_card_paysim.md) | **0.997968** | **0.998691** | 0.973080 | 0.997565 | 0.985170 | 0.003567% |
 | [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-DATASET-9333EA?style=flat-square)](docs/data_card_ieee_cis.md) | **0.756757** | **0.959075** | 0.710193 | 0.687964 | 0.698902 | 1.017758% |
 
-**Dataset color key:** 🔵 PaySim · 🟣 IEEE-CIS. The threshold is selected using validation data; the test metrics are reported separately and are not used to tune it.
+**Dataset color key:** PaySim is blue; IEEE-CIS is purple. The threshold is selected using validation data; the test metrics are reported separately and are not used to tune it.
 
 The IEEE-CIS test FPR is slightly above the 1% validation target. The threshold was selected without test data and must not be tuned using the test result. Only the selected LightGBM model for each dataset has final test metrics; the four-family model comparison is validation-only.
 
@@ -147,10 +147,10 @@ Future stages may explore federated learning across simulated institutions, diff
 
 | Stage | Status | Focus |
 | --- | --- | --- |
-| 🟢 **Micro** | ✅ Complete | Centralized dataset preparation, four-family model comparisons, selected-model evaluation, inference, SHAP, and local Streamlit demonstration. |
-| 🟠 **Mini** | 🗓️ Planned | Federated learning experiments across simulated institutions. |
-| 🟠 **Minor** | 🗓️ Planned | Differential privacy experiments and privacy-budget analysis. |
-| 🟠 **Major** | 🗓️ Planned | Secure aggregation research and broader system hardening. |
+| **Micro** | Complete | Centralized dataset preparation, four-family model comparisons, selected-model evaluation, inference, SHAP, and local Streamlit demonstration. |
+| **Mini** | Planned | Federated learning experiments across simulated institutions. |
+| **Minor** | Planned | Differential privacy experiments and privacy-budget analysis. |
+| **Major** | Planned | Secure aggregation research and broader system hardening. |
 
 ## Documentation and experiment tracking
 
