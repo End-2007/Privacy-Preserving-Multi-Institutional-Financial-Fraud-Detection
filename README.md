@@ -99,12 +99,7 @@ The shared inference interface loads the selected dataset-specific model, prepro
 
 The SHAP explanation layer reports the strongest local feature contributions, their directions, supplied source-feature names, and evidence-based reasons. SHAP values describe how features affected this model's output for one transaction; they do not prove fraud or establish causation. Anonymized IEEE-CIS fields remain identified by their supplied names.
 
-The Streamlit demo has separate PaySim and IEEE-CIS tabs:
-- PaySim lets a user choose a validation example and edit transaction type, amount, and balances. Related engineered balance features are recalculated before scoring.
-- IEEE-CIS lets a user choose a validation example and edit selected card/e-commerce fields; the remaining model inputs stay from the chosen example.
-- Both flows display the score, validation-selected threshold, prediction/flag, and SHAP explanation when available.
-- The app labels its final LightGBM results as held-out test metrics. Interactive examples come from validation data; the test split is evaluated once and is not used for model or threshold selection.
-- The dashboard keeps the four-family validation ranking comparison separate from the selected models' held-out test results.
+The Streamlit demo has a dataset selector and three main views: **Transaction score + SHAP**, **Model results**, and **Scope and limitations**. The transaction view supports a one-row CSV template/upload or a validation reference example. PaySim examples allow editing transaction type, amount, and balances; related engineered balance features are recalculated before scoring. IEEE-CIS examples allow editing selected card/e-commerce fields while the remaining inputs stay from the chosen validation example. Both dataset flows show the uncalibrated score, validation-selected threshold, threshold decision, heuristic interface category, and local SHAP explanation when available. A model selector allows scoring with the XGBoost comparison model or the selected LightGBM model. Model results keep the four-family validation comparison separate from the selected LightGBM held-out test metrics.
 
 The demo is for review and education. Scores are **not calibrated real-world fraud probabilities**, and the interface is not a production transaction-scoring service.
 
@@ -119,7 +114,7 @@ From PowerShell at the repository root:
     python -m pip install -r requirements.txt
     python -m streamlit run app\streamlit_app.py
 
-The dashboard requires the selected model artifacts and the processed validation examples. See docs/micro_demo_runbook.md for setup and demonstration guidance.
+The dashboard requires the selected model artifacts and the processed validation examples. By default, it looks in the repository root. To keep the transfer bundle outside the clone, set `FEDGUARD_ARTIFACT_ROOT` to its extracted folder before launching, or enter that folder in the dashboard sidebar. See docs/micro_demo_runbook.md for setup and demonstration guidance.
 
 ## Repository map
 

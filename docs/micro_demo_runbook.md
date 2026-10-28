@@ -6,7 +6,7 @@ This runbook covers the local centralized demo for PaySim and IEEE-CIS. It does 
 
 1. Open a terminal at the repository root.
 2. Obtain the separately shared Stage 1 transfer bundle. A fresh Git clone does not include the models, preprocessors, feature metadata, or processed validation examples.
-3. Copy the bundle’s models and data/processed folders into matching locations under the repository root. Do not add these large artifacts to Git.
+3. Extract the separately shared bundle. Keep it outside Git. The app defaults to the repository root; either copy the bundle's models and data/processed folders into matching locations under the repository root, set `FEDGUARD_ARTIFACT_ROOT` to the extracted bundle folder, or enter that folder in the dashboard sidebar.
 4. Create and activate an environment and install the declared dependencies:
 
        python -m venv .venv
@@ -17,17 +17,16 @@ This runbook covers the local centralized demo for PaySim and IEEE-CIS. It does 
 
        python -m streamlit run app\streamlit_app.py
 
-The app expects selected model bundles under models/paysim and models/ieee_cis, processed feature metadata, and validation reference data at data/processed/<dataset>/validation.parquet.
+The app expects model bundles under `models/<dataset>`, feature metadata, and validation reference data at `data/processed/<dataset>/validation.parquet` within the selected artifact root. Each dataset directory has a `stage1` selected-model bundle and `comparison/<model-family>` bundles for interactive model selection.
 
 ## Demonstration flow
 
-1. Open the PaySim Risk Check tab and choose a reference transaction. The reference comes from validation data.
-2. Edit transaction type, amount, and sender/receiver balances. The app recalculates the associated engineered balance features.
-3. Submit the form. Show the uncalibrated model score, the validation-selected threshold, the threshold decision, and the explanation output.
-4. Open the IEEE-CIS Risk Check tab and choose a validation reference. Edit the displayed card/e-commerce fields; other inputs remain from that reference example.
-5. Submit and show the score, threshold decision, and explanation.
-6. Show the centralized performance summary. Explain that the selected LightGBM test metrics are reported separately and the interactive inputs use validation examples.
-7. For a SHAP explanation, point out the source/model feature names, contribution direction, and evidence-based reasons. For IEEE-CIS coded fields, preserve the source names and avoid inventing their business meaning.
+1. Choose PaySim or IEEE-CIS in the sidebar and select a scoring model.
+2. In **Transaction score + SHAP**, choose either a one-row CSV or a validation reference example. The CSV template is label-free; demo examples come from validation data.
+3. For PaySim, edit transaction type, amount, and sender/receiver balances. The app recalculates the associated engineered balance features. For IEEE-CIS, edit the displayed card/e-commerce fields; other inputs remain from the selected validation example.
+4. Score the transaction and show the uncalibrated model score, validation-selected threshold, threshold decision, heuristic interface category, and SHAP contribution view/table.
+5. Open **Model results** to show the four-family validation comparison and the selected LightGBM held-out test metrics as separate result groups.
+6. Open **Scope and limitations**. For IEEE-CIS coded fields, preserve source names and avoid inventing business meanings.
 
 ## Interpretation notes
 

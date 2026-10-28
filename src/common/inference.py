@@ -88,12 +88,27 @@ def _repair_legacy_sklearn_state(value: Any, seen: set[int] | None = None) -> No
             _repair_legacy_sklearn_state(child, seen)
 
 
-def load_dataset_artifacts(dataset: str, *, root: Path = ROOT) -> DatasetArtifacts:
-    """Load the selected model, preprocessor, and metadata from the local bundle."""
+def load_dataset_artifacts(
+    dataset: str,
+    *,
+    root: Path = ROOT,
+    model_family: str | None = None,
+) -> DatasetArtifacts:
+    """Load a model, preprocessor, and metadata from a local artifact bundle.
+
+    With no ``model_family``, load the selected Stage 1 model. A family name
+    loads that family's validation-only comparison refit from ``comparison/``.
+    """
 
     name = _normalise_dataset(dataset)
     model_dir = root / "models" / name
-    stage_dir = model_dir / "stage1"
+    if model_family is None:
+        stage_dir = model_dir / "stage1"
+    else:
+        family = str(model_family).strip().lower()
+        if family not in {"logistic_regression", "random_forest", "xgboost", "lightgbm"}:
+            raise ValueError(f"Unsupported model family: {model_family!r}")
+        stage_dir = model_dir / "comparison" / family
     model_path = stage_dir / "best_model.joblib"
     metadata_path = stage_dir / "metadata.json"
     preprocessor_path = model_dir / "preprocessor.joblib"
@@ -109,6 +124,14 @@ def load_dataset_artifacts(dataset: str, *, root: Path = ROOT) -> DatasetArtifac
     model = joblib.load(model_path)
     preprocessor = joblib.load(preprocessor_path)
     _repair_legacy_sklearn_state(preprocessor)
+
+    # The saved XGBoost comparison models were fitted with CUDA. Dashboard
+    # inference receives one CPU-side transformed row; explicitly use XGBoost's
+    # CPU predictor to avoid device-mismatch fallback in the native runtime.
+    if metadata.get("model") == "xgboost":
+        get_booster = getattr(model, "get_booster", None)
+        if callable(get_booster):
+            get_booster().set_param({"device": "cpu"})
 
     if metadata.get("dataset") != name:
         raise ValueError(

@@ -83,7 +83,7 @@ PaySim excludes account identifiers and the isFlaggedFraud rule field and includ
 
 ## Application behavior
 
-The Streamlit application is app/streamlit_app.py. It has separate PaySim and IEEE-CIS tabs, loads a small set of reference examples from each validation split, and supports editing selected transaction fields. PaySim engineered balance fields are recalculated when relevant balances are changed. Other IEEE-CIS model inputs stay from the selected validation example.
+The Streamlit application is app/streamlit_app.py. Its sidebar selects the dataset, scoring model, and local artifact folder. The transaction view accepts a one-row CSV or a small set of validation reference examples and supports editing selected fields. PaySim engineered balance fields are recalculated when relevant balances change. Other IEEE-CIS model inputs stay from the selected validation example. Separate Model results and Scope and limitations views keep validation comparisons distinct from held-out test metrics and explain the demo's limits.
 
 The selected dataset-specific model and threshold are loaded from local artifacts. The dashboard presents the four-family validation ranking comparison separately from the selected models' held-out test results. The demo displays the output score, threshold decision, and local explanation when available. Validation examples are used for interaction; held-out test rows are not offered as demo inputs. Low, medium, and high labels in the interface are heuristic presentation categories based on the validation threshold; they are not calibrated risk bands.
 
@@ -91,7 +91,7 @@ The SHAP core ranks local feature effects and maps transformed fields to source 
 
 ## Local artifacts and running the demo
 
-A clean Git clone does not include raw/processed data or model artifacts. The separately shared transfer bundle is outside Git. To run the application, place its models and data/processed subfolders under the matching paths in the repository root. Keep those large artifacts out of Git.
+A clean Git clone does not include raw/processed data or model artifacts. The separately shared transfer bundle is outside Git. The dashboard defaults to the repository root; either place the bundle's models and data/processed subfolders there, or set FEDGUARD_ARTIFACT_ROOT to the extracted bundle folder or enter that folder in the dashboard sidebar. Keep those large artifacts out of Git.
 
 From PowerShell at the repository root:
 
