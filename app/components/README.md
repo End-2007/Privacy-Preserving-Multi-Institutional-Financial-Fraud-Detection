@@ -1,11 +1,14 @@
 # Transaction explanation component
 
 `render_explanation(result)` displays the SHAP explanation for one transaction.
-It shows the model-estimated fraud probability, a signed contribution chart, a
+It shows the uncalibrated model score, a signed contribution chart, a
 feature detail table, available plain-language reasons, and an explanation
 limitations notice.
 
-## Use from the app shell
+The current app shell does not call this component; it renders compact text-based signed bars.
+The example below documents a possible component integration.
+
+## Example integration from an app shell
 
 ```python
 import streamlit as st
@@ -29,7 +32,7 @@ module.
 
 ## Interpretation limits
 
-- The probability is a model estimate, not a confirmed fraud finding.
+- The displayed score is uncalibrated and is not a confirmed fraud finding.
 - SHAP values show how features contributed to this model's score for this
   transaction; they do not establish causation.
 - SHAP values are shown on the model's raw output scale, not as probability

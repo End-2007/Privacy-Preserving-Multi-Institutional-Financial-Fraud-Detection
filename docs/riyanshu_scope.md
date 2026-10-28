@@ -1,43 +1,23 @@
-# Anvi contribution and Riyanshu handoff status
+# Team contributions and Micro Project handoff
 
-This note records Anvi's contribution to the shared handoff and the later
-status of the account-level and release-level tasks.
+This note summarizes the contributions represented in the merged Micro Project history. It replaces the earlier Stage 1 handoff status, which predated the inference, SHAP, and Streamlit PRs.
 
-## Completed on this branch
+## Contributions in the merged project
 
-- Added validation tests for shared metrics, validation-only threshold choice,
-  deterministic stratified splitting, and W&B offline defaults.
-- Added a GitHub Actions workflow that installs the declared requirements and
-  runs the test suite on pushes to `main` and pull requests.
-- Added contribution rules, review rotation, a pull-request template, and an
-  issue template.
-- Added a documented W&B offline-run sync command.
-- Preserved the team decisions: LightGBM is the selected model for both
-  datasets, and IEEE-CIS selects class weights rather than SMOTE.
+| Member | Work |
+| --- | --- |
+| Naman Dugar | Data audit and EDA, split/preprocessing, model training and strategy comparisons, selected-model thresholds and test evaluation, threshold validation (PR #8), and dashboard error/rendering fixes (PR #9). |
+| Anvi Tyagi | Shared inference interface (PR #5), Streamlit application integration (PR #6), and demo hardening (PR #7). |
+| Riyanshu | SHAP explanation core (PR #10), evidence-based plain-language reasons (PR #11), and reusable XAI view component (PR #12). |
 
-## Open at the time of Anvi's contribution
+The checked main history contains merges for these PRs. Confirm the contribution descriptions with the team before using them as formal authorship statements.
 
-- Create the W&B project and invite the two teammates using the team account.
-- Authenticate and perform the actual W&B offline-run sync.
-- Create the GitHub labels in the remote repository and configure branch
-  protection/reviewer rules if required by the team.
-- Review this branch, make any final edits, and perform the final push/merge
-  decision under Riyanshu's own account.
+## Current implementation boundary
 
-## Status at the Stage 1 handoff
+The current Micro Project is a local centralized demonstration using separate PaySim and IEEE-CIS models. It includes saved-model inference, validation-selected thresholds, local SHAP contributions/reasons, and the Streamlit app. It is not a federated system and does not include differential privacy or secure aggregation.
 
-- Naman created the W&B project, handled teammate invitations, and added four
-  saved-metric summary runs per dataset. No training was repeated for this.
-- The older PaySim W&B entries were removed after the summaries were verified;
-  their offline `.wandb` files remain outside the repository.
-- GitHub labels and branch protection remain remote settings to verify only if
-  the team requires them.
-- Naman's final source/documentation commit, push, and separate transfer-bundle
-  ZIP remain to be completed.
+Large model/data artifacts remain in the separately shared transfer bundle and are excluded from Git. A fresh checkout needs the matching models and processed data placed in the paths described in docs/micro_demo_runbook.md.
 
-## Not part of this split
+## Remaining project direction
 
-SHAP explanations, Streamlit integration, schema-alignment ownership, and the
-common model interface remain separate follow-on or Anvi-owned work, as noted
-in `docs/HANDOVER.md`.
-
+This final documentation PR aligns README.md, ARCHITECTURE.md, the runbook, and this handoff with the merged code. Federated learning, differential privacy, and secure aggregation remain future research stages. GitHub labels and branch protection are repository settings; this note does not assert that they have been configured.

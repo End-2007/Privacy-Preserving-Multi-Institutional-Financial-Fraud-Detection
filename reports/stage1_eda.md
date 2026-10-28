@@ -158,7 +158,7 @@ The fraud rate is materially higher than PaySim's, and identity attributes cover
 1. Compare Logistic Regression, Random Forest, XGBoost, and LightGBM on each dataset. The updated sprint plan assigns 3, 6, 15, and 15 tuning sets respectively to LR, RF, XGBoost, and LightGBM.
 2. Use the planned 70/15/15 stratified split with seed 42. Derive IEEE-CIS missingness filtering and all preprocessing from train only.
 3. Keep validation and test at the natural class distribution; resample only train.
-4. Select models using validation PR-AUC; choose the operating threshold on validation and report test metrics once for the final selected model. Report FPR with the other metrics.
+4. Select models using validation Average Precision (AP); choose the operating threshold on validation and report test metrics once for the final selected model. Report FPR with the other metrics.
 5. Treat the distribution patterns as diagnostic findings, not evidence of production performance. SHAP and Streamlit remain post-Stage-1 work.
 
 ## Reproduction

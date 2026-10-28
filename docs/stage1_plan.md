@@ -2,7 +2,7 @@
 
 Team: Naman Dugar, Anvi Tyagi, Riyanshu. Guide: Prof. Mohit Tiwari.
 
-**Final status (2026-10-25):** Both dataset pipelines, comparisons, selected-model evaluations, saved artifacts, reports, and W&B summaries are complete. The Stage 1 results-summary requirement is covered in `docs/HANDOVER.md`. Naman's final commit/push and zipping/sharing the separate transfer bundle remain.
+**Historical plan status:** Both dataset pipelines, comparisons, selected-model evaluations, saved artifacts, reports, and W&B summaries are complete. Follow-on inference, SHAP, and Streamlit work is recorded in docs/HANDOVER.md. This plan records the Stage 1 process; current repository and PR status should be checked in Git.
 
 ## 1. How the work is split in time
 
@@ -21,13 +21,13 @@ Two days is tight, so decide the cut line now.
 - PaySim and IEEE-CIS cleaned, split (stratified 70/15/15, seed 42), saved as parquet
 - Preprocessing fitted on train only
 - Strategy A (class weights) and Strategy B (cap + SMOTE) for both datasets
-- LR, RF, XGBoost and LightGBM per dataset, tuned on validation PR-AUC
+- LR, RF, XGBoost and LightGBM per dataset, tuned on validation Average Precision (AP)
 - Threshold chosen on validation, one final test evaluation
 - Best model + preprocessor + `metadata.json` + metrics JSON + PR curve per dataset
 - Data cards, `decisions.md`, `HANDOVER.md`
 
 **Cut first, hand over as open tasks if time runs out:**
-1. Strategy C (SMOTE-ENN) on IEEE-CIS (slow on 400+ columns; later completed as a validation-only experiment, which did not improve PR-AUC)
+1. Strategy C (SMOTE-ENN) on IEEE-CIS (slow on 400+ columns; later completed as a validation-only experiment, which did not improve Average Precision (AP))
 2. IEEE-CIS temporal check
 3. `feature_metadata.json` readable-vs-anonymised grouping (write the raw list at least)
 4. W&B online sync (log offline if access is not ready)
@@ -39,9 +39,9 @@ Two days is tight, so decide the cut line now.
 | --- | --- |
 | Seed | 42 |
 | Split | 70/15/15, stratified |
-| Selection metric | Validation PR-AUC |
+| Selection metric | Validation Average Precision (AP) |
 | Tuning | XGBoost 15 sets, LightGBM 15 sets, RF 6 sets, LR 3 sets (reduced for the 2-day window; raise at handover if time allows) |
-| Primary-model rule for Stage 2 | Highest validation PR-AUC with FPR at most 1% |
+| Primary-model rule for Stage 2 | Highest validation Average Precision (AP) with FPR at most 1% |
 | Threshold | Chosen on validation, applied once to test |
 | IEEE-CIS split | Stratified primary; temporal check is optional |
 
@@ -97,7 +97,7 @@ Implement the PaySim preprocessing and split in the shared working tree.
 Implement PaySim imbalance handling and training in the shared working tree.
 
 - `src/paysim/resample.py`: Strategy A class weights; Strategy B cap majority at 1:20 then SMOTE to 1:2; Strategy C same cap then SMOTE-ENN (run it on PaySim, the capped set is small enough). Return class counts before and after.
-- `src/paysim/train.py`: loop models x strategies, random search, validation PR-AUC, threshold on validation, one test evaluation via `compute_metrics`, log to W&B.
+- `src/paysim/train.py`: loop models x strategies, random search, validation Average Precision (AP), threshold on validation, one test evaluation via `compute_metrics`, log to W&B.
 - Save best model, `metadata.json`, `reports/paysim_metrics.json`, `reports/figures/paysim_pr_curves.png`.
 
 Run the full training in the background while you start Day 1 evening work below.
@@ -186,7 +186,7 @@ Naman reviews their PRs and stays available for pipeline questions.
 2. Imputers, encoders, scalers and feature selectors are fitted on train only.
 3. Resampling touches train only; val and test keep the natural fraud rate.
 4. Tune and choose the threshold on validation; test is evaluated once per final model.
-5. Never headline accuracy. Lead with PR-AUC, recall, FPR.
+5. Never headline accuracy. Lead with Average Precision (AP), recall, FPR.
 6. Every number in a report comes from a logged run with its seed, dataset identifiers, package versions, and run configuration. Add the source commit reference after training during the final version-control step.
 
 ## 9. Time risks and fallbacks
@@ -208,6 +208,6 @@ Naman reviews their PRs and stays available for pipeline questions.
 - [x] Metrics JSON exists for each dataset and records the shared evaluation metrics
 - [x] Selected model, preprocessor and `metadata.json` are saved per dataset
 - [x] Data cards, `decisions.md`, and `HANDOVER.md` are written
-- [ ] Naman's final Git commit/push is pending after this review
-- [x] Remaining Stage 2 work is listed for Anvi and Riyanshu in `docs/HANDOVER.md`
-- [ ] Zip and share the separate `D:\MICRO\stage1_transfer` bundle with teammates who need the large artifacts
+- [x] Stage 1 source, reports, and handoff documentation were added to Git in earlier merged work
+- [x] Follow-on inference, SHAP, and Streamlit contributions are represented in the merged project history and documented in docs/HANDOVER.md
+- [x] The separate Stage 1 transfer bundle was shared outside Git with teammates who need the large artifacts

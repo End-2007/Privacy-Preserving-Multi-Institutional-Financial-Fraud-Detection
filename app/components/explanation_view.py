@@ -102,13 +102,13 @@ def _render_contribution_chart(
     axis.set_title("Feature contributions for this transaction")
     axis.grid(axis="x", linestyle=":", alpha=0.35)
     figure.tight_layout()
-    st.pyplot(figure, use_container_width=True)
+    st.pyplot(figure, width="stretch", clear_figure=True)
 
 
 def render_explanation(result: ExplanationResult) -> None:
     """Render a SHAP chart, contribution details, reasons, and limitations.
 
-    The component displays the probability from ``ExplanationResult`` as a
+    The component displays the uncalibrated model score from ``ExplanationResult`` as a
     model estimate. It does not infer a prediction label or threshold; those
     belong to the shared inference result consumed by the app shell.
     """
@@ -125,8 +125,8 @@ def render_explanation(result: ExplanationResult) -> None:
     st.markdown("### Transaction explanation")
     st.caption(f"Dataset: {result.dataset}")
     st.metric(
-        label="Model-estimated fraud probability",
-        value=f"{fraud_probability:.1%}",
+        label="Fraud model score (uncalibrated)",
+        value=f"{fraud_probability:.4f}",
     )
     st.info(EXPLANATION_DISCLAIMER)
 

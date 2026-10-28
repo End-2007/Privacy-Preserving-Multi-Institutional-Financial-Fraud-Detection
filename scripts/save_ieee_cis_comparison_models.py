@@ -120,7 +120,7 @@ def main() -> None:
         summary_path = out_dir / "comparison_summary.json"
         summary_path.write_text(json.dumps(saved, indent=2, sort_keys=True), encoding="utf-8")
         print(
-            f"Saved {family}: validation PR-AUC={validation_metrics['pr_auc']:.6f}; "
+            f"Saved {family}: validation Average Precision (AP)={validation_metrics['pr_auc']:.6f}; "
             f"path={family_dir}",
             flush=True,
         )

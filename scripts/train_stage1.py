@@ -202,7 +202,7 @@ def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, trac
                     fit_seconds = time.perf_counter() - fit_started
                     print(
                         f"[{fit_number}/{total_fits}] {model_name}/{strategy} candidate "
-                        f"{candidate_index}/{len(candidates)}: validation PR-AUC="
+                        f"{candidate_index}/{len(candidates)}: validation Average Precision (AP)="
                         f"{val_metrics['pr_auc']:.6f}, elapsed={fit_seconds / 60:.1f} min, "
                         f"device={xgb_device if model_name == 'xgboost' else 'cpu'}",
                         flush=True,

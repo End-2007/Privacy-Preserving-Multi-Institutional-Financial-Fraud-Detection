@@ -1,135 +1,136 @@
-# FedGuard Stage 1 Handover
+# FedGuard Micro Project Handover
 
-**Prepared by:** Naman Dugar  
-**Status:** Stage 1 training and evaluation complete; SHAP and Streamlit are later-stage work.  
-**Git status:** Final commit and push are pending Naman's review. Local `main` has commit `b785e7e` ahead of `origin/main`; the W&B sync helper and final handoff-document updates are uncommitted.
-**Recipients:** Anvi Tyagi and Riyanshu (Riya).
+**Prepared by:** Naman Dugar
+**Current scope:** Completed centralized Micro Project using PaySim and IEEE-CIS
+**Recipients:** Anvi Tyagi and Riyanshu
+**Repository note:** Source, tests, reports, and documentation are versioned. Large datasets and fitted model artifacts remain in the separately shared local transfer bundle and are excluded from Git.
 
-## Handover summary
+## Project status
 
-Naman completed data audit, exploratory analysis, split/preprocessing, model tuning, imbalance-strategy comparisons, selected-model evaluation, and saved per-family comparison models for both PaySim and IEEE-CIS. Both datasets use the same seed (42), stratified 70/15/15 split, train-only preprocessing/resampling, validation PR-AUC model selection, and validation threshold selection subject to FPR at most 1%. The selected model for each dataset was evaluated once on its held-out test split.
+The Micro Project combines Stage 1 training/evaluation with the later inference, SHAP, and Streamlit implementation. The current application is a local research demonstration using centralized, dataset-specific LightGBM models. It is not a federated-learning deployment, does not connect to real institutions, and does not block or approve transactions.
 
-Stage 1 did **not** include SHAP or Streamlit. Those are later-stage deliverables. The training, evaluation, W&B summaries, and transfer bundle are complete. Naman's remaining repository task is to review, commit, and push the final source and documentation changes.
+The merged project history in the checked repository includes Naman's threshold-validation and dashboard-fix work, Anvi's inference interface, Streamlit integration and demo hardening, and Riyanshu's SHAP core, plain-language reasons, and explanation-view work. The final documentation PR should keep this handover aligned with the code and mentor's reporting guidance.
 
 ## Deliverable status
 
-| Deliverable | Status | Location / notes |
+| Deliverable | Status | Source / notes |
 | --- | --- | --- |
-| Raw data audit | Done | `scripts/audit_data.py`; `reports/data_audit_summary.json` |
-| EDA | Done | `scripts/eda_stage1.py`; `reports/stage1_eda.md` |
-| Data cards and decisions | Done | `docs/data_card_paysim.md`, `docs/data_card_ieee_cis.md`, `docs/decisions.md` |
-| Shared training/preprocessing code | Done | `src/common/`, `scripts/` |
-| PaySim preparation and model-ready splits | Done locally | `data/processed/paysim/` (ignored by Git) |
-| IEEE-CIS preparation and model-ready splits | Done locally | `data/processed/ieee_cis/` (ignored by Git) |
-| PaySim model search | Done | 117 fits: 39 candidates for each of class weights, capped SMOTE, and capped SMOTE-ENN; `reports/paysim_metrics.json` |
-| IEEE-CIS model search | Done | 78 fits: 39 candidates for each of class weights and capped SMOTE; `reports/ieee_cis_metrics.json` |
-| IEEE-CIS SMOTE-ENN experiment | Done; not selected | Separate 39-fit validation-only experiment; lower PR-AUC than class weights for all four families; `reports/ieee_cis_smote_enn_validation.json` |
-| Selected models and preprocessing artifacts | Done locally | `models/paysim/stage1/`, `models/ieee_cis/stage1/` |
-| Four-family comparison models | Done locally | `models/{paysim,ieee_cis}/comparison/`; these were selected/refit on train and checked on validation only, not test |
-| PR curve figures | Done | `reports/figures/paysim_pr_curves.png`, `reports/figures/ieee_cis_pr_curves.png` |
-| W&B comparison summaries | Done | Four per-model summary runs for each dataset in the `fedguard-stage1` project; see `docs/github_and_wandb.md` |
-| SHAP explanations | Not started | Planned after Stage 1 |
-| Streamlit app | Not started | Planned after Stage 1 |
-| Final Git commit/push | Pending Naman | One earlier local commit is ahead of `origin/main`; the sync helper and final documentation updates still need review and commit |
+| Data audit and EDA | Complete | scripts/audit_data.py, scripts/eda_stage1.py, reports/data_audit_summary.json, reports/stage1_eda.md |
+| Dataset cards and training decisions | Complete | docs/data_card_paysim.md, docs/data_card_ieee_cis.md, docs/decisions.md |
+| Train/validation/test preparation | Complete | Stratified 70/15/15 split, seed 42; preprocessing and resampling fitted/applied on train only |
+| Four-family model comparison | Complete | Logistic Regression, Random Forest, XGBoost, and LightGBM; validation results only for comparison models |
+| PaySim imbalance experiments | Complete | Class weights, capped SMOTE, capped SMOTE-ENN; 117 candidate fits |
+| IEEE-CIS imbalance experiments | Complete | Class weights and capped SMOTE; 78 candidate fits. Separate 39-candidate SMOTE-ENN experiment was validation-only and did not improve Average Precision |
+| Final selected-model evaluation | Complete | LightGBM with class weights per dataset; each selected model evaluated once on its held-out test split |
+| Final threshold validation audit | Complete | reports/final_threshold_validation.json and docs/final_threshold_validation.md; checks validation snapshots without opening test data |
+| W&B experiment summaries | Complete | FedGuard Stage 1 project; summaries use saved results and do not retrain |
+| Shared inference interface | Complete | src/common/inference.py and tests/test_inference.py |
+| SHAP explanation core and evidence-based reasons | Complete | src/common/explain.py and tests/test_explain.py |
+| Streamlit demo and error handling | Complete | app/streamlit_app.py and tests/test_dashboard.py; uses local validation examples |
+| Reusable explanation view | Implemented | app/components/explanation_view.py and tests/test_explanation_view.py; current app shell uses text-based signed bars rather than this standalone Matplotlib view |
+| Public hosting | Not evidenced | Repository and reviewed demo evidence support local execution; do not claim a public deployment |
+| Federated learning, differential privacy, secure aggregation | Future work | Not implemented in this Micro Project |
 
-## Results snapshot
+## Evaluation protocol
 
-### Selected models: one held-out test evaluation each
+Both datasets are evaluated separately using a stratified 70/15/15 train/validation/test split with seed 42. Validation and test retain their natural class distributions. Imputation, encoding, feature filtering, scaling, and resampling are learned or applied using training data only.
 
-| Dataset | Selected model / strategy | Threshold | Validation PR-AUC | Test PR-AUC | Test ROC-AUC | Test precision | Test recall | Test F1 | Test FPR |
+Models and thresholds are selected using validation results. The operating threshold maximizes recall subject to validation FPR at most 1%. The selected model is then evaluated once on the held-out test split. Test outcomes must not be used to revise thresholds or choose models.
+
+The saved reports call the scalar field pr_auc; for report and dashboard wording, present it consistently as Average Precision (AP). The model outputs have not been calibrated as real-world fraud probabilities; describe them as uncalibrated model scores.
+
+## Selected models: held-out test results
+
+| Dataset | Selected model / strategy | Validation-selected threshold | Validation AP | Test AP | Test ROC-AUC | Test precision | Test recall | Test F1 | Test FPR |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| PaySim | LightGBM / class weights | 0.0568012 | 0.999986 | 0.997968 | 0.998691 | 0.973080 | 0.997565 | 0.985170 | 0.000036 |
-| IEEE-CIS | LightGBM / class weights | 0.7675237 | 0.758107 | 0.756757 | 0.959075 | 0.710193 | 0.687964 | 0.698902 | 0.010178 |
+| PaySim | LightGBM / class weights | 0.0568012 | 0.999986 | 0.997968 | 0.998691 | 0.973080 | 0.997565 | 0.985170 | 0.003567% |
+| IEEE-CIS | LightGBM / class weights | 0.7675237 | 0.758107 | 0.756757 | 0.959075 | 0.710193 | 0.687964 | 0.698902 | 1.017758% |
 
-Thresholds maximize recall while constraining validation FPR to at most 1%. IEEE-CIS test FPR is slightly above 1%, as expected from threshold selection on validation rather than tuning on test. Do not adjust the threshold using the test split.
+PaySim validation FPR at the selected threshold was 0.002203%. IEEE-CIS validation FPR was 0.996713%. IEEE-CIS test FPR was 1.017758%, slightly above the validation target; report it as observed and do not tune on test.
 
-### Validation comparison across model families
+| Dataset | Test TP | Test FP | Test FN | Test TN |
+| --- | ---: | ---: | ---: | ---: |
+| PaySim | 1,229 | 34 | 3 | 953,127 |
+| IEEE-CIS | 2,132 | 870 | 967 | 84,612 |
 
-These are validation results at each family's threshold selected under the same FPR rule. They are not test metrics. The accompanying `comparison_summary.json` files and family metadata are local under `models/` and excluded from Git.
+## Four-model validation comparison
 
-| Dataset | Model | Selected strategy | Validation PR-AUC | Validation ROC-AUC | Precision | Recall | FPR |
+These are validation-only family comparisons at the family thresholds selected under the same FPR rule. They are not test results. Family models and their detailed threshold metadata are local artifacts excluded from Git.
+
+| Dataset | Model | Selected strategy | Validation AP | Validation ROC-AUC | Precision | Recall | FPR |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| PaySim | LightGBM | class weights | 0.999986 | 1.000000 | 0.983240 | 1.000000 | 0.000022 |
-| PaySim | XGBoost | capped SMOTE | 0.999970 | 1.000000 | 0.968553 | 1.000000 | 0.000042 |
-| PaySim | Random Forest | capped SMOTE | 0.999909 | 1.000000 | 0.895349 | 1.000000 | 0.000151 |
-| PaySim | Logistic Regression | capped SMOTE | 0.636580 | 0.996018 | 0.106539 | 0.909903 | 0.009863 |
-| IEEE-CIS | LightGBM | class weights | 0.758107 | 0.960109 | 0.712744 | 0.681935 | 0.009967 |
-| IEEE-CIS | XGBoost | class weights | 0.729666 | 0.953336 | 0.704333 | 0.655484 | 0.009979 |
-| IEEE-CIS | Random Forest | class weights | 0.635609 | 0.937811 | 0.671791 | 0.563871 | 0.009991 |
-| IEEE-CIS | Logistic Regression | class weights | 0.469064 | 0.878558 | 0.584841 | 0.385806 | 0.009932 |
+| PaySim | LightGBM | Class weights | 0.999986 | 1.000000 | 0.983240 | 1.000000 | 0.0022% |
+| PaySim | XGBoost | Capped SMOTE | 0.999970 | 1.000000 | 0.968553 | 1.000000 | 0.0042% |
+| PaySim | Random Forest | Capped SMOTE | 0.999909 | 1.000000 | 0.895349 | 1.000000 | 0.0151% |
+| PaySim | Logistic Regression | Capped SMOTE | 0.636580 | 0.996018 | 0.106539 | 0.909903 | 0.9863% |
+| IEEE-CIS | LightGBM | Class weights | 0.758107 | 0.960109 | 0.712744 | 0.681935 | 0.9967% |
+| IEEE-CIS | XGBoost | Class weights | 0.729666 | 0.953336 | 0.704333 | 0.655484 | 0.9979% |
+| IEEE-CIS | Random Forest | Class weights | 0.635609 | 0.937811 | 0.671791 | 0.563871 | 0.9991% |
+| IEEE-CIS | Logistic Regression | Class weights | 0.469064 | 0.878558 | 0.584841 | 0.385806 | 0.9932% |
 
-The IEEE-CIS capped SMOTE-ENN follow-up used the same 39-candidate budget and validation protocol but did not outperform class weights: best PR-AUC was 0.429363 (LR), 0.598264 (RF), 0.651665 (XGBoost), and 0.692170 (LightGBM). It ended with 46,123 negative and 36,160 positive training rows after cap + SMOTE-ENN. The test split was not loaded or evaluated in this experiment.
+The top-level comparison arrays in each dataset metrics JSON record candidate metrics at the default 0.5 threshold. Those entries are not the threshold-optimized family summary above; keep the two result types separate.
 
-## Data and split summary
+The separate IEEE-CIS SMOTE-ENN run was validation-only. Its best AP values were 0.429363 for Logistic Regression, 0.598264 for Random Forest, 0.651665 for XGBoost, and 0.692170 for LightGBM, below the corresponding class-weight results. The test split was not loaded for that experiment.
 
-| Dataset | Train | Validation | Test | Fraud prevalence | Transformed feature count |
+## Data and feature summary
+
+| Dataset | Train rows / fraud | Validation rows / fraud | Test rows / fraud | Prevalence | Transformed features |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| PaySim | 4,453,833 (5,749 fraud) | 954,394 (1,232 fraud) | 954,393 (1,232 fraud) | 0.1291% | 18 |
-| IEEE-CIS | 413,378 (14,464 fraud) | 88,581 (3,100 fraud) | 88,581 (3,099 fraud) | 3.499% | 1,208 |
+| PaySim | 4,453,833 / 5,749 | 954,394 / 1,232 | 954,393 / 1,232 | 0.1291% | 18 |
+| IEEE-CIS | 413,378 / 14,464 | 88,581 / 3,100 | 88,581 / 3,099 | 3.499% | 1,208 |
 
-IEEE-CIS's train-only >90%-missingness rule dropped `dist2`, `D7`, `id_07`, `id_08`, `id_18`, `id_21`, `id_22`, `id_23`, `id_24`, `id_25`, `id_26`, and `id_27`. Feature order is in each local `data/processed/<dataset>/feature_metadata.json`.
+PaySim excludes account identifiers and the isFlaggedFraud rule field and includes engineered balance/time signals. IEEE-CIS left-joins labeled identity records to transactions, adds a has_identity indicator, applies a training-only missingness filter, and retains anonymized source names. The exact feature order and fitted transformers are in the local transfer bundle.
 
-## How to reproduce from raw data
+## Application behavior
 
-Use Python 3.10 or later. Put the required raw files in `data/raw/` as described in `data/README.md`. Raw data, processed matrices, and trained models are excluded from Git. The current machine already has `.venv`; from PowerShell:
+The Streamlit application is app/streamlit_app.py. It has separate PaySim and IEEE-CIS tabs, loads a small set of reference examples from each validation split, and supports editing selected transaction fields. PaySim engineered balance fields are recalculated when relevant balances are changed. Other IEEE-CIS model inputs stay from the selected validation example.
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python scripts\audit_data.py
-python scripts\eda_stage1.py
-python scripts\prepare_stage1.py
-```
+The selected dataset-specific model and threshold are loaded from local artifacts. The dashboard presents the four-family validation ranking comparison separately from the selected models' held-out test results. The demo displays the output score, threshold decision, and local explanation when available. Validation examples are used for interaction; held-out test rows are not offered as demo inputs. Risk labels in the interface are presentation categories, not calibrated risk bands.
 
-`prepare_stage1.py` prepares both datasets in one run. Then run either dataset independently:
+The SHAP core ranks local feature effects and maps transformed fields to source fields where possible. It reports contribution direction and evidence-based statements, not causality or proof of fraud. The standalone Matplotlib explanation view exists, but the current app shell renders compact signed text bars.
 
-```powershell
-python scripts\train_stage1.py --dataset paysim
-python scripts\train_stage1.py --dataset ieee_cis
-```
+## Local artifacts and running the demo
 
-The default strategy sets are defined in `src/common/config.py`: PaySim uses class weights, capped SMOTE, and capped SMOTE-ENN; IEEE-CIS uses class weights and capped SMOTE. Each strategy evaluates 3 Logistic Regression, 6 Random Forest, 15 XGBoost, and 15 LightGBM parameter candidates. XGBoost uses CUDA when the installed build supports it; RF and LightGBM use CPU; the installed LightGBM build has no GPU support. The scripts use seed 42.
+A clean Git clone does not include raw/processed data or model artifacts. The separately shared transfer bundle is outside Git. To run the application, place its models and data/processed subfolders under the matching paths in the repository root. Keep those large artifacts out of Git.
 
-After a completed search, the optional scripts below refit the validation-best candidate for each family and save family models/metadata. They do not load the test split:
+From PowerShell at the repository root:
 
-```powershell
-python scripts\save_paysim_comparison_models.py
-python scripts\save_ieee_cis_comparison_models.py
-```
+    python -m venv .venv
+    .\.venv\Scripts\Activate.ps1
+    python -m pip install -r requirements.txt
+    python -m streamlit run app\streamlit_app.py
 
-The separate IEEE-CIS SMOTE-ENN validation experiment is reproducible with:
+See docs/micro_demo_runbook.md for the demonstration sequence and common setup problems. The current evidence is local execution; a public hosted URL is not documented.
 
-```powershell
-python scripts\run_ieee_cis_smote_enn_validation.py
-```
+## Reports, figures, and tracking
 
-**Do not rerun training merely to inspect the saved results:** the normal training command performs a new fit and evaluates its selected model on the test split once. Existing results are in `reports/*_metrics.json`. The persisted training reports record candidate-level validation results and final selected-model test metrics. PaySim training took about 42 minutes in the recorded run; the IEEE-CIS report does not preserve a reliable end-to-end wall-clock runtime, so no estimate is claimed here.
+- PaySim metrics: reports/paysim_metrics.json
+- IEEE-CIS metrics: reports/ieee_cis_metrics.json
+- IEEE-CIS SMOTE-ENN validation experiment: reports/ieee_cis_smote_enn_validation.json
+- Final threshold audit: reports/final_threshold_validation.json
+- PaySim PR curves: reports/figures/paysim_pr_curves.png
+- IEEE-CIS PR curves: reports/figures/ieee_cis_pr_curves.png
+- Dataset audit and EDA: reports/data_audit_summary.json and reports/stage1_eda.md
+- W&B project: https://forge.coreweave.com/wandb/ndugar007-bharati-vidyapeeths-college-of-engineering/fedguard-stage1
 
-## Artifact locations and Git handoff
 
-| Purpose | PaySim | IEEE-CIS |
-| --- | --- | --- |
-| Final selected estimator and metadata | `models/paysim/stage1/` | `models/ieee_cis/stage1/` |
-| Per-family estimator and metadata | `models/paysim/comparison/` | `models/ieee_cis/comparison/` |
-| Main results | `reports/paysim_metrics.json` | `reports/ieee_cis_metrics.json` |
-| PR curve | `reports/figures/paysim_pr_curves.png` | `reports/figures/ieee_cis_pr_curves.png` |
-| Prepared matrices, splits, feature mapping | `data/processed/paysim/` | `data/processed/ieee_cis/` |
 
-`.gitignore` excludes raw and processed data and everything under `models/`, including model binaries and their metadata. The transfer bundle is at `D:\MICRO\stage1_transfer`, outside this Git checkout. It includes the raw training inputs used, both datasets' processed splits and feature maps, all saved model artifacts, and the reference documents. It does not include the unused unlabeled IEEE-CIS competition test files. The bundle has a `MANIFEST.sha256` checksum list. It still needs to be zipped and shared separately; do not add it to Git.
+## Team contributions in the merged project history
 
-The reports, code, requirements, and Stage 1 documentation are intended for Git. **GitHub will not contain the fitted models, transformers, splits, or feature metadata.**
+| Member | Contribution |
+| --- | --- |
+| Naman Dugar | Data audit/EDA, preparation, training and model comparison, threshold validation and results; dashboard error/rendering fixes. |
+| Anvi Tyagi | Shared inference interface, Streamlit integration and demo hardening. |
+| Riyanshu | SHAP explanation core, evidence-based plain-language reasons and reusable explanation-view component. |
 
-Before the final commit, review `git status` and ensure it contains only intended source, docs, requirements, and compact reports. The current local `main` already contains commit `b785e7e`, which is one commit ahead of `origin/main`; pushing `main` will publish it too. The current model metadata predates the final source commit. Do not retrain solely to add a Git reference.
+The local fetched main history includes the related merged PRs (#5, #6, #7, #8, #9, #10, #11, and #12). Verify contribution wording with the team before using it as an authorship statement.
 
-## Caveats and follow-up ownership
+## Limitations and future work
 
-- PaySim is synthetic and its balance behavior makes fraud unusually separable. Its near-perfect score is not evidence of comparable real-world performance.
-- IEEE-CIS has 3.499% fraud prevalence and many anonymized features. Its PR-AUC of 0.7568 is the selected model's test result; the PR-AUC need not exceed 0.9 to be useful. Stage 2 explanations should show both source feature names and encoded feature mapping where possible.
-- IEEE-CIS SMOTE-ENN did not improve validation PR-AUC for any family; retain class weights as the selected approach unless a future, preplanned experiment produces better validation evidence.
-- IEEE-CIS test FPR was 1.0178%, slightly over the 1% validation constraint. The threshold was chosen without test data; do not tune on test to force the test FPR under 1%.
-- No temporal split/check was performed. A temporal robustness analysis is an optional follow-up, separate from the completed stratified Stage 1 comparison.
-- The saved per-family comparison refits were assessed on validation only. Only the selected LightGBM for each dataset received the final test evaluation.
-- Naman: review, commit, and push the remaining source/documentation changes; zip and share `D:\MICRO\stage1_transfer` separately.
-- Anvi: schema alignment and the shared model interface remain follow-on tasks; the Stage 1 results snapshot is documented above.
-- Riyanshu: validation tests and GitHub workflow/repository setup are present in the repository; GitHub labels and branch protection remain to verify only if the team requires them. W&B project setup and invitations were handled by Naman.
-- Anvi and Riya/Riyanshu: agree who leads the Stage 2 SHAP implementation and who leads Streamlit integration; define those responsibilities at handover.
+- PaySim is synthetic. Near-perfect performance on this benchmark does not establish performance on real payment activity.
+- PaySim balance-after-transaction fields make the analysis retrospective, not pre-transaction fraud prevention.
+- IEEE-CIS has substantial missingness and many anonymized/coded attributes, which limits semantic explanations.
+- No probability calibration study is documented. Scores are not calibrated real-world fraud probabilities.
+- No temporal robustness experiment is reported.
+- The app is a local research demonstration, not a production risk-control service.
+- Federated learning, differential privacy, secure aggregation, real institution integration, and public production deployment remain future work.

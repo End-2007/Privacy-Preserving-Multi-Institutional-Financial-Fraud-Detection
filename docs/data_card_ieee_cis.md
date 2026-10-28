@@ -68,7 +68,7 @@ For Stage 1, use `isFraud` from `train_transaction.csv` as the target and left-j
 ## Known limitations and risks
 
 - The dataset has substantial and structured missingness. In particular, identity features apply to only about one quarter of transactions, and several become more than 90% missing after the join.
-- Many features are anonymized or represented by feature families, which limits direct human interpretation. Explainability work is planned after Stage 1.
+- Many features are anonymized or represented by feature families, which limits direct human interpretation. The SHAP layer preserves supplied names and does not assign undocumented business meaning; see docs/HANDOVER.md.
 - The competition test files do not provide `isFraud`. Use a stratified internal split of the labeled training files for Stage 1 metrics; do not report competition-test metrics as labeled evaluation.
 - The fraud prevalence (3.499%) is higher than PaySim's, so resampling ratios and operating thresholds should be dataset-specific.
 - Row counts and missingness describe the local files at audit time. Re-run the audit if the files are replaced or modified.
@@ -77,7 +77,7 @@ For Stage 1, use `isFraud` from `train_transaction.csv` as the target and left-j
 
 Merge only the labeled training files, then make a stratified 70/15/15 train/validation/test split with seed 42, as specified in the active Stage 1 plan. Fit all preprocessing and any resampling on the training portion only. Keep validation and test at their natural class distributions. Tune and choose the threshold on validation data, then evaluate the selected final model on the untouched test portion once.
 
-The selected Stage 1 model is LightGBM with class weights. Its validation PR-AUC was 0.758107; its single held-out test evaluation gave PR-AUC 0.756757, ROC-AUC 0.959075, precision 0.710193, recall 0.687964, F1 0.698902, and FPR 0.010178 at threshold 0.7675237. The separate IEEE-CIS SMOTE-ENN trial was validation-only and did not improve PR-AUC for any model family. See `reports/ieee_cis_metrics.json`, `reports/ieee_cis_smote_enn_validation.json`, and `docs/HANDOVER.md`.
+The selected Stage 1 model is LightGBM with class weights. Its validation AP was 0.758107; its single held-out test evaluation gave AP 0.756757, ROC-AUC 0.959075, precision 0.710193, recall 0.687964, F1 0.698902, and FPR 0.010178 at threshold 0.7675237. The separate IEEE-CIS SMOTE-ENN trial was validation-only and did not improve AP for any model family. See `reports/ieee_cis_metrics.json`, `reports/ieee_cis_smote_enn_validation.json`, and `docs/HANDOVER.md`.
 
 ## Audit method and reproducibility
 

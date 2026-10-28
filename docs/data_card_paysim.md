@@ -56,8 +56,8 @@ For Stage 1, `isFraud` is the target. The implementation derives balance-differe
 ## Known limitations and risks
 
 - PaySim is a simulator. Its balance rules can make fraud easier to identify than fraud in real payment systems, so performance should not be presented as expected production performance.
-- Fraud is rare (0.1291%); report PR-AUC, recall, precision, and false-positive rate. Accuracy alone is not informative.
-- The fraud labels occur only in two transaction types in this file. Models may rely heavily on those patterns; document feature importance and avoid claims that the result generalizes to other fraud types.
+- Fraud is rare (0.1291%); report Average Precision (AP), recall, precision, and false-positive rate. Accuracy alone is not informative.
+- The fraud labels occur only in two transaction types in this file. Models may rely heavily on those patterns; interpret local SHAP contributions in context and avoid claims that the result generalizes to other fraud types.
 - `step` is the simulator's time index. Any time-based split or feature derived from it needs a documented rationale.
 - No nulls or duplicate rows were observed in this audit. Additional checks for ranges, impossible values, and feature-label relationships belong in EDA.
 
@@ -65,7 +65,7 @@ For Stage 1, `isFraud` is the target. The implementation derives balance-differe
 
 Use a stratified 70/15/15 train/validation/test split with seed 42, as specified in the active Stage 1 plan. Fit preprocessing and resampling on the training portion only. Select models and thresholds using validation data, then evaluate the selected final model on the untouched test portion once. Preserve the natural fraud rate in validation and test.
 
-The selected Stage 1 model is LightGBM with class weights. Its validation PR-AUC was 0.999986; its single held-out test evaluation gave PR-AUC 0.997968, ROC-AUC 0.998691, precision 0.973080, recall 0.997565, F1 0.985170, and FPR 0.00003567 at threshold 0.0568012. See `reports/paysim_metrics.json` and `docs/HANDOVER.md` for the per-family validation comparison and interpretation.
+The selected Stage 1 model is LightGBM with class weights. Its validation AP was 0.999986; its single held-out test evaluation gave AP 0.997968, ROC-AUC 0.998691, precision 0.973080, recall 0.997565, F1 0.985170, and FPR 0.00003567 at threshold 0.0568012. See `reports/paysim_metrics.json` and `docs/HANDOVER.md` for the per-family validation comparison and interpretation.
 
 ## Audit method and reproducibility
 
