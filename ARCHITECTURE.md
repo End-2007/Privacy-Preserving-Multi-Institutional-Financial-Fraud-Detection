@@ -32,6 +32,19 @@ flowchart TB
     end
     PTest --> Reports[Dataset-specific evaluation reports]
     ITest --> Reports
+
+    classDef paysim fill:#DBEAFE,stroke:#2563EB,color:#172554,stroke-width:2px;
+    classDef ieee fill:#F3E8FF,stroke:#9333EA,color:#581C87,stroke-width:2px;
+    classDef validation fill:#FEF3C7,stroke:#D97706,color:#78350F,stroke-width:2px;
+    classDef test fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px;
+    classDef artifacts fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95,stroke-width:2px;
+    classDef reports fill:#FCE7F3,stroke:#DB2777,color:#831843,stroke-width:2px;
+    class PData,PPrep,PSplit,PTrain paysim;
+    class IData,IPrep,ISplit,ITrain ieee;
+    class PSelect,ISelect validation;
+    class PTest,ITest test;
+    class PBundle,IBundle artifacts;
+    class Reports reports;
 ```
 
 Runtime scoring and explanation path:
@@ -51,9 +64,26 @@ flowchart LR
     Bundle[(Local model and metadata bundle)] --> Transform
     Bundle --> Model
     Bundle --> Threshold
+
+    classDef input fill:#DBEAFE,stroke:#2563EB,color:#172554,stroke-width:2px;
+    classDef transform fill:#E0F2FE,stroke:#0284C7,color:#0C4A6E,stroke-width:2px;
+    classDef model fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95,stroke-width:2px;
+    classDef score fill:#FEF3C7,stroke:#D97706,color:#78350F,stroke-width:2px;
+    classDef explain fill:#FCE7F3,stroke:#DB2777,color:#831843,stroke-width:2px;
+    classDef app fill:#CCFBF1,stroke:#0F766E,color:#134E4A,stroke-width:2px;
+    classDef artifacts fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95,stroke-width:2px;
+    class Input,Schema input;
+    class Transform transform;
+    class Model model;
+    class Score,Threshold score;
+    class Explain explain;
+    class View app;
+    class Bundle artifacts;
 ```
 
 The saved bundles, data, and preprocessing artifacts are local and excluded from Git. PaySim and IEEE-CIS have distinct bundles and reports. The application does not send transaction data to a federated service.
+
+**Diagram key:** blue = PaySim or transaction input · purple = IEEE-CIS or saved model artifacts · amber = validation-selected decision · green = held-out test evaluation · teal = Streamlit view · pink = explanation or report.
 
 PaySim and IEEE-CIS retain separate features, preprocessing artifacts, models, thresholds, and reports.
 
@@ -101,10 +131,21 @@ The app displays the model score, threshold decision, local explanation when ava
 
 ## 8. Selected model results
 
-| Dataset | Model / strategy | Validation threshold | Validation AP | Test AP | Test ROC-AUC | Test precision | Test recall | Test F1 | Test FPR |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| PaySim | LightGBM / class weights | 0.0568012 | 0.999986 | 0.997968 | 0.998691 | 0.973080 | 0.997565 | 0.985170 | 0.003567% |
-| IEEE-CIS | LightGBM / class weights | 0.7675237 | 0.758107 | 0.756757 | 0.959075 | 0.710193 | 0.687964 | 0.698902 | 1.017758% |
+### 🟨 Validation-selected operating points
+
+| 🧩 Dataset | 🧠 Selected model / strategy | 🎯 Threshold | 📈 Validation AP |
+| --- | --- | ---: | ---: |
+| [![PaySim](https://img.shields.io/badge/PaySim-DATASET-2563EB?style=flat-square)](docs/data_card_paysim.md) | LightGBM / class weights | 0.0568012 | **0.999986** |
+| [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-DATASET-9333EA?style=flat-square)](docs/data_card_ieee_cis.md) | LightGBM / class weights | 0.7675237 | **0.758107** |
+
+### 🟩 Held-out test performance
+
+| 🧩 Dataset | 📊 Average Precision | 📉 ROC-AUC | Precision | Recall | F1 | FPR |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| [![PaySim](https://img.shields.io/badge/PaySim-DATASET-2563EB?style=flat-square)](docs/data_card_paysim.md) | **0.997968** | **0.998691** | 0.973080 | 0.997565 | 0.985170 | 0.003567% |
+| [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-DATASET-9333EA?style=flat-square)](docs/data_card_ieee_cis.md) | **0.756757** | **0.959075** | 0.710193 | 0.687964 | 0.698902 | 1.017758% |
+
+**Dataset color key:** 🔵 PaySim · 🟣 IEEE-CIS. Validation thresholds and final held-out test metrics are shown separately to make the evaluation boundary explicit.
 
 The validation FPR ceiling is 1%. IEEE-CIS test FPR is 1.017758%; report it as observed rather than tuning against the test result. Full validation family comparisons and confusion counts are in the reports and project handover.
 

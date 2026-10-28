@@ -36,7 +36,24 @@ flowchart LR
     IArtifacts --> App
     PTest --> Reports[Dataset-specific reports]
     ITest --> Reports
+
+    classDef paysim fill:#DBEAFE,stroke:#2563EB,color:#172554,stroke-width:2px;
+    classDef ieee fill:#F3E8FF,stroke:#9333EA,color:#581C87,stroke-width:2px;
+    classDef validation fill:#FEF3C7,stroke:#D97706,color:#78350F,stroke-width:2px;
+    classDef test fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px;
+    classDef artifacts fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95,stroke-width:2px;
+    classDef app fill:#CCFBF1,stroke:#0F766E,color:#134E4A,stroke-width:2px;
+    classDef reports fill:#FCE7F3,stroke:#DB2777,color:#831843,stroke-width:2px;
+    class P,PPrep,PTrain paysim;
+    class I,IPrep,ITrain ieee;
+    class PVal,IVal validation;
+    class PTest,ITest test;
+    class PArtifacts,IArtifacts artifacts;
+    class App app;
+    class Reports reports;
 ```
+
+**Flowchart key:** blue = PaySim · purple = IEEE-CIS · amber = validation selection · green = held-out test · teal = dashboard · pink = reports.
 
 PaySim and IEEE-CIS stay separate throughout preparation, model selection, scoring, and reporting. The final test split is held out from model and threshold selection.
 
@@ -44,8 +61,8 @@ PaySim and IEEE-CIS stay separate throughout preparation, model selection, scori
 
 | Dataset | Simulated institution | Characteristics |
 | --- | --- | --- |
-| PaySim | Mobile money | Synthetic transactions with transaction types, amounts, and account-balance fields. |
-| IEEE-CIS | Card/e-commerce | Labeled transaction data joined with identity data; many fields are coded or anonymized. |
+| [![PaySim](https://img.shields.io/badge/PaySim-SYNTHETIC-2563EB?style=for-the-badge)](docs/data_card_paysim.md) | Mobile money | Synthetic transactions with transaction types, amounts, and account-balance fields. |
+| [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-CARD%20DATA-9333EA?style=for-the-badge)](docs/data_card_ieee_cis.md) | Card/e-commerce | Labeled transaction data joined with identity data; many fields are coded or anonymized. |
 
 The datasets have separate feature pipelines, saved models, thresholds, and reports. IEEE-CIS feature names such as C*, D*, V*, and id_* are retained as supplied; the project does not assign undocumented business meanings to them.
 
@@ -53,10 +70,21 @@ The datasets have separate feature pipelines, saved models, thresholds, and repo
 
 The selected model for both datasets is LightGBM with class weights. The saved reports use the key pr_auc; the project presents this measure as **Average Precision (AP)**. FPR below is expressed as a percentage.
 
-| Dataset | Threshold selected on validation | Validation AP | Test AP | Test ROC-AUC | Test precision | Test recall | Test F1 | Test FPR |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| PaySim | 0.0568012 | 0.999986 | 0.997968 | 0.998691 | 0.973080 | 0.997565 | 0.985170 | 0.003567% |
-| IEEE-CIS | 0.7675237 | 0.758107 | 0.756757 | 0.959075 | 0.710193 | 0.687964 | 0.698902 | 1.017758% |
+### 🟨 Validation-selected operating points
+
+| 🧩 Dataset | 🧠 Selected model | 🎯 Threshold | 📈 Validation AP |
+| --- | --- | ---: | ---: |
+| [![PaySim](https://img.shields.io/badge/PaySim-DATASET-2563EB?style=flat-square)](docs/data_card_paysim.md) | LightGBM · class weights | 0.0568012 | **0.999986** |
+| [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-DATASET-9333EA?style=flat-square)](docs/data_card_ieee_cis.md) | LightGBM · class weights | 0.7675237 | **0.758107** |
+
+### 🟩 Held-out test performance
+
+| 🧩 Dataset | 📊 Average Precision | 📉 ROC-AUC | Precision | Recall | F1 | FPR |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| [![PaySim](https://img.shields.io/badge/PaySim-DATASET-2563EB?style=flat-square)](docs/data_card_paysim.md) | **0.997968** | **0.998691** | 0.973080 | 0.997565 | 0.985170 | 0.003567% |
+| [![IEEE-CIS](https://img.shields.io/badge/IEEE%20CIS-DATASET-9333EA?style=flat-square)](docs/data_card_ieee_cis.md) | **0.756757** | **0.959075** | 0.710193 | 0.687964 | 0.698902 | 1.017758% |
+
+**Dataset color key:** 🔵 PaySim · 🟣 IEEE-CIS. The threshold is selected using validation data; the test metrics are reported separately and are not used to tune it.
 
 The IEEE-CIS test FPR is slightly above the 1% validation target. The threshold was selected without test data and must not be tuned using the test result. Only the selected LightGBM model for each dataset has final test metrics; the four-family model comparison is validation-only.
 
@@ -119,10 +147,10 @@ Future stages may explore federated learning across simulated institutions, diff
 
 | Stage | Status | Focus |
 | --- | --- | --- |
-| Micro | Complete | Centralized dataset preparation, four-family model comparisons, selected-model evaluation, inference, SHAP, and local Streamlit demonstration. |
-| Mini | Planned | Federated learning experiments across simulated institutions. |
-| Minor | Planned | Differential privacy experiments and privacy-budget analysis. |
-| Major | Planned | Secure aggregation research and broader system hardening. |
+| 🟢 **Micro** | ✅ Complete | Centralized dataset preparation, four-family model comparisons, selected-model evaluation, inference, SHAP, and local Streamlit demonstration. |
+| 🟠 **Mini** | 🗓️ Planned | Federated learning experiments across simulated institutions. |
+| 🟠 **Minor** | 🗓️ Planned | Differential privacy experiments and privacy-budget analysis. |
+| 🟠 **Major** | 🗓️ Planned | Secure aggregation research and broader system hardening. |
 
 ## Documentation and experiment tracking
 
