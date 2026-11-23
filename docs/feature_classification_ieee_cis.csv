@@ -1,0 +1,435 @@
+feature,classification,model_a,model_b,identifier,leakage_risk,rationale
+TransactionID,identifier,false,false,true,medium,Technical transaction key used for joining and row traceability; not a predictor.
+isFraud,target,false,false,false,target,Ground-truth label; never a predictor.
+TransactionDT,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+TransactionAmt,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+ProductCD,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+card1,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+card2,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+card3,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+card4,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+card5,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+card6,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+addr1,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+addr2,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+dist1,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+dist2,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+P_emaildomain,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+R_emaildomain,authorization_time,true,true,false,low,"Transaction, payment, address, device-presence, or timing information plausibly available during authorization."
+C1,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C2,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C3,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C4,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C5,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C6,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C7,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C8,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C9,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C10,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C11,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C12,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C13,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+C14,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D1,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D2,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D3,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D4,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D5,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D6,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D7,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D8,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D9,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D10,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D11,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D12,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D13,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D14,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+D15,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M1,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M2,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M3,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M4,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M5,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M6,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M7,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M8,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+M9,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V1,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V2,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V3,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V4,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V5,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V6,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V7,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V8,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V9,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V10,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V11,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V12,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V13,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V14,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V15,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V16,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V17,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V18,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V19,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V20,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V21,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V22,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V23,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V24,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V25,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V26,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V27,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V28,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V29,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V30,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V31,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V32,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V33,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V34,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V35,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V36,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V37,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V38,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V39,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V40,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V41,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V42,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V43,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V44,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V45,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V46,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V47,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V48,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V49,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V50,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V51,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V52,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V53,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V54,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V55,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V56,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V57,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V58,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V59,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V60,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V61,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V62,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V63,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V64,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V65,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V66,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V67,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V68,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V69,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V70,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V71,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V72,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V73,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V74,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V75,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V76,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V77,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V78,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V79,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V80,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V81,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V82,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V83,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V84,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V85,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V86,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V87,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V88,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V89,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V90,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V91,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V92,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V93,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V94,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V95,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V96,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V97,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V98,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V99,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V100,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V101,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V102,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V103,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V104,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V105,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V106,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V107,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V108,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V109,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V110,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V111,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V112,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V113,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V114,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V115,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V116,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V117,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V118,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V119,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V120,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V121,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V122,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V123,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V124,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V125,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V126,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V127,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V128,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V129,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V130,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V131,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V132,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V133,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V134,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V135,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V136,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V137,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V138,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V139,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V140,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V141,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V142,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V143,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V144,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V145,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V146,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V147,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V148,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V149,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V150,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V151,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V152,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V153,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V154,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V155,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V156,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V157,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V158,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V159,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V160,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V161,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V162,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V163,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V164,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V165,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V166,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V167,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V168,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V169,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V170,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V171,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V172,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V173,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V174,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V175,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V176,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V177,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V178,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V179,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V180,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V181,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V182,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V183,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V184,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V185,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V186,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V187,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V188,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V189,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V190,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V191,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V192,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V193,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V194,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V195,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V196,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V197,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V198,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V199,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V200,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V201,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V202,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V203,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V204,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V205,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V206,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V207,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V208,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V209,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V210,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V211,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V212,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V213,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V214,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V215,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V216,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V217,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V218,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V219,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V220,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V221,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V222,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V223,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V224,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V225,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V226,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V227,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V228,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V229,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V230,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V231,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V232,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V233,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V234,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V235,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V236,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V237,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V238,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V239,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V240,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V241,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V242,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V243,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V244,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V245,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V246,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V247,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V248,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V249,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V250,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V251,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V252,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V253,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V254,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V255,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V256,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V257,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V258,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V259,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V260,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V261,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V262,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V263,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V264,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V265,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V266,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V267,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V268,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V269,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V270,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V271,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V272,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V273,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V274,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V275,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V276,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V277,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V278,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V279,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V280,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V281,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V282,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V283,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V284,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V285,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V286,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V287,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V288,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V289,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V290,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V291,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V292,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V293,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V294,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V295,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V296,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V297,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V298,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V299,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V300,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V301,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V302,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V303,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V304,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V305,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V306,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V307,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V308,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V309,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V310,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V311,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V312,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V313,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V314,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V315,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V316,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V317,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V318,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V319,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V320,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V321,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V322,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V323,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V324,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V325,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V326,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V327,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V328,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V329,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V330,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V331,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V332,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V333,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V334,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V335,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V336,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V337,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V338,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+V339,uncertain,true,false,false,medium,Anonymized engineered feature; the public schema does not establish whether its value is available before authorization.
+id_01,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_02,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_03,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_04,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_05,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_06,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_07,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_08,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_09,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_10,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_11,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_12,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_13,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_14,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_15,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_16,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_17,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_18,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_19,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_20,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_21,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_22,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_23,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_24,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_25,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_26,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_27,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_28,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_29,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_30,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_31,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_32,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_33,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_34,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_35,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_36,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_37,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+id_38,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+DeviceType,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.
+DeviceInfo,uncertain,true,false,false,medium,Identity-table or device feature; availability is conditional and its operational timing is not documented in the supplied materials.

@@ -1,0 +1,12 @@
+feature,classification,model_a,model_b,identifier,leakage_risk,rationale
+step,authorization_time,true,true,false,low,Transaction details or pre-transaction state available when authorization is decided.
+type,authorization_time,true,true,false,low,Transaction details or pre-transaction state available when authorization is decided.
+amount,authorization_time,true,true,false,low,Transaction details or pre-transaction state available when authorization is decided.
+nameOrig,identifier,false,false,true,medium,"Account identifier; retain only for traceability, not prediction."
+oldbalanceOrg,authorization_time,true,true,false,low,Transaction details or pre-transaction state available when authorization is decided.
+newbalanceOrig,post_transaction,true,false,false,high,Balance after the transaction; unavailable at authorization time and can leak transaction outcome.
+nameDest,identifier,false,false,true,medium,"Account identifier; retain only for traceability, not prediction."
+oldbalanceDest,authorization_time,true,true,false,low,Transaction details or pre-transaction state available when authorization is decided.
+newbalanceDest,post_transaction,true,false,false,high,Balance after the transaction; unavailable at authorization time and can leak transaction outcome.
+isFraud,target,false,false,false,target,Ground-truth label; never a predictor.
+isFlaggedFraud,uncertain,false,false,false,high,Rule-based screening output; the active Stage 1 decision keeps it out of model inputs until availability and label dependence are verified.
