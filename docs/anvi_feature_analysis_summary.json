@@ -1,0 +1,17 @@
+{
+  "paysim": {
+    "authorization_time": 5,
+    "identifier": 2,
+    "post_transaction": 2,
+    "target": 1,
+    "uncertain": 1
+  },
+  "ieee_cis": {
+    "identifier": 1,
+    "target": 1,
+    "authorization_time": 15,
+    "uncertain": 417
+  },
+  "pay_columns": 11,
+  "ieee_columns": 434
+}
