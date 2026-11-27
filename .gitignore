@@ -119,3 +119,10 @@ temp/
 
 # Local personal handoff material; keep out of Git.
 /Riyanshu_Report_Handoff/
+
+# Riyanshu evaluation outputs based on saved predictions.
+!reports/riya_evaluation/
+!reports/riya_evaluation/*.csv
+!reports/riya_evaluation/*.md
+!reports/riya_evaluation/confusion_matrices/
+!reports/riya_evaluation/confusion_matrices/*.svg
