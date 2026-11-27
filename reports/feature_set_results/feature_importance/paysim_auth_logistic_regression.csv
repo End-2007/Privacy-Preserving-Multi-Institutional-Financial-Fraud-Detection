@@ -1,0 +1,12 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+categorical__type_CASH_IN,type,98.55875287,0.5910739396,-98.55875287,absolute coefficient on train-scaled features,1
+numeric__oldbalanceOrg,oldbalanceOrg,25.86816079,0.155135848,25.86816079,absolute coefficient on train-scaled features,2
+categorical__type_CASH_OUT,type,17.75489528,0.1064791873,17.75489528,absolute coefficient on train-scaled features,3
+categorical__type_TRANSFER,type,10.8468078,0.06505018814,10.8468078,absolute coefficient on train-scaled features,4
+categorical__type_PAYMENT,type,9.510905042,0.05703854755,-9.510905042,absolute coefficient on train-scaled features,5
+numeric__amount,amount,1.745717574,0.01046937115,-1.745717574,absolute coefficient on train-scaled features,6
+numeric__hour,hour,0.6796086424,0.004075730932,-0.6796086424,absolute coefficient on train-scaled features,7
+numeric__step,step,0.5847834612,0.003507047869,0.5847834612,absolute coefficient on train-scaled features,8
+numeric__log_amount,log_amount,0.5730696914,0.003436798359,-0.5730696914,absolute coefficient on train-scaled features,9
+numeric__oldbalanceDest,oldbalanceDest,0.3797295227,0.002277303826,-0.3797295227,absolute coefficient on train-scaled features,10
+categorical__type_DEBIT,type,0.2427872616,0.001456037328,-0.2427872616,absolute coefficient on train-scaled features,11

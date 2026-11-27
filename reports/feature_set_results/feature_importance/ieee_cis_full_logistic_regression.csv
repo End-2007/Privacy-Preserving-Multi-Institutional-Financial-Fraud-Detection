@@ -1,0 +1,1208 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+numeric__V332,V332,8.818523315,0.04053052569,-8.818523315,absolute coefficient on train-scaled features,1
+numeric__C11,C11,7.166567572,0.0329380261,7.166567572,absolute coefficient on train-scaled features,2
+numeric__V179,V179,6.823816459,0.03136271895,6.823816459,absolute coefficient on train-scaled features,3
+numeric__V323,V323,6.143947779,0.02823799682,6.143947779,absolute coefficient on train-scaled features,4
+numeric__C14,C14,4.950110078,0.02275103853,-4.950110078,absolute coefficient on train-scaled features,5
+numeric__V168,V168,4.438273523,0.02039860333,-4.438273523,absolute coefficient on train-scaled features,6
+numeric__C12,C12,4.31192714,0.01981790686,-4.31192714,absolute coefficient on train-scaled features,7
+numeric__V177,V177,3.689794708,0.0169585444,-3.689794708,absolute coefficient on train-scaled features,8
+numeric__V324,V324,3.24565036,0.01491722714,-3.24565036,absolute coefficient on train-scaled features,9
+numeric__V202,V202,3.077081478,0.01414247323,3.077081478,absolute coefficient on train-scaled features,10
+numeric__V204,V204,3.032085113,0.01393566691,3.032085113,absolute coefficient on train-scaled features,11
+numeric__V331,V331,2.63061705,0.01209049272,2.63061705,absolute coefficient on train-scaled features,12
+numeric__V203,V203,2.527896121,0.01161838043,-2.527896121,absolute coefficient on train-scaled features,13
+numeric__V264,V264,2.50149386,0.01149703386,-2.50149386,absolute coefficient on train-scaled features,14
+missing__missingindicator_id_02,missingindicator_id_02,2.4757808,0.01137885491,-2.4757808,absolute coefficient on train-scaled features,15
+numeric__V211,V211,2.419226465,0.01111892739,-2.419226465,absolute coefficient on train-scaled features,16
+missing__missingindicator_id_32,missingindicator_id_32,2.191424191,0.01007193283,-2.191424191,absolute coefficient on train-scaled features,17
+numeric__C8,C8,2.089857898,0.009605127323,2.089857898,absolute coefficient on train-scaled features,18
+numeric__V218,V218,2.029412608,0.009327316707,-2.029412608,absolute coefficient on train-scaled features,19
+numeric__C6,C6,1.944587329,0.008937454026,-1.944587329,absolute coefficient on train-scaled features,20
+numeric__V213,V213,1.735166691,0.007974942701,-1.735166691,absolute coefficient on train-scaled features,21
+numeric__V263,V263,1.70402494,0.00783181312,-1.70402494,absolute coefficient on train-scaled features,22
+numeric__V295,V295,1.646784342,0.007568731486,-1.646784342,absolute coefficient on train-scaled features,23
+numeric__V212,V212,1.555759638,0.007150375832,1.555759638,absolute coefficient on train-scaled features,24
+numeric__V307,V307,1.487947872,0.0068387084,-1.487947872,absolute coefficient on train-scaled features,25
+numeric__V101,V101,1.479255856,0.006798759311,-1.479255856,absolute coefficient on train-scaled features,26
+numeric__V265,V265,1.457164247,0.006697224788,1.457164247,absolute coefficient on train-scaled features,27
+numeric__V232,V232,1.444989848,0.006641270434,1.444989848,absolute coefficient on train-scaled features,28
+numeric__V274,V274,1.344289268,0.006178443803,1.344289268,absolute coefficient on train-scaled features,29
+numeric__V167,V167,1.286921624,0.005914778253,-1.286921624,absolute coefficient on train-scaled features,30
+numeric__V178,V178,1.184562063,0.005444326835,1.184562063,absolute coefficient on train-scaled features,31
+numeric__V338,V338,1.112220302,0.005111839241,1.112220302,absolute coefficient on train-scaled features,32
+numeric__V280,V280,1.09482499,0.005031889216,1.09482499,absolute coefficient on train-scaled features,33
+numeric__V277,V277,1.092333724,0.005020439193,1.092333724,absolute coefficient on train-scaled features,34
+numeric__V273,V273,1.088045662,0.005000730969,1.088045662,absolute coefficient on train-scaled features,35
+numeric__V333,V333,1.060270567,0.004873074766,1.060270567,absolute coefficient on train-scaled features,36
+numeric__V182,V182,1.050156548,0.004826590056,-1.050156548,absolute coefficient on train-scaled features,37
+categorical__id_30___MISSING__,id,1.009739245,0.004640829416,1.009739245,absolute coefficient on train-scaled features,38
+numeric__V294,V294,1.008981585,0.004637347162,1.008981585,absolute coefficient on train-scaled features,39
+numeric__V275,V275,0.9773400876,0.004491920712,-0.9773400876,absolute coefficient on train-scaled features,40
+categorical__M7___MISSING__,M7,0.9620778782,0.004421774572,-0.9620778782,absolute coefficient on train-scaled features,41
+numeric__C4,C4,0.9493075718,0.004363081386,0.9493075718,absolute coefficient on train-scaled features,42
+numeric__V95,V95,0.944696999,0.004341890884,0.944696999,absolute coefficient on train-scaled features,43
+numeric__V97,V97,0.9432920591,0.004335433685,0.9432920591,absolute coefficient on train-scaled features,44
+numeric__C3,C3,0.9308106646,0.004278068358,-0.9308106646,absolute coefficient on train-scaled features,45
+numeric__C1,C1,0.909875819,0.004181850401,-0.909875819,absolute coefficient on train-scaled features,46
+numeric__V219,V219,0.9054354951,0.004161442374,-0.9054354951,absolute coefficient on train-scaled features,47
+numeric__V279,V279,0.8917649834,0.004098611783,0.8917649834,absolute coefficient on train-scaled features,48
+numeric__V164,V164,0.8767839246,0.00402975783,-0.8767839246,absolute coefficient on train-scaled features,49
+numeric__V187,V187,0.8692347073,0.00399506112,0.8692347073,absolute coefficient on train-scaled features,50
+numeric__V293,V293,0.8649487969,0.003975362788,0.8649487969,absolute coefficient on train-scaled features,51
+numeric__V18,V18,0.8644948774,0.003973276544,0.8644948774,absolute coefficient on train-scaled features,52
+numeric__V143,V143,0.863480758,0.003968615583,0.863480758,absolute coefficient on train-scaled features,53
+numeric__C7,C7,0.8581586378,0.003944154761,0.8581586378,absolute coefficient on train-scaled features,54
+missing__missingindicator_id_19,missingindicator_id_19,0.8214810345,0.003775582032,0.8214810345,absolute coefficient on train-scaled features,55
+categorical__M7_F,M7,0.7841014807,0.003603783091,0.7841014807,absolute coefficient on train-scaled features,56
+numeric__V236,V236,0.7773523226,0.003572763507,0.7773523226,absolute coefficient on train-scaled features,57
+numeric__V231,V231,0.7545302387,0.003467871675,-0.7545302387,absolute coefficient on train-scaled features,58
+numeric__C9,C9,0.7361594501,0.003383438297,0.7361594501,absolute coefficient on train-scaled features,59
+numeric__V329,V329,0.7337917991,0.003372556414,-0.7337917991,absolute coefficient on train-scaled features,60
+numeric__V268,V268,0.7217161415,0.00331705588,-0.7217161415,absolute coefficient on train-scaled features,61
+numeric__V278,V278,0.7021229768,0.003227004378,-0.7021229768,absolute coefficient on train-scaled features,62
+numeric__V317,V317,0.6925556311,0.003183032215,0.6925556311,absolute coefficient on train-scaled features,63
+numeric__V128,V128,0.6745247331,0.003100160996,0.6745247331,absolute coefficient on train-scaled features,64
+numeric__V134,V134,0.6541848343,0.003006677455,-0.6541848343,absolute coefficient on train-scaled features,65
+numeric__V335,V335,0.6122384172,0.002813888903,0.6122384172,absolute coefficient on train-scaled features,66
+numeric__V17,V17,0.5993909472,0.002754841068,-0.5993909472,absolute coefficient on train-scaled features,67
+numeric__V58,V58,0.597315462,0.002745301998,0.597315462,absolute coefficient on train-scaled features,68
+numeric__V153,V153,0.5939212089,0.002729701783,-0.5939212089,absolute coefficient on train-scaled features,69
+numeric__V72,V72,0.579410559,0.002663009861,-0.579410559,absolute coefficient on train-scaled features,70
+numeric__V22,V22,0.5704863736,0.002621993705,-0.5704863736,absolute coefficient on train-scaled features,71
+numeric__V48,V48,0.5695124137,0.00261751732,-0.5695124137,absolute coefficient on train-scaled features,72
+numeric__V207,V207,0.5335188111,0.002452088304,-0.5335188111,absolute coefficient on train-scaled features,73
+numeric__V217,V217,0.5306172857,0.002438752699,0.5306172857,absolute coefficient on train-scaled features,74
+numeric__V266,V266,0.5300848343,0.002436305516,0.5300848343,absolute coefficient on train-scaled features,75
+categorical__id_15_Found,id,0.4988327943,0.00229266904,-0.4988327943,absolute coefficient on train-scaled features,76
+categorical__M8___MISSING__,M8,0.4928208943,0.002265037944,0.4928208943,absolute coefficient on train-scaled features,77
+categorical__M9___MISSING__,M9,0.4928208943,0.002265037944,0.4928208943,absolute coefficient on train-scaled features,78
+categorical__id_30_Windows 10,id,0.4907167059,0.002255366953,-0.4907167059,absolute coefficient on train-scaled features,79
+numeric__V276,V276,0.4671930432,0.002147250618,0.4671930432,absolute coefficient on train-scaled features,80
+frequency__R_emaildomain,R_emaildomain,0.4607306072,0.002117548828,0.4607306072,absolute coefficient on train-scaled features,81
+numeric__V318,V318,0.4571651694,0.002101161836,0.4571651694,absolute coefficient on train-scaled features,82
+numeric__V226,V226,0.4497122745,0.002066907831,0.4497122745,absolute coefficient on train-scaled features,83
+numeric__V90,V90,0.4463348561,0.002051384989,0.4463348561,absolute coefficient on train-scaled features,84
+categorical__id_35_T,id,0.436563622,0.00200647574,-0.436563622,absolute coefficient on train-scaled features,85
+numeric__V166,V166,0.4319566776,0.001985301914,0.4319566776,absolute coefficient on train-scaled features,86
+categorical__M9_T,M9,0.4301518402,0.001977006761,-0.4301518402,absolute coefficient on train-scaled features,87
+numeric__V93,V93,0.4283637301,0.001968788486,-0.4283637301,absolute coefficient on train-scaled features,88
+categorical__M7_T,M7,0.4263582532,0.00195957118,0.4263582532,absolute coefficient on train-scaled features,89
+numeric__V222,V222,0.4238945284,0.001948247735,0.4238945284,absolute coefficient on train-scaled features,90
+numeric__V214,V214,0.4139206508,0.001902407123,-0.4139206508,absolute coefficient on train-scaled features,91
+numeric__log_amt,log_amt,0.4129383182,0.001897892256,0.4129383182,absolute coefficient on train-scaled features,92
+numeric__V49,V49,0.4076897347,0.001873769414,0.4076897347,absolute coefficient on train-scaled features,93
+numeric__V73,V73,0.4068096917,0.001869724677,-0.4068096917,absolute coefficient on train-scaled features,94
+numeric__V180,V180,0.4065920408,0.001868724339,0.4065920408,absolute coefficient on train-scaled features,95
+numeric__V144,V144,0.405184499,0.001862255182,-0.405184499,absolute coefficient on train-scaled features,96
+categorical__id_31_ie 11.0 for tablet,id,0.4031194417,0.00185276404,-0.4031194417,absolute coefficient on train-scaled features,97
+numeric__V306,V306,0.4018887403,0.001847107654,-0.4018887403,absolute coefficient on train-scaled features,98
+numeric__V105,V105,0.3940858889,0.001811245225,-0.3940858889,absolute coefficient on train-scaled features,99
+numeric__V133,V133,0.391747011,0.001800495585,0.391747011,absolute coefficient on train-scaled features,100
+numeric__V103,V103,0.3906344894,0.001795382361,-0.3906344894,absolute coefficient on train-scaled features,101
+numeric__V150,V150,0.3890368437,0.001788039474,-0.3890368437,absolute coefficient on train-scaled features,102
+numeric__V145,V145,0.3850744711,0.001769828143,0.3850744711,absolute coefficient on train-scaled features,103
+numeric__V330,V330,0.382550314,0.001758226947,-0.382550314,absolute coefficient on train-scaled features,104
+categorical__card4___MISSING__,card4,0.3781158272,0.001737845748,0.3781158272,absolute coefficient on train-scaled features,105
+categorical__id_16_NotFound,id,0.3730344812,0.001714491541,-0.3730344812,absolute coefficient on train-scaled features,106
+numeric__V227,V227,0.364574966,0.00167561104,-0.364574966,absolute coefficient on train-scaled features,107
+missing__missingindicator_id_17,missingindicator_id_17,0.3633607968,0.001670030637,-0.3633607968,absolute coefficient on train-scaled features,108
+categorical__id_15___MISSING__,id,0.3588165208,0.001649144839,0.3588165208,absolute coefficient on train-scaled features,109
+categorical__id_35___MISSING__,id,0.3588165208,0.001649144839,0.3588165208,absolute coefficient on train-scaled features,110
+categorical__id_36___MISSING__,id,0.3588165208,0.001649144839,0.3588165208,absolute coefficient on train-scaled features,111
+categorical__id_37___MISSING__,id,0.3588165208,0.001649144839,0.3588165208,absolute coefficient on train-scaled features,112
+categorical__id_38___MISSING__,id,0.3588165208,0.001649144839,0.3588165208,absolute coefficient on train-scaled features,113
+categorical__id_36_F,id,0.3554930377,0.001633869888,-0.3554930377,absolute coefficient on train-scaled features,114
+numeric__V337,V337,0.3528460288,0.001621704057,-0.3528460288,absolute coefficient on train-scaled features,115
+numeric__V92,V92,0.3524170683,0.001619732526,0.3524170683,absolute coefficient on train-scaled features,116
+numeric__V269,V269,0.3511997798,0.001614137786,-0.3511997798,absolute coefficient on train-scaled features,117
+numeric__V132,V132,0.3484149207,0.001601338386,-0.3484149207,absolute coefficient on train-scaled features,118
+categorical__DeviceType___MISSING__,DeviceType,0.3385225277,0.001555872283,-0.3385225277,absolute coefficient on train-scaled features,119
+numeric__V89,V89,0.3374477206,0.001550932398,-0.3374477206,absolute coefficient on train-scaled features,120
+numeric__V149,V149,0.3356396876,0.001542622556,0.3356396876,absolute coefficient on train-scaled features,121
+numeric__V267,V267,0.3330988929,0.001530944893,0.3330988929,absolute coefficient on train-scaled features,122
+missing__missingindicator_D13,missingindicator_D13,0.3329853994,0.00153042327,0.3329853994,absolute coefficient on train-scaled features,123
+numeric__V272,V272,0.3324891683,0.001528142558,0.3324891683,absolute coefficient on train-scaled features,124
+categorical__M8_F,M8,0.3269427699,0.001502650938,-0.3269427699,absolute coefficient on train-scaled features,125
+numeric__D2,D2,0.3226171589,0.001482770139,-0.3226171589,absolute coefficient on train-scaled features,126
+numeric__V235,V235,0.3208263682,0.001474539545,-0.3208263682,absolute coefficient on train-scaled features,127
+numeric__V57,V57,0.3195371062,0.00146861401,-0.3195371062,absolute coefficient on train-scaled features,128
+numeric__V82,V82,0.3193991637,0.001467980018,-0.3193991637,absolute coefficient on train-scaled features,129
+numeric__V71,V71,0.3189510286,0.001465920359,0.3189510286,absolute coefficient on train-scaled features,130
+numeric__C5,C5,0.315237247,0.001448851569,0.315237247,absolute coefficient on train-scaled features,131
+numeric__V126,V126,0.3146345717,0.001446081632,-0.3146345717,absolute coefficient on train-scaled features,132
+numeric__V21,V21,0.312147519,0.001434650971,0.312147519,absolute coefficient on train-scaled features,133
+categorical__id_30_Windows 7,id,0.3086951026,0.001418783433,-0.3086951026,absolute coefficient on train-scaled features,134
+missing__missingindicator_id_11,missingindicator_id_11,0.3047692065,0.001400739751,-0.3047692065,absolute coefficient on train-scaled features,135
+categorical__id_28___MISSING__,id,0.3047692065,0.001400739751,-0.3047692065,absolute coefficient on train-scaled features,136
+categorical__id_29___MISSING__,id,0.3047692065,0.001400739751,-0.3047692065,absolute coefficient on train-scaled features,137
+numeric__V106,V106,0.3047042045,0.001400440997,0.3047042045,absolute coefficient on train-scaled features,138
+categorical__id_37_T,id,0.3039232752,0.001396851794,-0.3039232752,absolute coefficient on train-scaled features,139
+numeric__V224,V224,0.3018438152,0.001387294456,0.3018438152,absolute coefficient on train-scaled features,140
+categorical__id_31___MISSING__,id,0.3014568655,0.00138551601,0.3014568655,absolute coefficient on train-scaled features,141
+numeric__V33,V33,0.3000221136,0.001378921793,0.3000221136,absolute coefficient on train-scaled features,142
+numeric__V326,V326,0.2985560577,0.001372183702,-0.2985560577,absolute coefficient on train-scaled features,143
+numeric__V79,V79,0.2984249607,0.001371581171,0.2984249607,absolute coefficient on train-scaled features,144
+numeric__V339,V339,0.2977069961,0.001368281357,-0.2977069961,absolute coefficient on train-scaled features,145
+numeric__V320,V320,0.2976149838,0.001367858463,0.2976149838,absolute coefficient on train-scaled features,146
+numeric__C10,C10,0.2974088637,0.001366911121,0.2974088637,absolute coefficient on train-scaled features,147
+numeric__V154,V154,0.2968962704,0.001364555208,0.2968962704,absolute coefficient on train-scaled features,148
+categorical__card6___MISSING__,card6,0.2956924731,0.001359022475,-0.2956924731,absolute coefficient on train-scaled features,149
+numeric__V210,V210,0.2932983448,0.0013480189,-0.2932983448,absolute coefficient on train-scaled features,150
+numeric__V221,V221,0.2902885373,0.001334185622,-0.2902885373,absolute coefficient on train-scaled features,151
+categorical__id_16___MISSING__,id,0.2851542751,0.001310588209,0.2851542751,absolute coefficient on train-scaled features,152
+numeric__V216,V216,0.2803880832,0.00128868247,-0.2803880832,absolute coefficient on train-scaled features,153
+numeric__V296,V296,0.2785003329,0.001280006243,0.2785003329,absolute coefficient on train-scaled features,154
+categorical__M8_T,M8,0.2768361016,0.001272357324,-0.2768361016,absolute coefficient on train-scaled features,155
+categorical__id_38_T,id,0.2706546898,0.00124394714,-0.2706546898,absolute coefficient on train-scaled features,156
+numeric__V200,V200,0.2705045297,0.001243256994,0.2705045297,absolute coefficient on train-scaled features,157
+numeric__V152,V152,0.2657028405,0.001221188108,-0.2657028405,absolute coefficient on train-scaled features,158
+numeric__V310,V310,0.2632827328,0.001210065131,0.2632827328,absolute coefficient on train-scaled features,159
+categorical__id_29_NotFound,id,0.2616365434,0.001202499133,0.2616365434,absolute coefficient on train-scaled features,160
+numeric__V257,V257,0.2604985042,0.001197268629,0.2604985042,absolute coefficient on train-scaled features,161
+numeric__V254,V254,0.2531743393,0.001163606275,-0.2531743393,absolute coefficient on train-scaled features,162
+numeric__V191,V191,0.2529144975,0.001162412024,0.2529144975,absolute coefficient on train-scaled features,163
+categorical__id_15_Unknown,id,0.2512110552,0.001154582889,-0.2512110552,absolute coefficient on train-scaled features,164
+categorical__ProductCD_H,ProductCD,0.2496948299,0.001147614216,0.2496948299,absolute coefficient on train-scaled features,165
+categorical__addr2___MISSING__,addr2,0.2485183258,0.001142206924,0.2485183258,absolute coefficient on train-scaled features,166
+numeric__V255,V255,0.2482733368,0.001141080938,0.2482733368,absolute coefficient on train-scaled features,167
+categorical__id_31_ie 11.0 for desktop,id,0.247858369,0.001139173718,-0.247858369,absolute coefficient on train-scaled features,168
+missing__missingindicator_D15,missingindicator_D15,0.2469263868,0.001134890265,0.2469263868,absolute coefficient on train-scaled features,169
+numeric__V237,V237,0.2461235053,0.001131200168,0.2461235053,absolute coefficient on train-scaled features,170
+numeric__V38,V38,0.2439993186,0.001121437263,0.2439993186,absolute coefficient on train-scaled features,171
+numeric__V225,V225,0.2436676736,0.001119913,0.2436676736,absolute coefficient on train-scaled features,172
+categorical__addr2_87.0,addr2,0.2428603197,0.001116202348,-0.2428603197,absolute coefficient on train-scaled features,173
+numeric__V316,V316,0.2423395617,0.001113808909,0.2423395617,absolute coefficient on train-scaled features,174
+numeric__V91,V91,0.2414956864,0.001109930401,-0.2414956864,absolute coefficient on train-scaled features,175
+numeric__V83,V83,0.2400758012,0.001103404514,0.2400758012,absolute coefficient on train-scaled features,176
+numeric__C13,C13,0.2390790944,0.001098823582,0.2390790944,absolute coefficient on train-scaled features,177
+numeric__D3,D3,0.2389963669,0.001098443361,-0.2389963669,absolute coefficient on train-scaled features,178
+numeric__id_17,id_17,0.2356476775,0.001083052559,0.2356476775,absolute coefficient on train-scaled features,179
+categorical__id_28_New,id,0.2338665011,0.001074866153,0.2338665011,absolute coefficient on train-scaled features,180
+categorical__DeviceType_desktop,DeviceType,0.2295370059,0.001054967502,0.2295370059,absolute coefficient on train-scaled features,181
+numeric__V37,V37,0.2289739564,0.001052379689,-0.2289739564,absolute coefficient on train-scaled features,182
+numeric__V285,V285,0.2285900407,0.001050615187,-0.2285900407,absolute coefficient on train-scaled features,183
+numeric__V192,V192,0.2282916832,0.001049243915,0.2282916832,absolute coefficient on train-scaled features,184
+missing__missingindicator_D3,missingindicator_D3,0.2258207221,0.001037887212,-0.2258207221,absolute coefficient on train-scaled features,185
+categorical__id_33_2736x1824,id,0.2249405705,0.001033841976,-0.2249405705,absolute coefficient on train-scaled features,186
+numeric__V29,V29,0.2220794703,0.001020692167,-0.2220794703,absolute coefficient on train-scaled features,187
+numeric__V199,V199,0.2214875143,0.001017971498,0.2214875143,absolute coefficient on train-scaled features,188
+numeric__V259,V259,0.2212284337,0.001016780746,0.2212284337,absolute coefficient on train-scaled features,189
+numeric__transaction_day,transaction_day,0.221079538,0.001016096411,0.221079538,absolute coefficient on train-scaled features,190
+numeric__V270,V270,0.2202273011,0.001012179473,-0.2202273011,absolute coefficient on train-scaled features,191
+categorical__ProductCD_S,ProductCD,0.2172293683,0.0009984007728,0.2172293683,absolute coefficient on train-scaled features,192
+categorical__DeviceType_mobile,DeviceType,0.2169919639,0.0009973096461,0.2169919639,absolute coefficient on train-scaled features,193
+categorical__ProductCD_W,ProductCD,0.2167726358,0.0009963015995,-0.2167726358,absolute coefficient on train-scaled features,194
+numeric__V74,V74,0.214847854,0.000987455173,0.214847854,absolute coefficient on train-scaled features,195
+categorical__id_30_Mac OS X 10_11_6,id,0.2140855808,0.000983951714,-0.2140855808,absolute coefficient on train-scaled features,196
+numeric__D1,D1,0.2126067293,0.0009771548134,0.2126067293,absolute coefficient on train-scaled features,197
+numeric__V80,V80,0.2100368218,0.0009653433457,-0.2100368218,absolute coefficient on train-scaled features,198
+categorical__id_30_iOS 11.1.2,id,0.2098938122,0.000964686064,-0.2098938122,absolute coefficient on train-scaled features,199
+numeric__D8,D8,0.2068950445,0.0009509035263,-0.2068950445,absolute coefficient on train-scaled features,200
+missing__missingindicator_D4,missingindicator_D4,0.2054236996,0.000944141126,0.2054236996,absolute coefficient on train-scaled features,201
+numeric__V299,V299,0.2034061248,0.0009348682168,-0.2034061248,absolute coefficient on train-scaled features,202
+categorical__id_38_F,id,0.2032303922,0.0009340605381,-0.2032303922,absolute coefficient on train-scaled features,203
+categorical__card5_131.0,card5,0.2031355038,0.0009336244245,-0.2031355038,absolute coefficient on train-scaled features,204
+numeric__V246,V246,0.2029806726,0.0009329128099,-0.2029806726,absolute coefficient on train-scaled features,205
+categorical__id_30_Mac OS X 10_12_6,id,0.2004645181,0.0009213483949,-0.2004645181,absolute coefficient on train-scaled features,206
+numeric__V42,V42,0.2004484943,0.0009212747485,0.2004484943,absolute coefficient on train-scaled features,207
+numeric__V291,V291,0.1978364046,0.0009092694086,-0.1978364046,absolute coefficient on train-scaled features,208
+numeric__V159,V159,0.1969787046,0.0009053273619,0.1969787046,absolute coefficient on train-scaled features,209
+numeric__V252,V252,0.1939216589,0.0008912769742,0.1939216589,absolute coefficient on train-scaled features,210
+numeric__V334,V334,0.1938928011,0.0008911443421,-0.1938928011,absolute coefficient on train-scaled features,211
+categorical__id_30_iOS 11.2.1,id,0.1937190616,0.0008903458236,-0.1937190616,absolute coefficient on train-scaled features,212
+categorical__id_30_Android 7.0,id,0.1931863246,0.0008878973283,-0.1931863246,absolute coefficient on train-scaled features,213
+numeric__V78,V78,0.1929317541,0.0008867273055,-0.1929317541,absolute coefficient on train-scaled features,214
+missing__missingindicator_D2,missingindicator_D2,0.1908592961,0.000877202149,0.1908592961,absolute coefficient on train-scaled features,215
+numeric__V147,V147,0.1864030744,0.0008567210548,0.1864030744,absolute coefficient on train-scaled features,216
+categorical__card5_207.0,card5,0.1860255983,0.0008549861493,-0.1860255983,absolute coefficient on train-scaled features,217
+categorical__id_33_4096x2304,id,0.1843253297,0.0008471716003,-0.1843253297,absolute coefficient on train-scaled features,218
+categorical__M5_T,M5,0.1835727057,0.00084371249,0.1835727057,absolute coefficient on train-scaled features,219
+missing__missingindicator_D14,missingindicator_D14,0.1819275634,0.0008361513055,-0.1819275634,absolute coefficient on train-scaled features,220
+categorical__M5___MISSING__,M5,0.1788724903,0.000822109984,-0.1788724903,absolute coefficient on train-scaled features,221
+categorical__id_30_Mac OS X 10_12_4,id,0.1777097656,0.0008167660236,-0.1777097656,absolute coefficient on train-scaled features,222
+numeric__V208,V208,0.1767602578,0.0008124020217,0.1767602578,absolute coefficient on train-scaled features,223
+numeric__V194,V194,0.1760174617,0.0008089880811,-0.1760174617,absolute coefficient on train-scaled features,224
+numeric__V228,V228,0.1752140349,0.0008052954775,0.1752140349,absolute coefficient on train-scaled features,225
+numeric__V94,V94,0.1737528544,0.0007985797935,0.1737528544,absolute coefficient on train-scaled features,226
+numeric__V130,V130,0.1730987219,0.0007955733566,-0.1730987219,absolute coefficient on train-scaled features,227
+numeric__V328,V328,0.1714702783,0.0007880889204,0.1714702783,absolute coefficient on train-scaled features,228
+numeric__V175,V175,0.1705023739,0.0007836403668,0.1705023739,absolute coefficient on train-scaled features,229
+categorical__card5_166.0,card5,0.1703328597,0.0007828612683,-0.1703328597,absolute coefficient on train-scaled features,230
+numeric__V85,V85,0.1694761855,0.0007789239361,0.1694761855,absolute coefficient on train-scaled features,231
+categorical__id_28_Found,id,0.1689909346,0.0007766936904,0.1689909346,absolute coefficient on train-scaled features,232
+numeric__V45,V45,0.1674563102,0.0007696404535,0.1674563102,absolute coefficient on train-scaled features,233
+numeric__V35,V35,0.1673269151,0.0007690457449,-0.1673269151,absolute coefficient on train-scaled features,234
+categorical__id_31_google search application 49.0,id,0.1658266833,0.0007621505785,-0.1658266833,absolute coefficient on train-scaled features,235
+categorical__id_30_Mac OS X 10_7_5,id,0.1650397434,0.0007585337501,-0.1650397434,absolute coefficient on train-scaled features,236
+numeric__V262,V262,0.1650154574,0.00075842213,0.1650154574,absolute coefficient on train-scaled features,237
+numeric__V283,V283,0.1648782327,0.0007577914361,0.1648782327,absolute coefficient on train-scaled features,238
+numeric__V27,V27,0.1632734983,0.0007504159688,-0.1632734983,absolute coefficient on train-scaled features,239
+categorical__id_30_iOS 10.1.1,id,0.1630429666,0.0007493564298,-0.1630429666,absolute coefficient on train-scaled features,240
+categorical__card3_195.0,card3,0.1620992354,0.0007450189779,-0.1620992354,absolute coefficient on train-scaled features,241
+categorical__id_30_Mac OS X 10_10_5,id,0.16041094,0.0007372594585,-0.16041094,absolute coefficient on train-scaled features,242
+numeric__V155,V155,0.1589512245,0.0007305505082,0.1589512245,absolute coefficient on train-scaled features,243
+categorical__id_30_Mac,id,0.1587722812,0.0007297280727,-0.1587722812,absolute coefficient on train-scaled features,244
+categorical__id_30_Mac OS X 10_13_2,id,0.1578389259,0.0007254383089,-0.1578389259,absolute coefficient on train-scaled features,245
+numeric__V171,V171,0.1576809717,0.0007247123408,-0.1576809717,absolute coefficient on train-scaled features,246
+categorical__id_37_F,id,0.1562152292,0.0007179756898,-0.1562152292,absolute coefficient on train-scaled features,247
+numeric__V233,V233,0.15619754,0.000717894389,-0.15619754,absolute coefficient on train-scaled features,248
+categorical__id_33_2562x1442,id,0.1552470126,0.0007135257014,-0.1552470126,absolute coefficient on train-scaled features,249
+numeric__V81,V81,0.155181724,0.0007132256304,0.155181724,absolute coefficient on train-scaled features,250
+categorical__M9_F,M9,0.1537862199,0.0007068118001,-0.1537862199,absolute coefficient on train-scaled features,251
+numeric__V308,V308,0.1537591051,0.0007066871787,0.1537591051,absolute coefficient on train-scaled features,252
+categorical__id_33_2560x1080,id,0.1530080796,0.000703235415,-0.1530080796,absolute coefficient on train-scaled features,253
+categorical__id_33_3200x1800,id,0.1529058394,0.0007027655121,-0.1529058394,absolute coefficient on train-scaled features,254
+numeric__V54,V54,0.1528127733,0.0007023377741,0.1528127733,absolute coefficient on train-scaled features,255
+categorical__id_30_iOS 11.3.0,id,0.152459291,0.0007007131456,-0.152459291,absolute coefficient on train-scaled features,256
+categorical__card3_197.0,card3,0.1517350701,0.0006973845775,-0.1517350701,absolute coefficient on train-scaled features,257
+numeric__V24,V24,0.1503647178,0.0006910863461,-0.1503647178,absolute coefficient on train-scaled features,258
+numeric__V28,V28,0.1495460103,0.0006873235118,-0.1495460103,absolute coefficient on train-scaled features,259
+frequency__P_emaildomain,P_emaildomain,0.1493851629,0.0006865842463,0.1493851629,absolute coefficient on train-scaled features,260
+categorical__id_30_Mac OS X 10_8_5,id,0.1467441206,0.0006744458384,-0.1467441206,absolute coefficient on train-scaled features,261
+numeric__V319,V319,0.1462432576,0.0006721438381,-0.1462432576,absolute coefficient on train-scaled features,262
+categorical__card3_148.0,card3,0.1462230813,0.0006720511067,-0.1462230813,absolute coefficient on train-scaled features,263
+numeric__V30,V30,0.1455154665,0.0006687988616,0.1455154665,absolute coefficient on train-scaled features,264
+categorical__id_31_chrome 57.0,id,0.1453632612,0.0006680993158,-0.1453632612,absolute coefficient on train-scaled features,265
+numeric__V137,V137,0.1447524465,0.0006652919702,-0.1447524465,absolute coefficient on train-scaled features,266
+categorical__card6_credit,card6,0.1432333291,0.0006583100046,0.1432333291,absolute coefficient on train-scaled features,267
+numeric__V189,V189,0.1429515618,0.0006570149834,0.1429515618,absolute coefficient on train-scaled features,268
+missing__missingindicator_D8,missingindicator_D8,0.1426180889,0.0006554823193,-0.1426180889,absolute coefficient on train-scaled features,269
+missing__missingindicator_D9,missingindicator_D9,0.1426180889,0.0006554823193,-0.1426180889,absolute coefficient on train-scaled features,270
+missing__missingindicator_id_09,missingindicator_id_09,0.1426180889,0.0006554823193,-0.1426180889,absolute coefficient on train-scaled features,271
+missing__missingindicator_id_10,missingindicator_id_10,0.1426180889,0.0006554823193,-0.1426180889,absolute coefficient on train-scaled features,272
+numeric__V174,V174,0.1424516592,0.0006547173975,-0.1424516592,absolute coefficient on train-scaled features,273
+categorical__id_29_Found,id,0.1420637606,0.0006529345892,0.1420637606,absolute coefficient on train-scaled features,274
+numeric__V163,V163,0.1418955958,0.0006521616924,-0.1418955958,absolute coefficient on train-scaled features,275
+categorical__id_30_Mac OS X 10.9,id,0.1418237187,0.0006518313406,-0.1418237187,absolute coefficient on train-scaled features,276
+categorical__id_30_iOS 11.2.6,id,0.1401320786,0.0006440564488,-0.1401320786,absolute coefficient on train-scaled features,277
+numeric__V34,V34,0.1398540904,0.0006427787966,-0.1398540904,absolute coefficient on train-scaled features,278
+categorical__card3_146.0,card3,0.1395060308,0.0006411790914,-0.1395060308,absolute coefficient on train-scaled features,279
+numeric__V193,V193,0.1379495183,0.0006340252554,-0.1379495183,absolute coefficient on train-scaled features,280
+categorical__id_33_1919x1080,id,0.1376716753,0.0006327482703,-0.1376716753,absolute coefficient on train-scaled features,281
+categorical__id_30_Mac OS X 10_11_3,id,0.1349739065,0.0006203491432,-0.1349739065,absolute coefficient on train-scaled features,282
+categorical__id_15_New,id,0.1340788205,0.0006162352683,0.1340788205,absolute coefficient on train-scaled features,283
+numeric__V70,V70,0.133807461,0.0006149880814,-0.133807461,absolute coefficient on train-scaled features,284
+categorical__id_30_Android 5.0.2,id,0.1331987126,0.0006121902332,-0.1331987126,absolute coefficient on train-scaled features,285
+numeric__V258,V258,0.1330619292,0.0006115615675,0.1330619292,absolute coefficient on train-scaled features,286
+categorical__id_30_Mac OS X 10_13_1,id,0.1314061539,0.000603951513,-0.1314061539,absolute coefficient on train-scaled features,287
+missing__missingindicator_D12,missingindicator_D12,0.1313577901,0.0006037292297,0.1313577901,absolute coefficient on train-scaled features,288
+numeric__V183,V183,0.1304172245,0.0005994063269,0.1304172245,absolute coefficient on train-scaled features,289
+numeric__TransactionDT,TransactionDT,0.1299105889,0.0005970777954,-0.1299105889,absolute coefficient on train-scaled features,290
+numeric__V165,V165,0.1298857007,0.0005969634077,-0.1298857007,absolute coefficient on train-scaled features,291
+numeric__V248,V248,0.1281515283,0.000588993035,0.1281515283,absolute coefficient on train-scaled features,292
+categorical__id_30_Mac OS X 10.13,id,0.1280027764,0.0005883093613,-0.1280027764,absolute coefficient on train-scaled features,293
+categorical__id_30_Mac OS X 10_6_8,id,0.1255831399,0.0005771885494,-0.1255831399,absolute coefficient on train-scaled features,294
+categorical__id_33_1152x864,id,0.1252205667,0.0005755221383,-0.1252205667,absolute coefficient on train-scaled features,295
+categorical__card5_213.0,card5,0.1239280155,0.0005695814863,-0.1239280155,absolute coefficient on train-scaled features,296
+numeric__V87,V87,0.1238245849,0.0005691061123,0.1238245849,absolute coefficient on train-scaled features,297
+numeric__V56,V56,0.1217771762,0.0005596960843,-0.1217771762,absolute coefficient on train-scaled features,298
+numeric__id_02,id_02,0.1216486573,0.0005591054027,-0.1216486573,absolute coefficient on train-scaled features,299
+categorical__id_33_1280x1025,id,0.1214788528,0.0005583249698,-0.1214788528,absolute coefficient on train-scaled features,300
+numeric__V104,V104,0.1211872169,0.0005569845917,-0.1211872169,absolute coefficient on train-scaled features,301
+numeric__V188,V188,0.1210130045,0.0005561838998,-0.1210130045,absolute coefficient on train-scaled features,302
+categorical__id_33_3440x1440,id,0.1192737169,0.0005481900171,-0.1192737169,absolute coefficient on train-scaled features,303
+categorical__id_30_Android,id,0.1192383903,0.0005480276537,-0.1192383903,absolute coefficient on train-scaled features,304
+categorical__card5_177.0,card5,0.1191173946,0.0005474715492,-0.1191173946,absolute coefficient on train-scaled features,305
+numeric__V250,V250,0.1189234289,0.0005465800697,-0.1189234289,absolute coefficient on train-scaled features,306
+numeric__V10,V10,0.1188299903,0.00054615062,0.1188299903,absolute coefficient on train-scaled features,307
+categorical__M6_F,M6,0.1188263485,0.0005461338817,0.1188263485,absolute coefficient on train-scaled features,308
+numeric__V50,V50,0.1185357597,0.0005447983164,-0.1185357597,absolute coefficient on train-scaled features,309
+categorical__id_30_Android 5.0,id,0.1185093362,0.000544676872,-0.1185093362,absolute coefficient on train-scaled features,310
+categorical__id_30_Mac OS X 10.6,id,0.1179153259,0.0005419467609,-0.1179153259,absolute coefficient on train-scaled features,311
+numeric__V198,V198,0.1171436331,0.000538400009,0.1171436331,absolute coefficient on train-scaled features,312
+categorical__id_30_Mac OS X 10_12,id,0.1168243343,0.00053693249,-0.1168243343,absolute coefficient on train-scaled features,313
+categorical__card5_222.0,card5,0.1163220728,0.0005346240626,-0.1163220728,absolute coefficient on train-scaled features,314
+categorical__card3_185.0,card3,0.1160644394,0.0005334399621,0.1160644394,absolute coefficient on train-scaled features,315
+numeric__V223,V223,0.1160494006,0.0005333708425,-0.1160494006,absolute coefficient on train-scaled features,316
+numeric__V53,V53,0.1158219519,0.0005323254732,-0.1158219519,absolute coefficient on train-scaled features,317
+numeric__V271,V271,0.115737426,0.0005319369864,0.115737426,absolute coefficient on train-scaled features,318
+numeric__V297,V297,0.1157352206,0.0005319268504,0.1157352206,absolute coefficient on train-scaled features,319
+categorical__id_30_Mac OS X 10_12_5,id,0.1145246049,0.0005263627795,-0.1145246049,absolute coefficient on train-scaled features,320
+categorical__id_33_2400x1350,id,0.1128256706,0.000518554363,-0.1128256706,absolute coefficient on train-scaled features,321
+numeric__V23,V23,0.110920759,0.0005097992612,0.110920759,absolute coefficient on train-scaled features,322
+categorical__card3_210.0,card3,0.1108280302,0.0005093730735,-0.1108280302,absolute coefficient on train-scaled features,323
+categorical__id_30_Android 7.1.1,id,0.1107427192,0.0005089809787,-0.1107427192,absolute coefficient on train-scaled features,324
+numeric__V77,V77,0.1106880348,0.0005087296455,0.1106880348,absolute coefficient on train-scaled features,325
+numeric__V136,V136,0.1106575312,0.0005085894488,0.1106575312,absolute coefficient on train-scaled features,326
+categorical__card4_mastercard,card4,0.1106193395,0.000508413917,-0.1106193395,absolute coefficient on train-scaled features,327
+categorical__id_31_safari generic,id,0.1104568243,0.0005076669864,-0.1104568243,absolute coefficient on train-scaled features,328
+numeric__V190,V190,0.1102047294,0.0005065083411,0.1102047294,absolute coefficient on train-scaled features,329
+categorical__card3_166.0,card3,0.1100457226,0.0005057775352,-0.1100457226,absolute coefficient on train-scaled features,330
+frequency__DeviceInfo,DeviceInfo,0.1095862968,0.0005036659833,0.1095862968,absolute coefficient on train-scaled features,331
+numeric__V131,V131,0.1084761835,0.0004985638283,0.1084761835,absolute coefficient on train-scaled features,332
+numeric__V151,V151,0.1082340404,0.000497450922,-0.1082340404,absolute coefficient on train-scaled features,333
+numeric__V63,V63,0.1081762913,0.0004971855032,-0.1081762913,absolute coefficient on train-scaled features,334
+numeric__V313,V313,0.1079785975,0.0004962768894,0.1079785975,absolute coefficient on train-scaled features,335
+numeric__V108,V108,0.1079107558,0.0004959650843,0.1079107558,absolute coefficient on train-scaled features,336
+numeric__V284,V284,0.1076618902,0.0004948212812,0.1076618902,absolute coefficient on train-scaled features,337
+numeric__id_01,id_01,0.1073150383,0.0004932271267,-0.1073150383,absolute coefficient on train-scaled features,338
+categorical__card5_224.0,card5,0.1072682176,0.0004930119358,0.1072682176,absolute coefficient on train-scaled features,339
+categorical__card6_debit,card6,0.1071154335,0.0004923097295,-0.1071154335,absolute coefficient on train-scaled features,340
+numeric__V247,V247,0.1064373272,0.0004891931076,0.1064373272,absolute coefficient on train-scaled features,341
+numeric__V196,V196,0.1063617018,0.0004888455279,-0.1063617018,absolute coefficient on train-scaled features,342
+numeric__V141,V141,0.1062035899,0.0004881188352,0.1062035899,absolute coefficient on train-scaled features,343
+categorical__id_31_chrome 64.0 for ios,id,0.1057199923,0.0004858961882,-0.1057199923,absolute coefficient on train-scaled features,344
+numeric__V315,V315,0.1054983099,0.0004848773209,-0.1054983099,absolute coefficient on train-scaled features,345
+categorical__id_30_Mac OS X 10_13_3,id,0.105118077,0.0004831297449,-0.105118077,absolute coefficient on train-scaled features,346
+categorical__M6___MISSING__,M6,0.105006544,0.000482617132,-0.105006544,absolute coefficient on train-scaled features,347
+categorical__id_12_NotFound,id,0.1049183346,0.0004822117154,-0.1049183346,absolute coefficient on train-scaled features,348
+categorical__id_33_2560x1440,id,0.1044869849,0.0004802292035,-0.1044869849,absolute coefficient on train-scaled features,349
+categorical__id_30_Windows 8.1,id,0.1038128783,0.000477130964,-0.1038128783,absolute coefficient on train-scaled features,350
+numeric__V205,V205,0.1035409409,0.0004758811217,-0.1035409409,absolute coefficient on train-scaled features,351
+categorical__id_33_2672x1440,id,0.1035072499,0.0004757262756,-0.1035072499,absolute coefficient on train-scaled features,352
+categorical__id_30_iOS 10.3.3,id,0.1031832608,0.0004742371996,-0.1031832608,absolute coefficient on train-scaled features,353
+numeric__V60,V60,0.1029000696,0.0004729356339,-0.1029000696,absolute coefficient on train-scaled features,354
+numeric__V300,V300,0.1027788434,0.0004723784702,-0.1027788434,absolute coefficient on train-scaled features,355
+numeric__V311,V311,0.1019561419,0.000468597279,-0.1019561419,absolute coefficient on train-scaled features,356
+numeric__V139,V139,0.1013613047,0.0004658633671,-0.1013613047,absolute coefficient on train-scaled features,357
+numeric__V336,V336,0.1012318263,0.0004652682757,0.1012318263,absolute coefficient on train-scaled features,358
+categorical__card3_212.0,card3,0.1009987817,0.0004641971871,-0.1009987817,absolute coefficient on train-scaled features,359
+categorical__id_30_Mac OS X 10_12_2,id,0.1003749703,0.000461330108,-0.1003749703,absolute coefficient on train-scaled features,360
+categorical__id_31_google search application 48.0,id,0.1000765787,0.0004599586801,-0.1000765787,absolute coefficient on train-scaled features,361
+categorical__id_33_1366x768,id,0.09968543617,0.0004581609627,0.09968543617,absolute coefficient on train-scaled features,362
+numeric__V25,V25,0.0994629856,0.000457138565,-0.0994629856,absolute coefficient on train-scaled features,363
+numeric__V43,V43,0.09941635166,0.0004569242322,-0.09941635166,absolute coefficient on train-scaled features,364
+categorical__card5_202.0,card5,0.09895076591,0.0004547843688,-0.09895076591,absolute coefficient on train-scaled features,365
+categorical__id_33_1919x1079,id,0.09891606684,0.0004546248896,-0.09891606684,absolute coefficient on train-scaled features,366
+numeric__V110,V110,0.09879936317,0.0004540885117,-0.09879936317,absolute coefficient on train-scaled features,367
+numeric__V321,V321,0.09837751561,0.0004521496719,-0.09837751561,absolute coefficient on train-scaled features,368
+categorical__card3_163.0,card3,0.09780284918,0.0004495084664,-0.09780284918,absolute coefficient on train-scaled features,369
+categorical__id_33_1921x1081,id,0.0971970221,0.0004467240445,-0.0971970221,absolute coefficient on train-scaled features,370
+numeric__V84,V84,0.09638143904,0.0004429755699,-0.09638143904,absolute coefficient on train-scaled features,371
+categorical__id_31_mobile safari 8.0,id,0.09603865749,0.0004414001229,-0.09603865749,absolute coefficient on train-scaled features,372
+numeric__V99,V99,0.09558325517,0.0004393070632,0.09558325517,absolute coefficient on train-scaled features,373
+numeric__V20,V20,0.09473843364,0.0004354242067,0.09473843364,absolute coefficient on train-scaled features,374
+categorical__addr2_31.0,addr2,0.0946611012,0.0004350687816,-0.0946611012,absolute coefficient on train-scaled features,375
+categorical__id_31_chrome 53.0 for android,id,0.09465374657,0.0004350349792,-0.09465374657,absolute coefficient on train-scaled features,376
+categorical__id_33_2048x1152,id,0.09461322141,0.0004348487229,-0.09461322141,absolute coefficient on train-scaled features,377
+categorical__id_30_Linux,id,0.09370813906,0.0004306889035,-0.09370813906,absolute coefficient on train-scaled features,378
+numeric__V40,V40,0.09345590309,0.0004295296101,-0.09345590309,absolute coefficient on train-scaled features,379
+numeric__V256,V256,0.09307804587,0.0004277929529,-0.09307804587,absolute coefficient on train-scaled features,380
+categorical__ProductCD_R,ProductCD,0.09304514992,0.0004276417609,-0.09304514992,absolute coefficient on train-scaled features,381
+numeric__id_04,id_04,0.09296794855,0.0004272869382,-0.09296794855,absolute coefficient on train-scaled features,382
+categorical__ProductCD_C,ProductCD,0.0925393135,0.0004253169028,0.0925393135,absolute coefficient on train-scaled features,383
+numeric__V102,V102,0.09243352264,0.0004248306809,-0.09243352264,absolute coefficient on train-scaled features,384
+numeric__V66,V66,0.09170757252,0.0004214941653,0.09170757252,absolute coefficient on train-scaled features,385
+categorical__card3_106.0,card3,0.09151642648,0.0004206156453,-0.09151642648,absolute coefficient on train-scaled features,386
+categorical__id_31_Microsoft/Windows,id,0.09142854729,0.0004202117466,-0.09142854729,absolute coefficient on train-scaled features,387
+numeric__V68,V68,0.09137748196,0.0004199770469,-0.09137748196,absolute coefficient on train-scaled features,388
+numeric__V39,V39,0.09121383694,0.0004192249234,0.09121383694,absolute coefficient on train-scaled features,389
+categorical__id_30_Android 6.0.1,id,0.09049953264,0.0004159419329,-0.09049953264,absolute coefficient on train-scaled features,390
+categorical__card3_215.0,card3,0.08954156275,0.0004115390389,-0.08954156275,absolute coefficient on train-scaled features,391
+numeric__V206,V206,0.08872622989,0.0004077917143,-0.08872622989,absolute coefficient on train-scaled features,392
+categorical__id_30_iOS 11.2.5,id,0.08860297718,0.0004072252365,-0.08860297718,absolute coefficient on train-scaled features,393
+categorical__card3_171.0,card3,0.08830325511,0.0004058476938,-0.08830325511,absolute coefficient on train-scaled features,394
+categorical__id_31_samsung browser 4.0,id,0.08818282064,0.0004052941689,-0.08818282064,absolute coefficient on train-scaled features,395
+categorical__addr2_16.0,addr2,0.08740322338,0.0004017110875,-0.08740322338,absolute coefficient on train-scaled features,396
+categorical__card5_215.0,card5,0.08732601538,0.0004013562343,-0.08732601538,absolute coefficient on train-scaled features,397
+numeric__V260,V260,0.08723717934,0.0004009479379,-0.08723717934,absolute coefficient on train-scaled features,398
+categorical__addr2_19.0,addr2,0.08712125074,0.0004004151223,-0.08712125074,absolute coefficient on train-scaled features,399
+numeric__V195,V195,0.08611677198,0.0003957984704,0.08611677198,absolute coefficient on train-scaled features,400
+numeric__V11,V11,0.08610309021,0.000395735588,-0.08610309021,absolute coefficient on train-scaled features,401
+numeric__V209,V209,0.08534432478,0.0003922482511,-0.08534432478,absolute coefficient on train-scaled features,402
+categorical__card3_200.0,card3,0.08387627129,0.0003855009787,-0.08387627129,absolute coefficient on train-scaled features,403
+numeric__V261,V261,0.08366144398,0.0003845136179,0.08366144398,absolute coefficient on train-scaled features,404
+numeric__V120,V120,0.08317026421,0.0003822561227,-0.08317026421,absolute coefficient on train-scaled features,405
+missing__missingindicator_D11,missingindicator_D11,0.08309066659,0.0003818902867,-0.08309066659,absolute coefficient on train-scaled features,406
+categorical__id_33_1280x960,id,0.0828891519,0.0003809641116,-0.0828891519,absolute coefficient on train-scaled features,407
+categorical__card3_190.0,card3,0.08271960408,0.0003801848584,-0.08271960408,absolute coefficient on train-scaled features,408
+numeric__V282,V282,0.08260437785,0.000379655271,0.08260437785,absolute coefficient on train-scaled features,409
+numeric__V62,V62,0.08232981572,0.000378393365,0.08232981572,absolute coefficient on train-scaled features,410
+numeric__V12,V12,0.08218573763,0.0003777311724,0.08218573763,absolute coefficient on train-scaled features,411
+numeric__V64,V64,0.08197198564,0.0003767487539,0.08197198564,absolute coefficient on train-scaled features,412
+categorical__card5_184.0,card5,0.08122681586,0.0003733239035,-0.08122681586,absolute coefficient on train-scaled features,413
+numeric__V230,V230,0.08051284579,0.0003700424491,-0.08051284579,absolute coefficient on train-scaled features,414
+categorical__id_30_Mac OS X 10_13_4,id,0.08028382077,0.0003689898347,-0.08028382077,absolute coefficient on train-scaled features,415
+categorical__id_30_Mac OS X 10_9_5,id,0.07994717678,0.0003674425963,-0.07994717678,absolute coefficient on train-scaled features,416
+categorical__card3___MISSING__,card3,0.07989556534,0.0003672053867,-0.07989556534,absolute coefficient on train-scaled features,417
+numeric__V157,V157,0.07983885115,0.0003669447244,-0.07983885115,absolute coefficient on train-scaled features,418
+numeric__V111,V111,0.0794673391,0.0003652372301,0.0794673391,absolute coefficient on train-scaled features,419
+categorical__id_31_chrome 63.0,id,0.07903152409,0.000363234195,-0.07903152409,absolute coefficient on train-scaled features,420
+missing__missingindicator_id_01,missingindicator_id_01,0.07886920692,0.0003624881744,0.07886920692,absolute coefficient on train-scaled features,421
+categorical__id_12___MISSING__,id,0.07886920692,0.0003624881744,0.07886920692,absolute coefficient on train-scaled features,422
+numeric__V162,V162,0.07868294076,0.0003616320826,0.07868294076,absolute coefficient on train-scaled features,423
+numeric__V69,V69,0.07853348785,0.000360945187,-0.07853348785,absolute coefficient on train-scaled features,424
+numeric__id_11,id_11,0.07741894864,0.0003558226899,0.07741894864,absolute coefficient on train-scaled features,425
+missing__missingindicator_id_20,missingindicator_id_20,0.07725100412,0.0003550508056,0.07725100412,absolute coefficient on train-scaled features,426
+numeric__V129,V129,0.07721089052,0.0003548664408,-0.07721089052,absolute coefficient on train-scaled features,427
+categorical__id_30_Android 5.1.1,id,0.07610496993,0.0003497835554,-0.07610496993,absolute coefficient on train-scaled features,428
+numeric__V75,V75,0.0760984227,0.000349753464,0.0760984227,absolute coefficient on train-scaled features,429
+missing__missingindicator_id_14,missingindicator_id_14,0.0755957547,0.000347443168,0.0755957547,absolute coefficient on train-scaled features,430
+categorical__id_33_1920x1080,id,0.07460513781,0.0003428902262,0.07460513781,absolute coefficient on train-scaled features,431
+numeric__V113,V113,0.07455923285,0.000342679244,-0.07455923285,absolute coefficient on train-scaled features,432
+categorical__addr2_96.0,addr2,0.07450307955,0.0003424211596,0.07450307955,absolute coefficient on train-scaled features,433
+categorical__id_30_iOS 11.1.1,id,0.07434700701,0.0003417038398,-0.07434700701,absolute coefficient on train-scaled features,434
+categorical__id_31_mobile safari 10.0,id,0.07427483583,0.0003413721362,-0.07427483583,absolute coefficient on train-scaled features,435
+numeric__V245,V245,0.07422372914,0.0003411372464,-0.07422372914,absolute coefficient on train-scaled features,436
+numeric__V281,V281,0.07312469415,0.0003360860077,0.07312469415,absolute coefficient on train-scaled features,437
+categorical__card5_182.0,card5,0.07308291614,0.0003358939932,-0.07308291614,absolute coefficient on train-scaled features,438
+numeric__V13,V13,0.0730115272,0.0003355658848,0.0730115272,absolute coefficient on train-scaled features,439
+categorical__id_33_2880x1620,id,0.07283040633,0.0003347334411,-0.07283040633,absolute coefficient on train-scaled features,440
+numeric__V244,V244,0.0723628702,0.0003325846136,0.0723628702,absolute coefficient on train-scaled features,441
+categorical__id_31_chrome 62.0,id,0.07220046855,0.0003318382048,-0.07220046855,absolute coefficient on train-scaled features,442
+numeric__V76,V76,0.07192361457,0.0003305657653,-0.07192361457,absolute coefficient on train-scaled features,443
+categorical__id_33_3840x2400,id,0.07170243344,0.0003295492019,-0.07170243344,absolute coefficient on train-scaled features,444
+numeric__V229,V229,0.07167673294,0.0003294310807,0.07167673294,absolute coefficient on train-scaled features,445
+categorical__M1_F,M1,0.07127426617,0.0003275813164,-0.07127426617,absolute coefficient on train-scaled features,446
+categorical__id_33_1728x972,id,0.07122391222,0.0003273498862,-0.07122391222,absolute coefficient on train-scaled features,447
+categorical__id_33_1152x720,id,0.07115861857,0.0003270497922,-0.07115861857,absolute coefficient on train-scaled features,448
+numeric__V301,V301,0.07084672565,0.0003256163114,0.07084672565,absolute coefficient on train-scaled features,449
+categorical__addr2_51.0,addr2,0.07083823556,0.0003255772904,0.07083823556,absolute coefficient on train-scaled features,450
+categorical__addr2_27.0,addr2,0.07074758012,0.0003251606319,-0.07074758012,absolute coefficient on train-scaled features,451
+numeric__D4,D4,0.07060560932,0.0003245081246,-0.07060560932,absolute coefficient on train-scaled features,452
+categorical__card3_194.0,card3,0.06997357404,0.000321603248,-0.06997357404,absolute coefficient on train-scaled features,453
+numeric__id_14,id_14,0.0693381149,0.0003186826351,0.0693381149,absolute coefficient on train-scaled features,454
+categorical__card5_102.0,card5,0.0693176483,0.0003185885692,0.0693176483,absolute coefficient on train-scaled features,455
+categorical__M3_T,M3,0.0691023189,0.0003175989008,-0.0691023189,absolute coefficient on train-scaled features,456
+frequency__card1,card1,0.06902320737,0.0003172352989,0.06902320737,absolute coefficient on train-scaled features,457
+categorical__card5_138.0,card5,0.0687317735,0.0003158958492,-0.0687317735,absolute coefficient on train-scaled features,458
+numeric__V305,V305,0.06862612427,0.0003154102783,-0.06862612427,absolute coefficient on train-scaled features,459
+categorical__id_33_1280x800,id,0.06862010494,0.000315382613,0.06862010494,absolute coefficient on train-scaled features,460
+frequency__addr1,addr1,0.06816299556,0.0003132817076,-0.06816299556,absolute coefficient on train-scaled features,461
+categorical__card5_104.0,card5,0.06777362574,0.0003114921378,-0.06777362574,absolute coefficient on train-scaled features,462
+numeric__V186,V186,0.06755474663,0.0003104861546,-0.06755474663,absolute coefficient on train-scaled features,463
+categorical__id_30_Mac OS X 10.11,id,0.06746005304,0.0003100509365,-0.06746005304,absolute coefficient on train-scaled features,464
+categorical__card5_127.0,card5,0.0674432392,0.000309973659,-0.0674432392,absolute coefficient on train-scaled features,465
+numeric__V6,V6,0.06717502088,0.0003087409096,-0.06717502088,absolute coefficient on train-scaled features,466
+categorical__card6_debit or credit,card6,0.06703695004,0.0003081063268,-0.06703695004,absolute coefficient on train-scaled features,467
+categorical__M3_F,M3,0.06695587445,0.0003077336979,0.06695587445,absolute coefficient on train-scaled features,468
+categorical__addr2_59.0,addr2,0.06672119713,0.0003066551051,-0.06672119713,absolute coefficient on train-scaled features,469
+numeric__V148,V148,0.0666301655,0.0003062367177,-0.0666301655,absolute coefficient on train-scaled features,470
+categorical__id_30_iOS 11.2.0,id,0.06654191214,0.0003058310993,-0.06654191214,absolute coefficient on train-scaled features,471
+categorical__id_30_Android 8.0.0,id,0.06647344269,0.0003055164091,-0.06647344269,absolute coefficient on train-scaled features,472
+numeric__V251,V251,0.06647334561,0.0003055159629,-0.06647334561,absolute coefficient on train-scaled features,473
+categorical__card5_188.0,card5,0.06636730933,0.000305028613,-0.06636730933,absolute coefficient on train-scaled features,474
+categorical__addr2_34.0,addr2,0.06615284089,0.0003040429017,-0.06615284089,absolute coefficient on train-scaled features,475
+numeric__V135,V135,0.06567795747,0.0003018603056,-0.06567795747,absolute coefficient on train-scaled features,476
+frequency__card2,card2,0.06553615656,0.000301208579,0.06553615656,absolute coefficient on train-scaled features,477
+numeric__V156,V156,0.06495292392,0.0002985280027,0.06495292392,absolute coefficient on train-scaled features,478
+categorical__card4_discover,card4,0.06494996564,0.0002985144062,0.06494996564,absolute coefficient on train-scaled features,479
+categorical__card3_152.0,card3,0.06492978332,0.0002984216469,-0.06492978332,absolute coefficient on train-scaled features,480
+numeric__id_09,id_09,0.0648793655,0.0002981899232,0.0648793655,absolute coefficient on train-scaled features,481
+categorical__id_30_iOS 11.2.2,id,0.06437322564,0.0002958636704,-0.06437322564,absolute coefficient on train-scaled features,482
+categorical__id_30_iOS,id,0.06401698016,0.0002942263423,-0.06401698016,absolute coefficient on train-scaled features,483
+categorical__id_33_1280x720,id,0.06395967578,0.0002939629675,0.06395967578,absolute coefficient on train-scaled features,484
+numeric__V32,V32,0.06374432351,0.000292973194,0.06374432351,absolute coefficient on train-scaled features,485
+numeric__V176,V176,0.06357249628,0.0002921834645,-0.06357249628,absolute coefficient on train-scaled features,486
+categorical__id_30_iOS 11.3.1,id,0.06346959774,0.0002917105359,-0.06346959774,absolute coefficient on train-scaled features,487
+categorical__id_33_2048x1536,id,0.06342162884,0.0002914900676,-0.06342162884,absolute coefficient on train-scaled features,488
+numeric__V286,V286,0.06300565945,0.0002895782443,0.06300565945,absolute coefficient on train-scaled features,489
+categorical__card3_118.0,card3,0.06240053358,0.0002867970452,-0.06240053358,absolute coefficient on train-scaled features,490
+categorical__id_33_2400x1600,id,0.06219042097,0.0002858313535,-0.06219042097,absolute coefficient on train-scaled features,491
+numeric__V298,V298,0.06179788124,0.0002840272145,-0.06179788124,absolute coefficient on train-scaled features,492
+numeric__V67,V67,0.06135552903,0.000281994134,0.06135552903,absolute coefficient on train-scaled features,493
+numeric__C2,C2,0.06112769171,0.0002809469784,0.06112769171,absolute coefficient on train-scaled features,494
+numeric__V55,V55,0.06086904536,0.0002797582224,-0.06086904536,absolute coefficient on train-scaled features,495
+numeric__D10,D10,0.06051109633,0.0002781130646,0.06051109633,absolute coefficient on train-scaled features,496
+categorical__id_30_iOS 9.3.5,id,0.06023745066,0.0002768553707,-0.06023745066,absolute coefficient on train-scaled features,497
+numeric__V51,V51,0.05995110518,0.0002755393077,0.05995110518,absolute coefficient on train-scaled features,498
+numeric__V100,V100,0.05901992256,0.0002712595298,-0.05901992256,absolute coefficient on train-scaled features,499
+categorical__addr2_26.0,addr2,0.05862323413,0.0002694363231,-0.05862323413,absolute coefficient on train-scaled features,500
+categorical__card3_217.0,card3,0.05860048132,0.0002693317496,-0.05860048132,absolute coefficient on train-scaled features,501
+categorical__card5_111.0,card5,0.05834624415,0.0002681632585,-0.05834624415,absolute coefficient on train-scaled features,502
+numeric__V160,V160,0.05823869698,0.0002676689645,-0.05823869698,absolute coefficient on train-scaled features,503
+numeric__V114,V114,0.05758993156,0.0002646871951,-0.05758993156,absolute coefficient on train-scaled features,504
+categorical__card3_162.0,card3,0.05758116994,0.000264646926,-0.05758116994,absolute coefficient on train-scaled features,505
+categorical__card3_100.0,card3,0.05755302187,0.0002645175556,-0.05755302187,absolute coefficient on train-scaled features,506
+numeric__V158,V158,0.05697214307,0.0002618477976,-0.05697214307,absolute coefficient on train-scaled features,507
+missing__missingindicator_id_13,missingindicator_id_13,0.05695162673,0.0002617535031,-0.05695162673,absolute coefficient on train-scaled features,508
+categorical__id_31_chrome 65.0,id,0.0569245415,0.0002616290176,-0.0569245415,absolute coefficient on train-scaled features,509
+categorical__id_33_855x480,id,0.05690975777,0.0002615610706,0.05690975777,absolute coefficient on train-scaled features,510
+categorical__id_30_func,id,0.05689574722,0.0002614966772,-0.05689574722,absolute coefficient on train-scaled features,511
+numeric__V123,V123,0.05675315718,0.0002608413238,0.05675315718,absolute coefficient on train-scaled features,512
+numeric__V47,V47,0.05613824244,0.0002580151343,0.05613824244,absolute coefficient on train-scaled features,513
+categorical__id_33_1024x600,id,0.05575000632,0.000256230775,0.05575000632,absolute coefficient on train-scaled features,514
+categorical__id_30_iOS 11.0.3,id,0.05552641756,0.000255203146,-0.05552641756,absolute coefficient on train-scaled features,515
+categorical__id_30_Android 6.0,id,0.05525619915,0.0002539612041,-0.05525619915,absolute coefficient on train-scaled features,516
+categorical__card5_136.0,card5,0.05494814854,0.0002525453828,-0.05494814854,absolute coefficient on train-scaled features,517
+categorical__card5_225.0,card5,0.05489840432,0.000252316755,-0.05489840432,absolute coefficient on train-scaled features,518
+categorical__id_33_2048x1280,id,0.05471761394,0.0002514858303,-0.05471761394,absolute coefficient on train-scaled features,519
+categorical__card5_233.0,card5,0.05467632166,0.0002512960481,-0.05467632166,absolute coefficient on train-scaled features,520
+categorical__id_33_2560x1600,id,0.05450707603,0.0002505181839,0.05450707603,absolute coefficient on train-scaled features,521
+categorical__id_30_Windows XP,id,0.05427514485,0.0002494522126,-0.05427514485,absolute coefficient on train-scaled features,522
+categorical__id_33_1280x1023,id,0.05410588046,0.0002486742621,-0.05410588046,absolute coefficient on train-scaled features,523
+categorical__id_33_960x640,id,0.05394190113,0.0002479206021,-0.05394190113,absolute coefficient on train-scaled features,524
+numeric__D11,D11,0.05384049756,0.0002474545445,-0.05384049756,absolute coefficient on train-scaled features,525
+numeric__V1,V1,0.05349137255,0.0002458499424,0.05349137255,absolute coefficient on train-scaled features,526
+categorical__card3_189.0,card3,0.05338440141,0.0002453582959,-0.05338440141,absolute coefficient on train-scaled features,527
+numeric__D5,D5,0.05325006456,0.0002447408747,-0.05325006456,absolute coefficient on train-scaled features,528
+categorical__id_33_1024x552,id,0.05286086512,0.0002429520879,0.05286086512,absolute coefficient on train-scaled features,529
+categorical__addr2_10.0,addr2,0.05262617819,0.000241873451,0.05262617819,absolute coefficient on train-scaled features,530
+categorical__card4_visa,card4,0.05206678843,0.0002393024581,0.05206678843,absolute coefficient on train-scaled features,531
+numeric__V142,V142,0.0519893413,0.0002389465059,-0.0519893413,absolute coefficient on train-scaled features,532
+categorical__addr2_98.0,addr2,0.05192364211,0.000238644548,-0.05192364211,absolute coefficient on train-scaled features,533
+categorical__card5_189.0,card5,0.05187823372,0.000238435848,-0.05187823372,absolute coefficient on train-scaled features,534
+categorical__id_33_2049x1152,id,0.05181113975,0.0002381274796,-0.05181113975,absolute coefficient on train-scaled features,535
+numeric__V127,V127,0.05136493411,0.0002360766885,0.05136493411,absolute coefficient on train-scaled features,536
+categorical__card3_134.0,card3,0.05129149621,0.0002357391629,-0.05129149621,absolute coefficient on train-scaled features,537
+categorical__id_33_2732x2048,id,0.05122370131,0.0002354275731,-0.05122370131,absolute coefficient on train-scaled features,538
+categorical__card3_222.0,card3,0.0512181513,0.0002354020649,-0.0512181513,absolute coefficient on train-scaled features,539
+categorical__id_33_1599x900,id,0.05088521444,0.0002338718647,-0.05088521444,absolute coefficient on train-scaled features,540
+categorical__id_33_3441x1440,id,0.05086076778,0.0002337595062,-0.05086076778,absolute coefficient on train-scaled features,541
+categorical__id_33_1600x899,id,0.05063973149,0.0002327436085,-0.05063973149,absolute coefficient on train-scaled features,542
+numeric__V116,V116,0.05059115493,0.0002325203474,0.05059115493,absolute coefficient on train-scaled features,543
+categorical__id_30_Mac OS X 10.10,id,0.05056560408,0.000232402914,-0.05056560408,absolute coefficient on train-scaled features,544
+numeric__TransactionAmt,TransactionAmt,0.05045144511,0.0002318782317,-0.05045144511,absolute coefficient on train-scaled features,545
+categorical__id_31_silk,id,0.05037820562,0.000231541618,-0.05037820562,absolute coefficient on train-scaled features,546
+categorical__id_33_1024x640,id,0.04985919285,0.0002291562005,-0.04985919285,absolute coefficient on train-scaled features,547
+categorical__id_31_chrome 52.0 for android,id,0.04977359094,0.0002287627684,0.04977359094,absolute coefficient on train-scaled features,548
+categorical__addr2_43.0,addr2,0.04948299117,0.0002274271523,-0.04948299117,absolute coefficient on train-scaled features,549
+categorical__id_31_mobile safari 11.0,id,0.04924551047,0.0002263356751,-0.04924551047,absolute coefficient on train-scaled features,550
+numeric__V122,V122,0.04860097218,0.0002233733338,0.04860097218,absolute coefficient on train-scaled features,551
+categorical__addr2_57.0,addr2,0.04802358971,0.0002207196451,-0.04802358971,absolute coefficient on train-scaled features,552
+categorical__card3_211.0,card3,0.04778113654,0.0002196053141,-0.04778113654,absolute coefficient on train-scaled features,553
+categorical__card3_117.0,card3,0.04762537686,0.0002188894321,-0.04762537686,absolute coefficient on train-scaled features,554
+categorical__id_33_1920x975,id,0.04760916404,0.0002188149169,0.04760916404,absolute coefficient on train-scaled features,555
+categorical__card3_168.0,card3,0.04735868034,0.000217663677,-0.04735868034,absolute coefficient on train-scaled features,556
+categorical__card3_227.0,card3,0.04735852369,0.000217662957,-0.04735852369,absolute coefficient on train-scaled features,557
+numeric__V292,V292,0.0470529189,0.0002162583769,-0.0470529189,absolute coefficient on train-scaled features,558
+categorical__id_33_1680x1049,id,0.04694658775,0.0002157696717,-0.04694658775,absolute coefficient on train-scaled features,559
+categorical__id_30_Android 8.1.0,id,0.04691711716,0.0002156342229,-0.04691711716,absolute coefficient on train-scaled features,560
+categorical__id_33_1920x1079,id,0.04679785517,0.0002150860868,-0.04679785517,absolute coefficient on train-scaled features,561
+categorical__id_33_2961x1440,id,0.04668319588,0.000214559105,-0.04668319588,absolute coefficient on train-scaled features,562
+categorical__card3_130.0,card3,0.04653583468,0.000213881823,-0.04653583468,absolute coefficient on train-scaled features,563
+categorical__id_31_edge 16.0,id,0.04653496668,0.0002138778336,-0.04653496668,absolute coefficient on train-scaled features,564
+categorical__M4_M2,M4,0.046532006,0.0002138642262,0.046532006,absolute coefficient on train-scaled features,565
+categorical__card3_147.0,card3,0.04615102301,0.0002121132028,-0.04615102301,absolute coefficient on train-scaled features,566
+categorical__id_12_Found,id,0.04595780981,0.0002112251819,0.04595780981,absolute coefficient on train-scaled features,567
+categorical__id_31_samsung browser 3.3,id,0.04575648863,0.0002102998962,-0.04575648863,absolute coefficient on train-scaled features,568
+numeric__V19,V19,0.04556972571,0.0002094415213,-0.04556972571,absolute coefficient on train-scaled features,569
+categorical__id_31_safari,id,0.04549056719,0.0002090777034,-0.04549056719,absolute coefficient on train-scaled features,570
+categorical__card3_144.0,card3,0.04524607205,0.0002079539873,-0.04524607205,absolute coefficient on train-scaled features,571
+numeric__V109,V109,0.04509532652,0.0002072611507,0.04509532652,absolute coefficient on train-scaled features,572
+categorical__card5_117.0,card5,0.0450472738,0.0002070402972,0.0450472738,absolute coefficient on train-scaled features,573
+categorical__id_33_2049x1536,id,0.04476690172,0.0002057516883,-0.04476690172,absolute coefficient on train-scaled features,574
+categorical__card5_235.0,card5,0.04419634396,0.0002031293665,-0.04419634396,absolute coefficient on train-scaled features,575
+numeric__id_32,id_32,0.04418242528,0.0002030653953,0.04418242528,absolute coefficient on train-scaled features,576
+categorical__id_33_640x360,id,0.04409788919,0.0002026768618,0.04409788919,absolute coefficient on train-scaled features,577
+categorical__card3_159.0,card3,0.04396827143,0.0002020811298,-0.04396827143,absolute coefficient on train-scaled features,578
+categorical__card5_185.0,card5,0.04375906411,0.0002011195989,0.04375906411,absolute coefficient on train-scaled features,579
+categorical__card5_148.0,card5,0.04373650992,0.0002010159384,-0.04373650992,absolute coefficient on train-scaled features,580
+numeric__V3,V3,0.04360146613,0.000200395268,0.04360146613,absolute coefficient on train-scaled features,581
+categorical__card3_169.0,card3,0.04354673368,0.000200143714,-0.04354673368,absolute coefficient on train-scaled features,582
+categorical__id_33_2880x1442,id,0.04346183669,0.0001997535217,-0.04346183669,absolute coefficient on train-scaled features,583
+categorical__id_33_1440x900,id,0.04328160464,0.0001989251631,0.04328160464,absolute coefficient on train-scaled features,584
+categorical__card3_219.0,card3,0.04294680242,0.0001973863896,-0.04294680242,absolute coefficient on train-scaled features,585
+numeric__V220,V220,0.04260105154,0.0001957972954,-0.04260105154,absolute coefficient on train-scaled features,586
+categorical__card5_121.0,card5,0.04225770744,0.0001942192628,-0.04225770744,absolute coefficient on train-scaled features,587
+categorical__id_31_chrome 66.0,id,0.04221019418,0.0001940008886,-0.04221019418,absolute coefficient on train-scaled features,588
+categorical__card5_126.0,card5,0.04220325383,0.0001939689903,-0.04220325383,absolute coefficient on train-scaled features,589
+categorical__card3_102.0,card3,0.04199085732,0.0001929928017,-0.04199085732,absolute coefficient on train-scaled features,590
+categorical__id_33_2880x1440,id,0.04197111329,0.0001929020568,-0.04197111329,absolute coefficient on train-scaled features,591
+categorical__card3_116.0,card3,0.04190919763,0.0001926174883,-0.04190919763,absolute coefficient on train-scaled features,592
+numeric__V170,V170,0.04171754051,0.0001917366193,0.04171754051,absolute coefficient on train-scaled features,593
+categorical__card3_161.0,card3,0.04142186004,0.000190377652,-0.04142186004,absolute coefficient on train-scaled features,594
+categorical__id_33_1281x801,id,0.04141811343,0.0001903604323,-0.04141811343,absolute coefficient on train-scaled features,595
+categorical__card3_119.0,card3,0.04136932176,0.0001901361825,-0.04136932176,absolute coefficient on train-scaled features,596
+categorical__card3_150.0,card3,0.04127260401,0.0001896916612,0.04127260401,absolute coefficient on train-scaled features,597
+categorical__addr2_60.0,addr2,0.04126482286,0.0001896558986,0.04126482286,absolute coefficient on train-scaled features,598
+categorical__card5_219.0,card5,0.04051752328,0.0001862212594,0.04051752328,absolute coefficient on train-scaled features,599
+categorical__M5_F,M5,0.04044946134,0.0001859084422,0.04044946134,absolute coefficient on train-scaled features,600
+numeric__V239,V239,0.04036247458,0.0001855086452,-0.04036247458,absolute coefficient on train-scaled features,601
+categorical__id_33_1400x1050,id,0.04032942258,0.000185356736,-0.04032942258,absolute coefficient on train-scaled features,602
+categorical__id_30_iOS 11.4.0,id,0.04026231362,0.0001850482987,-0.04026231362,absolute coefficient on train-scaled features,603
+categorical__addr2_65.0,addr2,0.04023473092,0.0001849215268,0.04023473092,absolute coefficient on train-scaled features,604
+categorical__id_30_iOS 10.3.2,id,0.0401888584,0.0001847106936,-0.0401888584,absolute coefficient on train-scaled features,605
+categorical__card3_120.0,card3,0.04008650611,0.0001842402756,-0.04008650611,absolute coefficient on train-scaled features,606
+categorical__id_33_3360x1890,id,0.03981662143,0.0001829998675,-0.03981662143,absolute coefficient on train-scaled features,607
+categorical__id_31_icedragon,id,0.03974760431,0.0001826826601,0.03974760431,absolute coefficient on train-scaled features,608
+categorical__card5_112.0,card5,0.03973871442,0.0001826418016,-0.03973871442,absolute coefficient on train-scaled features,609
+numeric__V327,V327,0.03951060568,0.0001815933985,0.03951060568,absolute coefficient on train-scaled features,610
+categorical__id_30_Mac OS X 10.12,id,0.0394723416,0.0001814175342,-0.0394723416,absolute coefficient on train-scaled features,611
+numeric__id_03,id_03,0.03938820428,0.0001810308334,0.03938820428,absolute coefficient on train-scaled features,612
+categorical__id_36_T,id,0.03924316194,0.0001803642091,-0.03924316194,absolute coefficient on train-scaled features,613
+categorical__addr2_72.0,addr2,0.03898442447,0.0001791750343,-0.03898442447,absolute coefficient on train-scaled features,614
+categorical__addr2_78.0,addr2,0.03880427287,0.0001783470454,-0.03880427287,absolute coefficient on train-scaled features,615
+categorical__id_33_1368x768,id,0.03871412356,0.0001779327131,-0.03871412356,absolute coefficient on train-scaled features,616
+categorical__id_31_samsung browser generic,id,0.03827850786,0.0001759305941,0.03827850786,absolute coefficient on train-scaled features,617
+categorical__id_33_2961x1442,id,0.03808924393,0.0001750607244,-0.03808924393,absolute coefficient on train-scaled features,618
+categorical__id_31_maxthon,id,0.03803474677,0.0001748102518,-0.03803474677,absolute coefficient on train-scaled features,619
+categorical__id_33_1279x1024,id,0.03784729313,0.0001739487023,-0.03784729313,absolute coefficient on train-scaled features,620
+numeric__V242,V242,0.03767437219,0.000173153946,0.03767437219,absolute coefficient on train-scaled features,621
+categorical__card3_160.0,card3,0.0376317272,0.0001729579468,0.0376317272,absolute coefficient on train-scaled features,622
+categorical__M4_M1,M4,0.03760918094,0.0001728543226,-0.03760918094,absolute coefficient on train-scaled features,623
+categorical__card3_127.0,card3,0.03723006038,0.0001711118591,-0.03723006038,absolute coefficient on train-scaled features,624
+categorical__id_33_1916x901,id,0.03714988754,0.0001707433793,0.03714988754,absolute coefficient on train-scaled features,625
+categorical__M4___MISSING__,M4,0.03707155176,0.0001703833428,-0.03707155176,absolute coefficient on train-scaled features,626
+numeric__V124,V124,0.0370516156,0.0001702917149,-0.0370516156,absolute coefficient on train-scaled features,627
+numeric__V5,V5,0.03704723964,0.0001702716027,0.03704723964,absolute coefficient on train-scaled features,628
+categorical__id_33_2000x1125,id,0.036704519,0.0001686964356,-0.036704519,absolute coefficient on train-scaled features,629
+categorical__id_30_iOS 11.1.0,id,0.0366251587,0.0001683316903,-0.0366251587,absolute coefficient on train-scaled features,630
+categorical__id_33_1344x840,id,0.03655606033,0.0001680141096,-0.03655606033,absolute coefficient on train-scaled features,631
+categorical__card5_162.0,card5,0.03647609694,0.0001676465924,0.03647609694,absolute coefficient on train-scaled features,632
+numeric__V7,V7,0.03645792726,0.0001675630834,0.03645792726,absolute coefficient on train-scaled features,633
+categorical__card5_137.0,card5,0.03630924206,0.0001668797162,0.03630924206,absolute coefficient on train-scaled features,634
+numeric__V16,V16,0.03610651682,0.0001659479774,-0.03610651682,absolute coefficient on train-scaled features,635
+categorical__id_31_edge 15.0,id,0.03610443367,0.0001659384031,-0.03610443367,absolute coefficient on train-scaled features,636
+categorical__card6_charge card,card6,0.03588693293,0.0001649387551,-0.03588693293,absolute coefficient on train-scaled features,637
+categorical__card3_107.0,card3,0.03586666782,0.0001648456153,-0.03586666782,absolute coefficient on train-scaled features,638
+categorical__id_33_1920x1081,id,0.03581755183,0.0001646198749,-0.03581755183,absolute coefficient on train-scaled features,639
+categorical__id_31_chrome 59.0,id,0.03579713914,0.0001645260568,-0.03579713914,absolute coefficient on train-scaled features,640
+categorical__card5_168.0,card5,0.03551448044,0.0001632269384,-0.03551448044,absolute coefficient on train-scaled features,641
+categorical__card3_184.0,card3,0.03551421398,0.0001632257137,-0.03551421398,absolute coefficient on train-scaled features,642
+categorical__addr2_13.0,addr2,0.0355019862,0.000163169514,-0.0355019862,absolute coefficient on train-scaled features,643
+categorical__card3_203.0,card3,0.03543608616,0.000162866633,-0.03543608616,absolute coefficient on train-scaled features,644
+categorical__id_30_Android 4.4.2,id,0.03542718787,0.0001628257359,-0.03542718787,absolute coefficient on train-scaled features,645
+categorical__id_33_1344x756,id,0.03534157697,0.0001624322624,-0.03534157697,absolute coefficient on train-scaled features,646
+categorical__card3_131.0,card3,0.03526107338,0.0001620622625,-0.03526107338,absolute coefficient on train-scaled features,647
+numeric__V86,V86,0.0351775984,0.0001616786059,-0.0351775984,absolute coefficient on train-scaled features,648
+categorical__card3_229.0,card3,0.03516958258,0.0001616417647,-0.03516958258,absolute coefficient on train-scaled features,649
+categorical__id_31_firefox 57.0,id,0.03516122327,0.0001616033447,-0.03516122327,absolute coefficient on train-scaled features,650
+numeric__V115,V115,0.03515548688,0.0001615769799,0.03515548688,absolute coefficient on train-scaled features,651
+categorical__id_31_line,id,0.03488052889,0.0001603132545,-0.03488052889,absolute coefficient on train-scaled features,652
+categorical__card3_128.0,card3,0.03469477832,0.0001594595324,-0.03469477832,absolute coefficient on train-scaled features,653
+categorical__id_33_3360x2100,id,0.03463062607,0.0001591646843,0.03463062607,absolute coefficient on train-scaled features,654
+categorical__id_33_2076x1080,id,0.03460891289,0.0001590648891,0.03460891289,absolute coefficient on train-scaled features,655
+categorical__card5_130.0,card5,0.0344474323,0.0001583227135,-0.0344474323,absolute coefficient on train-scaled features,656
+categorical__card3_156.0,card3,0.03435450777,0.0001578956261,-0.03435450777,absolute coefficient on train-scaled features,657
+numeric__V253,V253,0.03417456077,0.0001570685776,-0.03417456077,absolute coefficient on train-scaled features,658
+categorical__id_31_chrome 64.0,id,0.03416889827,0.0001570425523,-0.03416889827,absolute coefficient on train-scaled features,659
+categorical__card5_171.0,card5,0.03413564658,0.0001568897253,-0.03413564658,absolute coefficient on train-scaled features,660
+categorical__id_33_2208x1242,id,0.03412528993,0.0001568421255,0.03412528993,absolute coefficient on train-scaled features,661
+numeric__V31,V31,0.03406605695,0.0001565698867,-0.03406605695,absolute coefficient on train-scaled features,662
+numeric__V288,V288,0.03396526477,0.0001561066391,-0.03396526477,absolute coefficient on train-scaled features,663
+categorical__addr2_18.0,addr2,0.03334791268,0.0001532692474,-0.03334791268,absolute coefficient on train-scaled features,664
+numeric__V314,V314,0.03331400821,0.0001531134202,-0.03331400821,absolute coefficient on train-scaled features,665
+categorical__card3_143.0,card3,0.03327466657,0.0001529326033,0.03327466657,absolute coefficient on train-scaled features,666
+numeric__V161,V161,0.03324788007,0.0001528094908,0.03324788007,absolute coefficient on train-scaled features,667
+categorical__id_33_1024x768,id,0.03320178348,0.0001525976278,0.03320178348,absolute coefficient on train-scaled features,668
+categorical__card5_230.0,card5,0.03307052925,0.0001519943745,-0.03307052925,absolute coefficient on train-scaled features,669
+categorical__id_33_3240x2160,id,0.03300469343,0.0001516917887,-0.03300469343,absolute coefficient on train-scaled features,670
+categorical__card5_217.0,card5,0.03277449683,0.0001506337896,-0.03277449683,absolute coefficient on train-scaled features,671
+categorical__card5_210.0,card5,0.03267825676,0.0001501914638,-0.03267825676,absolute coefficient on train-scaled features,672
+numeric__V146,V146,0.03265885434,0.000150102289,-0.03265885434,absolute coefficient on train-scaled features,673
+categorical__card3_205.0,card3,0.03261848305,0.0001499167398,-0.03261848305,absolute coefficient on train-scaled features,674
+categorical__card5_180.0,card5,0.03258842522,0.000149778592,-0.03258842522,absolute coefficient on train-scaled features,675
+categorical__id_33_1600x1000,id,0.03253960313,0.0001495542024,-0.03253960313,absolute coefficient on train-scaled features,676
+categorical__M2_T,M2,0.032371842,0.000148783161,-0.032371842,absolute coefficient on train-scaled features,677
+categorical__id_33_1920x1281,id,0.03232454789,0.000148565794,-0.03232454789,absolute coefficient on train-scaled features,678
+numeric__V118,V118,0.03219327092,0.0001479624363,-0.03219327092,absolute coefficient on train-scaled features,679
+categorical__card3_225.0,card3,0.03194786876,0.0001468345515,-0.03194786876,absolute coefficient on train-scaled features,680
+numeric__V9,V9,0.03186364328,0.0001464474455,-0.03186364328,absolute coefficient on train-scaled features,681
+categorical__M4_M0,M4,0.03181741685,0.0001462349857,0.03181741685,absolute coefficient on train-scaled features,682
+numeric__id_19,id_19,0.0314720636,0.000144647719,0.0314720636,absolute coefficient on train-scaled features,683
+categorical__id_33_1152x648,id,0.03140435073,0.0001443365061,-0.03140435073,absolute coefficient on train-scaled features,684
+categorical__card5_195.0,card5,0.03122174701,0.0001434972471,0.03122174701,absolute coefficient on train-scaled features,685
+categorical__card3_153.0,card3,0.03091379581,0.0001420818827,-0.03091379581,absolute coefficient on train-scaled features,686
+categorical__addr2_38.0,addr2,0.03091032881,0.0001420659482,0.03091032881,absolute coefficient on train-scaled features,687
+categorical__card5_141.0,card5,0.03087944507,0.0001419240044,0.03087944507,absolute coefficient on train-scaled features,688
+categorical__card5_122.0,card5,0.0308314443,0.0001417033896,-0.0308314443,absolute coefficient on train-scaled features,689
+categorical__card5_214.0,card5,0.03068491733,0.0001410299419,-0.03068491733,absolute coefficient on train-scaled features,690
+categorical__id_31_firefox 52.0,id,0.03067660911,0.0001409917567,-0.03067660911,absolute coefficient on train-scaled features,691
+categorical__addr2_40.0,addr2,0.03053081725,0.0001403216875,-0.03053081725,absolute coefficient on train-scaled features,692
+numeric__V173,V173,0.03031407634,0.0001393255317,-0.03031407634,absolute coefficient on train-scaled features,693
+categorical__id_31_Lanix/Ilium,id,0.03022832645,0.0001389314195,0.03022832645,absolute coefficient on train-scaled features,694
+numeric__V44,V44,0.03004874711,0.0001381060607,0.03004874711,absolute coefficient on train-scaled features,695
+categorical__id_33_801x480,id,0.03004738036,0.0001380997791,0.03004738036,absolute coefficient on train-scaled features,696
+categorical__id_33_800x600,id,0.02996367783,0.0001377150766,-0.02996367783,absolute coefficient on train-scaled features,697
+categorical__card3_124.0,card3,0.02996254217,0.000137709857,-0.02996254217,absolute coefficient on train-scaled features,698
+numeric__V185,V185,0.02992552068,0.0001375397038,-0.02992552068,absolute coefficient on train-scaled features,699
+categorical__card3_151.0,card3,0.02991091805,0.0001374725891,-0.02991091805,absolute coefficient on train-scaled features,700
+numeric__V303,V303,0.02980620543,0.0001369913229,-0.02980620543,absolute coefficient on train-scaled features,701
+categorical__card5_116.0,card5,0.02976486506,0.0001368013198,-0.02976486506,absolute coefficient on train-scaled features,702
+categorical__id_33_1727x971,id,0.02962944363,0.0001361789138,-0.02962944363,absolute coefficient on train-scaled features,703
+categorical__addr2_47.0,addr2,0.02958680027,0.000135982922,-0.02958680027,absolute coefficient on train-scaled features,704
+missing__missingindicator_D10,missingindicator_D10,0.0294872264,0.0001355252739,-0.0294872264,absolute coefficient on train-scaled features,705
+categorical__id_31_aol,id,0.02936618146,0.0001349689432,-0.02936618146,absolute coefficient on train-scaled features,706
+numeric__V302,V302,0.0293011626,0.0001346701121,0.0293011626,absolute coefficient on train-scaled features,707
+categorical__card3_213.0,card3,0.02927541823,0.0001345517893,-0.02927541823,absolute coefficient on train-scaled features,708
+categorical__id_33_1280x600,id,0.02920978022,0.0001342501126,-0.02920978022,absolute coefficient on train-scaled features,709
+categorical__id_33_1599x899,id,0.02920246393,0.0001342164864,-0.02920246393,absolute coefficient on train-scaled features,710
+categorical__id_33_2561x1442,id,0.02916696462,0.0001340533292,-0.02916696462,absolute coefficient on train-scaled features,711
+categorical__card3_122.0,card3,0.02882763222,0.0001324937347,-0.02882763222,absolute coefficient on train-scaled features,712
+categorical__id_33_1680x945,id,0.02874243048,0.0001321021418,-0.02874243048,absolute coefficient on train-scaled features,713
+categorical__card5_106.0,card5,0.02862075929,0.0001315429328,-0.02862075929,absolute coefficient on train-scaled features,714
+categorical__card3_109.0,card3,0.02861400389,0.0001315118845,-0.02861400389,absolute coefficient on train-scaled features,715
+categorical__id_33_1279x1023,id,0.02849023103,0.0001309430161,-0.02849023103,absolute coefficient on train-scaled features,716
+categorical__id_33_1679x1049,id,0.02848621527,0.0001309245594,-0.02848621527,absolute coefficient on train-scaled features,717
+categorical__id_31_chrome 61.0,id,0.02836423132,0.000130363913,-0.02836423132,absolute coefficient on train-scaled features,718
+categorical__card5_151.0,card5,0.02825917835,0.0001298810825,-0.02825917835,absolute coefficient on train-scaled features,719
+categorical__id_31_chrome 67.0,id,0.02821517015,0.0001296788178,0.02821517015,absolute coefficient on train-scaled features,720
+categorical__id_33_1776x1000,id,0.02817770388,0.0001295066204,-0.02817770388,absolute coefficient on train-scaled features,721
+categorical__id_33_1239x697,id,0.02813351012,0.0001293035029,-0.02813351012,absolute coefficient on train-scaled features,722
+categorical__card3_207.0,card3,0.02804422634,0.0001288931486,-0.02804422634,absolute coefficient on train-scaled features,723
+categorical__card5_158.0,card5,0.02803174623,0.0001288357892,-0.02803174623,absolute coefficient on train-scaled features,724
+categorical__id_33_2880x1800,id,0.02803085838,0.0001288317086,0.02803085838,absolute coefficient on train-scaled features,725
+categorical__id_30_iOS 10.2.1,id,0.02794561049,0.0001284399035,-0.02794561049,absolute coefficient on train-scaled features,726
+numeric__V96,V96,0.02785705387,0.0001280328914,-0.02785705387,absolute coefficient on train-scaled features,727
+numeric__V241,V241,0.02782323128,0.0001278774405,-0.02782323128,absolute coefficient on train-scaled features,728
+categorical__card5_229.0,card5,0.02782243094,0.000127873762,-0.02782243094,absolute coefficient on train-scaled features,729
+categorical__card5_128.0,card5,0.0276642736,0.0001271468603,-0.0276642736,absolute coefficient on train-scaled features,730
+categorical__card5_226.0,card5,0.02763738958,0.0001270232995,0.02763738958,absolute coefficient on train-scaled features,731
+categorical__card5_223.0,card5,0.02759238036,0.0001268164341,0.02759238036,absolute coefficient on train-scaled features,732
+categorical__addr2_61.0,addr2,0.02749522004,0.0001263698788,-0.02749522004,absolute coefficient on train-scaled features,733
+categorical__id_30_Windows,id,0.02744658725,0.0001261463592,-0.02744658725,absolute coefficient on train-scaled features,734
+categorical__id_33_1364x768,id,0.02741997771,0.0001260240599,0.02741997771,absolute coefficient on train-scaled features,735
+categorical__addr2_24.0,addr2,0.02739657682,0.0001259165079,-0.02739657682,absolute coefficient on train-scaled features,736
+numeric__V290,V290,0.02728642042,0.0001254102217,-0.02728642042,absolute coefficient on train-scaled features,737
+categorical__id_33_2560x1700,id,0.02716211177,0.0001248388908,-0.02716211177,absolute coefficient on train-scaled features,738
+categorical__card3_111.0,card3,0.02692125061,0.0001237318767,-0.02692125061,absolute coefficient on train-scaled features,739
+categorical__id_31_firefox 47.0,id,0.02685686657,0.0001234359633,-0.02685686657,absolute coefficient on train-scaled features,740
+categorical__id_33_2304x1440,id,0.0267577595,0.0001229804606,-0.0267577595,absolute coefficient on train-scaled features,741
+categorical__id_31_chrome 63.0 for ios,id,0.02671032005,0.0001227624257,-0.02671032005,absolute coefficient on train-scaled features,742
+categorical__id_33_1023x768,id,0.02670882692,0.0001227555631,-0.02670882692,absolute coefficient on train-scaled features,743
+categorical__card5_118.0,card5,0.02659227435,0.0001222198797,-0.02659227435,absolute coefficient on train-scaled features,744
+categorical__id_31_chrome 60.0,id,0.02654290788,0.0001219929881,-0.02654290788,absolute coefficient on train-scaled features,745
+numeric__D12,D12,0.02628532192,0.0001208091057,-0.02628532192,absolute coefficient on train-scaled features,746
+categorical__id_30_Mac OS X 10_13_5,id,0.02626347549,0.0001207086981,-0.02626347549,absolute coefficient on train-scaled features,747
+numeric__V36,V36,0.02620886044,0.0001204576836,-0.02620886044,absolute coefficient on train-scaled features,748
+categorical__id_33_2735x1823,id,0.02601812444,0.0001195810481,-0.02601812444,absolute coefficient on train-scaled features,749
+categorical__card3_105.0,card3,0.02597683488,0.0001193912785,-0.02597683488,absolute coefficient on train-scaled features,750
+categorical__card5_156.0,card5,0.02578336519,0.0001185020788,-0.02578336519,absolute coefficient on train-scaled features,751
+categorical__card5_114.0,card5,0.02574741904,0.0001183368679,-0.02574741904,absolute coefficient on train-scaled features,752
+categorical__id_31_mobile safari 9.0,id,0.02571930471,0.0001182076526,-0.02571930471,absolute coefficient on train-scaled features,753
+categorical__card3_202.0,card3,0.0257097578,0.0001181637743,-0.0257097578,absolute coefficient on train-scaled features,754
+categorical__id_31_Mozilla/Firefox,id,0.02563980667,0.0001178422742,0.02563980667,absolute coefficient on train-scaled features,755
+categorical__id_33_5760x3240,id,0.02559098929,0.0001176179063,-0.02559098929,absolute coefficient on train-scaled features,756
+categorical__card3_183.0,card3,0.02558411817,0.0001175863262,-0.02558411817,absolute coefficient on train-scaled features,757
+categorical__card3_186.0,card3,0.02555501813,0.0001174525804,-0.02555501813,absolute coefficient on train-scaled features,758
+categorical__id_33_1280x712,id,0.02554377597,0.0001174009107,-0.02554377597,absolute coefficient on train-scaled features,759
+categorical__id_30_iOS 11.0.0,id,0.02551942134,0.0001172889752,-0.02551942134,absolute coefficient on train-scaled features,760
+categorical__card5_205.0,card5,0.02549431119,0.0001171735673,-0.02549431119,absolute coefficient on train-scaled features,761
+numeric__V121,V121,0.02549232598,0.0001171644431,0.02549232598,absolute coefficient on train-scaled features,762
+categorical__id_33_3840x1600,id,0.0254727551,0.000117074494,-0.0254727551,absolute coefficient on train-scaled features,763
+categorical__M1___MISSING__,M1,0.02546634897,0.000117045051,0.02546634897,absolute coefficient on train-scaled features,764
+categorical__M2___MISSING__,M2,0.02546634897,0.000117045051,0.02546634897,absolute coefficient on train-scaled features,765
+categorical__M3___MISSING__,M3,0.02546634897,0.000117045051,0.02546634897,absolute coefficient on train-scaled features,766
+categorical__id_33_1371x857,id,0.02543599012,0.0001169055197,-0.02543599012,absolute coefficient on train-scaled features,767
+categorical__card3_188.0,card3,0.02534507618,0.0001164876731,-0.02534507618,absolute coefficient on train-scaled features,768
+numeric__V98,V98,0.02527177526,0.0001161507772,0.02527177526,absolute coefficient on train-scaled features,769
+categorical__id_31_chrome 64.0 for android,id,0.02522498607,0.0001159357309,0.02522498607,absolute coefficient on train-scaled features,770
+categorical__id_33_1023x767,id,0.02519384214,0.0001157925913,-0.02519384214,absolute coefficient on train-scaled features,771
+categorical__card5_160.0,card5,0.02515809589,0.0001156282991,-0.02515809589,absolute coefficient on train-scaled features,772
+categorical__card5_109.0,card5,0.02513215181,0.0001155090584,-0.02513215181,absolute coefficient on train-scaled features,773
+categorical__id_31_safari 11.0,id,0.02508472372,0.0001152910757,-0.02508472372,absolute coefficient on train-scaled features,774
+categorical__addr2_86.0,addr2,0.02498804603,0.0001148467386,-0.02498804603,absolute coefficient on train-scaled features,775
+categorical__id_33_1440x720,id,0.02496602457,0.0001147455265,-0.02496602457,absolute coefficient on train-scaled features,776
+categorical__M1_T,M1,0.02491993932,0.0001145337155,-0.02491993932,absolute coefficient on train-scaled features,777
+categorical__id_33_1365x768,id,0.0249043227,0.0001144619405,0.0249043227,absolute coefficient on train-scaled features,778
+categorical__id_33_1888x941,id,0.02489324742,0.0001144110378,-0.02489324742,absolute coefficient on train-scaled features,779
+categorical__card5_231.0,card5,0.02482440779,0.0001140946462,-0.02482440779,absolute coefficient on train-scaled features,780
+categorical__id_33_1800x1125,id,0.02476539197,0.0001138234055,-0.02476539197,absolute coefficient on train-scaled features,781
+categorical__card5_172.0,card5,0.02469264101,0.0001134890372,-0.02469264101,absolute coefficient on train-scaled features,782
+categorical__id_34_match_status:1,id,0.02466749553,0.0001133734669,0.02466749553,absolute coefficient on train-scaled features,783
+categorical__id_33_1360x768,id,0.02446056291,0.0001124223907,0.02446056291,absolute coefficient on train-scaled features,784
+categorical__card5_173.0,card5,0.02443240462,0.0001122929733,-0.02443240462,absolute coefficient on train-scaled features,785
+categorical__card5_164.0,card5,0.02442185543,0.0001122444885,-0.02442185543,absolute coefficient on train-scaled features,786
+categorical__addr2_48.0,addr2,0.02437500272,0.0001120291503,-0.02437500272,absolute coefficient on train-scaled features,787
+categorical__id_33_2160x1440,id,0.02415605904,0.0001110228704,0.02415605904,absolute coefficient on train-scaled features,788
+categorical__addr2_74.0,addr2,0.02412578986,0.0001108837513,-0.02412578986,absolute coefficient on train-scaled features,789
+categorical__id_33_1296x774,id,0.02406701233,0.0001106136058,-0.02406701233,absolute coefficient on train-scaled features,790
+categorical__id_31_chrome 62.0 for android,id,0.02403405713,0.0001104621415,-0.02403405713,absolute coefficient on train-scaled features,791
+categorical__id_30_Windows Vista,id,0.02401477012,0.0001103734971,-0.02401477012,absolute coefficient on train-scaled features,792
+categorical__id_33_2560x1800,id,0.02400271922,0.0001103181103,-0.02400271922,absolute coefficient on train-scaled features,793
+categorical__card5_206.0,card5,0.02395438766,0.0001100959752,-0.02395438766,absolute coefficient on train-scaled features,794
+categorical__id_33_1919x1200,id,0.02387473729,0.0001097298968,-0.02387473729,absolute coefficient on train-scaled features,795
+categorical__card3_175.0,card3,0.02384368634,0.0001095871845,0.02384368634,absolute coefficient on train-scaled features,796
+categorical__card3_208.0,card3,0.02380582849,0.0001094131873,0.02380582849,absolute coefficient on train-scaled features,797
+categorical__id_33_2737x1825,id,0.02380477524,0.0001094083465,-0.02380477524,absolute coefficient on train-scaled features,798
+numeric__V15,V15,0.02372095478,0.000109023102,0.02372095478,absolute coefficient on train-scaled features,799
+categorical__id_33_3600x2250,id,0.02365198473,0.000108706111,-0.02365198473,absolute coefficient on train-scaled features,800
+categorical__card3_149.0,card3,0.02359894894,0.000108462355,-0.02359894894,absolute coefficient on train-scaled features,801
+categorical__id_33_1200x675,id,0.02359307883,0.0001084353756,-0.02359307883,absolute coefficient on train-scaled features,802
+categorical__addr2_88.0,addr2,0.02350897149,0.0001080488126,-0.02350897149,absolute coefficient on train-scaled features,803
+categorical__id_33_2520x1575,id,0.02348174894,0.0001079236959,-0.02348174894,absolute coefficient on train-scaled features,804
+missing__missingindicator_id_05,missingindicator_id_05,0.02341710248,0.0001076265764,-0.02341710248,absolute coefficient on train-scaled features,805
+missing__missingindicator_id_06,missingindicator_id_06,0.02341710248,0.0001076265764,-0.02341710248,absolute coefficient on train-scaled features,806
+categorical__id_34_match_status:-1,id,0.02340772293,0.0001075834674,-0.02340772293,absolute coefficient on train-scaled features,807
+categorical__card3_193.0,card3,0.02332659115,0.0001072105803,-0.02332659115,absolute coefficient on train-scaled features,808
+categorical__id_33_2700x1800,id,0.02324510695,0.0001068360734,-0.02324510695,absolute coefficient on train-scaled features,809
+categorical__card3_139.0,card3,0.02322996307,0.0001067664711,0.02322996307,absolute coefficient on train-scaled features,810
+categorical__card3_138.0,card3,0.023063031,0.0001059992401,-0.023063031,absolute coefficient on train-scaled features,811
+categorical__card3_176.0,card3,0.0230622133,0.0001059954819,-0.0230622133,absolute coefficient on train-scaled features,812
+categorical__id_31_android webview 4.0,id,0.02288010742,0.0001051585111,0.02288010742,absolute coefficient on train-scaled features,813
+categorical__id_33_1624x1080,id,0.02273733447,0.000104502317,-0.02273733447,absolute coefficient on train-scaled features,814
+categorical__id_30_Mac OS X 10_12_3,id,0.02272482582,0.0001044448264,-0.02272482582,absolute coefficient on train-scaled features,815
+categorical__card5_135.0,card5,0.02271895124,0.0001044178264,0.02271895124,absolute coefficient on train-scaled features,816
+categorical__card3_179.0,card3,0.0226664177,0.0001041763788,-0.0226664177,absolute coefficient on train-scaled features,817
+categorical__id_33_1760x990,id,0.02265404373,0.0001041195071,-0.02265404373,absolute coefficient on train-scaled features,818
+categorical__id_33_1920x1280,id,0.02257025421,0.0001037344049,-0.02257025421,absolute coefficient on train-scaled features,819
+categorical__card5_169.0,card5,0.02244603441,0.0001031634824,-0.02244603441,absolute coefficient on train-scaled features,820
+categorical__id_33_3841x2161,id,0.0224070483,0.0001029842996,-0.0224070483,absolute coefficient on train-scaled features,821
+categorical__id_31_chrome 59.0 for android,id,0.02239832536,0.0001029442083,-0.02239832536,absolute coefficient on train-scaled features,822
+categorical__M6_T,M6,0.02239431168,0.0001029257612,-0.02239431168,absolute coefficient on train-scaled features,823
+categorical__id_33_1281x721,id,0.02238417917,0.0001028791915,-0.02238417917,absolute coefficient on train-scaled features,824
+categorical__id_33_1480x720,id,0.02229381106,0.0001024638536,-0.02229381106,absolute coefficient on train-scaled features,825
+categorical__card5_152.0,card5,0.02217996421,0.0001019406058,-0.02217996421,absolute coefficient on train-scaled features,826
+categorical__card3_226.0,card3,0.02213143352,0.0001017175555,-0.02213143352,absolute coefficient on train-scaled features,827
+categorical__id_30_iOS 11.4.1,id,0.02209247162,0.000101538484,-0.02209247162,absolute coefficient on train-scaled features,828
+numeric__V169,V169,0.02200909274,0.0001011552691,-0.02200909274,absolute coefficient on train-scaled features,829
+categorical__id_33_1184x720,id,0.02200834699,0.0001011518416,-0.02200834699,absolute coefficient on train-scaled features,830
+categorical__id_33_2256x1504,id,0.02189889169,0.0001006487777,-0.02189889169,absolute coefficient on train-scaled features,831
+categorical__id_33_1680x1051,id,0.02186070269,0.0001004732584,-0.02186070269,absolute coefficient on train-scaled features,832
+categorical__id_33_1024x767,id,0.02172904801,9.986816467e-05,-0.02172904801,absolute coefficient on train-scaled features,833
+categorical__id_33_1200x720,id,0.02159393782,9.924718917e-05,-0.02159393782,absolute coefficient on train-scaled features,834
+categorical__id_33_2436x1125,id,0.02157163479,9.914468293e-05,0.02157163479,absolute coefficient on train-scaled features,835
+categorical__id_33_1684x947,id,0.02155925129,9.908776755e-05,-0.02155925129,absolute coefficient on train-scaled features,836
+categorical__id_31_chrome 51.0,id,0.02153446897,9.897386631e-05,-0.02153446897,absolute coefficient on train-scaled features,837
+categorical__card3_125.0,card3,0.02140676974,9.83869521e-05,0.02140676974,absolute coefficient on train-scaled features,838
+categorical__id_30_Mac OS X 10_12_1,id,0.02122440204,9.754877789e-05,-0.02122440204,absolute coefficient on train-scaled features,839
+categorical__id_33_2400x1500,id,0.02117369271,9.73157144e-05,-0.02117369271,absolute coefficient on train-scaled features,840
+categorical__id_33_1919x1199,id,0.02091125162,9.610951752e-05,-0.02091125162,absolute coefficient on train-scaled features,841
+categorical__id_33_5120x2880,id,0.02089070011,9.601506138e-05,0.02089070011,absolute coefficient on train-scaled features,842
+categorical__id_33_3840x2160,id,0.02087855602,9.595924633e-05,0.02087855602,absolute coefficient on train-scaled features,843
+categorical__id_33_1356x900,id,0.02076590978,9.544151667e-05,-0.02076590978,absolute coefficient on train-scaled features,844
+categorical__id_33_1824x1026,id,0.02075483939,9.539063641e-05,-0.02075483939,absolute coefficient on train-scaled features,845
+categorical__id_31_google,id,0.02073728847,9.530997121e-05,0.02073728847,absolute coefficient on train-scaled features,846
+categorical__addr2_100.0,addr2,0.02063404646,9.483546396e-05,-0.02063404646,absolute coefficient on train-scaled features,847
+categorical__card5_191.0,card5,0.02056532048,9.451959474e-05,0.02056532048,absolute coefficient on train-scaled features,848
+categorical__id_33_1502x844,id,0.02048764588,9.416259709e-05,0.02048764588,absolute coefficient on train-scaled features,849
+categorical__card3_224.0,card3,0.0204053149,9.378419838e-05,0.0204053149,absolute coefficient on train-scaled features,850
+categorical__id_33_1408x880,id,0.02035669555,9.356074054e-05,-0.02035669555,absolute coefficient on train-scaled features,851
+categorical__card5_167.0,card5,0.02034586507,9.351096295e-05,0.02034586507,absolute coefficient on train-scaled features,852
+numeric__V26,V26,0.02031110557,9.335120596e-05,-0.02031110557,absolute coefficient on train-scaled features,853
+categorical__card5_133.0,card5,0.02028734566,9.32420038e-05,0.02028734566,absolute coefficient on train-scaled features,854
+numeric__V2,V2,0.02005873639,9.219130023e-05,-0.02005873639,absolute coefficient on train-scaled features,855
+categorical__id_31_facebook,id,0.0200015184,9.192832252e-05,-0.0200015184,absolute coefficient on train-scaled features,856
+numeric__V61,V61,0.01993925326,9.164214775e-05,-0.01993925326,absolute coefficient on train-scaled features,857
+categorical__id_33_4200x2625,id,0.01990836047,9.150016241e-05,-0.01990836047,absolute coefficient on train-scaled features,858
+categorical__id_33_1600x837,id,0.01968135013,9.045680761e-05,-0.01968135013,absolute coefficient on train-scaled features,859
+categorical__addr2_102.0,addr2,0.01966274915,9.037131629e-05,-0.01966274915,absolute coefficient on train-scaled features,860
+categorical__id_33_1680x1050,id,0.01961205615,9.013832785e-05,-0.01961205615,absolute coefficient on train-scaled features,861
+categorical__card3_108.0,card3,0.01958084534,8.999488086e-05,-0.01958084534,absolute coefficient on train-scaled features,862
+categorical__addr2_28.0,addr2,0.01958084534,8.999488086e-05,-0.01958084534,absolute coefficient on train-scaled features,863
+categorical__id_31_firefox,id,0.01939865388,8.915751667e-05,0.01939865388,absolute coefficient on train-scaled features,864
+categorical__id_33_1365x767,id,0.01936098561,8.898439075e-05,-0.01936098561,absolute coefficient on train-scaled features,865
+categorical__addr2_50.0,addr2,0.0192749423,8.858892992e-05,-0.0192749423,absolute coefficient on train-scaled features,866
+numeric__id_06,id_06,0.01926643234,8.854981757e-05,-0.01926643234,absolute coefficient on train-scaled features,867
+categorical__id_31_samsung browser 7.0,id,0.01913825127,8.796068878e-05,-0.01913825127,absolute coefficient on train-scaled features,868
+categorical__id_33_1272x960,id,0.01907728612,8.768048886e-05,-0.01907728612,absolute coefficient on train-scaled features,869
+numeric__V46,V46,0.01886644686,8.671145743e-05,-0.01886644686,absolute coefficient on train-scaled features,870
+categorical__id_33_2160x1350,id,0.01883444548,8.656437696e-05,-0.01883444548,absolute coefficient on train-scaled features,871
+categorical__id_33_2392x1440,id,0.01872563457,8.606427468e-05,-0.01872563457,absolute coefficient on train-scaled features,872
+categorical__id_31_puffin,id,0.01863088857,8.56288157e-05,-0.01863088857,absolute coefficient on train-scaled features,873
+categorical__id_31_opera,id,0.01861222798,8.554305041e-05,0.01861222798,absolute coefficient on train-scaled features,874
+categorical__id_33_2882x1442,id,0.01860427179,8.55064832e-05,-0.01860427179,absolute coefficient on train-scaled features,875
+categorical__id_33_2735x1825,id,0.01833918411,8.428812241e-05,-0.01833918411,absolute coefficient on train-scaled features,876
+categorical__card3_123.0,card3,0.01823286922,8.379949204e-05,-0.01823286922,absolute coefficient on train-scaled features,877
+categorical__addr2_39.0,addr2,0.01823286922,8.379949204e-05,-0.01823286922,absolute coefficient on train-scaled features,878
+categorical__card3_101.0,card3,0.01815592117,8.344583362e-05,-0.01815592117,absolute coefficient on train-scaled features,879
+categorical__id_35_F,id,0.01815135302,8.34248381e-05,-0.01815135302,absolute coefficient on train-scaled features,880
+categorical__id_31_chrome 56.0 for android,id,0.01811444763,8.325521843e-05,0.01811444763,absolute coefficient on train-scaled features,881
+categorical__card5_236.0,card5,0.01808674153,8.312787937e-05,-0.01808674153,absolute coefficient on train-scaled features,882
+categorical__card5_198.0,card5,0.01808458797,8.311798147e-05,-0.01808458797,absolute coefficient on train-scaled features,883
+categorical__id_33_2304x1296,id,0.01806071472,8.300825837e-05,-0.01806071472,absolute coefficient on train-scaled features,884
+categorical__id_31_safari 9.0,id,0.01805464067,8.298034163e-05,-0.01805464067,absolute coefficient on train-scaled features,885
+categorical__id_33_2048x1080,id,0.01802740229,8.285515221e-05,-0.01802740229,absolute coefficient on train-scaled features,886
+categorical__id_31_firefox 56.0,id,0.01795892586,8.254042995e-05,-0.01795892586,absolute coefficient on train-scaled features,887
+categorical__id_33_1707x960,id,0.01794554452,8.247892841e-05,-0.01794554452,absolute coefficient on train-scaled features,888
+categorical__card3_228.0,card3,0.01793637521,8.243678564e-05,-0.01793637521,absolute coefficient on train-scaled features,889
+categorical__id_31_chrome 50.0 for android,id,0.01791000614,8.231559162e-05,0.01791000614,absolute coefficient on train-scaled features,890
+categorical__addr2_76.0,addr2,0.01786904243,8.212731967e-05,-0.01786904243,absolute coefficient on train-scaled features,891
+categorical__id_33_1921x1080,id,0.01776432543,8.164603328e-05,-0.01776432543,absolute coefficient on train-scaled features,892
+categorical__id_31_android,id,0.0177591254,8.162213361e-05,-0.0177591254,absolute coefficient on train-scaled features,893
+categorical__id_33_1600x1200,id,0.01774224627,8.154455598e-05,0.01774224627,absolute coefficient on train-scaled features,894
+categorical__card5_183.0,card5,0.01772706059,8.147476157e-05,-0.01772706059,absolute coefficient on train-scaled features,895
+categorical__card5_129.0,card5,0.01769818274,8.134203707e-05,0.01769818274,absolute coefficient on train-scaled features,896
+categorical__id_33_2710x1440,id,0.01768492311,8.128109489e-05,-0.01768492311,absolute coefficient on train-scaled features,897
+categorical__card5_201.0,card5,0.01760732668,8.09244565e-05,-0.01760732668,absolute coefficient on train-scaled features,898
+categorical__card5_237.0,card5,0.01758302187,8.081274996e-05,-0.01758302187,absolute coefficient on train-scaled features,899
+categorical__id_31_iron,id,0.01750746635,8.046549169e-05,-0.01750746635,absolute coefficient on train-scaled features,900
+numeric__V59,V59,0.01744354825,8.017171981e-05,-0.01744354825,absolute coefficient on train-scaled features,901
+categorical__card3_209.0,card3,0.01726250906,7.933965153e-05,-0.01726250906,absolute coefficient on train-scaled features,902
+categorical__card3_170.0,card3,0.0172391957,7.923250178e-05,-0.0172391957,absolute coefficient on train-scaled features,903
+categorical__id_33_1638x922,id,0.01723148818,7.919707751e-05,-0.01723148818,absolute coefficient on train-scaled features,904
+categorical__id_33_2048x1278,id,0.01722726427,7.917766411e-05,-0.01722726427,absolute coefficient on train-scaled features,905
+categorical__id_33_1138x640,id,0.01716667497,7.889919163e-05,-0.01716667497,absolute coefficient on train-scaled features,906
+categorical__id_31_chrome 67.0 for android,id,0.01716399643,7.88868809e-05,-0.01716399643,absolute coefficient on train-scaled features,907
+categorical__id_33_3200x2000,id,0.01714302097,7.879047624e-05,-0.01714302097,absolute coefficient on train-scaled features,908
+categorical__addr2_68.0,addr2,0.01713978449,7.877560117e-05,-0.01713978449,absolute coefficient on train-scaled features,909
+categorical__id_33_2160x1081,id,0.01713754504,7.87653085e-05,-0.01713754504,absolute coefficient on train-scaled features,910
+categorical__id_33_2960x1440,id,0.01698698016,7.807330221e-05,0.01698698016,absolute coefficient on train-scaled features,911
+categorical__id_33_2255x1503,id,0.0169424115,7.786846163e-05,-0.0169424115,absolute coefficient on train-scaled features,912
+categorical__id_30_iOS 10.3.1,id,0.01680886875,7.725469018e-05,-0.01680886875,absolute coefficient on train-scaled features,913
+categorical__card5_105.0,card5,0.01679408717,7.718675306e-05,-0.01679408717,absolute coefficient on train-scaled features,914
+categorical__id_33_6016x3384,id,0.01678102886,7.71267362e-05,-0.01678102886,absolute coefficient on train-scaled features,915
+categorical__id_33_2800x1575,id,0.01666370658,7.658751512e-05,-0.01666370658,absolute coefficient on train-scaled features,916
+categorical__id_31_BLU/Dash,id,0.0166223369,7.639737726e-05,-0.0166223369,absolute coefficient on train-scaled features,917
+categorical__id_33_1136x640,id,0.01652224501,7.593734825e-05,-0.01652224501,absolute coefficient on train-scaled features,918
+categorical__id_33_921x691,id,0.01651964533,7.592539991e-05,-0.01651964533,absolute coefficient on train-scaled features,919
+categorical__card5_200.0,card5,0.01650094129,7.583943489e-05,-0.01650094129,absolute coefficient on train-scaled features,920
+categorical__id_31_cyberfox,id,0.01647112628,7.570240312e-05,-0.01647112628,absolute coefficient on train-scaled features,921
+categorical__id_33_3840x1080,id,0.01646524008,7.567534974e-05,-0.01646524008,absolute coefficient on train-scaled features,922
+categorical__card5_139.0,card5,0.01642940978,7.551067128e-05,-0.01642940978,absolute coefficient on train-scaled features,923
+categorical__id_31_chromium,id,0.01631767473,7.499712946e-05,-0.01631767473,absolute coefficient on train-scaled features,924
+categorical__addr2_25.0,addr2,0.01628034028,7.482553786e-05,-0.01628034028,absolute coefficient on train-scaled features,925
+categorical__id_31_waterfox,id,0.01624886025,7.468085352e-05,-0.01624886025,absolute coefficient on train-scaled features,926
+categorical__id_33_2736x1823,id,0.01623552754,7.461957548e-05,-0.01623552754,absolute coefficient on train-scaled features,927
+categorical__id_33_1536x960,id,0.01614854159,7.421978221e-05,-0.01614854159,absolute coefficient on train-scaled features,928
+categorical__id_31_M4Tel/M4,id,0.0160103288,7.358454694e-05,-0.0160103288,absolute coefficient on train-scaled features,929
+categorical__card5_145.0,card5,0.01594277858,7.327408158e-05,-0.01594277858,absolute coefficient on train-scaled features,930
+categorical__id_33_1281x800,id,0.01593942893,7.325868636e-05,-0.01593942893,absolute coefficient on train-scaled features,931
+categorical__id_31_seamonkey,id,0.01592128587,7.317529966e-05,-0.01592128587,absolute coefficient on train-scaled features,932
+categorical__id_33_4500x3000,id,0.01590955843,7.312139956e-05,0.01590955843,absolute coefficient on train-scaled features,933
+categorical__card5_125.0,card5,0.01586115165,7.289891873e-05,-0.01586115165,absolute coefficient on train-scaled features,934
+categorical__card5_197.0,card5,0.01585771735,7.288313446e-05,0.01585771735,absolute coefficient on train-scaled features,935
+categorical__id_31_chrome generic,id,0.01584302363,7.281560111e-05,-0.01584302363,absolute coefficient on train-scaled features,936
+categorical__card5_187.0,card5,0.01574207468,7.235163298e-05,-0.01574207468,absolute coefficient on train-scaled features,937
+categorical__id_31_chrome generic for android,id,0.01572832901,7.228845697e-05,-0.01572832901,absolute coefficient on train-scaled features,938
+categorical__id_33_1439x899,id,0.01569532827,7.213678333e-05,-0.01569532827,absolute coefficient on train-scaled features,939
+categorical__id_33_960x540,id,0.01566573861,7.200078729e-05,0.01566573861,absolute coefficient on train-scaled features,940
+numeric__V215,V215,0.01565492155,7.195107134e-05,0.01565492155,absolute coefficient on train-scaled features,941
+categorical__id_33_3838x2160,id,0.01564325548,7.189745329e-05,-0.01564325548,absolute coefficient on train-scaled features,942
+categorical__card3_181.0,card3,0.01559231764,7.166333956e-05,0.01559231764,absolute coefficient on train-scaled features,943
+categorical__addr2_46.0,addr2,0.01559231764,7.166333956e-05,0.01559231764,absolute coefficient on train-scaled features,944
+categorical__addr2_84.0,addr2,0.01554660742,7.14532523e-05,-0.01554660742,absolute coefficient on train-scaled features,945
+categorical__id_33_2559x1439,id,0.01550244475,7.12502777e-05,-0.01550244475,absolute coefficient on train-scaled features,946
+categorical__card3_221.0,card3,0.0154554156,7.103412858e-05,-0.0154554156,absolute coefficient on train-scaled features,947
+numeric__V112,V112,0.01532614926,7.04400118e-05,0.01532614926,absolute coefficient on train-scaled features,948
+categorical__id_33_1062x630,id,0.01528887425,7.026869336e-05,-0.01528887425,absolute coefficient on train-scaled features,949
+categorical__id_31_Generic/Android 7.0,id,0.0152636335,7.015268516e-05,-0.0152636335,absolute coefficient on train-scaled features,950
+categorical__id_33_1440x960,id,0.01524354793,7.006037053e-05,-0.01524354793,absolute coefficient on train-scaled features,951
+categorical__id_31_chrome 49.0,id,0.01522801635,6.998898636e-05,-0.01522801635,absolute coefficient on train-scaled features,952
+categorical__id_33_2224x1668,id,0.01522179934,6.996041255e-05,-0.01522179934,absolute coefficient on train-scaled features,953
+categorical__id_33_3839x2160,id,0.01520303126,6.987415318e-05,-0.01520303126,absolute coefficient on train-scaled features,954
+categorical__id_33_2816x1584,id,0.01515478086,6.96523911e-05,-0.01515478086,absolute coefficient on train-scaled features,955
+categorical__card5_209.0,card5,0.01514477028,6.960638181e-05,-0.01514477028,absolute coefficient on train-scaled features,956
+categorical__id_33_1440x810,id,0.01507455068,6.928364781e-05,0.01507455068,absolute coefficient on train-scaled features,957
+categorical__card5_157.0,card5,0.0150521659,6.918076586e-05,-0.0150521659,absolute coefficient on train-scaled features,958
+categorical__id_33_1281x720,id,0.01497315551,6.881762882e-05,-0.01497315551,absolute coefficient on train-scaled features,959
+categorical__id_33_3072x1728,id,0.0149090085,6.852280486e-05,-0.0149090085,absolute coefficient on train-scaled features,960
+categorical__id_30_iOS 11.0.2,id,0.01487713972,6.837633378e-05,-0.01487713972,absolute coefficient on train-scaled features,961
+categorical__card3_174.0,card3,0.01487438149,6.836365676e-05,-0.01487438149,absolute coefficient on train-scaled features,962
+categorical__id_31_palemoon,id,0.01479789905,6.801213831e-05,-0.01479789905,absolute coefficient on train-scaled features,963
+categorical__card5_123.0,card5,0.01479548352,6.800103641e-05,-0.01479548352,absolute coefficient on train-scaled features,964
+categorical__id_33_1280x732,id,0.01477078946,6.788754083e-05,-0.01477078946,absolute coefficient on train-scaled features,965
+categorical__card5_203.0,card5,0.01472546787,6.767923979e-05,0.01472546787,absolute coefficient on train-scaled features,966
+categorical__addr2_63.0,addr2,0.01471563364,6.763404097e-05,-0.01471563364,absolute coefficient on train-scaled features,967
+categorical__id_33_2160x1439,id,0.01463680815,6.727175374e-05,-0.01463680815,absolute coefficient on train-scaled features,968
+categorical__id_33_480x320,id,0.01457050149,6.696700387e-05,-0.01457050149,absolute coefficient on train-scaled features,969
+categorical__addr2_36.0,addr2,0.01454681041,6.685811805e-05,-0.01454681041,absolute coefficient on train-scaled features,970
+categorical__id_33_6720x3780,id,0.01451090394,6.669308953e-05,-0.01451090394,absolute coefficient on train-scaled features,971
+categorical__card5_204.0,card5,0.01443160139,6.632860969e-05,-0.01443160139,absolute coefficient on train-scaled features,972
+categorical__id_33_1359x768,id,0.014353498,6.596964125e-05,-0.014353498,absolute coefficient on train-scaled features,973
+categorical__card5_196.0,card5,0.01433816063,6.589914968e-05,-0.01433816063,absolute coefficient on train-scaled features,974
+categorical__id_33_1776x1080,id,0.01429210821,6.568748965e-05,-0.01429210821,absolute coefficient on train-scaled features,975
+categorical__id_33_1093x615,id,0.01427471513,6.560754988e-05,-0.01427471513,absolute coefficient on train-scaled features,976
+categorical__id_33_1422x889,id,0.01426112827,6.554510374e-05,-0.01426112827,absolute coefficient on train-scaled features,977
+categorical__card3_172.0,card3,0.01422884006,6.539670496e-05,-0.01422884006,absolute coefficient on train-scaled features,978
+categorical__id_33_1334x750,id,0.01422651564,6.538602181e-05,-0.01422651564,absolute coefficient on train-scaled features,979
+categorical__M2_F,M2,0.01420957678,6.530816967e-05,0.01420957678,absolute coefficient on train-scaled features,980
+categorical__id_33_2368x1440,id,0.01420014416,6.526481672e-05,-0.01420014416,absolute coefficient on train-scaled features,981
+categorical__id_31_comodo,id,0.01411193845,6.485941735e-05,0.01411193845,absolute coefficient on train-scaled features,982
+categorical__card3_121.0,card3,0.01403191194,6.449161013e-05,-0.01403191194,absolute coefficient on train-scaled features,983
+categorical__id_30_Android 7.1.2,id,0.01401402772,6.440941304e-05,-0.01401402772,absolute coefficient on train-scaled features,984
+categorical__card5_120.0,card5,0.01397948499,6.425065232e-05,-0.01397948499,absolute coefficient on train-scaled features,985
+categorical__id_30_Mac OS X 10_11_4,id,0.01380211167,6.343543263e-05,-0.01380211167,absolute coefficient on train-scaled features,986
+categorical__id_33_2816x1760,id,0.0137511477,6.320119878e-05,-0.0137511477,absolute coefficient on train-scaled features,987
+categorical__id_33_2160x1215,id,0.01365050928,6.273865786e-05,-0.01365050928,absolute coefficient on train-scaled features,988
+numeric__V52,V52,0.01357323406,6.238349574e-05,-0.01357323406,absolute coefficient on train-scaled features,989
+categorical__addr2_15.0,addr2,0.01355931941,6.231954308e-05,-0.01355931941,absolute coefficient on train-scaled features,990
+categorical__id_33_1584x990,id,0.01355493652,6.229939902e-05,-0.01355493652,absolute coefficient on train-scaled features,991
+categorical__addr2_22.0,addr2,0.01354912905,6.227270751e-05,-0.01354912905,absolute coefficient on train-scaled features,992
+numeric__id_10,id_10,0.01351325145,6.210781163e-05,0.01351325145,absolute coefficient on train-scaled features,993
+categorical__id_33_1440x803,id,0.01351221403,6.210304362e-05,-0.01351221403,absolute coefficient on train-scaled features,994
+categorical__id_33_1536x1152,id,0.013498907,6.204188361e-05,-0.013498907,absolute coefficient on train-scaled features,995
+categorical__addr2_66.0,addr2,0.01349781252,6.203685331e-05,-0.01349781252,absolute coefficient on train-scaled features,996
+categorical__id_33_3520x1980,id,0.01349016973,6.200172651e-05,-0.01349016973,absolute coefficient on train-scaled features,997
+categorical__id_31_chrome,id,0.01347089073,6.191311894e-05,-0.01347089073,absolute coefficient on train-scaled features,998
+categorical__id_33_1502x845,id,0.01346379125,6.188048923e-05,-0.01346379125,absolute coefficient on train-scaled features,999
+categorical__card5_163.0,card5,0.01336568908,6.142960506e-05,-0.01336568908,absolute coefficient on train-scaled features,1000
+numeric__D14,D14,0.01336127135,6.140930089e-05,-0.01336127135,absolute coefficient on train-scaled features,1001
+categorical__id_31_Samsung/SM-G532M,id,0.01329517369,6.110551163e-05,0.01329517369,absolute coefficient on train-scaled features,1002
+categorical__id_33_1439x900,id,0.01325149037,6.090474015e-05,-0.01325149037,absolute coefficient on train-scaled features,1003
+categorical__card5_107.0,card5,0.01322212138,6.07697583e-05,0.01322212138,absolute coefficient on train-scaled features,1004
+categorical__id_31_firefox 48.0,id,0.01317327789,6.054527032e-05,-0.01317327789,absolute coefficient on train-scaled features,1005
+categorical__card5_216.0,card5,0.01314912921,6.043428137e-05,-0.01314912921,absolute coefficient on train-scaled features,1006
+categorical__id_33_4499x2999,id,0.01304758397,5.99675726e-05,-0.01304758397,absolute coefficient on train-scaled features,1007
+numeric__V41,V41,0.0129757721,5.963752044e-05,0.0129757721,absolute coefficient on train-scaled features,1008
+categorical__card3_204.0,card3,0.01293760878,5.946211924e-05,-0.01293760878,absolute coefficient on train-scaled features,1009
+categorical__card3_220.0,card3,0.01289901177,5.928472481e-05,-0.01289901177,absolute coefficient on train-scaled features,1010
+numeric__V140,V140,0.01289150487,5.925022258e-05,-0.01289150487,absolute coefficient on train-scaled features,1011
+categorical__addr2_73.0,addr2,0.012877331,5.918507851e-05,0.012877331,absolute coefficient on train-scaled features,1012
+numeric__V234,V234,0.0128251415,5.894521207e-05,0.0128251415,absolute coefficient on train-scaled features,1013
+categorical__card3_214.0,card3,0.01281269654,5.888801423e-05,-0.01281269654,absolute coefficient on train-scaled features,1014
+categorical__id_33_1920x1279,id,0.01278201769,5.874701216e-05,-0.01278201769,absolute coefficient on train-scaled features,1015
+numeric__V312,V312,0.01277764005,5.872689222e-05,0.01277764005,absolute coefficient on train-scaled features,1016
+categorical__id_31_Generic/Android,id,0.01269903296,5.836560875e-05,0.01269903296,absolute coefficient on train-scaled features,1017
+categorical__card5_234.0,card5,0.01262339911,5.801799049e-05,-0.01262339911,absolute coefficient on train-scaled features,1018
+categorical__id_33_3838x2158,id,0.01256830499,5.776477423e-05,-0.01256830499,absolute coefficient on train-scaled features,1019
+numeric__V240,V240,0.01254055065,5.76372134e-05,-0.01254055065,absolute coefficient on train-scaled features,1020
+categorical__addr2_54.0,addr2,0.0125274839,5.757715777e-05,-0.0125274839,absolute coefficient on train-scaled features,1021
+categorical__id_33_1768x992,id,0.01245424904,5.724056543e-05,0.01245424904,absolute coefficient on train-scaled features,1022
+categorical__addr2_52.0,addr2,0.01236785287,5.684348282e-05,-0.01236785287,absolute coefficient on train-scaled features,1023
+categorical__id_31_firefox 55.0,id,0.01230677773,5.656277736e-05,0.01230677773,absolute coefficient on train-scaled features,1024
+categorical__card3_206.0,card3,0.01222609367,5.619194798e-05,0.01222609367,absolute coefficient on train-scaled features,1025
+categorical__addr2_82.0,addr2,0.01222609367,5.619194798e-05,0.01222609367,absolute coefficient on train-scaled features,1026
+categorical__addr2_71.0,addr2,0.01221479134,5.614000174e-05,-0.01221479134,absolute coefficient on train-scaled features,1027
+numeric__V88,V88,0.01217863217,5.597381176e-05,0.01217863217,absolute coefficient on train-scaled features,1028
+categorical__id_31_ZTE/Blade,id,0.01209171993,5.557435725e-05,-0.01209171993,absolute coefficient on train-scaled features,1029
+numeric__V287,V287,0.0120332078,5.530543158e-05,0.0120332078,absolute coefficient on train-scaled features,1030
+categorical__id_33_1600x900,id,0.01191748228,5.477354933e-05,0.01191748228,absolute coefficient on train-scaled features,1031
+categorical__id_33_5040x3150,id,0.01187306821,5.456941925e-05,-0.01187306821,absolute coefficient on train-scaled features,1032
+categorical__addr2_101.0,addr2,0.01185293063,5.44768656e-05,-0.01185293063,absolute coefficient on train-scaled features,1033
+categorical__card5_144.0,card5,0.01183135533,5.437770406e-05,0.01183135533,absolute coefficient on train-scaled features,1034
+categorical__id_33_1912x1025,id,0.01174842466,5.399654913e-05,-0.01174842466,absolute coefficient on train-scaled features,1035
+numeric__V309,V309,0.01138278003,5.231602185e-05,0.01138278003,absolute coefficient on train-scaled features,1036
+numeric__V4,V4,0.01120904646,5.151753069e-05,0.01120904646,absolute coefficient on train-scaled features,1037
+categorical__id_33_3201x1800,id,0.01113156376,5.1161415e-05,0.01113156376,absolute coefficient on train-scaled features,1038
+categorical__id_31_samsung browser 5.4,id,0.0110406838,5.07437246e-05,0.0110406838,absolute coefficient on train-scaled features,1039
+categorical__card5_146.0,card5,0.01102601259,5.067629475e-05,0.01102601259,absolute coefficient on train-scaled features,1040
+categorical__id_31_ie,id,0.01087186018,4.99677999e-05,0.01087186018,absolute coefficient on train-scaled features,1041
+numeric__V325,V325,0.01084490823,4.984392692e-05,0.01084490823,absolute coefficient on train-scaled features,1042
+categorical__card5_149.0,card5,0.01080681393,4.966884297e-05,0.01080681393,absolute coefficient on train-scaled features,1043
+categorical__addr2_17.0,addr2,0.01069988507,4.917739075e-05,-0.01069988507,absolute coefficient on train-scaled features,1044
+categorical__id_31_chrome 63.0 for android,id,0.01064511269,4.892565317e-05,0.01064511269,absolute coefficient on train-scaled features,1045
+categorical__addr2_32.0,addr2,0.01060281314,4.873124162e-05,0.01060281314,absolute coefficient on train-scaled features,1046
+categorical__id_31_opera 49.0,id,0.01059863088,4.871201966e-05,0.01059863088,absolute coefficient on train-scaled features,1047
+categorical__id_34___MISSING__,id,0.01059430112,4.869211982e-05,-0.01059430112,absolute coefficient on train-scaled features,1048
+numeric__id_20,id_20,0.01056174251,4.854247822e-05,0.01056174251,absolute coefficient on train-scaled features,1049
+categorical__card5_100.0,card5,0.01055562337,4.851435426e-05,-0.01055562337,absolute coefficient on train-scaled features,1050
+categorical__id_33_1280x900,id,0.01055544575,4.851353792e-05,-0.01055544575,absolute coefficient on train-scaled features,1051
+categorical__card5___MISSING__,card5,0.01050432375,4.827857776e-05,0.01050432375,absolute coefficient on train-scaled features,1052
+categorical__id_33_3000x2000,id,0.01031881444,4.74259645e-05,0.01031881444,absolute coefficient on train-scaled features,1053
+numeric__id_13,id_13,0.01028327463,4.726262114e-05,-0.01028327463,absolute coefficient on train-scaled features,1054
+categorical__id_31_chrome 49.0 for android,id,0.01023287139,4.703096449e-05,0.01023287139,absolute coefficient on train-scaled features,1055
+categorical__id_31_chrome 65.0 for ios,id,0.01020133406,4.688601678e-05,0.01020133406,absolute coefficient on train-scaled features,1056
+categorical__card5_232.0,card5,0.01015979116,4.669508281e-05,0.01015979116,absolute coefficient on train-scaled features,1057
+numeric__transaction_hour,transaction_hour,0.01012933116,4.655508663e-05,-0.01012933116,absolute coefficient on train-scaled features,1058
+categorical__card5_132.0,card5,0.01012410207,4.653105339e-05,-0.01012410207,absolute coefficient on train-scaled features,1059
+categorical__id_31_opera 51.0,id,0.01004095463,4.614890216e-05,-0.01004095463,absolute coefficient on train-scaled features,1060
+categorical__card3_155.0,card3,0.009985870598,4.589573224e-05,-0.009985870598,absolute coefficient on train-scaled features,1061
+categorical__id_30_iOS 10.2.0,id,0.009948579847,4.572434144e-05,-0.009948579847,absolute coefficient on train-scaled features,1062
+categorical__card3_164.0,card3,0.00986916377,4.535933982e-05,-0.00986916377,absolute coefficient on train-scaled features,1063
+categorical__addr2_77.0,addr2,0.00986916377,4.535933982e-05,-0.00986916377,absolute coefficient on train-scaled features,1064
+categorical__card3_191.0,card3,0.00984994671,4.527101692e-05,0.00984994671,absolute coefficient on train-scaled features,1065
+missing__missingindicator_D1,missingindicator_D1,0.009762680646,4.486993623e-05,0.009762680646,absolute coefficient on train-scaled features,1066
+categorical__addr2_69.0,addr2,0.009754240084,4.483114284e-05,-0.009754240084,absolute coefficient on train-scaled features,1067
+categorical__id_31_firefox 58.0,id,0.009746453165,4.479535363e-05,-0.009746453165,absolute coefficient on train-scaled features,1068
+categorical__card3_201.0,card3,0.009733951548,4.473789536e-05,-0.009733951548,absolute coefficient on train-scaled features,1069
+categorical__addr2_89.0,addr2,0.009733951548,4.473789536e-05,-0.009733951548,absolute coefficient on train-scaled features,1070
+categorical__card3_173.0,card3,0.009651961151,4.436106199e-05,-0.009651961151,absolute coefficient on train-scaled features,1071
+categorical__addr2_55.0,addr2,0.009651961151,4.436106199e-05,-0.009651961151,absolute coefficient on train-scaled features,1072
+categorical__id_16_Found,id,0.009592015986,4.408554998e-05,-0.009592015986,absolute coefficient on train-scaled features,1073
+categorical__id_31_samsung browser 6.2,id,0.009490409461,4.361855956e-05,-0.009490409461,absolute coefficient on train-scaled features,1074
+categorical__card5_211.0,card5,0.009468427726,4.351753003e-05,-0.009468427726,absolute coefficient on train-scaled features,1075
+categorical__id_31_chrome 57.0 for android,id,0.009439130755,4.338287919e-05,-0.009439130755,absolute coefficient on train-scaled features,1076
+numeric__V138,V138,0.009322488669,4.284678432e-05,0.009322488669,absolute coefficient on train-scaled features,1077
+missing__missingindicator_id_03,missingindicator_id_03,0.009007610362,4.139958246e-05,0.009007610362,absolute coefficient on train-scaled features,1078
+missing__missingindicator_id_04,missingindicator_id_04,0.009007610362,4.139958246e-05,0.009007610362,absolute coefficient on train-scaled features,1079
+categorical__id_33_1536x864,id,0.008996614199,4.134904336e-05,0.008996614199,absolute coefficient on train-scaled features,1080
+numeric__V14,V14,0.008925276846,4.102117209e-05,0.008925276846,absolute coefficient on train-scaled features,1081
+categorical__id_33_3840x2162,id,0.008839731378,4.062799938e-05,-0.008839731378,absolute coefficient on train-scaled features,1082
+numeric__V117,V117,0.008836950208,4.061521693e-05,0.008836950208,absolute coefficient on train-scaled features,1083
+numeric__V119,V119,0.008714262143,4.005133434e-05,0.008714262143,absolute coefficient on train-scaled features,1084
+categorical__card5_147.0,card5,0.008615461865,3.959724162e-05,0.008615461865,absolute coefficient on train-scaled features,1085
+categorical__id_31_chrome 69.0,id,0.008609127593,3.956812888e-05,-0.008609127593,absolute coefficient on train-scaled features,1086
+categorical__id_31_edge,id,0.008504804569,3.908865326e-05,0.008504804569,absolute coefficient on train-scaled features,1087
+categorical__card5_134.0,card5,0.00844562524,3.881666108e-05,0.00844562524,absolute coefficient on train-scaled features,1088
+numeric__V184,V184,0.008365383403,3.844786421e-05,0.008365383403,absolute coefficient on train-scaled features,1089
+categorical__card3_177.0,card3,0.008284771315,3.807736563e-05,-0.008284771315,absolute coefficient on train-scaled features,1090
+categorical__id_31_chrome 54.0 for android,id,0.008060798042,3.704796942e-05,-0.008060798042,absolute coefficient on train-scaled features,1091
+categorical__card3_157.0,card3,0.008053138339,3.701276491e-05,-0.008053138339,absolute coefficient on train-scaled features,1092
+categorical__id_33_1188x720,id,0.008002299829,3.677910771e-05,-0.008002299829,absolute coefficient on train-scaled features,1093
+categorical__addr2_62.0,addr2,0.007955953801,3.656609825e-05,-0.007955953801,absolute coefficient on train-scaled features,1094
+categorical__id_31_chrome 56.0,id,0.007944672806,3.651425004e-05,-0.007944672806,absolute coefficient on train-scaled features,1095
+categorical__id_31_edge 13.0,id,0.007934829449,3.646900931e-05,0.007934829449,absolute coefficient on train-scaled features,1096
+categorical__id_33_2220x1081,id,0.00793164339,3.645436596e-05,0.00793164339,absolute coefficient on train-scaled features,1097
+categorical__id_31_opera 52.0,id,0.007931301442,3.645279435e-05,0.007931301442,absolute coefficient on train-scaled features,1098
+categorical__id_31_mobile,id,0.00791396993,3.637313755e-05,0.00791396993,absolute coefficient on train-scaled features,1099
+categorical__addr2_49.0,addr2,0.00776888213,3.570630428e-05,-0.00776888213,absolute coefficient on train-scaled features,1100
+categorical__id_33_2001x1125,id,0.007754297735,3.563927342e-05,-0.007754297735,absolute coefficient on train-scaled features,1101
+numeric__D6,D6,0.007596485927,3.491395975e-05,0.007596485927,absolute coefficient on train-scaled features,1102
+numeric__V125,V125,0.007502828836,3.448350546e-05,-0.007502828836,absolute coefficient on train-scaled features,1103
+categorical__id_31_chrome 58.0,id,0.007429802438,3.414787123e-05,0.007429802438,absolute coefficient on train-scaled features,1104
+categorical__card3_182.0,card3,0.007366767085,3.385815651e-05,0.007366767085,absolute coefficient on train-scaled features,1105
+categorical__id_31_mobile safari uiwebview,id,0.007213901359,3.315557536e-05,-0.007213901359,absolute coefficient on train-scaled features,1106
+categorical__id_31_firefox 60.0,id,0.007211157966,3.314296654e-05,-0.007211157966,absolute coefficient on train-scaled features,1107
+categorical__id_34_match_status:0,id,0.007195913432,3.307290164e-05,0.007195913432,absolute coefficient on train-scaled features,1108
+numeric__D15,D15,0.007181430474,3.300633699e-05,0.007181430474,absolute coefficient on train-scaled features,1109
+numeric__id_05,id_05,0.007114558107,3.26989871e-05,0.007114558107,absolute coefficient on train-scaled features,1110
+categorical__id_31_chrome 62.0 for ios,id,0.006979948805,3.20803137e-05,-0.006979948805,absolute coefficient on train-scaled features,1111
+numeric__V289,V289,0.006823910064,3.136314917e-05,0.006823910064,absolute coefficient on train-scaled features,1112
+categorical__id_30_iOS 11.0.1,id,0.006748504578,3.101658049e-05,-0.006748504578,absolute coefficient on train-scaled features,1113
+categorical__card3_198.0,card3,0.00669647241,3.077743714e-05,-0.00669647241,absolute coefficient on train-scaled features,1114
+categorical__id_31_edge 17.0,id,0.006639107372,3.051378358e-05,-0.006639107372,absolute coefficient on train-scaled features,1115
+categorical__id_30_iOS 10.0.2,id,0.006599556067,3.033200312e-05,-0.006599556067,absolute coefficient on train-scaled features,1116
+categorical__card5_159.0,card5,0.006492724826,2.984099956e-05,0.006492724826,absolute coefficient on train-scaled features,1117
+numeric__V181,V181,0.006461919228,2.969941496e-05,0.006461919228,absolute coefficient on train-scaled features,1118
+categorical__card3_137.0,card3,0.006368550481,2.927028593e-05,-0.006368550481,absolute coefficient on train-scaled features,1119
+categorical__addr2_30.0,addr2,0.006351989641,2.919417119e-05,-0.006351989641,absolute coefficient on train-scaled features,1120
+categorical__id_33_1024x819,id,0.006320840296,2.905100671e-05,-0.006320840296,absolute coefficient on train-scaled features,1121
+categorical__id_31_edge 14.0,id,0.005853781546,2.690437331e-05,-0.005853781546,absolute coefficient on train-scaled features,1122
+categorical__addr2_93.0,addr2,0.005520977572,2.537478389e-05,-0.005520977572,absolute coefficient on train-scaled features,1123
+categorical__id_31_chrome 55.0,id,0.005495916784,2.525960282e-05,-0.005495916784,absolute coefficient on train-scaled features,1124
+missing__missingindicator_D5,missingindicator_D5,0.005461878591,2.5103161e-05,-0.005461878591,absolute coefficient on train-scaled features,1125
+categorical__id_31_mobile safari generic,id,0.005314982707,2.442801765e-05,-0.005314982707,absolute coefficient on train-scaled features,1126
+categorical__card3_231.0,card3,0.005159629642,2.371400452e-05,-0.005159629642,absolute coefficient on train-scaled features,1127
+numeric__V8,V8,0.005077419958,2.333616329e-05,-0.005077419958,absolute coefficient on train-scaled features,1128
+missing__missingindicator_D6,missingindicator_D6,0.00487780612,2.241872468e-05,0.00487780612,absolute coefficient on train-scaled features,1129
+categorical__id_31_safari 10.0,id,0.004863237553,2.235176656e-05,-0.004863237553,absolute coefficient on train-scaled features,1130
+categorical__card5_101.0,card5,0.004812725842,2.211961135e-05,-0.004812725842,absolute coefficient on train-scaled features,1131
+numeric__V238,V238,0.004719105084,2.168932405e-05,-0.004719105084,absolute coefficient on train-scaled features,1132
+categorical__card3_167.0,card3,0.004558635676,2.095179587e-05,0.004558635676,absolute coefficient on train-scaled features,1133
+numeric__V243,V243,0.004119636978,1.893412836e-05,-0.004119636978,absolute coefficient on train-scaled features,1134
+categorical__card5_228.0,card5,0.00402241472,1.848728833e-05,0.00402241472,absolute coefficient on train-scaled features,1135
+categorical__card4_american express,card4,0.00399922243,1.838069501e-05,0.00399922243,absolute coefficient on train-scaled features,1136
+numeric__V107,V107,0.003987564215,1.832711306e-05,-0.003987564215,absolute coefficient on train-scaled features,1137
+numeric__V322,V322,0.003809675452,1.750952436e-05,0.003809675452,absolute coefficient on train-scaled features,1138
+categorical__addr2_92.0,addr2,0.003772820865,1.73401382e-05,0.003772820865,absolute coefficient on train-scaled features,1139
+categorical__card3_141.0,card3,0.003747748089,1.722490204e-05,-0.003747748089,absolute coefficient on train-scaled features,1140
+categorical__card5_113.0,card5,0.003735163743,1.716706354e-05,-0.003735163743,absolute coefficient on train-scaled features,1141
+categorical__card5_119.0,card5,0.003619793931,1.663681613e-05,-0.003619793931,absolute coefficient on train-scaled features,1142
+categorical__card5_150.0,card5,0.003551498021,1.632292354e-05,0.003551498021,absolute coefficient on train-scaled features,1143
+categorical__card5_199.0,card5,0.003534368637,1.624419574e-05,0.003534368637,absolute coefficient on train-scaled features,1144
+numeric__D13,D13,0.003515279686,1.615646163e-05,0.003515279686,absolute coefficient on train-scaled features,1145
+numeric__V201,V201,0.003432239706,1.577480431e-05,0.003432239706,absolute coefficient on train-scaled features,1146
+categorical__card3_129.0,card3,0.003420648365,1.572152973e-05,-0.003420648365,absolute coefficient on train-scaled features,1147
+numeric__dist1,dist1,0.003413079459,1.568674253e-05,0.003413079459,absolute coefficient on train-scaled features,1148
+categorical__id_31_chrome 46.0 for android,id,0.003387442923,1.556891529e-05,-0.003387442923,absolute coefficient on train-scaled features,1149
+numeric__V249,V249,0.00335791163,1.543318748e-05,0.00335791163,absolute coefficient on train-scaled features,1150
+categorical__card3_126.0,card3,0.003310848224,1.52168809e-05,-0.003310848224,absolute coefficient on train-scaled features,1151
+categorical__id_31_chrome 43.0 for android,id,0.003185020579,1.463856859e-05,-0.003185020579,absolute coefficient on train-scaled features,1152
+categorical__id_31_chrome 51.0 for android,id,0.003173948218,1.458767927e-05,-0.003173948218,absolute coefficient on train-scaled features,1153
+categorical__id_31_opera generic,id,0.003161021723,1.452826824e-05,0.003161021723,absolute coefficient on train-scaled features,1154
+categorical__id_30_Windows 8,id,0.00306242973,1.407513281e-05,-0.00306242973,absolute coefficient on train-scaled features,1155
+categorical__id_34_match_status:2,id,0.003051934236,1.402689481e-05,-0.003051934236,absolute coefficient on train-scaled features,1156
+categorical__card3_223.0,card3,0.003037783312,1.396185622e-05,0.003037783312,absolute coefficient on train-scaled features,1157
+categorical__card5_194.0,card5,0.00302304027,1.389409621e-05,0.00302304027,absolute coefficient on train-scaled features,1158
+categorical__id_33_1366x767,id,0.002950813866,1.35621388e-05,0.002950813866,absolute coefficient on train-scaled features,1159
+categorical__id_31_chrome 65.0 for android,id,0.002927950331,1.345705645e-05,0.002927950331,absolute coefficient on train-scaled features,1160
+categorical__id_31_firefox generic,id,0.002841713903,1.306070804e-05,0.002841713903,absolute coefficient on train-scaled features,1161
+categorical__card3_135.0,card3,0.002776094,1.275911456e-05,-0.002776094,absolute coefficient on train-scaled features,1162
+categorical__addr2_23.0,addr2,0.002626721255,1.207258738e-05,-0.002626721255,absolute coefficient on train-scaled features,1163
+numeric__V65,V65,0.00258568566,1.188398503e-05,0.00258568566,absolute coefficient on train-scaled features,1164
+categorical__id_33_1280x768,id,0.002421190946,1.112795627e-05,0.002421190946,absolute coefficient on train-scaled features,1165
+categorical__id_33_2160x1080,id,0.002363712994,1.086378374e-05,-0.002363712994,absolute coefficient on train-scaled features,1166
+categorical__id_31_chrome 61.0 for android,id,0.002130652256,9.79262093e-06,0.002130652256,absolute coefficient on train-scaled features,1167
+categorical__id_31_samsung,id,0.002107183079,9.684755019e-06,-0.002107183079,absolute coefficient on train-scaled features,1168
+categorical__card5_142.0,card5,0.001821372634,8.371151009e-06,-0.001821372634,absolute coefficient on train-scaled features,1169
+categorical__card5_190.0,card5,0.001813367011,8.334356629e-06,0.001813367011,absolute coefficient on train-scaled features,1170
+categorical__id_31_android browser 4.0,id,0.001782800726,8.193871927e-06,-0.001782800726,absolute coefficient on train-scaled features,1171
+categorical__id_30_other,id,0.001758262626,8.08109317e-06,0.001758262626,absolute coefficient on train-scaled features,1172
+categorical__card3_142.0,card3,0.001746713041,8.0280105e-06,0.001746713041,absolute coefficient on train-scaled features,1173
+numeric__V304,V304,0.001700086536,7.813711952e-06,-0.001700086536,absolute coefficient on train-scaled features,1174
+categorical__card5_212.0,card5,0.001677944333,7.711944898e-06,-0.001677944333,absolute coefficient on train-scaled features,1175
+categorical__id_33_0x0,id,0.001668353454,7.667864573e-06,0.001668353454,absolute coefficient on train-scaled features,1176
+categorical__id_31_Samsung/SM-G531H,id,0.001613149896,7.414145312e-06,0.001613149896,absolute coefficient on train-scaled features,1177
+categorical__card3_180.0,card3,0.001553607625,7.140485035e-06,-0.001553607625,absolute coefficient on train-scaled features,1178
+categorical__id_33_1280x1024,id,0.001436130785,6.600553585e-06,-0.001436130785,absolute coefficient on train-scaled features,1179
+categorical__id_33_2220x1080,id,0.001298304914,5.967096618e-06,0.001298304914,absolute coefficient on train-scaled features,1180
+categorical__id_33_1920x1200,id,0.001296581997,5.959177978e-06,0.001296581997,absolute coefficient on train-scaled features,1181
+categorical__id_31_samsung browser 4.2,id,0.001225713883,5.633463365e-06,0.001225713883,absolute coefficient on train-scaled features,1182
+categorical__id_31_samsung browser 5.2,id,0.00114438913,5.259689337e-06,0.00114438913,absolute coefficient on train-scaled features,1183
+categorical__id_31_chrome 66.0 for ios,id,0.001120551929,5.150131956e-06,-0.001120551929,absolute coefficient on train-scaled features,1184
+categorical__id_33_2100x1312,id,0.001024873301,4.710386553e-06,-0.001024873301,absolute coefficient on train-scaled features,1185
+categorical__id_33_2112x1188,id,0.0008819488127,4.053496003e-06,-0.0008819488127,absolute coefficient on train-scaled features,1186
+categorical__addr2_21.0,addr2,0.0008738613109,4.016325302e-06,-0.0008738613109,absolute coefficient on train-scaled features,1187
+categorical__id_31_chrome 55.0 for android,id,0.0008408326401,3.864523311e-06,0.0008408326401,absolute coefficient on train-scaled features,1188
+categorical__id_33___MISSING__,id,0.0008273701127,3.802648631e-06,0.0008273701127,absolute coefficient on train-scaled features,1189
+categorical__id_31_firefox 59.0,id,0.0007917670519,3.639014571e-06,0.0007917670519,absolute coefficient on train-scaled features,1190
+categorical__id_31_samsung browser 6.4,id,0.0006793246157,3.122221579e-06,0.0006793246157,absolute coefficient on train-scaled features,1191
+categorical__addr2_29.0,addr2,0.0006572770253,3.020889372e-06,-0.0006572770253,absolute coefficient on train-scaled features,1192
+categorical__id_31_opera 53.0,id,0.0006321934375,2.905603517e-06,-0.0006321934375,absolute coefficient on train-scaled features,1193
+numeric__D9,D9,0.0006145928989,2.824710259e-06,0.0006145928989,absolute coefficient on train-scaled features,1194
+categorical__id_31_chrome 60.0 for android,id,0.0005053353817,2.322555369e-06,0.0005053353817,absolute coefficient on train-scaled features,1195
+categorical__id_31_chrome 66.0 for android,id,0.0004797037814,2.204750811e-06,-0.0004797037814,absolute coefficient on train-scaled features,1196
+categorical__id_33_2159x1439,id,0.0004436028558,2.038828532e-06,-0.0004436028558,absolute coefficient on train-scaled features,1197
+numeric__V172,V172,0.0004421161105,2.03199535e-06,0.0004421161105,absolute coefficient on train-scaled features,1198
+categorical__id_31_other,id,0.0004274753472,1.964705419e-06,0.0004274753472,absolute coefficient on train-scaled features,1199
+categorical__id_33_2159x1440,id,0.0003613820816,1.660936329e-06,-0.0003613820816,absolute coefficient on train-scaled features,1200
+categorical__card5_143.0,card5,0.0003213501518,1.47694689e-06,-0.0003213501518,absolute coefficient on train-scaled features,1201
+categorical__addr2_20.0,addr2,0.0001660623538,7.632337363e-07,-0.0001660623538,absolute coefficient on train-scaled features,1202
+categorical__id_31_chrome 58.0 for android,id,7.970312223e-05,3.663209052e-07,-7.970312223e-05,absolute coefficient on train-scaled features,1203
+categorical__addr2_35.0,addr2,2.83523743e-05,1.303094173e-07,-2.83523743e-05,absolute coefficient on train-scaled features,1204
+categorical__card3_133.0,card3,1.526602509e-05,7.016367709e-08,-1.526602509e-05,absolute coefficient on train-scaled features,1205
+numeric__V197,V197,7.834598733e-06,3.60083422e-08,-7.834598733e-06,absolute coefficient on train-scaled features,1206
+categorical__id_30_Mac OS X 10_11_5,id,4.254990084e-06,1.955622033e-08,-4.254990084e-06,absolute coefficient on train-scaled features,1207

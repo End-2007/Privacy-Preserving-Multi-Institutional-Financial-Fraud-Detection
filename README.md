@@ -86,7 +86,7 @@ The selected model for both datasets is LightGBM with class weights. The saved r
 
 **Dataset color key:** PaySim is blue; IEEE-CIS is purple. The threshold is selected using validation data; the test metrics are reported separately and are not used to tune it.
 
-The IEEE-CIS test FPR is slightly above the 1% validation target. The threshold was selected without test data and must not be tuned using the test result. Only the selected LightGBM model for each dataset has final test metrics; the four-family model comparison is validation-only.
+The IEEE-CIS test FPR is slightly above the 1% validation target. The threshold was selected without test data and must not be tuned using the test result. The table above reports the original Stage 1 selected-LightGBM results. A separate full-versus-authorization-time experiment now includes held-out results for all four model families on both datasets; see [the completed Model A/Model B analysis](reports/feature_set_results/model_a_vs_model_b_analysis.md) and [its reproducibility guide](docs/feature_set_comparison.md).
 
 Full metrics, threshold-selected validation comparisons, audit summaries, and precision-recall figures are available in the reports directory:
 - PaySim: reports/paysim_metrics.json and reports/figures/paysim_pr_curves.png
@@ -154,6 +154,7 @@ Future stages may explore federated learning across simulated institutions, diff
 - Local demonstration instructions: docs/micro_demo_runbook.md
 - Dataset descriptions: docs/data_card_paysim.md and docs/data_card_ieee_cis.md
 - Final threshold audit: docs/final_threshold_validation.md
+- Model A/Model B feature-list pipeline: docs/feature_set_comparison.md
 - W&B experiment project: https://forge.coreweave.com/wandb/ndugar007-bharati-vidyapeeths-college-of-engineering/fedguard-stage1
 
 ## Team

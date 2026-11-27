@@ -1,0 +1,19 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+categorical__type_CASH_IN,type,26.63474893,0.343147088,-26.63474893,absolute coefficient on train-scaled features,1
+categorical__type_PAYMENT,type,8.549455603,0.1101463656,-8.549455603,absolute coefficient on train-scaled features,2
+categorical__type_CASH_OUT,type,6.0926038,0.07849367222,6.0926038,absolute coefficient on train-scaled features,3
+numeric__orig_balance_delta,orig_balance_delta,4.589170295,0.05912428261,-4.589170295,absolute coefficient on train-scaled features,4
+numeric__orig_zero_after,orig_zero_after,4.467000743,0.05755031898,4.467000743,absolute coefficient on train-scaled features,5
+numeric__oldbalanceOrg,oldbalanceOrg,4.198361306,0.05408931994,4.198361306,absolute coefficient on train-scaled features,6
+numeric__newbalanceOrig,newbalanceOrig,3.916682917,0.05046033439,3.916682917,absolute coefficient on train-scaled features,7
+categorical__type_TRANSFER,type,3.901789372,0.05026845436,3.901789372,absolute coefficient on train-scaled features,8
+numeric__error_balance_dest,error_balance_dest,3.451010115,0.04446086856,3.451010115,absolute coefficient on train-scaled features,9
+numeric__dest_balance_delta,dest_balance_delta,3.208925605,0.04134198823,-3.208925605,absolute coefficient on train-scaled features,10
+numeric__error_balance_orig,error_balance_orig,2.904974641,0.03742605539,-2.904974641,absolute coefficient on train-scaled features,11
+numeric__log_amount,log_amount,1.848346244,0.02381305087,-1.848346244,absolute coefficient on train-scaled features,12
+numeric__amount,amount,1.795562602,0.02313301619,-1.795562602,absolute coefficient on train-scaled features,13
+numeric__hour,hour,0.6500281458,0.00837459613,-0.6500281458,absolute coefficient on train-scaled features,14
+numeric__newbalanceDest,newbalanceDest,0.5289006114,0.006814057272,-0.5289006114,absolute coefficient on train-scaled features,15
+numeric__step,step,0.523729565,0.006747436425,0.523729565,absolute coefficient on train-scaled features,16
+numeric__oldbalanceDest,oldbalanceDest,0.1899846133,0.002447654641,0.1899846133,absolute coefficient on train-scaled features,17
+categorical__type_DEBIT,type,0.1677689188,0.002161440158,-0.1677689188,absolute coefficient on train-scaled features,18

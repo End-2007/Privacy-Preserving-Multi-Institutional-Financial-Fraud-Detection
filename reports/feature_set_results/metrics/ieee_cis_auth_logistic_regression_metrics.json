@@ -1,0 +1,98 @@
+{
+  "artifact": "models\\ieee_cis\\feature_sets\\auth\\logistic_regression\\stage1\\best_model.joblib",
+  "compute_device": "cpu",
+  "confusion_figure": "reports\\feature_set_results\\figures\\ieee_cis_auth_logistic_regression_confusion.png",
+  "created_utc": "2026-11-27T06:11:25.700017+00:00",
+  "dataset": "ieee_cis",
+  "feature_importance_file": "reports\\feature_set_results\\feature_importance\\ieee_cis_auth_logistic_regression.csv",
+  "feature_list": "configs\\features\\IEEECIS_auth.txt",
+  "feature_metadata": "data\\processed\\ieee_cis\\feature_sets\\auth\\feature_metadata.json",
+  "feature_set": "auth",
+  "final_metrics_split": "test",
+  "fit_seconds": 0.0,
+  "lr_scaler": "models\\ieee_cis\\feature_sets\\auth\\logistic_regression\\stage1\\lr_scaler.joblib",
+  "metrics_file": "reports\\feature_set_results\\metrics\\ieee_cis_auth_logistic_regression_metrics.json",
+  "model": "logistic_regression",
+  "model_candidate_selection": "highest validation AP among the recorded candidates for this model family",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0"
+  },
+  "params": {
+    "C": 0.0745934328572655,
+    "solver": "liblinear"
+  },
+  "pr_figure": "reports\\feature_set_results\\figures\\ieee_cis_auth_logistic_regression_pr.png",
+  "prediction_file": "reports\\feature_set_results\\predictions\\ieee_cis_auth_logistic_regression_predictions.csv.gz",
+  "preprocessing_fit_split": "train",
+  "preprocessor": "models\\ieee_cis\\feature_sets\\auth\\preprocessor.joblib",
+  "resampling_counts": {
+    "after": {
+      "negative": 72320,
+      "positive": 36160
+    },
+    "after_cap": {
+      "negative": 72320,
+      "positive": 14464
+    },
+    "before": {
+      "negative": 398914,
+      "positive": 14464
+    },
+    "cap_majority_per_minority": 5,
+    "method": "cap_smote",
+    "seed": 42
+  },
+  "search_candidate": 1,
+  "search_validation_ap": 0.14372035698573554,
+  "seed": 42,
+  "selection_metric": "validation Average Precision (AP)",
+  "source_search_report": "reports\\ieee_cis_auth_logistic_regression_metrics.json",
+  "split": {
+    "stratified": true,
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  },
+  "split_manifest": "data\\processed\\ieee_cis\\feature_sets\\auth\\split_manifest.json",
+  "strategy": "cap_smote",
+  "test_metrics": {
+    "f1": 0.16605839416058393,
+    "fn": 2735,
+    "fp": 921,
+    "fpr": 0.010774198076788095,
+    "pr_auc": 0.15071563103826413,
+    "precision": 0.28326848249027237,
+    "recall": 0.11745724427234591,
+    "roc_auc": 0.7569479196981355,
+    "threshold": 0.8183093429410548,
+    "tn": 84561,
+    "tp": 364
+  },
+  "test_rows": 88581,
+  "test_scored_once_for_this_export": true,
+  "threshold": 0.8183093429410548,
+  "threshold_rule": "maximize validation recall subject to validation FPR <= 0.01",
+  "threshold_selected_on": "validation",
+  "train_only_resampling": true,
+  "train_rows": 413378,
+  "validation_metrics": {
+    "f1": 0.16018626309662398,
+    "fn": 2756,
+    "fp": 851,
+    "fpr": 0.009955428691756063,
+    "pr_auc": 0.14372035698573554,
+    "precision": 0.2878661087866109,
+    "recall": 0.11096774193548387,
+    "roc_auc": 0.7549133838834587,
+    "threshold": 0.8183093429410548,
+    "tn": 84630,
+    "tp": 344
+  },
+  "validation_rows": 88581
+}

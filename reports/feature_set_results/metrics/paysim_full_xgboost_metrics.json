@@ -1,0 +1,97 @@
+{
+  "artifact": "models\\paysim\\feature_sets\\full\\xgboost\\stage1\\best_model.joblib",
+  "compute_device": "cuda",
+  "confusion_figure": "reports\\feature_set_results\\figures\\paysim_full_xgboost_confusion.png",
+  "created_utc": "2026-11-27T06:09:43.137645+00:00",
+  "dataset": "paysim",
+  "feature_importance_file": "reports\\feature_set_results\\feature_importance\\paysim_full_xgboost.csv",
+  "feature_list": "configs\\features\\PaySim_full.txt",
+  "feature_metadata": "data\\processed\\paysim\\feature_sets\\full\\feature_metadata.json",
+  "feature_set": "full",
+  "final_metrics_split": "test",
+  "fit_seconds": 0.0,
+  "lr_scaler": null,
+  "metrics_file": "reports\\feature_set_results\\metrics\\paysim_full_xgboost_metrics.json",
+  "model": "xgboost",
+  "model_candidate_selection": "highest validation AP among the recorded candidates for this model family",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0"
+  },
+  "params": {
+    "colsample_bytree": 1.0,
+    "learning_rate": 0.12519096368575075,
+    "max_depth": 7,
+    "min_child_weight": 10,
+    "n_estimators": 200,
+    "reg_lambda": 1.5620693675639872,
+    "subsample": 0.9
+  },
+  "pr_figure": "reports\\feature_set_results\\figures\\paysim_full_xgboost_pr.png",
+  "prediction_file": "reports\\feature_set_results\\predictions\\paysim_full_xgboost_predictions.csv.gz",
+  "preprocessing_fit_split": "train",
+  "preprocessor": "models\\paysim\\feature_sets\\full\\preprocessor.joblib",
+  "resampling_counts": {
+    "after": {
+      "negative": 4448084,
+      "positive": 5749
+    },
+    "before": {
+      "negative": 4448084,
+      "positive": 5749
+    },
+    "method": "class_weight"
+  },
+  "search_candidate": 1,
+  "search_validation_ap": 0.9999813330998899,
+  "seed": 42,
+  "selection_metric": "validation Average Precision (AP)",
+  "source_search_report": "reports\\paysim_full_metrics.json",
+  "split": {
+    "stratified": true,
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  },
+  "split_manifest": "data\\processed\\paysim\\feature_sets\\full\\split_manifest.json",
+  "strategy": "class_weight",
+  "test_metrics": {
+    "f1": 0.9820215741110667,
+    "fn": 3,
+    "fp": 42,
+    "fpr": 4.406390945496091e-05,
+    "pr_auc": 0.9977886561175936,
+    "precision": 0.9669551534225019,
+    "recall": 0.997564935064935,
+    "roc_auc": 0.999237770326941,
+    "threshold": 0.08033625781536102,
+    "tn": 953119,
+    "tp": 1229
+  },
+  "test_rows": 954393,
+  "test_scored_once_for_this_export": true,
+  "threshold": 0.08033625781536102,
+  "threshold_rule": "maximize validation recall subject to validation FPR <= 0.01",
+  "threshold_selected_on": "validation",
+  "train_only_resampling": true,
+  "train_rows": 4453833,
+  "validation_metrics": {
+    "f1": 0.9883674288006418,
+    "fn": 0,
+    "fp": 29,
+    "fpr": 3.042504841779257e-05,
+    "pr_auc": 0.9999813330998899,
+    "precision": 0.9770023790642347,
+    "recall": 1.0,
+    "roc_auc": 0.9999999753043438,
+    "threshold": 0.08033625781536102,
+    "tn": 953133,
+    "tp": 1232
+  },
+  "validation_rows": 954394
+}

@@ -1,0 +1,12 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+categorical__type_CASH_IN,type,0.5704638958,0.5704639197,,native xgboost feature_importances_,1
+categorical__type_PAYMENT,type,0.2167521268,0.2167521359,,native xgboost feature_importances_,2
+numeric__log_amount,log_amount,0.07269383967,0.07269384272,,native xgboost feature_importances_,3
+numeric__oldbalanceOrg,oldbalanceOrg,0.0397122018,0.03971220347,,native xgboost feature_importances_,4
+numeric__amount,amount,0.02296612598,0.02296612694,,native xgboost feature_importances_,5
+categorical__type_TRANSFER,type,0.01962268725,0.01962268807,,native xgboost feature_importances_,6
+numeric__hour,hour,0.01844893582,0.01844893659,,native xgboost feature_importances_,7
+categorical__type_CASH_OUT,type,0.01484140102,0.01484140164,,native xgboost feature_importances_,8
+categorical__type_DEBIT,type,0.01447733305,0.01447733366,,native xgboost feature_importances_,9
+numeric__step,step,0.005845444277,0.005845444522,,native xgboost feature_importances_,10
+numeric__oldbalanceDest,oldbalanceDest,0.004175966606,0.004175966781,,native xgboost feature_importances_,11

@@ -1,0 +1,98 @@
+{
+  "artifact": "models\\ieee_cis\\feature_sets\\full\\stage1\\best_model.joblib",
+  "compute_device": "cpu",
+  "confusion_figure": "reports\\feature_set_results\\figures\\ieee_cis_full_lightgbm_confusion.png",
+  "created_utc": "2026-11-27T06:11:23.682934+00:00",
+  "dataset": "ieee_cis",
+  "feature_importance_file": "reports\\feature_set_results\\feature_importance\\ieee_cis_full_lightgbm.csv",
+  "feature_list": "configs\\features\\IEEECIS_full.txt",
+  "feature_metadata": "data\\processed\\ieee_cis\\feature_sets\\full\\feature_metadata.json",
+  "feature_set": "full",
+  "final_metrics_split": "test",
+  "fit_seconds": 0.0,
+  "lr_scaler": null,
+  "metrics_file": "reports\\feature_set_results\\metrics\\ieee_cis_full_lightgbm_metrics.json",
+  "model": "lightgbm",
+  "model_candidate_selection": "highest validation AP among the recorded candidates for this model family",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0"
+  },
+  "params": {
+    "colsample_bytree": 1.0,
+    "learning_rate": 0.11811371850121274,
+    "max_depth": -1,
+    "min_child_samples": 50,
+    "n_estimators": 500,
+    "num_leaves": 31,
+    "reg_lambda": 0.17050539260269293,
+    "subsample": 1.0
+  },
+  "pr_figure": "reports\\feature_set_results\\figures\\ieee_cis_full_lightgbm_pr.png",
+  "prediction_file": "reports\\feature_set_results\\predictions\\ieee_cis_full_lightgbm_predictions.csv.gz",
+  "preprocessing_fit_split": "train",
+  "preprocessor": "models\\ieee_cis\\feature_sets\\full\\preprocessor.joblib",
+  "resampling_counts": {
+    "after": {
+      "negative": 398914,
+      "positive": 14464
+    },
+    "before": {
+      "negative": 398914,
+      "positive": 14464
+    },
+    "method": "class_weight"
+  },
+  "search_candidate": null,
+  "search_validation_ap": 0.7592608492047006,
+  "seed": 42,
+  "selection_metric": "validation Average Precision (AP)",
+  "source_search_report": "reports\\ieee_cis_full_metrics.json",
+  "split": {
+    "stratified": true,
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  },
+  "split_manifest": "data\\processed\\ieee_cis\\feature_sets\\full\\split_manifest.json",
+  "strategy": "class_weight",
+  "test_metrics": {
+    "f1": 0.7022674991784423,
+    "fn": 962,
+    "fp": 850,
+    "fpr": 0.009943613860227884,
+    "pr_auc": 0.7556358781985362,
+    "precision": 0.7154335453632407,
+    "recall": 0.6895772829945144,
+    "roc_auc": 0.9601744514878519,
+    "threshold": 0.7736608553921122,
+    "tn": 84632,
+    "tp": 2137
+  },
+  "test_rows": 88581,
+  "test_scored_once_for_this_export": true,
+  "threshold": 0.7736608553921122,
+  "threshold_rule": "maximize validation recall subject to validation FPR <= 0.01",
+  "threshold_selected_on": "validation",
+  "train_only_resampling": true,
+  "train_rows": 413378,
+  "validation_metrics": {
+    "f1": 0.7007563301545544,
+    "fn": 969,
+    "fp": 851,
+    "fpr": 0.009955428691756063,
+    "pr_auc": 0.7592608492047006,
+    "precision": 0.7146210596914823,
+    "recall": 0.6874193548387096,
+    "roc_auc": 0.9611423477996053,
+    "threshold": 0.7736608553921122,
+    "tn": 84630,
+    "tp": 2131
+  },
+  "validation_rows": 88581
+}

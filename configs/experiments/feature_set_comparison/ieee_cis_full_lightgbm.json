@@ -1,0 +1,52 @@
+{
+  "artifact": "models\\ieee_cis\\feature_sets\\full\\stage1\\best_model.joblib",
+  "compute_device": "cpu",
+  "created_utc": "2026-11-27T06:11:23.682934+00:00",
+  "dataset": "ieee_cis",
+  "feature_importance_file": "reports\\feature_set_results\\feature_importance\\ieee_cis_full_lightgbm.csv",
+  "feature_list": "configs\\features\\IEEECIS_full.txt",
+  "feature_metadata": "data\\processed\\ieee_cis\\feature_sets\\full\\feature_metadata.json",
+  "feature_set": "full",
+  "final_metrics_split": "test",
+  "lr_scaler": null,
+  "model": "lightgbm",
+  "model_candidate_selection": "highest validation AP among the recorded candidates for this model family",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0"
+  },
+  "params": {
+    "colsample_bytree": 1.0,
+    "learning_rate": 0.11811371850121274,
+    "max_depth": -1,
+    "min_child_samples": 50,
+    "n_estimators": 500,
+    "num_leaves": 31,
+    "reg_lambda": 0.17050539260269293,
+    "subsample": 1.0
+  },
+  "prediction_file": "reports\\feature_set_results\\predictions\\ieee_cis_full_lightgbm_predictions.csv.gz",
+  "preprocessing_fit_split": "train",
+  "preprocessor": "models\\ieee_cis\\feature_sets\\full\\preprocessor.joblib",
+  "search_candidate": null,
+  "search_validation_ap": 0.7592608492047006,
+  "seed": 42,
+  "selection_metric": "validation Average Precision (AP)",
+  "source_search_report": "reports\\ieee_cis_full_metrics.json",
+  "split": {
+    "stratified": true,
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  },
+  "split_manifest": "data\\processed\\ieee_cis\\feature_sets\\full\\split_manifest.json",
+  "strategy": "class_weight",
+  "threshold_rule": "maximize validation recall subject to validation FPR <= 0.01",
+  "threshold_selected_on": "validation",
+  "train_only_resampling": true
+}

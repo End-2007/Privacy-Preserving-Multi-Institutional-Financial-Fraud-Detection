@@ -1,0 +1,12 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+categorical__type_TRANSFER,type,0.251496013,0.251496013,,native random_forest feature_importances_,1
+numeric__oldbalanceOrg,oldbalanceOrg,0.1857058958,0.1857058958,,native random_forest feature_importances_,2
+numeric__amount,amount,0.1412887433,0.1412887433,,native random_forest feature_importances_,3
+numeric__log_amount,log_amount,0.1080122994,0.1080122994,,native random_forest feature_importances_,4
+numeric__oldbalanceDest,oldbalanceDest,0.08705702174,0.08705702174,,native random_forest feature_importances_,5
+numeric__hour,hour,0.07421488632,0.07421488632,,native random_forest feature_importances_,6
+categorical__type_CASH_OUT,type,0.05972763379,0.05972763379,,native random_forest feature_importances_,7
+numeric__step,step,0.04830834732,0.04830834732,,native random_forest feature_importances_,8
+categorical__type_CASH_IN,type,0.02665523953,0.02665523953,,native random_forest feature_importances_,9
+categorical__type_PAYMENT,type,0.01720289324,0.01720289324,,native random_forest feature_importances_,10
+categorical__type_DEBIT,type,0.0003310265858,0.0003310265858,,native random_forest feature_importances_,11

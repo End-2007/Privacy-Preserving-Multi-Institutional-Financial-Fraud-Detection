@@ -1,0 +1,1208 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+numeric__V258,V258,0.1283814609,0.1283814496,,native xgboost feature_importances_,1
+numeric__V222,V222,0.0589523986,0.05895239339,,native xgboost feature_importances_,2
+numeric__V201,V201,0.04780250788,0.04780250365,,native xgboost feature_importances_,3
+numeric__V90,V90,0.04485638812,0.04485638416,,native xgboost feature_importances_,4
+numeric__V70,V70,0.03842947632,0.03842947292,,native xgboost feature_importances_,5
+categorical__ProductCD_C,ProductCD,0.02632427029,0.02632426797,,native xgboost feature_importances_,6
+numeric__V257,V257,0.02121000364,0.02121000177,,native xgboost feature_importances_,7
+numeric__V294,V294,0.01409249008,0.01409248883,,native xgboost feature_importances_,8
+categorical__addr2_87.0,addr2,0.008684274741,0.008684273973,,native xgboost feature_importances_,9
+numeric__V102,V102,0.007990300655,0.007990299949,,native xgboost feature_importances_,10
+numeric__V91,V91,0.007879963145,0.007879962448,,native xgboost feature_importances_,11
+numeric__C14,C14,0.007229932118,0.007229931479,,native xgboost feature_importances_,12
+numeric__C8,C8,0.005670271814,0.005670271313,,native xgboost feature_importances_,13
+categorical__M4___MISSING__,M4,0.005614686292,0.005614685795,,native xgboost feature_importances_,14
+numeric__C4,C4,0.005451042671,0.005451042189,,native xgboost feature_importances_,15
+numeric__V29,V29,0.005425041541,0.005425041062,,native xgboost feature_importances_,16
+missing__missingindicator_id_14,missingindicator_id_14,0.005326327868,0.005326327397,,native xgboost feature_importances_,17
+numeric__V317,V317,0.005237086676,0.005237086213,,native xgboost feature_importances_,18
+categorical__card6_credit,card6,0.005217563827,0.005217563365,,native xgboost feature_importances_,19
+numeric__V49,V49,0.004979253281,0.004979252841,,native xgboost feature_importances_,20
+numeric__V318,V318,0.004866919015,0.004866918584,,native xgboost feature_importances_,21
+categorical__card6_debit,card6,0.004802227486,0.004802227062,,native xgboost feature_importances_,22
+numeric__V187,V187,0.004660067149,0.004660066737,,native xgboost feature_importances_,23
+numeric__V69,V69,0.004549752455,0.004549752053,,native xgboost feature_importances_,24
+numeric__D2,D2,0.004104687832,0.00410468747,,native xgboost feature_importances_,25
+numeric__V48,V48,0.004102670122,0.004102669759,,native xgboost feature_importances_,26
+numeric__C1,C1,0.004023196176,0.00402319582,,native xgboost feature_importances_,27
+numeric__C11,C11,0.003827800043,0.003827799705,,native xgboost feature_importances_,28
+numeric__V308,V308,0.003305832855,0.003305832563,,native xgboost feature_importances_,29
+numeric__V128,V128,0.00329680508,0.003296804789,,native xgboost feature_importances_,30
+numeric__id_03,id_03,0.003175840247,0.003175839967,,native xgboost feature_importances_,31
+categorical__ProductCD_R,ProductCD,0.003168412717,0.003168412437,,native xgboost feature_importances_,32
+categorical__DeviceType_mobile,DeviceType,0.003149739932,0.003149739654,,native xgboost feature_importances_,33
+categorical__card5_166.0,card5,0.003139020177,0.003139019899,,native xgboost feature_importances_,34
+categorical__id_34_match_status:2,id,0.003102716291,0.003102716017,,native xgboost feature_importances_,35
+numeric__id_32,id_32,0.003061096184,0.003061095913,,native xgboost feature_importances_,36
+numeric__V295,V295,0.002959043952,0.00295904369,,native xgboost feature_importances_,37
+numeric__V287,V287,0.002907137387,0.00290713713,,native xgboost feature_importances_,38
+numeric__C12,C12,0.002803884214,0.002803883966,,native xgboost feature_importances_,39
+numeric__V296,V296,0.002751887543,0.0027518873,,native xgboost feature_importances_,40
+numeric__D3,D3,0.002714320319,0.002714320079,,native xgboost feature_importances_,41
+categorical__M4_M2,M4,0.002639934188,0.002639933954,,native xgboost feature_importances_,42
+categorical__ProductCD_H,ProductCD,0.002599928528,0.002599928298,,native xgboost feature_importances_,43
+numeric__V97,V97,0.002478589304,0.002478589085,,native xgboost feature_importances_,44
+numeric__V156,V156,0.002468162449,0.002468162231,,native xgboost feature_importances_,45
+categorical__card3_185.0,card3,0.002462688833,0.002462688616,,native xgboost feature_importances_,46
+numeric__V45,V45,0.002436414361,0.002436414146,,native xgboost feature_importances_,47
+numeric__V323,V323,0.00241905218,0.002419051966,,native xgboost feature_importances_,48
+categorical__M6_F,M6,0.002344047185,0.002344046978,,native xgboost feature_importances_,49
+numeric__V95,V95,0.002291182056,0.002291181854,,native xgboost feature_importances_,50
+numeric__C2,C2,0.002285134047,0.002285133845,,native xgboost feature_importances_,51
+numeric__C13,C13,0.00227966276,0.002279662559,,native xgboost feature_importances_,52
+numeric__V312,V312,0.002252872102,0.002252871903,,native xgboost feature_importances_,53
+numeric__V298,V298,0.002235281281,0.002235281084,,native xgboost feature_importances_,54
+numeric__V87,V87,0.002216264606,0.00221626441,,native xgboost feature_importances_,55
+numeric__V281,V281,0.002212924417,0.002212924222,,native xgboost feature_importances_,56
+categorical__M5_T,M5,0.002196622081,0.002196621887,,native xgboost feature_importances_,57
+numeric__V280,V280,0.002163594821,0.00216359463,,native xgboost feature_importances_,58
+missing__missingindicator_id_32,missingindicator_id_32,0.002069665585,0.002069665402,,native xgboost feature_importances_,59
+numeric__C6,C6,0.002056794474,0.002056794292,,native xgboost feature_importances_,60
+numeric__C10,C10,0.002027405426,0.002027405247,,native xgboost feature_importances_,61
+categorical__M6_T,M6,0.002000929322,0.002000929145,,native xgboost feature_importances_,62
+numeric__C5,C5,0.00197415147,0.001974151295,,native xgboost feature_importances_,63
+numeric__V83,V83,0.001957659144,0.001957658971,,native xgboost feature_importances_,64
+numeric__V252,V252,0.001942256116,0.001942255945,,native xgboost feature_importances_,65
+numeric__V196,V196,0.001926624682,0.001926624512,,native xgboost feature_importances_,66
+missing__missingindicator_D5,missingindicator_D5,0.001918913564,0.001918913394,,native xgboost feature_importances_,67
+categorical__id_30_Windows 8.1,id,0.001867836458,0.001867836293,,native xgboost feature_importances_,68
+numeric__log_amt,log_amt,0.00183602504,0.001836024877,,native xgboost feature_importances_,69
+categorical__M2_F,M2,0.001811628928,0.001811628768,,native xgboost feature_importances_,70
+numeric__V285,V285,0.001797901001,0.001797900842,,native xgboost feature_importances_,71
+numeric__V326,V326,0.001789694885,0.001789694727,,native xgboost feature_importances_,72
+categorical__M9_F,M9,0.001782897976,0.001782897819,,native xgboost feature_importances_,73
+numeric__V189,V189,0.001782894367,0.00178289421,,native xgboost feature_importances_,74
+numeric__V129,V129,0.00176850229,0.001768502134,,native xgboost feature_importances_,75
+numeric__V324,V324,0.001764374785,0.001764374629,,native xgboost feature_importances_,76
+categorical__card5_126.0,card5,0.001736204256,0.001736204103,,native xgboost feature_importances_,77
+numeric__C3,C3,0.001735371887,0.001735371733,,native xgboost feature_importances_,78
+numeric__id_17,id_17,0.001719566761,0.001719566609,,native xgboost feature_importances_,79
+numeric__D15,D15,0.001693711616,0.001693711466,,native xgboost feature_importances_,80
+numeric__V54,V54,0.001690188888,0.001690188739,,native xgboost feature_importances_,81
+numeric__C7,C7,0.001687607379,0.00168760723,,native xgboost feature_importances_,82
+numeric__V133,V133,0.001685040304,0.001685040156,,native xgboost feature_importances_,83
+numeric__V335,V335,0.001679306151,0.001679306003,,native xgboost feature_importances_,84
+missing__missingindicator_D10,missingindicator_D10,0.001658744295,0.001658744149,,native xgboost feature_importances_,85
+categorical__M3_F,M3,0.00165396661,0.001653966464,,native xgboost feature_importances_,86
+categorical__M5_F,M5,0.001639898517,0.001639898372,,native xgboost feature_importances_,87
+categorical__id_31_ie 11.0 for desktop,id,0.001616004156,0.001616004013,,native xgboost feature_importances_,88
+categorical__M4_M1,M4,0.00159886817,0.001598868029,,native xgboost feature_importances_,89
+frequency__card1,card1,0.001589574735,0.001589574594,,native xgboost feature_importances_,90
+numeric__TransactionAmt,TransactionAmt,0.001583673758,0.001583673618,,native xgboost feature_importances_,91
+numeric__V315,V315,0.001574734924,0.001574734785,,native xgboost feature_importances_,92
+numeric__V62,V62,0.001565608778,0.00156560864,,native xgboost feature_importances_,93
+numeric__C9,C9,0.001542780548,0.001542780412,,native xgboost feature_importances_,94
+categorical__card5_226.0,card5,0.001531879767,0.001531879631,,native xgboost feature_importances_,95
+numeric__V76,V76,0.001527460525,0.00152746039,,native xgboost feature_importances_,96
+categorical__addr2_96.0,addr2,0.001525516855,0.00152551672,,native xgboost feature_importances_,97
+numeric__V21,V21,0.001510912436,0.001510912303,,native xgboost feature_importances_,98
+categorical__card5_117.0,card5,0.001507909852,0.001507909719,,native xgboost feature_importances_,99
+categorical__id_30_Windows 7,id,0.001506227534,0.001506227401,,native xgboost feature_importances_,100
+missing__missingindicator_D2,missingindicator_D2,0.001484442037,0.001484441905,,native xgboost feature_importances_,101
+numeric__D1,D1,0.001472345321,0.00147234519,,native xgboost feature_importances_,102
+categorical__id_36_T,id,0.001470530871,0.001470530741,,native xgboost feature_importances_,103
+numeric__V333,V333,0.001462255605,0.001462255475,,native xgboost feature_importances_,104
+categorical__M4_M0,M4,0.001453275327,0.001453275198,,native xgboost feature_importances_,105
+numeric__V309,V309,0.001442709006,0.001442708879,,native xgboost feature_importances_,106
+categorical__addr2_65.0,addr2,0.0014384276,0.001438427473,,native xgboost feature_importances_,107
+categorical__card4_discover,card4,0.001435012906,0.001435012779,,native xgboost feature_importances_,108
+numeric__dist1,dist1,0.001434629783,0.001434629656,,native xgboost feature_importances_,109
+numeric__V26,V26,0.001419524662,0.001419524537,,native xgboost feature_importances_,110
+numeric__D10,D10,0.001399843371,0.001399843248,,native xgboost feature_importances_,111
+categorical__card5_185.0,card5,0.001380749629,0.001380749507,,native xgboost feature_importances_,112
+categorical__id_33_1280x720,id,0.001377832843,0.001377832721,,native xgboost feature_importances_,113
+categorical__M3_T,M3,0.001360674156,0.001360674036,,native xgboost feature_importances_,114
+numeric__V283,V283,0.001353697153,0.001353697033,,native xgboost feature_importances_,115
+numeric__V20,V20,0.001348920865,0.001348920746,,native xgboost feature_importances_,116
+categorical__id_30_Windows Vista,id,0.001344100456,0.001344100337,,native xgboost feature_importances_,117
+frequency__card2,card2,0.001339972834,0.001339972716,,native xgboost feature_importances_,118
+numeric__V126,V126,0.001339028822,0.001339028704,,native xgboost feature_importances_,119
+numeric__V36,V36,0.00133858819,0.001338588072,,native xgboost feature_importances_,120
+numeric__V320,V320,0.001337920781,0.001337920663,,native xgboost feature_importances_,121
+frequency__P_emaildomain,P_emaildomain,0.001333513064,0.001333512946,,native xgboost feature_importances_,122
+numeric__V261,V261,0.001330552739,0.001330552622,,native xgboost feature_importances_,123
+numeric__V331,V331,0.001327570644,0.001327570527,,native xgboost feature_importances_,124
+numeric__V64,V64,0.001325543039,0.001325542921,,native xgboost feature_importances_,125
+categorical__card5_229.0,card5,0.001325329999,0.001325329881,,native xgboost feature_importances_,126
+missing__missingindicator_D15,missingindicator_D15,0.001318266965,0.001318266848,,native xgboost feature_importances_,127
+numeric__D4,D4,0.001312682056,0.00131268194,,native xgboost feature_importances_,128
+numeric__V151,V151,0.00130974676,0.001309746644,,native xgboost feature_importances_,129
+categorical__card5_195.0,card5,0.001300320611,0.001300320496,,native xgboost feature_importances_,130
+numeric__V173,V173,0.001299344352,0.001299344238,,native xgboost feature_importances_,131
+numeric__V82,V82,0.001295891823,0.001295891709,,native xgboost feature_importances_,132
+numeric__V30,V30,0.001279195421,0.001279195308,,native xgboost feature_importances_,133
+numeric__V256,V256,0.00127274543,0.001272745318,,native xgboost feature_importances_,134
+numeric__V115,V115,0.001264271676,0.001264271564,,native xgboost feature_importances_,135
+numeric__V244,V244,0.001261048019,0.001261047907,,native xgboost feature_importances_,136
+numeric__V11,V11,0.001253084047,0.001253083936,,native xgboost feature_importances_,137
+numeric__V300,V300,0.001240409329,0.001240409219,,native xgboost feature_importances_,138
+numeric__V165,V165,0.001239237259,0.00123923715,,native xgboost feature_importances_,139
+numeric__V13,V13,0.001222105348,0.00122210524,,native xgboost feature_importances_,140
+frequency__addr1,addr1,0.001221929095,0.001221928987,,native xgboost feature_importances_,141
+numeric__V282,V282,0.001213953714,0.001213953607,,native xgboost feature_importances_,142
+categorical__id_33___MISSING__,id,0.001211643219,0.001211643112,,native xgboost feature_importances_,143
+numeric__V301,V301,0.001208780566,0.001208780459,,native xgboost feature_importances_,144
+categorical__id_33_1024x768,id,0.001208759029,0.001208758923,,native xgboost feature_importances_,145
+numeric__V310,V310,0.001207710127,0.001207710021,,native xgboost feature_importances_,146
+numeric__V59,V59,0.001206301502,0.001206301395,,native xgboost feature_importances_,147
+numeric__D11,D11,0.001204135711,0.001204135605,,native xgboost feature_importances_,148
+categorical__DeviceType_desktop,DeviceType,0.001204044791,0.001204044685,,native xgboost feature_importances_,149
+numeric__V56,V56,0.001203212538,0.001203212431,,native xgboost feature_importances_,150
+categorical__M7___MISSING__,M7,0.001200271654,0.001200271548,,native xgboost feature_importances_,151
+numeric__transaction_day,transaction_day,0.001194770099,0.001194769993,,native xgboost feature_importances_,152
+numeric__V149,V149,0.001193527132,0.001193527027,,native xgboost feature_importances_,153
+numeric__V124,V124,0.0011883931,0.001188392995,,native xgboost feature_importances_,154
+frequency__R_emaildomain,R_emaildomain,0.001181974774,0.00118197467,,native xgboost feature_importances_,155
+numeric__V47,V47,0.0011803339,0.001180333796,,native xgboost feature_importances_,156
+categorical__id_33_1360x768,id,0.001179039944,0.00117903984,,native xgboost feature_importances_,157
+categorical__card4_mastercard,card4,0.001172575285,0.001172575181,,native xgboost feature_importances_,158
+numeric__V72,V72,0.00116304087,0.001163040767,,native xgboost feature_importances_,159
+numeric__V217,V217,0.001156355836,0.001156355734,,native xgboost feature_importances_,160
+numeric__V233,V233,0.001152876415,0.001152876313,,native xgboost feature_importances_,161
+categorical__card5_223.0,card5,0.00115204195,0.001152041848,,native xgboost feature_importances_,162
+numeric__V160,V160,0.001143623493,0.001143623392,,native xgboost feature_importances_,163
+categorical__id_31_safari generic,id,0.001143130357,0.001143130256,,native xgboost feature_importances_,164
+numeric__V43,V43,0.001135758241,0.00113575814,,native xgboost feature_importances_,165
+categorical__id_33_2560x1440,id,0.001135281171,0.00113528107,,native xgboost feature_importances_,166
+categorical__ProductCD_S,ProductCD,0.001134679653,0.001134679552,,native xgboost feature_importances_,167
+numeric__V307,V307,0.00113026693,0.00113026683,,native xgboost feature_importances_,168
+numeric__V33,V33,0.001126868883,0.001126868784,,native xgboost feature_importances_,169
+numeric__V306,V306,0.001124959439,0.00112495934,,native xgboost feature_importances_,170
+numeric__V99,V99,0.001118124928,0.00111812483,,native xgboost feature_importances_,171
+numeric__V35,V35,0.001113057253,0.001113057155,,native xgboost feature_importances_,172
+numeric__V55,V55,0.001107082935,0.001107082837,,native xgboost feature_importances_,173
+numeric__V32,V32,0.001106533571,0.001106533473,,native xgboost feature_importances_,174
+numeric__V31,V31,0.001103437738,0.001103437641,,native xgboost feature_importances_,175
+categorical__M9_T,M9,0.001103242394,0.001103242296,,native xgboost feature_importances_,176
+numeric__V249,V249,0.001101354021,0.001101353923,,native xgboost feature_importances_,177
+categorical__card5_202.0,card5,0.001098116511,0.001098116414,,native xgboost feature_importances_,178
+categorical__card3_150.0,card3,0.001096924767,0.00109692467,,native xgboost feature_importances_,179
+categorical__id_30_iOS 10.3.2,id,0.001095294021,0.001095293924,,native xgboost feature_importances_,180
+numeric__id_09,id_09,0.001090093632,0.001090093536,,native xgboost feature_importances_,181
+numeric__V38,V38,0.001081913128,0.001081913032,,native xgboost feature_importances_,182
+numeric__V210,V210,0.001077303197,0.001077303102,,native xgboost feature_importances_,183
+numeric__V170,V170,0.001072718645,0.001072718551,,native xgboost feature_importances_,184
+numeric__V52,V52,0.001072240877,0.001072240782,,native xgboost feature_importances_,185
+numeric__V7,V7,0.001070764381,0.001070764287,,native xgboost feature_importances_,186
+categorical__card5_162.0,card5,0.001066355151,0.001066355057,,native xgboost feature_importances_,187
+numeric__V200,V200,0.001063516829,0.001063516735,,native xgboost feature_importances_,188
+numeric__V131,V131,0.001047772006,0.001047771914,,native xgboost feature_importances_,189
+categorical__M6___MISSING__,M6,0.001046135207,0.001046135114,,native xgboost feature_importances_,190
+numeric__V63,V63,0.001043102355,0.001043102263,,native xgboost feature_importances_,191
+categorical__card5_224.0,card5,0.00103088934,0.001030889249,,native xgboost feature_importances_,192
+categorical__card5_129.0,card5,0.001024521189,0.001024521098,,native xgboost feature_importances_,193
+numeric__V12,V12,0.001022602664,0.001022602574,,native xgboost feature_importances_,194
+categorical__id_15___MISSING__,id,0.001019779942,0.001019779852,,native xgboost feature_importances_,195
+numeric__D5,D5,0.001018299605,0.001018299515,,native xgboost feature_importances_,196
+numeric__V67,V67,0.001017916715,0.001017916625,,native xgboost feature_importances_,197
+categorical__card4___MISSING__,card4,0.001015764545,0.001015764455,,native xgboost feature_importances_,198
+numeric__V313,V313,0.001014051493,0.001014051404,,native xgboost feature_importances_,199
+numeric__V23,V23,0.001013492467,0.001013492377,,native xgboost feature_importances_,200
+numeric__V136,V136,0.001012204448,0.001012204358,,native xgboost feature_importances_,201
+numeric__id_01,id_01,0.001011617482,0.001011617392,,native xgboost feature_importances_,202
+numeric__V311,V311,0.001007964835,0.001007964745,,native xgboost feature_importances_,203
+numeric__V75,V75,0.001007251092,0.001007251003,,native xgboost feature_importances_,204
+categorical__card3_146.0,card3,0.001006687875,0.001006687786,,native xgboost feature_importances_,205
+numeric__TransactionDT,TransactionDT,0.001000046497,0.001000046409,,native xgboost feature_importances_,206
+numeric__V66,V66,0.0009993948042,0.0009993947159,,native xgboost feature_importances_,207
+numeric__V182,V182,0.0009967199294,0.0009967198413,,native xgboost feature_importances_,208
+categorical__card5_133.0,card5,0.000996039249,0.000996039161,,native xgboost feature_importances_,209
+numeric__V61,V61,0.000995749142,0.000995749054,,native xgboost feature_importances_,210
+categorical__M7_T,M7,0.0009949605446,0.0009949604567,,native xgboost feature_importances_,211
+missing__missingindicator_id_01,missingindicator_id_01,0.00098920241,0.0009892023226,,native xgboost feature_importances_,212
+numeric__V94,V94,0.0009830291383,0.0009830290514,,native xgboost feature_importances_,213
+numeric__V289,V289,0.0009746063733,0.0009746062872,,native xgboost feature_importances_,214
+numeric__V172,V172,0.0009744747076,0.0009744746215,,native xgboost feature_importances_,215
+numeric__V168,V168,0.000971900241,0.0009719001551,,native xgboost feature_importances_,216
+categorical__id_33_2160x1440,id,0.0009695882327,0.000969588147,,native xgboost feature_importances_,217
+missing__missingindicator_D3,missingindicator_D3,0.000965788844,0.0009657887587,,native xgboost feature_importances_,218
+numeric__V24,V24,0.0009649105486,0.0009649104634,,native xgboost feature_importances_,219
+numeric__V224,V224,0.0009636089671,0.000963608882,,native xgboost feature_importances_,220
+numeric__D8,D8,0.0009574587457,0.0009574586611,,native xgboost feature_importances_,221
+categorical__M5___MISSING__,M5,0.0009558287566,0.0009558286721,,native xgboost feature_importances_,222
+categorical__id_30_Mac OS X 10_9_5,id,0.0009539067978,0.0009539067135,,native xgboost feature_importances_,223
+numeric__V81,V81,0.0009464783943,0.0009464783107,,native xgboost feature_importances_,224
+numeric__V53,V53,0.0009459659923,0.0009459659087,,native xgboost feature_importances_,225
+numeric__V19,V19,0.000944915053,0.0009449149695,,native xgboost feature_importances_,226
+numeric__V314,V314,0.0009423251613,0.000942325078,,native xgboost feature_importances_,227
+numeric__V243,V243,0.0009388836334,0.0009388835504,,native xgboost feature_importances_,228
+categorical__id_30_iOS 11.2.2,id,0.0009388743201,0.0009388742372,,native xgboost feature_importances_,229
+categorical__id_31_chrome 63.0,id,0.0009359135875,0.0009359135047,,native xgboost feature_importances_,230
+missing__missingindicator_D4,missingindicator_D4,0.0009358995012,0.0009358994185,,native xgboost feature_importances_,231
+numeric__V275,V275,0.0009230896831,0.0009230896015,,native xgboost feature_importances_,232
+categorical__id_33_1440x900,id,0.0009175220039,0.0009175219228,,native xgboost feature_importances_,233
+numeric__V110,V110,0.0009156696615,0.0009156695806,,native xgboost feature_importances_,234
+numeric__V297,V297,0.0009098506416,0.0009098505612,,native xgboost feature_importances_,235
+categorical__card5_102.0,card5,0.0009052784881,0.0009052784081,,native xgboost feature_importances_,236
+numeric__V130,V130,0.0009040419245,0.0009040418446,,native xgboost feature_importances_,237
+categorical__id_31_samsung browser generic,id,0.0009021898732,0.0009021897934,,native xgboost feature_importances_,238
+categorical__id_33_2048x1536,id,0.0009021784062,0.0009021783265,,native xgboost feature_importances_,239
+categorical__id_38_F,id,0.0009015830583,0.0009015829786,,native xgboost feature_importances_,240
+categorical__id_16___MISSING__,id,0.0008949315525,0.0008949314734,,native xgboost feature_importances_,241
+categorical__id_33_2208x1242,id,0.0008947128081,0.000894712729,,native xgboost feature_importances_,242
+numeric__V152,V152,0.0008897291264,0.0008897290477,,native xgboost feature_importances_,243
+numeric__V4,V4,0.0008814010071,0.0008814009292,,native xgboost feature_importances_,244
+categorical__M8_F,M8,0.0008773194277,0.0008773193501,,native xgboost feature_importances_,245
+numeric__V25,V25,0.0008753605071,0.0008753604297,,native xgboost feature_importances_,246
+numeric__V190,V190,0.0008737202734,0.0008737201962,,native xgboost feature_importances_,247
+categorical__id_33_1920x1080,id,0.0008728224784,0.0008728224013,,native xgboost feature_importances_,248
+numeric__V85,V85,0.0008726475062,0.0008726474291,,native xgboost feature_importances_,249
+numeric__V293,V293,0.000870470074,0.0008704699971,,native xgboost feature_importances_,250
+categorical__id_31___MISSING__,id,0.0008692172705,0.0008692171937,,native xgboost feature_importances_,251
+numeric__D6,D6,0.0008657062426,0.0008657061661,,native xgboost feature_importances_,252
+categorical__id_34_match_status:1,id,0.0008601528825,0.0008601528065,,native xgboost feature_importances_,253
+numeric__V5,V5,0.0008559895796,0.0008559895039,,native xgboost feature_importances_,254
+numeric__V206,V206,0.0008543316508,0.0008543315753,,native xgboost feature_importances_,255
+numeric__V8,V8,0.0008525216836,0.0008525216082,,native xgboost feature_importances_,256
+categorical__id_31_chrome 62.0,id,0.0008497115923,0.0008497115172,,native xgboost feature_importances_,257
+categorical__id_30_iOS 11.0.3,id,0.0008431345341,0.0008431344596,,native xgboost feature_importances_,258
+numeric__D13,D13,0.0008387534763,0.0008387534021,,native xgboost feature_importances_,259
+categorical__addr2___MISSING__,addr2,0.0008319421904,0.0008319421169,,native xgboost feature_importances_,260
+numeric__V58,V58,0.0008272444247,0.0008272443516,,native xgboost feature_importances_,261
+frequency__DeviceInfo,DeviceInfo,0.0008266040822,0.0008266040092,,native xgboost feature_importances_,262
+numeric__id_05,id_05,0.0008175375988,0.0008175375265,,native xgboost feature_importances_,263
+numeric__V176,V176,0.0008169224602,0.000816922388,,native xgboost feature_importances_,264
+numeric__id_02,id_02,0.0008158955607,0.0008158954886,,native xgboost feature_importances_,265
+categorical__M1_T,M1,0.0008149719797,0.0008149719077,,native xgboost feature_importances_,266
+numeric__V2,V2,0.0008106809109,0.0008106808393,,native xgboost feature_importances_,267
+categorical__M8_T,M8,0.0008104518638,0.0008104517922,,native xgboost feature_importances_,268
+numeric__V223,V223,0.0008100947016,0.00081009463,,native xgboost feature_importances_,269
+categorical__id_33_3840x2160,id,0.0008085843292,0.0008085842577,,native xgboost feature_importances_,270
+categorical__id_15_New,id,0.0008044642163,0.0008044641453,,native xgboost feature_importances_,271
+categorical__id_31_edge 13.0,id,0.0008031656034,0.0008031655325,,native xgboost feature_importances_,272
+numeric__V125,V125,0.0008029352175,0.0008029351465,,native xgboost feature_importances_,273
+numeric__transaction_hour,transaction_hour,0.0008010308375,0.0008010307667,,native xgboost feature_importances_,274
+numeric__V225,V225,0.0007974082837,0.0007974082132,,native xgboost feature_importances_,275
+categorical__card3_137.0,card3,0.0007959268987,0.0007959268284,,native xgboost feature_importances_,276
+numeric__V92,V92,0.0007924347883,0.0007924347183,,native xgboost feature_importances_,277
+categorical__id_31_chrome 66.0,id,0.0007872804417,0.0007872803722,,native xgboost feature_importances_,278
+numeric__V9,V9,0.0007864048821,0.0007864048126,,native xgboost feature_importances_,279
+numeric__V60,V60,0.0007856481825,0.0007856481131,,native xgboost feature_importances_,280
+numeric__V336,V336,0.0007852839772,0.0007852839078,,native xgboost feature_importances_,281
+numeric__V192,V192,0.0007798738661,0.0007798737972,,native xgboost feature_importances_,282
+numeric__V96,V96,0.0007778296131,0.0007778295443,,native xgboost feature_importances_,283
+missing__missingindicator_D14,missingindicator_D14,0.0007736178814,0.000773617813,,native xgboost feature_importances_,284
+categorical__id_30_Mac OS X 10_12_3,id,0.0007716069231,0.0007716068549,,native xgboost feature_importances_,285
+missing__missingindicator_D1,missingindicator_D1,0.0007711300277,0.0007711299596,,native xgboost feature_importances_,286
+numeric__V145,V145,0.0007706237957,0.0007706237276,,native xgboost feature_importances_,287
+numeric__id_06,id_06,0.0007655022782,0.0007655022106,,native xgboost feature_importances_,288
+numeric__V140,V140,0.0007647265447,0.0007647264771,,native xgboost feature_importances_,289
+categorical__M2_T,M2,0.0007632332854,0.0007632332179,,native xgboost feature_importances_,290
+numeric__V291,V291,0.0007561681559,0.0007561680891,,native xgboost feature_importances_,291
+numeric__V332,V332,0.0007540018996,0.000754001833,,native xgboost feature_importances_,292
+numeric__V93,V93,0.0007532289019,0.0007532288353,,native xgboost feature_importances_,293
+numeric__V22,V22,0.0007519787177,0.0007519786513,,native xgboost feature_importances_,294
+categorical__M9___MISSING__,M9,0.000750237552,0.0007502374857,,native xgboost feature_importances_,295
+categorical__id_33_2880x1800,id,0.0007482965011,0.000748296435,,native xgboost feature_importances_,296
+numeric__V150,V150,0.0007453298895,0.0007453298236,,native xgboost feature_importances_,297
+numeric__V321,V321,0.0007419029134,0.0007419028479,,native xgboost feature_importances_,298
+categorical__id_37_T,id,0.0007365430938,0.0007365430287,,native xgboost feature_importances_,299
+numeric__V186,V186,0.0007354132249,0.0007354131599,,native xgboost feature_importances_,300
+categorical__card5_232.0,card5,0.0007331060478,0.0007331059831,,native xgboost feature_importances_,301
+numeric__V119,V119,0.0007305777981,0.0007305777335,,native xgboost feature_importances_,302
+categorical__id_33_1366x768,id,0.0007251855568,0.0007251854927,,native xgboost feature_importances_,303
+categorical__card3_143.0,card3,0.0007241076091,0.0007241075451,,native xgboost feature_importances_,304
+numeric__V6,V6,0.000723922858,0.000723922794,,native xgboost feature_importances_,305
+numeric__V292,V292,0.0007225626032,0.0007225625393,,native xgboost feature_importances_,306
+numeric__V248,V248,0.0007216108497,0.000721610786,,native xgboost feature_importances_,307
+numeric__V78,V78,0.0007179713575,0.0007179712941,,native xgboost feature_importances_,308
+numeric__V74,V74,0.0007157314103,0.0007157313471,,native xgboost feature_importances_,309
+numeric__V57,V57,0.0007104905671,0.0007104905044,,native xgboost feature_importances_,310
+categorical__id_12_NotFound,id,0.0007104300894,0.0007104300266,,native xgboost feature_importances_,311
+categorical__id_34___MISSING__,id,0.0007100813091,0.0007100812463,,native xgboost feature_importances_,312
+numeric__V109,V109,0.0007082551019,0.0007082550393,,native xgboost feature_importances_,313
+numeric__V272,V272,0.0007068921113,0.0007068920489,,native xgboost feature_importances_,314
+categorical__id_28_New,id,0.000705628132,0.0007056280696,,native xgboost feature_importances_,315
+categorical__id_31_firefox,id,0.0007051069406,0.0007051068783,,native xgboost feature_importances_,316
+categorical__card4_visa,card4,0.0007024103543,0.0007024102922,,native xgboost feature_importances_,317
+numeric__D12,D12,0.0007021452184,0.0007021451563,,native xgboost feature_importances_,318
+categorical__id_31_mobile safari generic,id,0.0006996528246,0.0006996527627,,native xgboost feature_importances_,319
+numeric__V79,V79,0.0006960851606,0.0006960850991,,native xgboost feature_importances_,320
+numeric__V37,V37,0.0006942164036,0.0006942163423,,native xgboost feature_importances_,321
+numeric__id_20,id_20,0.0006912956596,0.0006912955985,,native xgboost feature_importances_,322
+numeric__V288,V288,0.0006894653197,0.0006894652588,,native xgboost feature_importances_,323
+numeric__V137,V137,0.0006880384171,0.0006880383563,,native xgboost feature_importances_,324
+categorical__id_31_chrome 52.0 for android,id,0.0006821239367,0.0006821238764,,native xgboost feature_importances_,325
+numeric__V121,V121,0.0006817206158,0.0006817205556,,native xgboost feature_importances_,326
+numeric__V103,V103,0.0006786569138,0.0006786568538,,native xgboost feature_importances_,327
+numeric__V339,V339,0.0006783144781,0.0006783144182,,native xgboost feature_importances_,328
+numeric__V286,V286,0.0006776342052,0.0006776341453,,native xgboost feature_importances_,329
+categorical__card5_100.0,card5,0.000675140589,0.0006751405293,,native xgboost feature_importances_,330
+categorical__id_34_match_status:0,id,0.0006726644933,0.0006726644339,,native xgboost feature_importances_,331
+numeric__V73,V73,0.0006679797079,0.0006679796489,,native xgboost feature_importances_,332
+missing__missingindicator_D6,missingindicator_D6,0.000667847693,0.0006678476339,,native xgboost feature_importances_,333
+categorical__id_30_iOS 11.1.0,id,0.0006662433152,0.0006662432563,,native xgboost feature_importances_,334
+categorical__id_15_Unknown,id,0.0006622246001,0.0006622245416,,native xgboost feature_importances_,335
+numeric__V77,V77,0.0006608438562,0.0006608437978,,native xgboost feature_importances_,336
+categorical__M7_F,M7,0.0006591007113,0.0006591006531,,native xgboost feature_importances_,337
+categorical__id_31_edge 15.0,id,0.0006573387072,0.0006573386492,,native xgboost feature_importances_,338
+numeric__V159,V159,0.000656544813,0.0006565447549,,native xgboost feature_importances_,339
+numeric__V174,V174,0.0006561053451,0.0006561052871,,native xgboost feature_importances_,340
+numeric__V86,V86,0.0006533776177,0.00065337756,,native xgboost feature_importances_,341
+numeric__V268,V268,0.0006475021364,0.0006475020792,,native xgboost feature_importances_,342
+numeric__V260,V260,0.0006413498777,0.000641349821,,native xgboost feature_importances_,343
+categorical__id_31_mobile safari 11.0,id,0.0006411098875,0.0006411098309,,native xgboost feature_importances_,344
+numeric__id_14,id_14,0.0006406391039,0.0006406390473,,native xgboost feature_importances_,345
+numeric__V10,V10,0.0006405257736,0.000640525717,,native xgboost feature_importances_,346
+numeric__V127,V127,0.0006391778006,0.0006391777441,,native xgboost feature_importances_,347
+numeric__V175,V175,0.0006317173829,0.0006317173271,,native xgboost feature_importances_,348
+categorical__id_30_iOS 11.2.6,id,0.0006281678798,0.0006281678243,,native xgboost feature_importances_,349
+categorical__id_33_1600x900,id,0.0006219147472,0.0006219146922,,native xgboost feature_importances_,350
+categorical__card5_198.0,card5,0.0006207981496,0.0006207980947,,native xgboost feature_importances_,351
+categorical__id_31_firefox 57.0,id,0.0006201663055,0.0006201662506,,native xgboost feature_importances_,352
+numeric__V231,V231,0.0006187788676,0.000618778813,,native xgboost feature_importances_,353
+categorical__id_30_iOS 11.0.1,id,0.000616412668,0.0006164126135,,native xgboost feature_importances_,354
+numeric__V3,V3,0.0006147150416,0.0006147149873,,native xgboost feature_importances_,355
+categorical__card5_137.0,card5,0.0006144294748,0.0006144294205,,native xgboost feature_importances_,356
+categorical__id_33_1136x640,id,0.0006096858415,0.0006096857876,,native xgboost feature_importances_,357
+numeric__V207,V207,0.0006057486171,0.0006057485636,,native xgboost feature_importances_,358
+numeric__V116,V116,0.0006042535533,0.0006042534999,,native xgboost feature_importances_,359
+categorical__id_30_Mac OS X 10_12_6,id,0.0005989932688,0.0005989932159,,native xgboost feature_importances_,360
+numeric__V135,V135,0.0005987524637,0.0005987524108,,native xgboost feature_importances_,361
+categorical__id_33_2220x1080,id,0.0005942728603,0.0005942728078,,native xgboost feature_importances_,362
+categorical__card3_106.0,card3,0.0005932474742,0.0005932474217,,native xgboost feature_importances_,363
+categorical__id_30_iOS 11.3.0,id,0.0005914309877,0.0005914309354,,native xgboost feature_importances_,364
+categorical__id_31_chrome 62.0 for android,id,0.0005913078203,0.000591307768,,native xgboost feature_importances_,365
+numeric__V299,V299,0.0005906122387,0.0005906121865,,native xgboost feature_importances_,366
+numeric__V239,V239,0.0005896619987,0.0005896619466,,native xgboost feature_importances_,367
+numeric__V183,V183,0.0005864196573,0.0005864196055,,native xgboost feature_importances_,368
+categorical__card5_118.0,card5,0.0005852117902,0.0005852117384,,native xgboost feature_importances_,369
+numeric__V208,V208,0.0005802931846,0.0005802931333,,native xgboost feature_importances_,370
+numeric__V134,V134,0.0005764024099,0.000576402359,,native xgboost feature_importances_,371
+categorical__id_31_ie 11.0 for tablet,id,0.0005761304055,0.0005761303546,,native xgboost feature_importances_,372
+categorical__id_16_NotFound,id,0.0005748990225,0.0005748989717,,native xgboost feature_importances_,373
+missing__missingindicator_id_04,missingindicator_id_04,0.0005746500683,0.0005746500175,,native xgboost feature_importances_,374
+categorical__id_33_1280x800,id,0.0005720188492,0.0005720187986,,native xgboost feature_importances_,375
+numeric__V334,V334,0.0005701875198,0.0005701874694,,native xgboost feature_importances_,376
+numeric__V319,V319,0.000569283322,0.0005692832717,,native xgboost feature_importances_,377
+categorical__id_38_T,id,0.0005664363271,0.000566436277,,native xgboost feature_importances_,378
+numeric__V316,V316,0.0005656994763,0.0005656994263,,native xgboost feature_importances_,379
+categorical__id_30_iOS 11.0.2,id,0.0005647012149,0.000564701165,,native xgboost feature_importances_,380
+numeric__V185,V185,0.0005644389312,0.0005644388813,,native xgboost feature_importances_,381
+categorical__id_33_3360x2100,id,0.0005611368106,0.000561136761,,native xgboost feature_importances_,382
+numeric__V18,V18,0.0005537435063,0.0005537434574,,native xgboost feature_importances_,383
+categorical__id_31_ie,id,0.0005537344841,0.0005537344352,,native xgboost feature_importances_,384
+categorical__id_31_chrome generic,id,0.0005529911141,0.0005529910652,,native xgboost feature_importances_,385
+numeric__V51,V51,0.0005496269441,0.0005496268955,,native xgboost feature_importances_,386
+categorical__card5_150.0,card5,0.0005467304727,0.0005467304244,,native xgboost feature_importances_,387
+numeric__V144,V144,0.0005465582944,0.0005465582461,,native xgboost feature_importances_,388
+categorical__id_33_960x540,id,0.000546502939,0.0005465028907,,native xgboost feature_importances_,389
+numeric__V219,V219,0.0005459456588,0.0005459456106,,native xgboost feature_importances_,390
+categorical__id_31_mobile safari 10.0,id,0.0005448040902,0.000544804042,,native xgboost feature_importances_,391
+categorical__card5_135.0,card5,0.0005446268478,0.0005446267997,,native xgboost feature_importances_,392
+categorical__id_31_other,id,0.000541971589,0.0005419715411,,native xgboost feature_importances_,393
+numeric__V304,V304,0.0005414334591,0.0005414334113,,native xgboost feature_importances_,394
+categorical__id_33_2436x1125,id,0.0005410481244,0.0005410480766,,native xgboost feature_importances_,395
+categorical__card3_117.0,card3,0.0005404386902,0.0005404386425,,native xgboost feature_importances_,396
+numeric__V143,V143,0.0005377991474,0.0005377990999,,native xgboost feature_importances_,397
+categorical__id_29_NotFound,id,0.0005376871559,0.0005376871084,,native xgboost feature_importances_,398
+numeric__V203,V203,0.0005370939034,0.0005370938559,,native xgboost feature_importances_,399
+categorical__id_33_1920x1200,id,0.0005349942367,0.0005349941894,,native xgboost feature_importances_,400
+categorical__id_30_Mac OS X 10_11_6,id,0.0005341872456,0.0005341871984,,native xgboost feature_importances_,401
+categorical__id_31_samsung browser 6.2,id,0.0005326297833,0.0005326297362,,native xgboost feature_importances_,402
+categorical__id_33_1334x750,id,0.0005324311787,0.0005324311317,,native xgboost feature_importances_,403
+categorical__id_33_2560x1600,id,0.0005314313457,0.0005314312988,,native xgboost feature_importances_,404
+numeric__V226,V226,0.0005290083936,0.0005290083469,,native xgboost feature_importances_,405
+missing__missingindicator_id_13,missingindicator_id_13,0.000522236689,0.0005222366428,,native xgboost feature_importances_,406
+categorical__id_30_Mac OS X 10_13_2,id,0.0005209385417,0.0005209384957,,native xgboost feature_importances_,407
+numeric__V34,V34,0.0005196645507,0.0005196645047,,native xgboost feature_importances_,408
+categorical__id_12___MISSING__,id,0.000513825682,0.0005138256366,,native xgboost feature_importances_,409
+numeric__V112,V112,0.0005137854605,0.0005137854151,,native xgboost feature_importances_,410
+missing__missingindicator_id_19,missingindicator_id_19,0.0005125849275,0.0005125848822,,native xgboost feature_importances_,411
+categorical__card5_219.0,card5,0.0005106006283,0.0005106005832,,native xgboost feature_importances_,412
+numeric__V259,V259,0.0005097174435,0.0005097173984,,native xgboost feature_importances_,413
+numeric__V178,V178,0.0005063950666,0.0005063950219,,native xgboost feature_importances_,414
+numeric__V255,V255,0.000505998556,0.0005059985113,,native xgboost feature_importances_,415
+categorical__id_36_F,id,0.0005036579678,0.0005036579233,,native xgboost feature_importances_,416
+categorical__card5_144.0,card5,0.0005024402635,0.0005024402191,,native xgboost feature_importances_,417
+numeric__V229,V229,0.0005020396784,0.000502039634,,native xgboost feature_importances_,418
+numeric__D9,D9,0.0005014691269,0.0005014690826,,native xgboost feature_importances_,419
+categorical__card5___MISSING__,card5,0.0004990692833,0.0004990692391,,native xgboost feature_importances_,420
+numeric__V279,V279,0.0004984776024,0.0004984775583,,native xgboost feature_importances_,421
+numeric__D14,D14,0.0004971138551,0.0004971138112,,native xgboost feature_importances_,422
+missing__missingindicator_D13,missingindicator_D13,0.0004957673955,0.0004957673517,,native xgboost feature_importances_,423
+categorical__id_31_chrome 64.0 for android,id,0.0004955089535,0.0004955089097,,native xgboost feature_importances_,424
+numeric__id_11,id_11,0.0004950637813,0.0004950637375,,native xgboost feature_importances_,425
+categorical__id_30_Mac OS X 10_11_5,id,0.0004935134202,0.0004935133766,,native xgboost feature_importances_,426
+numeric__V158,V158,0.0004929869901,0.0004929869466,,native xgboost feature_importances_,427
+categorical__id_31_firefox 59.0,id,0.0004929268616,0.0004929268181,,native xgboost feature_importances_,428
+categorical__id_33_2001x1125,id,0.000491104729,0.0004911046856,,native xgboost feature_importances_,429
+numeric__V215,V215,0.0004908920964,0.000490892053,,native xgboost feature_importances_,430
+categorical__id_31_chrome 50.0 for android,id,0.0004884706577,0.0004884706146,,native xgboost feature_importances_,431
+numeric__V273,V273,0.0004846839292,0.0004846838864,,native xgboost feature_importances_,432
+numeric__V180,V180,0.0004840191104,0.0004840190677,,native xgboost feature_importances_,433
+categorical__id_31_safari 11.0,id,0.0004830091493,0.0004830091066,,native xgboost feature_importances_,434
+categorical__id_30_Mac OS X 10_13_3,id,0.0004820525937,0.0004820525511,,native xgboost feature_importances_,435
+categorical__card5_138.0,card5,0.0004812616971,0.0004812616546,,native xgboost feature_importances_,436
+numeric__V234,V234,0.0004806087236,0.0004806086811,,native xgboost feature_importances_,437
+numeric__V197,V197,0.0004790986131,0.0004790985708,,native xgboost feature_importances_,438
+numeric__V216,V216,0.0004748128413,0.0004748127993,,native xgboost feature_importances_,439
+categorical__M8___MISSING__,M8,0.0004725027538,0.0004725027121,,native xgboost feature_importances_,440
+categorical__card3_180.0,card3,0.0004720849684,0.0004720849266,,native xgboost feature_importances_,441
+categorical__id_30_iOS 10.3.3,id,0.0004719073768,0.0004719073351,,native xgboost feature_importances_,442
+categorical__id_31_chrome 63.0 for android,id,0.0004706784384,0.0004706783968,,native xgboost feature_importances_,443
+numeric__V245,V245,0.0004697660042,0.0004697659627,,native xgboost feature_importances_,444
+categorical__card3_102.0,card3,0.0004689477501,0.0004689477086,,native xgboost feature_importances_,445
+numeric__V164,V164,0.0004667383037,0.0004667382624,,native xgboost feature_importances_,446
+numeric__V132,V132,0.0004655315715,0.0004655315304,,native xgboost feature_importances_,447
+categorical__card3_191.0,card3,0.0004642729764,0.0004642729354,,native xgboost feature_importances_,448
+numeric__V46,V46,0.000460343319,0.0004603432783,,native xgboost feature_importances_,449
+numeric__V266,V266,0.0004594468046,0.000459446764,,native xgboost feature_importances_,450
+categorical__card5_194.0,card5,0.000459419156,0.0004594191154,,native xgboost feature_importances_,451
+numeric__V329,V329,0.0004585772112,0.0004585771707,,native xgboost feature_importances_,452
+numeric__V251,V251,0.0004583710397,0.0004583709992,,native xgboost feature_importances_,453
+categorical__id_31_edge 16.0,id,0.0004579732486,0.0004579732081,,native xgboost feature_importances_,454
+numeric__V205,V205,0.0004561451497,0.0004561451093,,native xgboost feature_importances_,455
+categorical__id_30_Mac OS X 10_13_1,id,0.0004536963825,0.0004536963424,,native xgboost feature_importances_,456
+numeric__V40,V40,0.000453602057,0.0004536020169,,native xgboost feature_importances_,457
+numeric__V108,V108,0.0004529011203,0.0004529010803,,native xgboost feature_importances_,458
+categorical__id_30_iOS 11.2.1,id,0.0004521504452,0.0004521504052,,native xgboost feature_importances_,459
+numeric__V188,V188,0.0004516540503,0.0004516540104,,native xgboost feature_importances_,460
+categorical__card5_146.0,card5,0.0004512518644,0.0004512518246,,native xgboost feature_importances_,461
+categorical__card3___MISSING__,card3,0.0004504101526,0.0004504101127,,native xgboost feature_importances_,462
+numeric__V278,V278,0.0004491899745,0.0004491899348,,native xgboost feature_importances_,463
+numeric__V177,V177,0.0004491634609,0.0004491634212,,native xgboost feature_importances_,464
+categorical__id_30_Mac OS X 10.12,id,0.0004472903966,0.000447290357,,native xgboost feature_importances_,465
+numeric__V148,V148,0.0004458313633,0.0004458313239,,native xgboost feature_importances_,466
+numeric__V262,V262,0.0004457223986,0.0004457223592,,native xgboost feature_importances_,467
+categorical__id_31_chrome 56.0 for android,id,0.0004452204739,0.0004452204346,,native xgboost feature_importances_,468
+numeric__V101,V101,0.0004451539426,0.0004451539032,,native xgboost feature_importances_,469
+numeric__V330,V330,0.0004444864171,0.0004444863778,,native xgboost feature_importances_,470
+numeric__id_13,id_13,0.000443629222,0.0004436291828,,native xgboost feature_importances_,471
+numeric__V44,V44,0.0004423955106,0.0004423954715,,native xgboost feature_importances_,472
+numeric__V155,V155,0.0004421669291,0.0004421668901,,native xgboost feature_importances_,473
+numeric__V195,V195,0.0004419124161,0.0004419123771,,native xgboost feature_importances_,474
+numeric__V209,V209,0.0004416592128,0.0004416591738,,native xgboost feature_importances_,475
+categorical__id_28_Found,id,0.0004410431138,0.0004410430748,,native xgboost feature_importances_,476
+categorical__card3_229.0,card3,0.0004403284402,0.0004403284012,,native xgboost feature_importances_,477
+categorical__id_31_opera generic,id,0.0004390045069,0.0004390044681,,native xgboost feature_importances_,478
+numeric__V214,V214,0.0004370150855,0.0004370150469,,native xgboost feature_importances_,479
+categorical__id_33_1680x1050,id,0.0004359929299,0.0004359928913,,native xgboost feature_importances_,480
+categorical__card5_141.0,card5,0.0004321735469,0.0004321735087,,native xgboost feature_importances_,481
+numeric__id_19,id_19,0.0004317387356,0.0004317386975,,native xgboost feature_importances_,482
+numeric__V118,V118,0.0004315168189,0.0004315167808,,native xgboost feature_importances_,483
+categorical__id_30_Windows 8,id,0.0004257093242,0.0004257092866,,native xgboost feature_importances_,484
+numeric__V80,V80,0.0004254149972,0.0004254149596,,native xgboost feature_importances_,485
+categorical__id_33_2732x2048,id,0.0004252542276,0.00042525419,,native xgboost feature_importances_,486
+numeric__id_04,id_04,0.0004249183112,0.0004249182736,,native xgboost feature_importances_,487
+numeric__V169,V169,0.0004245372838,0.0004245372463,,native xgboost feature_importances_,488
+categorical__id_33_855x480,id,0.000424515747,0.0004245157095,,native xgboost feature_importances_,489
+categorical__id_31_google search application 49.0,id,0.0004236870736,0.0004236870362,,native xgboost feature_importances_,490
+numeric__V166,V166,0.0004231207422,0.0004231207048,,native xgboost feature_importances_,491
+categorical__id_31_chrome 49.0,id,0.0004230028426,0.0004230028052,,native xgboost feature_importances_,492
+categorical__id_31_chrome 66.0 for android,id,0.0004225033917,0.0004225033544,,native xgboost feature_importances_,493
+numeric__V71,V71,0.0004176016373,0.0004176016004,,native xgboost feature_importances_,494
+numeric__V213,V213,0.0004171495384,0.0004171495015,,native xgboost feature_importances_,495
+numeric__V14,V14,0.0004164882703,0.0004164882335,,native xgboost feature_importances_,496
+categorical__id_31_chrome 64.0,id,0.0004158474039,0.0004158473672,,native xgboost feature_importances_,497
+categorical__id_30_Windows 10,id,0.0004143005935,0.0004143005569,,native xgboost feature_importances_,498
+numeric__V199,V199,0.0004139577213,0.0004139576847,,native xgboost feature_importances_,499
+numeric__V232,V232,0.0004107053974,0.0004107053611,,native xgboost feature_importances_,500
+numeric__V267,V267,0.0004096330958,0.0004096330596,,native xgboost feature_importances_,501
+numeric__V111,V111,0.0004095940094,0.0004095939732,,native xgboost feature_importances_,502
+categorical__id_31_edge 14.0,id,0.0004094781762,0.00040947814,,native xgboost feature_importances_,503
+numeric__V139,V139,0.0004079533101,0.000407953274,,native xgboost feature_importances_,504
+numeric__V123,V123,0.0004067257105,0.0004067256745,,native xgboost feature_importances_,505
+numeric__V337,V337,0.0004059093772,0.0004059093413,,native xgboost feature_importances_,506
+numeric__V122,V122,0.0004048658011,0.0004048657653,,native xgboost feature_importances_,507
+numeric__V39,V39,0.0004018123436,0.0004018123081,,native xgboost feature_importances_,508
+numeric__V265,V265,0.0003936240391,0.0003936240043,,native xgboost feature_importances_,509
+categorical__id_30_Android,id,0.0003913214314,0.0003913213968,,native xgboost feature_importances_,510
+numeric__V163,V163,0.0003902104218,0.0003902103873,,native xgboost feature_importances_,511
+numeric__V211,V211,0.0003893618996,0.0003893618652,,native xgboost feature_importances_,512
+categorical__id_31_edge,id,0.00038841879,0.0003884187556,,native xgboost feature_importances_,513
+numeric__V253,V253,0.000384786108,0.000384786074,,native xgboost feature_importances_,514
+categorical__card3_203.0,card3,0.0003840980062,0.0003840979722,,native xgboost feature_importances_,515
+categorical__card3_160.0,card3,0.0003823134466,0.0003823134128,,native xgboost feature_importances_,516
+numeric__V153,V153,0.000376761629,0.0003767615957,,native xgboost feature_importances_,517
+numeric__V270,V270,0.0003766244918,0.0003766244585,,native xgboost feature_importances_,518
+numeric__V276,V276,0.0003734836937,0.0003734836607,,native xgboost feature_importances_,519
+categorical__card3_144.0,card3,0.0003729445743,0.0003729445414,,native xgboost feature_importances_,520
+numeric__V264,V264,0.0003690448648,0.0003690448322,,native xgboost feature_importances_,521
+numeric__V277,V277,0.0003667934507,0.0003667934183,,native xgboost feature_importances_,522
+numeric__V146,V146,0.0003664587275,0.0003664586951,,native xgboost feature_importances_,523
+missing__missingindicator_id_05,missingindicator_id_05,0.000365623011,0.0003656229787,,native xgboost feature_importances_,524
+numeric__V238,V238,0.000365007465,0.0003650074327,,native xgboost feature_importances_,525
+numeric__V221,V221,0.0003639006172,0.0003639005851,,native xgboost feature_importances_,526
+categorical__id_31_firefox 48.0,id,0.000362900726,0.000362900694,,native xgboost feature_importances_,527
+categorical__id_31_samsung browser 5.4,id,0.000362676743,0.0003626767109,,native xgboost feature_importances_,528
+numeric__id_10,id_10,0.0003625412937,0.0003625412617,,native xgboost feature_importances_,529
+categorical__id_30_Android 5.1.1,id,0.0003613250738,0.0003613250418,,native xgboost feature_importances_,530
+categorical__card5_183.0,card5,0.0003609558335,0.0003609558016,,native xgboost feature_importances_,531
+categorical__id_15_Found,id,0.0003594001755,0.0003594001438,,native xgboost feature_importances_,532
+categorical__id_12_Found,id,0.0003593953152,0.0003593952834,,native xgboost feature_importances_,533
+numeric__V162,V162,0.0003569932596,0.0003569932281,,native xgboost feature_importances_,534
+numeric__V290,V290,0.0003529753012,0.00035297527,,native xgboost feature_importances_,535
+numeric__V181,V181,0.0003521369945,0.0003521369634,,native xgboost feature_importances_,536
+categorical__id_31_opera,id,0.0003501506581,0.0003501506271,,native xgboost feature_importances_,537
+categorical__card3_162.0,card3,0.0003486498899,0.0003486498591,,native xgboost feature_importances_,538
+categorical__id_31_chrome generic for android,id,0.0003480020678,0.000348002037,,native xgboost feature_importances_,539
+categorical__card5_142.0,card5,0.0003474604164,0.0003474603857,,native xgboost feature_importances_,540
+numeric__V271,V271,0.0003473272955,0.0003473272648,,native xgboost feature_importances_,541
+numeric__V171,V171,0.0003459184372,0.0003459184067,,native xgboost feature_importances_,542
+categorical__id_31_chrome 55.0 for android,id,0.0003447438066,0.0003447437762,,native xgboost feature_importances_,543
+categorical__card4_american express,card4,0.0003443527967,0.0003443527662,,native xgboost feature_importances_,544
+categorical__addr2_60.0,addr2,0.0003429350909,0.0003429350606,,native xgboost feature_importances_,545
+numeric__V106,V106,0.0003409099299,0.0003409098998,,native xgboost feature_importances_,546
+numeric__V17,V17,0.0003401476424,0.0003401476124,,native xgboost feature_importances_,547
+categorical__id_31_samsung browser 6.4,id,0.0003374908702,0.0003374908403,,native xgboost feature_importances_,548
+categorical__id_31_chrome 58.0,id,0.0003371976782,0.0003371976484,,native xgboost feature_importances_,549
+categorical__id_31_chrome 61.0,id,0.0003355078516,0.0003355078219,,native xgboost feature_importances_,550
+numeric__V274,V274,0.0003305079299,0.0003305079007,,native xgboost feature_importances_,551
+numeric__V220,V220,0.0003277171345,0.0003277171055,,native xgboost feature_importances_,552
+numeric__V338,V338,0.0003252082679,0.0003252082392,,native xgboost feature_importances_,553
+categorical__id_33_2076x1080,id,0.0003248832945,0.0003248832658,,native xgboost feature_importances_,554
+numeric__V42,V42,0.0003240781953,0.0003240781666,,native xgboost feature_importances_,555
+categorical__id_31_firefox 58.0,id,0.0003212881857,0.0003212881573,,native xgboost feature_importances_,556
+numeric__V194,V194,0.0003194380261,0.0003194379978,,native xgboost feature_importances_,557
+numeric__V284,V284,0.0003184160159,0.0003184159878,,native xgboost feature_importances_,558
+categorical__id_30_Android 8.1.0,id,0.0003176261089,0.0003176260808,,native xgboost feature_importances_,559
+numeric__V198,V198,0.0003175476741,0.000317547646,,native xgboost feature_importances_,560
+categorical__id_35_F,id,0.0003162680659,0.000316268038,,native xgboost feature_importances_,561
+categorical__card3_119.0,card3,0.0003155826707,0.0003155826428,,native xgboost feature_importances_,562
+numeric__V303,V303,0.000315177138,0.0003151771101,,native xgboost feature_importances_,563
+numeric__V16,V16,0.0003146393283,0.0003146393005,,native xgboost feature_importances_,564
+categorical__M2___MISSING__,M2,0.0003128412354,0.0003128412078,,native xgboost feature_importances_,565
+categorical__M1___MISSING__,M1,0.0003111773403,0.0003111773128,,native xgboost feature_importances_,566
+categorical__id_30_iOS 11.2.0,id,0.0003103245981,0.0003103245707,,native xgboost feature_importances_,567
+categorical__id_33_1916x901,id,0.00030773654,0.0003077365128,,native xgboost feature_importances_,568
+categorical__id_33_2960x1440,id,0.0003076832509,0.0003076832237,,native xgboost feature_importances_,569
+numeric__V204,V204,0.0003074354318,0.0003074354046,,native xgboost feature_importances_,570
+numeric__V191,V191,0.0003017810523,0.0003017810256,,native xgboost feature_importances_,571
+numeric__V227,V227,0.0002908832103,0.0002908831845,,native xgboost feature_importances_,572
+numeric__V184,V184,0.0002895632933,0.0002895632677,,native xgboost feature_importances_,573
+categorical__id_33_1024x600,id,0.0002876535873,0.0002876535619,,native xgboost feature_importances_,574
+categorical__id_30_Mac OS X 10_10_5,id,0.0002854453051,0.0002854452798,,native xgboost feature_importances_,575
+numeric__V157,V157,0.0002844620321,0.000284462007,,native xgboost feature_importances_,576
+missing__missingindicator_id_06,missingindicator_id_06,0.0002832007303,0.0002832007053,,native xgboost feature_importances_,577
+categorical__id_31_android webview 4.0,id,0.0002827310236,0.0002827309986,,native xgboost feature_importances_,578
+numeric__V212,V212,0.0002823671675,0.0002823671426,,native xgboost feature_importances_,579
+categorical__id_30_iOS 11.1.2,id,0.0002774000459,0.0002774000214,,native xgboost feature_importances_,580
+numeric__V302,V302,0.0002723629295,0.0002723629055,,native xgboost feature_importances_,581
+numeric__V179,V179,0.0002710785484,0.0002710785244,,native xgboost feature_importances_,582
+categorical__id_31_chrome 58.0 for android,id,0.0002708571265,0.0002708571025,,native xgboost feature_importances_,583
+numeric__V113,V113,0.0002687069355,0.0002687069117,,native xgboost feature_importances_,584
+numeric__V105,V105,0.0002681364422,0.0002681364185,,native xgboost feature_importances_,585
+missing__missingindicator_D11,missingindicator_D11,0.0002654835989,0.0002654835755,,native xgboost feature_importances_,586
+categorical__id_30_Linux,id,0.0002653218398,0.0002653218164,,native xgboost feature_importances_,587
+numeric__V161,V161,0.000264325703,0.0002643256797,,native xgboost feature_importances_,588
+numeric__V202,V202,0.0002569619683,0.0002569619456,,native xgboost feature_importances_,589
+numeric__V254,V254,0.0002514653315,0.0002514653093,,native xgboost feature_importances_,590
+missing__missingindicator_D8,missingindicator_D8,0.0002510395425,0.0002510395203,,native xgboost feature_importances_,591
+numeric__V100,V100,0.000249084871,0.000249084849,,native xgboost feature_importances_,592
+numeric__V141,V141,0.0002474242938,0.0002474242719,,native xgboost feature_importances_,593
+categorical__id_30_Android 8.0.0,id,0.0002466077567,0.0002466077349,,native xgboost feature_importances_,594
+numeric__V322,V322,0.0002466031874,0.0002466031656,,native xgboost feature_importances_,595
+categorical__id_30_Android 7.0,id,0.0002429683518,0.0002429683303,,native xgboost feature_importances_,596
+numeric__V250,V250,0.0002402132523,0.000240213231,,native xgboost feature_importances_,597
+numeric__V247,V247,0.0002376644406,0.0002376644196,,native xgboost feature_importances_,598
+categorical__id_30_Mac OS X 10_13_4,id,0.0002347495465,0.0002347495258,,native xgboost feature_importances_,599
+numeric__V98,V98,0.0002285203518,0.0002285203316,,native xgboost feature_importances_,600
+numeric__V230,V230,0.0002283754875,0.0002283754673,,native xgboost feature_importances_,601
+categorical__id_33_2736x1824,id,0.000225240743,0.0002252407231,,native xgboost feature_importances_,602
+numeric__V114,V114,0.0002192129177,0.0002192128984,,native xgboost feature_importances_,603
+categorical__id_37_F,id,0.0002171901724,0.0002171901532,,native xgboost feature_importances_,604
+numeric__V154,V154,0.0002167987986,0.0002167987795,,native xgboost feature_importances_,605
+numeric__V120,V120,0.0002165340265,0.0002165340074,,native xgboost feature_importances_,606
+categorical__id_31_mobile,id,0.0002161703305,0.0002161703114,,native xgboost feature_importances_,607
+categorical__id_30_iOS 10.2.0,id,0.000213813968,0.0002138139491,,native xgboost feature_importances_,608
+numeric__V236,V236,0.0002136382827,0.0002136382639,,native xgboost feature_importances_,609
+categorical__card3_100.0,card3,0.0002129540371,0.0002129540183,,native xgboost feature_importances_,610
+categorical__id_30_other,id,0.0002099767153,0.0002099766967,,native xgboost feature_importances_,611
+numeric__V237,V237,0.0002066001471,0.0002066001288,,native xgboost feature_importances_,612
+numeric__V147,V147,0.0002033357741,0.0002033357562,,native xgboost feature_importances_,613
+categorical__card5_107.0,card5,0.0002016132639,0.0002016132461,,native xgboost feature_importances_,614
+categorical__card5_131.0,card5,0.0001999898959,0.0001999898782,,native xgboost feature_importances_,615
+categorical__ProductCD_W,ProductCD,0.0001978791843,0.0001978791668,,native xgboost feature_importances_,616
+categorical__id_31_chrome 65.0 for android,id,0.000194186141,0.0001941861239,,native xgboost feature_importances_,617
+numeric__V218,V218,0.0001912987354,0.0001912987185,,native xgboost feature_importances_,618
+categorical__id_31_firefox 55.0,id,0.0001904008095,0.0001904007927,,native xgboost feature_importances_,619
+categorical__id_31_comodo,id,0.000189587663,0.0001895876463,,native xgboost feature_importances_,620
+categorical__card3_224.0,card3,0.0001841860503,0.000184186034,,native xgboost feature_importances_,621
+numeric__V104,V104,0.0001838098979,0.0001838098816,,native xgboost feature_importances_,622
+categorical__id_33_1364x768,id,0.0001829483372,0.000182948321,,native xgboost feature_importances_,623
+missing__missingindicator_id_20,missingindicator_id_20,0.0001823656494,0.0001823656333,,native xgboost feature_importances_,624
+categorical__id_33_1440x810,id,0.0001821138285,0.0001821138124,,native xgboost feature_importances_,625
+numeric__V246,V246,0.0001812263072,0.0001812262912,,native xgboost feature_importances_,626
+categorical__id_31_Lanix/Ilium,id,0.0001775354176,0.0001775354019,,native xgboost feature_importances_,627
+categorical__id_31_samsung browser 7.0,id,0.0001771321549,0.0001771321393,,native xgboost feature_importances_,628
+categorical__id_31_chrome 65.0,id,0.0001704519236,0.0001704519086,,native xgboost feature_importances_,629
+categorical__id_31_opera 49.0,id,0.0001597660303,0.0001597660161,,native xgboost feature_importances_,630
+numeric__V263,V263,0.0001478803606,0.0001478803475,,native xgboost feature_importances_,631
+numeric__V167,V167,0.0001418169268,0.0001418169142,,native xgboost feature_importances_,632
+numeric__V84,V84,0.0001383784111,0.0001383783988,,native xgboost feature_importances_,633
+categorical__id_16_Found,id,0.0001350256207,0.0001350256088,,native xgboost feature_importances_,634
+numeric__V242,V242,0.0001288366766,0.0001288366652,,native xgboost feature_importances_,635
+categorical__id_30_Mac OS X 10_11_4,id,0.0001240160636,0.0001240160527,,native xgboost feature_importances_,636
+numeric__V228,V228,9.503292677e-05,9.503291837e-05,,native xgboost feature_importances_,637
+categorical__id_30_Android 6.0.1,id,9.097140719e-05,9.097139915e-05,,native xgboost feature_importances_,638
+categorical__id_33_5120x2880,id,8.699496539e-05,8.69949577e-05,,native xgboost feature_importances_,639
+numeric__V50,V50,8.688228991e-05,8.688228223e-05,,native xgboost feature_importances_,640
+numeric__V138,V138,8.166098269e-05,8.166097547e-05,,native xgboost feature_importances_,641
+numeric__V142,V142,8.081935084e-05,8.08193437e-05,,native xgboost feature_importances_,642
+categorical__card5_236.0,card5,7.764630573e-05,7.764629886e-05,,native xgboost feature_importances_,643
+categorical__id_29_Found,id,7.712588558e-05,7.712587877e-05,,native xgboost feature_importances_,644
+numeric__V328,V328,6.517625297e-05,6.517624721e-05,,native xgboost feature_importances_,645
+numeric__V15,V15,3.725695206e-05,3.725694876e-05,,native xgboost feature_importances_,646
+categorical__id_31_Generic/Android 7.0,id,3.70400885e-05,3.704008523e-05,,native xgboost feature_importances_,647
+categorical__id_30_iOS 11.2.5,id,3.561789345e-05,3.56178903e-05,,native xgboost feature_importances_,648
+missing__missingindicator_id_10,missingindicator_id_10,2.560326902e-05,2.560326676e-05,,native xgboost feature_importances_,649
+numeric__V1,V1,0,0,,native xgboost feature_importances_,650
+numeric__V27,V27,0,0,,native xgboost feature_importances_,651
+numeric__V28,V28,0,0,,native xgboost feature_importances_,652
+numeric__V41,V41,0,0,,native xgboost feature_importances_,653
+numeric__V65,V65,0,0,,native xgboost feature_importances_,654
+numeric__V68,V68,0,0,,native xgboost feature_importances_,655
+numeric__V88,V88,0,0,,native xgboost feature_importances_,656
+numeric__V89,V89,0,0,,native xgboost feature_importances_,657
+numeric__V107,V107,0,0,,native xgboost feature_importances_,658
+numeric__V117,V117,0,0,,native xgboost feature_importances_,659
+numeric__V193,V193,0,0,,native xgboost feature_importances_,660
+numeric__V235,V235,0,0,,native xgboost feature_importances_,661
+numeric__V240,V240,0,0,,native xgboost feature_importances_,662
+numeric__V241,V241,0,0,,native xgboost feature_importances_,663
+numeric__V269,V269,0,0,,native xgboost feature_importances_,664
+numeric__V305,V305,0,0,,native xgboost feature_importances_,665
+numeric__V325,V325,0,0,,native xgboost feature_importances_,666
+numeric__V327,V327,0,0,,native xgboost feature_importances_,667
+missing__missingindicator_D9,missingindicator_D9,0,0,,native xgboost feature_importances_,668
+missing__missingindicator_D12,missingindicator_D12,0,0,,native xgboost feature_importances_,669
+missing__missingindicator_id_02,missingindicator_id_02,0,0,,native xgboost feature_importances_,670
+missing__missingindicator_id_03,missingindicator_id_03,0,0,,native xgboost feature_importances_,671
+missing__missingindicator_id_09,missingindicator_id_09,0,0,,native xgboost feature_importances_,672
+missing__missingindicator_id_11,missingindicator_id_11,0,0,,native xgboost feature_importances_,673
+missing__missingindicator_id_17,missingindicator_id_17,0,0,,native xgboost feature_importances_,674
+categorical__card3_101.0,card3,0,0,,native xgboost feature_importances_,675
+categorical__card3_105.0,card3,0,0,,native xgboost feature_importances_,676
+categorical__card3_107.0,card3,0,0,,native xgboost feature_importances_,677
+categorical__card3_108.0,card3,0,0,,native xgboost feature_importances_,678
+categorical__card3_109.0,card3,0,0,,native xgboost feature_importances_,679
+categorical__card3_111.0,card3,0,0,,native xgboost feature_importances_,680
+categorical__card3_116.0,card3,0,0,,native xgboost feature_importances_,681
+categorical__card3_118.0,card3,0,0,,native xgboost feature_importances_,682
+categorical__card3_120.0,card3,0,0,,native xgboost feature_importances_,683
+categorical__card3_121.0,card3,0,0,,native xgboost feature_importances_,684
+categorical__card3_122.0,card3,0,0,,native xgboost feature_importances_,685
+categorical__card3_123.0,card3,0,0,,native xgboost feature_importances_,686
+categorical__card3_124.0,card3,0,0,,native xgboost feature_importances_,687
+categorical__card3_125.0,card3,0,0,,native xgboost feature_importances_,688
+categorical__card3_126.0,card3,0,0,,native xgboost feature_importances_,689
+categorical__card3_127.0,card3,0,0,,native xgboost feature_importances_,690
+categorical__card3_128.0,card3,0,0,,native xgboost feature_importances_,691
+categorical__card3_129.0,card3,0,0,,native xgboost feature_importances_,692
+categorical__card3_130.0,card3,0,0,,native xgboost feature_importances_,693
+categorical__card3_131.0,card3,0,0,,native xgboost feature_importances_,694
+categorical__card3_133.0,card3,0,0,,native xgboost feature_importances_,695
+categorical__card3_134.0,card3,0,0,,native xgboost feature_importances_,696
+categorical__card3_135.0,card3,0,0,,native xgboost feature_importances_,697
+categorical__card3_138.0,card3,0,0,,native xgboost feature_importances_,698
+categorical__card3_139.0,card3,0,0,,native xgboost feature_importances_,699
+categorical__card3_141.0,card3,0,0,,native xgboost feature_importances_,700
+categorical__card3_142.0,card3,0,0,,native xgboost feature_importances_,701
+categorical__card3_147.0,card3,0,0,,native xgboost feature_importances_,702
+categorical__card3_148.0,card3,0,0,,native xgboost feature_importances_,703
+categorical__card3_149.0,card3,0,0,,native xgboost feature_importances_,704
+categorical__card3_151.0,card3,0,0,,native xgboost feature_importances_,705
+categorical__card3_152.0,card3,0,0,,native xgboost feature_importances_,706
+categorical__card3_153.0,card3,0,0,,native xgboost feature_importances_,707
+categorical__card3_155.0,card3,0,0,,native xgboost feature_importances_,708
+categorical__card3_156.0,card3,0,0,,native xgboost feature_importances_,709
+categorical__card3_157.0,card3,0,0,,native xgboost feature_importances_,710
+categorical__card3_159.0,card3,0,0,,native xgboost feature_importances_,711
+categorical__card3_161.0,card3,0,0,,native xgboost feature_importances_,712
+categorical__card3_163.0,card3,0,0,,native xgboost feature_importances_,713
+categorical__card3_164.0,card3,0,0,,native xgboost feature_importances_,714
+categorical__card3_166.0,card3,0,0,,native xgboost feature_importances_,715
+categorical__card3_167.0,card3,0,0,,native xgboost feature_importances_,716
+categorical__card3_168.0,card3,0,0,,native xgboost feature_importances_,717
+categorical__card3_169.0,card3,0,0,,native xgboost feature_importances_,718
+categorical__card3_170.0,card3,0,0,,native xgboost feature_importances_,719
+categorical__card3_171.0,card3,0,0,,native xgboost feature_importances_,720
+categorical__card3_172.0,card3,0,0,,native xgboost feature_importances_,721
+categorical__card3_173.0,card3,0,0,,native xgboost feature_importances_,722
+categorical__card3_174.0,card3,0,0,,native xgboost feature_importances_,723
+categorical__card3_175.0,card3,0,0,,native xgboost feature_importances_,724
+categorical__card3_176.0,card3,0,0,,native xgboost feature_importances_,725
+categorical__card3_177.0,card3,0,0,,native xgboost feature_importances_,726
+categorical__card3_179.0,card3,0,0,,native xgboost feature_importances_,727
+categorical__card3_181.0,card3,0,0,,native xgboost feature_importances_,728
+categorical__card3_182.0,card3,0,0,,native xgboost feature_importances_,729
+categorical__card3_183.0,card3,0,0,,native xgboost feature_importances_,730
+categorical__card3_184.0,card3,0,0,,native xgboost feature_importances_,731
+categorical__card3_186.0,card3,0,0,,native xgboost feature_importances_,732
+categorical__card3_188.0,card3,0,0,,native xgboost feature_importances_,733
+categorical__card3_189.0,card3,0,0,,native xgboost feature_importances_,734
+categorical__card3_190.0,card3,0,0,,native xgboost feature_importances_,735
+categorical__card3_193.0,card3,0,0,,native xgboost feature_importances_,736
+categorical__card3_194.0,card3,0,0,,native xgboost feature_importances_,737
+categorical__card3_195.0,card3,0,0,,native xgboost feature_importances_,738
+categorical__card3_197.0,card3,0,0,,native xgboost feature_importances_,739
+categorical__card3_198.0,card3,0,0,,native xgboost feature_importances_,740
+categorical__card3_200.0,card3,0,0,,native xgboost feature_importances_,741
+categorical__card3_201.0,card3,0,0,,native xgboost feature_importances_,742
+categorical__card3_202.0,card3,0,0,,native xgboost feature_importances_,743
+categorical__card3_204.0,card3,0,0,,native xgboost feature_importances_,744
+categorical__card3_205.0,card3,0,0,,native xgboost feature_importances_,745
+categorical__card3_206.0,card3,0,0,,native xgboost feature_importances_,746
+categorical__card3_207.0,card3,0,0,,native xgboost feature_importances_,747
+categorical__card3_208.0,card3,0,0,,native xgboost feature_importances_,748
+categorical__card3_209.0,card3,0,0,,native xgboost feature_importances_,749
+categorical__card3_210.0,card3,0,0,,native xgboost feature_importances_,750
+categorical__card3_211.0,card3,0,0,,native xgboost feature_importances_,751
+categorical__card3_212.0,card3,0,0,,native xgboost feature_importances_,752
+categorical__card3_213.0,card3,0,0,,native xgboost feature_importances_,753
+categorical__card3_214.0,card3,0,0,,native xgboost feature_importances_,754
+categorical__card3_215.0,card3,0,0,,native xgboost feature_importances_,755
+categorical__card3_217.0,card3,0,0,,native xgboost feature_importances_,756
+categorical__card3_219.0,card3,0,0,,native xgboost feature_importances_,757
+categorical__card3_220.0,card3,0,0,,native xgboost feature_importances_,758
+categorical__card3_221.0,card3,0,0,,native xgboost feature_importances_,759
+categorical__card3_222.0,card3,0,0,,native xgboost feature_importances_,760
+categorical__card3_223.0,card3,0,0,,native xgboost feature_importances_,761
+categorical__card3_225.0,card3,0,0,,native xgboost feature_importances_,762
+categorical__card3_226.0,card3,0,0,,native xgboost feature_importances_,763
+categorical__card3_227.0,card3,0,0,,native xgboost feature_importances_,764
+categorical__card3_228.0,card3,0,0,,native xgboost feature_importances_,765
+categorical__card3_231.0,card3,0,0,,native xgboost feature_importances_,766
+categorical__card5_101.0,card5,0,0,,native xgboost feature_importances_,767
+categorical__card5_104.0,card5,0,0,,native xgboost feature_importances_,768
+categorical__card5_105.0,card5,0,0,,native xgboost feature_importances_,769
+categorical__card5_106.0,card5,0,0,,native xgboost feature_importances_,770
+categorical__card5_109.0,card5,0,0,,native xgboost feature_importances_,771
+categorical__card5_111.0,card5,0,0,,native xgboost feature_importances_,772
+categorical__card5_112.0,card5,0,0,,native xgboost feature_importances_,773
+categorical__card5_113.0,card5,0,0,,native xgboost feature_importances_,774
+categorical__card5_114.0,card5,0,0,,native xgboost feature_importances_,775
+categorical__card5_116.0,card5,0,0,,native xgboost feature_importances_,776
+categorical__card5_119.0,card5,0,0,,native xgboost feature_importances_,777
+categorical__card5_120.0,card5,0,0,,native xgboost feature_importances_,778
+categorical__card5_121.0,card5,0,0,,native xgboost feature_importances_,779
+categorical__card5_122.0,card5,0,0,,native xgboost feature_importances_,780
+categorical__card5_123.0,card5,0,0,,native xgboost feature_importances_,781
+categorical__card5_125.0,card5,0,0,,native xgboost feature_importances_,782
+categorical__card5_127.0,card5,0,0,,native xgboost feature_importances_,783
+categorical__card5_128.0,card5,0,0,,native xgboost feature_importances_,784
+categorical__card5_130.0,card5,0,0,,native xgboost feature_importances_,785
+categorical__card5_132.0,card5,0,0,,native xgboost feature_importances_,786
+categorical__card5_134.0,card5,0,0,,native xgboost feature_importances_,787
+categorical__card5_136.0,card5,0,0,,native xgboost feature_importances_,788
+categorical__card5_139.0,card5,0,0,,native xgboost feature_importances_,789
+categorical__card5_143.0,card5,0,0,,native xgboost feature_importances_,790
+categorical__card5_145.0,card5,0,0,,native xgboost feature_importances_,791
+categorical__card5_147.0,card5,0,0,,native xgboost feature_importances_,792
+categorical__card5_148.0,card5,0,0,,native xgboost feature_importances_,793
+categorical__card5_149.0,card5,0,0,,native xgboost feature_importances_,794
+categorical__card5_151.0,card5,0,0,,native xgboost feature_importances_,795
+categorical__card5_152.0,card5,0,0,,native xgboost feature_importances_,796
+categorical__card5_156.0,card5,0,0,,native xgboost feature_importances_,797
+categorical__card5_157.0,card5,0,0,,native xgboost feature_importances_,798
+categorical__card5_158.0,card5,0,0,,native xgboost feature_importances_,799
+categorical__card5_159.0,card5,0,0,,native xgboost feature_importances_,800
+categorical__card5_160.0,card5,0,0,,native xgboost feature_importances_,801
+categorical__card5_163.0,card5,0,0,,native xgboost feature_importances_,802
+categorical__card5_164.0,card5,0,0,,native xgboost feature_importances_,803
+categorical__card5_167.0,card5,0,0,,native xgboost feature_importances_,804
+categorical__card5_168.0,card5,0,0,,native xgboost feature_importances_,805
+categorical__card5_169.0,card5,0,0,,native xgboost feature_importances_,806
+categorical__card5_171.0,card5,0,0,,native xgboost feature_importances_,807
+categorical__card5_172.0,card5,0,0,,native xgboost feature_importances_,808
+categorical__card5_173.0,card5,0,0,,native xgboost feature_importances_,809
+categorical__card5_177.0,card5,0,0,,native xgboost feature_importances_,810
+categorical__card5_180.0,card5,0,0,,native xgboost feature_importances_,811
+categorical__card5_182.0,card5,0,0,,native xgboost feature_importances_,812
+categorical__card5_184.0,card5,0,0,,native xgboost feature_importances_,813
+categorical__card5_187.0,card5,0,0,,native xgboost feature_importances_,814
+categorical__card5_188.0,card5,0,0,,native xgboost feature_importances_,815
+categorical__card5_189.0,card5,0,0,,native xgboost feature_importances_,816
+categorical__card5_190.0,card5,0,0,,native xgboost feature_importances_,817
+categorical__card5_191.0,card5,0,0,,native xgboost feature_importances_,818
+categorical__card5_196.0,card5,0,0,,native xgboost feature_importances_,819
+categorical__card5_197.0,card5,0,0,,native xgboost feature_importances_,820
+categorical__card5_199.0,card5,0,0,,native xgboost feature_importances_,821
+categorical__card5_200.0,card5,0,0,,native xgboost feature_importances_,822
+categorical__card5_201.0,card5,0,0,,native xgboost feature_importances_,823
+categorical__card5_203.0,card5,0,0,,native xgboost feature_importances_,824
+categorical__card5_204.0,card5,0,0,,native xgboost feature_importances_,825
+categorical__card5_205.0,card5,0,0,,native xgboost feature_importances_,826
+categorical__card5_206.0,card5,0,0,,native xgboost feature_importances_,827
+categorical__card5_207.0,card5,0,0,,native xgboost feature_importances_,828
+categorical__card5_209.0,card5,0,0,,native xgboost feature_importances_,829
+categorical__card5_210.0,card5,0,0,,native xgboost feature_importances_,830
+categorical__card5_211.0,card5,0,0,,native xgboost feature_importances_,831
+categorical__card5_212.0,card5,0,0,,native xgboost feature_importances_,832
+categorical__card5_213.0,card5,0,0,,native xgboost feature_importances_,833
+categorical__card5_214.0,card5,0,0,,native xgboost feature_importances_,834
+categorical__card5_215.0,card5,0,0,,native xgboost feature_importances_,835
+categorical__card5_216.0,card5,0,0,,native xgboost feature_importances_,836
+categorical__card5_217.0,card5,0,0,,native xgboost feature_importances_,837
+categorical__card5_222.0,card5,0,0,,native xgboost feature_importances_,838
+categorical__card5_225.0,card5,0,0,,native xgboost feature_importances_,839
+categorical__card5_228.0,card5,0,0,,native xgboost feature_importances_,840
+categorical__card5_230.0,card5,0,0,,native xgboost feature_importances_,841
+categorical__card5_231.0,card5,0,0,,native xgboost feature_importances_,842
+categorical__card5_233.0,card5,0,0,,native xgboost feature_importances_,843
+categorical__card5_234.0,card5,0,0,,native xgboost feature_importances_,844
+categorical__card5_235.0,card5,0,0,,native xgboost feature_importances_,845
+categorical__card5_237.0,card5,0,0,,native xgboost feature_importances_,846
+categorical__card6___MISSING__,card6,0,0,,native xgboost feature_importances_,847
+categorical__card6_charge card,card6,0,0,,native xgboost feature_importances_,848
+categorical__card6_debit or credit,card6,0,0,,native xgboost feature_importances_,849
+categorical__addr2_10.0,addr2,0,0,,native xgboost feature_importances_,850
+categorical__addr2_100.0,addr2,0,0,,native xgboost feature_importances_,851
+categorical__addr2_101.0,addr2,0,0,,native xgboost feature_importances_,852
+categorical__addr2_102.0,addr2,0,0,,native xgboost feature_importances_,853
+categorical__addr2_13.0,addr2,0,0,,native xgboost feature_importances_,854
+categorical__addr2_15.0,addr2,0,0,,native xgboost feature_importances_,855
+categorical__addr2_16.0,addr2,0,0,,native xgboost feature_importances_,856
+categorical__addr2_17.0,addr2,0,0,,native xgboost feature_importances_,857
+categorical__addr2_18.0,addr2,0,0,,native xgboost feature_importances_,858
+categorical__addr2_19.0,addr2,0,0,,native xgboost feature_importances_,859
+categorical__addr2_20.0,addr2,0,0,,native xgboost feature_importances_,860
+categorical__addr2_21.0,addr2,0,0,,native xgboost feature_importances_,861
+categorical__addr2_22.0,addr2,0,0,,native xgboost feature_importances_,862
+categorical__addr2_23.0,addr2,0,0,,native xgboost feature_importances_,863
+categorical__addr2_24.0,addr2,0,0,,native xgboost feature_importances_,864
+categorical__addr2_25.0,addr2,0,0,,native xgboost feature_importances_,865
+categorical__addr2_26.0,addr2,0,0,,native xgboost feature_importances_,866
+categorical__addr2_27.0,addr2,0,0,,native xgboost feature_importances_,867
+categorical__addr2_28.0,addr2,0,0,,native xgboost feature_importances_,868
+categorical__addr2_29.0,addr2,0,0,,native xgboost feature_importances_,869
+categorical__addr2_30.0,addr2,0,0,,native xgboost feature_importances_,870
+categorical__addr2_31.0,addr2,0,0,,native xgboost feature_importances_,871
+categorical__addr2_32.0,addr2,0,0,,native xgboost feature_importances_,872
+categorical__addr2_34.0,addr2,0,0,,native xgboost feature_importances_,873
+categorical__addr2_35.0,addr2,0,0,,native xgboost feature_importances_,874
+categorical__addr2_36.0,addr2,0,0,,native xgboost feature_importances_,875
+categorical__addr2_38.0,addr2,0,0,,native xgboost feature_importances_,876
+categorical__addr2_39.0,addr2,0,0,,native xgboost feature_importances_,877
+categorical__addr2_40.0,addr2,0,0,,native xgboost feature_importances_,878
+categorical__addr2_43.0,addr2,0,0,,native xgboost feature_importances_,879
+categorical__addr2_46.0,addr2,0,0,,native xgboost feature_importances_,880
+categorical__addr2_47.0,addr2,0,0,,native xgboost feature_importances_,881
+categorical__addr2_48.0,addr2,0,0,,native xgboost feature_importances_,882
+categorical__addr2_49.0,addr2,0,0,,native xgboost feature_importances_,883
+categorical__addr2_50.0,addr2,0,0,,native xgboost feature_importances_,884
+categorical__addr2_51.0,addr2,0,0,,native xgboost feature_importances_,885
+categorical__addr2_52.0,addr2,0,0,,native xgboost feature_importances_,886
+categorical__addr2_54.0,addr2,0,0,,native xgboost feature_importances_,887
+categorical__addr2_55.0,addr2,0,0,,native xgboost feature_importances_,888
+categorical__addr2_57.0,addr2,0,0,,native xgboost feature_importances_,889
+categorical__addr2_59.0,addr2,0,0,,native xgboost feature_importances_,890
+categorical__addr2_61.0,addr2,0,0,,native xgboost feature_importances_,891
+categorical__addr2_62.0,addr2,0,0,,native xgboost feature_importances_,892
+categorical__addr2_63.0,addr2,0,0,,native xgboost feature_importances_,893
+categorical__addr2_66.0,addr2,0,0,,native xgboost feature_importances_,894
+categorical__addr2_68.0,addr2,0,0,,native xgboost feature_importances_,895
+categorical__addr2_69.0,addr2,0,0,,native xgboost feature_importances_,896
+categorical__addr2_71.0,addr2,0,0,,native xgboost feature_importances_,897
+categorical__addr2_72.0,addr2,0,0,,native xgboost feature_importances_,898
+categorical__addr2_73.0,addr2,0,0,,native xgboost feature_importances_,899
+categorical__addr2_74.0,addr2,0,0,,native xgboost feature_importances_,900
+categorical__addr2_76.0,addr2,0,0,,native xgboost feature_importances_,901
+categorical__addr2_77.0,addr2,0,0,,native xgboost feature_importances_,902
+categorical__addr2_78.0,addr2,0,0,,native xgboost feature_importances_,903
+categorical__addr2_82.0,addr2,0,0,,native xgboost feature_importances_,904
+categorical__addr2_84.0,addr2,0,0,,native xgboost feature_importances_,905
+categorical__addr2_86.0,addr2,0,0,,native xgboost feature_importances_,906
+categorical__addr2_88.0,addr2,0,0,,native xgboost feature_importances_,907
+categorical__addr2_89.0,addr2,0,0,,native xgboost feature_importances_,908
+categorical__addr2_92.0,addr2,0,0,,native xgboost feature_importances_,909
+categorical__addr2_93.0,addr2,0,0,,native xgboost feature_importances_,910
+categorical__addr2_98.0,addr2,0,0,,native xgboost feature_importances_,911
+categorical__M1_F,M1,0,0,,native xgboost feature_importances_,912
+categorical__M3___MISSING__,M3,0,0,,native xgboost feature_importances_,913
+categorical__id_28___MISSING__,id,0,0,,native xgboost feature_importances_,914
+categorical__id_29___MISSING__,id,0,0,,native xgboost feature_importances_,915
+categorical__id_30_Android 4.4.2,id,0,0,,native xgboost feature_importances_,916
+categorical__id_30_Android 5.0,id,0,0,,native xgboost feature_importances_,917
+categorical__id_30_Android 5.0.2,id,0,0,,native xgboost feature_importances_,918
+categorical__id_30_Android 6.0,id,0,0,,native xgboost feature_importances_,919
+categorical__id_30_Android 7.1.1,id,0,0,,native xgboost feature_importances_,920
+categorical__id_30_Android 7.1.2,id,0,0,,native xgboost feature_importances_,921
+categorical__id_30_Mac,id,0,0,,native xgboost feature_importances_,922
+categorical__id_30_Mac OS X 10.10,id,0,0,,native xgboost feature_importances_,923
+categorical__id_30_Mac OS X 10.11,id,0,0,,native xgboost feature_importances_,924
+categorical__id_30_Mac OS X 10.13,id,0,0,,native xgboost feature_importances_,925
+categorical__id_30_Mac OS X 10.6,id,0,0,,native xgboost feature_importances_,926
+categorical__id_30_Mac OS X 10.9,id,0,0,,native xgboost feature_importances_,927
+categorical__id_30_Mac OS X 10_11_3,id,0,0,,native xgboost feature_importances_,928
+categorical__id_30_Mac OS X 10_12,id,0,0,,native xgboost feature_importances_,929
+categorical__id_30_Mac OS X 10_12_1,id,0,0,,native xgboost feature_importances_,930
+categorical__id_30_Mac OS X 10_12_2,id,0,0,,native xgboost feature_importances_,931
+categorical__id_30_Mac OS X 10_12_4,id,0,0,,native xgboost feature_importances_,932
+categorical__id_30_Mac OS X 10_12_5,id,0,0,,native xgboost feature_importances_,933
+categorical__id_30_Mac OS X 10_13_5,id,0,0,,native xgboost feature_importances_,934
+categorical__id_30_Mac OS X 10_6_8,id,0,0,,native xgboost feature_importances_,935
+categorical__id_30_Mac OS X 10_7_5,id,0,0,,native xgboost feature_importances_,936
+categorical__id_30_Mac OS X 10_8_5,id,0,0,,native xgboost feature_importances_,937
+categorical__id_30_Windows,id,0,0,,native xgboost feature_importances_,938
+categorical__id_30_Windows XP,id,0,0,,native xgboost feature_importances_,939
+categorical__id_30___MISSING__,id,0,0,,native xgboost feature_importances_,940
+categorical__id_30_func,id,0,0,,native xgboost feature_importances_,941
+categorical__id_30_iOS,id,0,0,,native xgboost feature_importances_,942
+categorical__id_30_iOS 10.0.2,id,0,0,,native xgboost feature_importances_,943
+categorical__id_30_iOS 10.1.1,id,0,0,,native xgboost feature_importances_,944
+categorical__id_30_iOS 10.2.1,id,0,0,,native xgboost feature_importances_,945
+categorical__id_30_iOS 10.3.1,id,0,0,,native xgboost feature_importances_,946
+categorical__id_30_iOS 11.0.0,id,0,0,,native xgboost feature_importances_,947
+categorical__id_30_iOS 11.1.1,id,0,0,,native xgboost feature_importances_,948
+categorical__id_30_iOS 11.3.1,id,0,0,,native xgboost feature_importances_,949
+categorical__id_30_iOS 11.4.0,id,0,0,,native xgboost feature_importances_,950
+categorical__id_30_iOS 11.4.1,id,0,0,,native xgboost feature_importances_,951
+categorical__id_30_iOS 9.3.5,id,0,0,,native xgboost feature_importances_,952
+categorical__id_31_BLU/Dash,id,0,0,,native xgboost feature_importances_,953
+categorical__id_31_Generic/Android,id,0,0,,native xgboost feature_importances_,954
+categorical__id_31_M4Tel/M4,id,0,0,,native xgboost feature_importances_,955
+categorical__id_31_Microsoft/Windows,id,0,0,,native xgboost feature_importances_,956
+categorical__id_31_Mozilla/Firefox,id,0,0,,native xgboost feature_importances_,957
+categorical__id_31_Samsung/SM-G531H,id,0,0,,native xgboost feature_importances_,958
+categorical__id_31_Samsung/SM-G532M,id,0,0,,native xgboost feature_importances_,959
+categorical__id_31_ZTE/Blade,id,0,0,,native xgboost feature_importances_,960
+categorical__id_31_android,id,0,0,,native xgboost feature_importances_,961
+categorical__id_31_android browser 4.0,id,0,0,,native xgboost feature_importances_,962
+categorical__id_31_aol,id,0,0,,native xgboost feature_importances_,963
+categorical__id_31_chrome,id,0,0,,native xgboost feature_importances_,964
+categorical__id_31_chrome 43.0 for android,id,0,0,,native xgboost feature_importances_,965
+categorical__id_31_chrome 46.0 for android,id,0,0,,native xgboost feature_importances_,966
+categorical__id_31_chrome 49.0 for android,id,0,0,,native xgboost feature_importances_,967
+categorical__id_31_chrome 51.0,id,0,0,,native xgboost feature_importances_,968
+categorical__id_31_chrome 51.0 for android,id,0,0,,native xgboost feature_importances_,969
+categorical__id_31_chrome 53.0 for android,id,0,0,,native xgboost feature_importances_,970
+categorical__id_31_chrome 54.0 for android,id,0,0,,native xgboost feature_importances_,971
+categorical__id_31_chrome 55.0,id,0,0,,native xgboost feature_importances_,972
+categorical__id_31_chrome 56.0,id,0,0,,native xgboost feature_importances_,973
+categorical__id_31_chrome 57.0,id,0,0,,native xgboost feature_importances_,974
+categorical__id_31_chrome 57.0 for android,id,0,0,,native xgboost feature_importances_,975
+categorical__id_31_chrome 59.0,id,0,0,,native xgboost feature_importances_,976
+categorical__id_31_chrome 59.0 for android,id,0,0,,native xgboost feature_importances_,977
+categorical__id_31_chrome 60.0,id,0,0,,native xgboost feature_importances_,978
+categorical__id_31_chrome 60.0 for android,id,0,0,,native xgboost feature_importances_,979
+categorical__id_31_chrome 61.0 for android,id,0,0,,native xgboost feature_importances_,980
+categorical__id_31_chrome 62.0 for ios,id,0,0,,native xgboost feature_importances_,981
+categorical__id_31_chrome 63.0 for ios,id,0,0,,native xgboost feature_importances_,982
+categorical__id_31_chrome 64.0 for ios,id,0,0,,native xgboost feature_importances_,983
+categorical__id_31_chrome 65.0 for ios,id,0,0,,native xgboost feature_importances_,984
+categorical__id_31_chrome 66.0 for ios,id,0,0,,native xgboost feature_importances_,985
+categorical__id_31_chrome 67.0,id,0,0,,native xgboost feature_importances_,986
+categorical__id_31_chrome 67.0 for android,id,0,0,,native xgboost feature_importances_,987
+categorical__id_31_chrome 69.0,id,0,0,,native xgboost feature_importances_,988
+categorical__id_31_chromium,id,0,0,,native xgboost feature_importances_,989
+categorical__id_31_cyberfox,id,0,0,,native xgboost feature_importances_,990
+categorical__id_31_edge 17.0,id,0,0,,native xgboost feature_importances_,991
+categorical__id_31_facebook,id,0,0,,native xgboost feature_importances_,992
+categorical__id_31_firefox 47.0,id,0,0,,native xgboost feature_importances_,993
+categorical__id_31_firefox 52.0,id,0,0,,native xgboost feature_importances_,994
+categorical__id_31_firefox 56.0,id,0,0,,native xgboost feature_importances_,995
+categorical__id_31_firefox 60.0,id,0,0,,native xgboost feature_importances_,996
+categorical__id_31_firefox generic,id,0,0,,native xgboost feature_importances_,997
+categorical__id_31_google,id,0,0,,native xgboost feature_importances_,998
+categorical__id_31_google search application 48.0,id,0,0,,native xgboost feature_importances_,999
+categorical__id_31_icedragon,id,0,0,,native xgboost feature_importances_,1000
+categorical__id_31_iron,id,0,0,,native xgboost feature_importances_,1001
+categorical__id_31_line,id,0,0,,native xgboost feature_importances_,1002
+categorical__id_31_maxthon,id,0,0,,native xgboost feature_importances_,1003
+categorical__id_31_mobile safari 8.0,id,0,0,,native xgboost feature_importances_,1004
+categorical__id_31_mobile safari 9.0,id,0,0,,native xgboost feature_importances_,1005
+categorical__id_31_mobile safari uiwebview,id,0,0,,native xgboost feature_importances_,1006
+categorical__id_31_opera 51.0,id,0,0,,native xgboost feature_importances_,1007
+categorical__id_31_opera 52.0,id,0,0,,native xgboost feature_importances_,1008
+categorical__id_31_opera 53.0,id,0,0,,native xgboost feature_importances_,1009
+categorical__id_31_palemoon,id,0,0,,native xgboost feature_importances_,1010
+categorical__id_31_puffin,id,0,0,,native xgboost feature_importances_,1011
+categorical__id_31_safari,id,0,0,,native xgboost feature_importances_,1012
+categorical__id_31_safari 10.0,id,0,0,,native xgboost feature_importances_,1013
+categorical__id_31_safari 9.0,id,0,0,,native xgboost feature_importances_,1014
+categorical__id_31_samsung,id,0,0,,native xgboost feature_importances_,1015
+categorical__id_31_samsung browser 3.3,id,0,0,,native xgboost feature_importances_,1016
+categorical__id_31_samsung browser 4.0,id,0,0,,native xgboost feature_importances_,1017
+categorical__id_31_samsung browser 4.2,id,0,0,,native xgboost feature_importances_,1018
+categorical__id_31_samsung browser 5.2,id,0,0,,native xgboost feature_importances_,1019
+categorical__id_31_seamonkey,id,0,0,,native xgboost feature_importances_,1020
+categorical__id_31_silk,id,0,0,,native xgboost feature_importances_,1021
+categorical__id_31_waterfox,id,0,0,,native xgboost feature_importances_,1022
+categorical__id_33_0x0,id,0,0,,native xgboost feature_importances_,1023
+categorical__id_33_1023x767,id,0,0,,native xgboost feature_importances_,1024
+categorical__id_33_1023x768,id,0,0,,native xgboost feature_importances_,1025
+categorical__id_33_1024x552,id,0,0,,native xgboost feature_importances_,1026
+categorical__id_33_1024x640,id,0,0,,native xgboost feature_importances_,1027
+categorical__id_33_1024x767,id,0,0,,native xgboost feature_importances_,1028
+categorical__id_33_1024x819,id,0,0,,native xgboost feature_importances_,1029
+categorical__id_33_1062x630,id,0,0,,native xgboost feature_importances_,1030
+categorical__id_33_1093x615,id,0,0,,native xgboost feature_importances_,1031
+categorical__id_33_1138x640,id,0,0,,native xgboost feature_importances_,1032
+categorical__id_33_1152x648,id,0,0,,native xgboost feature_importances_,1033
+categorical__id_33_1152x720,id,0,0,,native xgboost feature_importances_,1034
+categorical__id_33_1152x864,id,0,0,,native xgboost feature_importances_,1035
+categorical__id_33_1184x720,id,0,0,,native xgboost feature_importances_,1036
+categorical__id_33_1188x720,id,0,0,,native xgboost feature_importances_,1037
+categorical__id_33_1200x675,id,0,0,,native xgboost feature_importances_,1038
+categorical__id_33_1200x720,id,0,0,,native xgboost feature_importances_,1039
+categorical__id_33_1239x697,id,0,0,,native xgboost feature_importances_,1040
+categorical__id_33_1272x960,id,0,0,,native xgboost feature_importances_,1041
+categorical__id_33_1279x1023,id,0,0,,native xgboost feature_importances_,1042
+categorical__id_33_1279x1024,id,0,0,,native xgboost feature_importances_,1043
+categorical__id_33_1280x1023,id,0,0,,native xgboost feature_importances_,1044
+categorical__id_33_1280x1024,id,0,0,,native xgboost feature_importances_,1045
+categorical__id_33_1280x1025,id,0,0,,native xgboost feature_importances_,1046
+categorical__id_33_1280x600,id,0,0,,native xgboost feature_importances_,1047
+categorical__id_33_1280x712,id,0,0,,native xgboost feature_importances_,1048
+categorical__id_33_1280x732,id,0,0,,native xgboost feature_importances_,1049
+categorical__id_33_1280x768,id,0,0,,native xgboost feature_importances_,1050
+categorical__id_33_1280x900,id,0,0,,native xgboost feature_importances_,1051
+categorical__id_33_1280x960,id,0,0,,native xgboost feature_importances_,1052
+categorical__id_33_1281x720,id,0,0,,native xgboost feature_importances_,1053
+categorical__id_33_1281x721,id,0,0,,native xgboost feature_importances_,1054
+categorical__id_33_1281x800,id,0,0,,native xgboost feature_importances_,1055
+categorical__id_33_1281x801,id,0,0,,native xgboost feature_importances_,1056
+categorical__id_33_1296x774,id,0,0,,native xgboost feature_importances_,1057
+categorical__id_33_1344x756,id,0,0,,native xgboost feature_importances_,1058
+categorical__id_33_1344x840,id,0,0,,native xgboost feature_importances_,1059
+categorical__id_33_1356x900,id,0,0,,native xgboost feature_importances_,1060
+categorical__id_33_1359x768,id,0,0,,native xgboost feature_importances_,1061
+categorical__id_33_1365x767,id,0,0,,native xgboost feature_importances_,1062
+categorical__id_33_1365x768,id,0,0,,native xgboost feature_importances_,1063
+categorical__id_33_1366x767,id,0,0,,native xgboost feature_importances_,1064
+categorical__id_33_1368x768,id,0,0,,native xgboost feature_importances_,1065
+categorical__id_33_1371x857,id,0,0,,native xgboost feature_importances_,1066
+categorical__id_33_1400x1050,id,0,0,,native xgboost feature_importances_,1067
+categorical__id_33_1408x880,id,0,0,,native xgboost feature_importances_,1068
+categorical__id_33_1422x889,id,0,0,,native xgboost feature_importances_,1069
+categorical__id_33_1439x899,id,0,0,,native xgboost feature_importances_,1070
+categorical__id_33_1439x900,id,0,0,,native xgboost feature_importances_,1071
+categorical__id_33_1440x720,id,0,0,,native xgboost feature_importances_,1072
+categorical__id_33_1440x803,id,0,0,,native xgboost feature_importances_,1073
+categorical__id_33_1440x960,id,0,0,,native xgboost feature_importances_,1074
+categorical__id_33_1480x720,id,0,0,,native xgboost feature_importances_,1075
+categorical__id_33_1502x844,id,0,0,,native xgboost feature_importances_,1076
+categorical__id_33_1502x845,id,0,0,,native xgboost feature_importances_,1077
+categorical__id_33_1536x1152,id,0,0,,native xgboost feature_importances_,1078
+categorical__id_33_1536x864,id,0,0,,native xgboost feature_importances_,1079
+categorical__id_33_1536x960,id,0,0,,native xgboost feature_importances_,1080
+categorical__id_33_1584x990,id,0,0,,native xgboost feature_importances_,1081
+categorical__id_33_1599x899,id,0,0,,native xgboost feature_importances_,1082
+categorical__id_33_1599x900,id,0,0,,native xgboost feature_importances_,1083
+categorical__id_33_1600x1000,id,0,0,,native xgboost feature_importances_,1084
+categorical__id_33_1600x1200,id,0,0,,native xgboost feature_importances_,1085
+categorical__id_33_1600x837,id,0,0,,native xgboost feature_importances_,1086
+categorical__id_33_1600x899,id,0,0,,native xgboost feature_importances_,1087
+categorical__id_33_1624x1080,id,0,0,,native xgboost feature_importances_,1088
+categorical__id_33_1638x922,id,0,0,,native xgboost feature_importances_,1089
+categorical__id_33_1679x1049,id,0,0,,native xgboost feature_importances_,1090
+categorical__id_33_1680x1049,id,0,0,,native xgboost feature_importances_,1091
+categorical__id_33_1680x1051,id,0,0,,native xgboost feature_importances_,1092
+categorical__id_33_1680x945,id,0,0,,native xgboost feature_importances_,1093
+categorical__id_33_1684x947,id,0,0,,native xgboost feature_importances_,1094
+categorical__id_33_1707x960,id,0,0,,native xgboost feature_importances_,1095
+categorical__id_33_1727x971,id,0,0,,native xgboost feature_importances_,1096
+categorical__id_33_1728x972,id,0,0,,native xgboost feature_importances_,1097
+categorical__id_33_1760x990,id,0,0,,native xgboost feature_importances_,1098
+categorical__id_33_1768x992,id,0,0,,native xgboost feature_importances_,1099
+categorical__id_33_1776x1000,id,0,0,,native xgboost feature_importances_,1100
+categorical__id_33_1776x1080,id,0,0,,native xgboost feature_importances_,1101
+categorical__id_33_1800x1125,id,0,0,,native xgboost feature_importances_,1102
+categorical__id_33_1824x1026,id,0,0,,native xgboost feature_importances_,1103
+categorical__id_33_1888x941,id,0,0,,native xgboost feature_importances_,1104
+categorical__id_33_1912x1025,id,0,0,,native xgboost feature_importances_,1105
+categorical__id_33_1919x1079,id,0,0,,native xgboost feature_importances_,1106
+categorical__id_33_1919x1080,id,0,0,,native xgboost feature_importances_,1107
+categorical__id_33_1919x1199,id,0,0,,native xgboost feature_importances_,1108
+categorical__id_33_1919x1200,id,0,0,,native xgboost feature_importances_,1109
+categorical__id_33_1920x1079,id,0,0,,native xgboost feature_importances_,1110
+categorical__id_33_1920x1081,id,0,0,,native xgboost feature_importances_,1111
+categorical__id_33_1920x1279,id,0,0,,native xgboost feature_importances_,1112
+categorical__id_33_1920x1280,id,0,0,,native xgboost feature_importances_,1113
+categorical__id_33_1920x1281,id,0,0,,native xgboost feature_importances_,1114
+categorical__id_33_1920x975,id,0,0,,native xgboost feature_importances_,1115
+categorical__id_33_1921x1080,id,0,0,,native xgboost feature_importances_,1116
+categorical__id_33_1921x1081,id,0,0,,native xgboost feature_importances_,1117
+categorical__id_33_2000x1125,id,0,0,,native xgboost feature_importances_,1118
+categorical__id_33_2048x1080,id,0,0,,native xgboost feature_importances_,1119
+categorical__id_33_2048x1152,id,0,0,,native xgboost feature_importances_,1120
+categorical__id_33_2048x1278,id,0,0,,native xgboost feature_importances_,1121
+categorical__id_33_2048x1280,id,0,0,,native xgboost feature_importances_,1122
+categorical__id_33_2049x1152,id,0,0,,native xgboost feature_importances_,1123
+categorical__id_33_2049x1536,id,0,0,,native xgboost feature_importances_,1124
+categorical__id_33_2100x1312,id,0,0,,native xgboost feature_importances_,1125
+categorical__id_33_2112x1188,id,0,0,,native xgboost feature_importances_,1126
+categorical__id_33_2159x1439,id,0,0,,native xgboost feature_importances_,1127
+categorical__id_33_2159x1440,id,0,0,,native xgboost feature_importances_,1128
+categorical__id_33_2160x1080,id,0,0,,native xgboost feature_importances_,1129
+categorical__id_33_2160x1081,id,0,0,,native xgboost feature_importances_,1130
+categorical__id_33_2160x1215,id,0,0,,native xgboost feature_importances_,1131
+categorical__id_33_2160x1350,id,0,0,,native xgboost feature_importances_,1132
+categorical__id_33_2160x1439,id,0,0,,native xgboost feature_importances_,1133
+categorical__id_33_2220x1081,id,0,0,,native xgboost feature_importances_,1134
+categorical__id_33_2224x1668,id,0,0,,native xgboost feature_importances_,1135
+categorical__id_33_2255x1503,id,0,0,,native xgboost feature_importances_,1136
+categorical__id_33_2256x1504,id,0,0,,native xgboost feature_importances_,1137
+categorical__id_33_2304x1296,id,0,0,,native xgboost feature_importances_,1138
+categorical__id_33_2304x1440,id,0,0,,native xgboost feature_importances_,1139
+categorical__id_33_2368x1440,id,0,0,,native xgboost feature_importances_,1140
+categorical__id_33_2392x1440,id,0,0,,native xgboost feature_importances_,1141
+categorical__id_33_2400x1350,id,0,0,,native xgboost feature_importances_,1142
+categorical__id_33_2400x1500,id,0,0,,native xgboost feature_importances_,1143
+categorical__id_33_2400x1600,id,0,0,,native xgboost feature_importances_,1144
+categorical__id_33_2520x1575,id,0,0,,native xgboost feature_importances_,1145
+categorical__id_33_2559x1439,id,0,0,,native xgboost feature_importances_,1146
+categorical__id_33_2560x1080,id,0,0,,native xgboost feature_importances_,1147
+categorical__id_33_2560x1700,id,0,0,,native xgboost feature_importances_,1148
+categorical__id_33_2560x1800,id,0,0,,native xgboost feature_importances_,1149
+categorical__id_33_2561x1442,id,0,0,,native xgboost feature_importances_,1150
+categorical__id_33_2562x1442,id,0,0,,native xgboost feature_importances_,1151
+categorical__id_33_2672x1440,id,0,0,,native xgboost feature_importances_,1152
+categorical__id_33_2700x1800,id,0,0,,native xgboost feature_importances_,1153
+categorical__id_33_2710x1440,id,0,0,,native xgboost feature_importances_,1154
+categorical__id_33_2735x1823,id,0,0,,native xgboost feature_importances_,1155
+categorical__id_33_2735x1825,id,0,0,,native xgboost feature_importances_,1156
+categorical__id_33_2736x1823,id,0,0,,native xgboost feature_importances_,1157
+categorical__id_33_2737x1825,id,0,0,,native xgboost feature_importances_,1158
+categorical__id_33_2800x1575,id,0,0,,native xgboost feature_importances_,1159
+categorical__id_33_2816x1584,id,0,0,,native xgboost feature_importances_,1160
+categorical__id_33_2816x1760,id,0,0,,native xgboost feature_importances_,1161
+categorical__id_33_2880x1440,id,0,0,,native xgboost feature_importances_,1162
+categorical__id_33_2880x1442,id,0,0,,native xgboost feature_importances_,1163
+categorical__id_33_2880x1620,id,0,0,,native xgboost feature_importances_,1164
+categorical__id_33_2882x1442,id,0,0,,native xgboost feature_importances_,1165
+categorical__id_33_2961x1440,id,0,0,,native xgboost feature_importances_,1166
+categorical__id_33_2961x1442,id,0,0,,native xgboost feature_importances_,1167
+categorical__id_33_3000x2000,id,0,0,,native xgboost feature_importances_,1168
+categorical__id_33_3072x1728,id,0,0,,native xgboost feature_importances_,1169
+categorical__id_33_3200x1800,id,0,0,,native xgboost feature_importances_,1170
+categorical__id_33_3200x2000,id,0,0,,native xgboost feature_importances_,1171
+categorical__id_33_3201x1800,id,0,0,,native xgboost feature_importances_,1172
+categorical__id_33_3240x2160,id,0,0,,native xgboost feature_importances_,1173
+categorical__id_33_3360x1890,id,0,0,,native xgboost feature_importances_,1174
+categorical__id_33_3440x1440,id,0,0,,native xgboost feature_importances_,1175
+categorical__id_33_3441x1440,id,0,0,,native xgboost feature_importances_,1176
+categorical__id_33_3520x1980,id,0,0,,native xgboost feature_importances_,1177
+categorical__id_33_3600x2250,id,0,0,,native xgboost feature_importances_,1178
+categorical__id_33_3838x2158,id,0,0,,native xgboost feature_importances_,1179
+categorical__id_33_3838x2160,id,0,0,,native xgboost feature_importances_,1180
+categorical__id_33_3839x2160,id,0,0,,native xgboost feature_importances_,1181
+categorical__id_33_3840x1080,id,0,0,,native xgboost feature_importances_,1182
+categorical__id_33_3840x1600,id,0,0,,native xgboost feature_importances_,1183
+categorical__id_33_3840x2162,id,0,0,,native xgboost feature_importances_,1184
+categorical__id_33_3840x2400,id,0,0,,native xgboost feature_importances_,1185
+categorical__id_33_3841x2161,id,0,0,,native xgboost feature_importances_,1186
+categorical__id_33_4096x2304,id,0,0,,native xgboost feature_importances_,1187
+categorical__id_33_4200x2625,id,0,0,,native xgboost feature_importances_,1188
+categorical__id_33_4499x2999,id,0,0,,native xgboost feature_importances_,1189
+categorical__id_33_4500x3000,id,0,0,,native xgboost feature_importances_,1190
+categorical__id_33_480x320,id,0,0,,native xgboost feature_importances_,1191
+categorical__id_33_5040x3150,id,0,0,,native xgboost feature_importances_,1192
+categorical__id_33_5760x3240,id,0,0,,native xgboost feature_importances_,1193
+categorical__id_33_6016x3384,id,0,0,,native xgboost feature_importances_,1194
+categorical__id_33_640x360,id,0,0,,native xgboost feature_importances_,1195
+categorical__id_33_6720x3780,id,0,0,,native xgboost feature_importances_,1196
+categorical__id_33_800x600,id,0,0,,native xgboost feature_importances_,1197
+categorical__id_33_801x480,id,0,0,,native xgboost feature_importances_,1198
+categorical__id_33_921x691,id,0,0,,native xgboost feature_importances_,1199
+categorical__id_33_960x640,id,0,0,,native xgboost feature_importances_,1200
+categorical__id_34_match_status:-1,id,0,0,,native xgboost feature_importances_,1201
+categorical__id_35_T,id,0,0,,native xgboost feature_importances_,1202
+categorical__id_35___MISSING__,id,0,0,,native xgboost feature_importances_,1203
+categorical__id_36___MISSING__,id,0,0,,native xgboost feature_importances_,1204
+categorical__id_37___MISSING__,id,0,0,,native xgboost feature_importances_,1205
+categorical__id_38___MISSING__,id,0,0,,native xgboost feature_importances_,1206
+categorical__DeviceType___MISSING__,DeviceType,0,0,,native xgboost feature_importances_,1207

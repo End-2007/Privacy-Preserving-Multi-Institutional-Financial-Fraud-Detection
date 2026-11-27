@@ -1,0 +1,19 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+numeric__error_balance_orig,error_balance_orig,0.3920335181,0.3920335181,,native random_forest feature_importances_,1
+numeric__orig_balance_delta,orig_balance_delta,0.2229070074,0.2229070074,,native random_forest feature_importances_,2
+numeric__newbalanceOrig,newbalanceOrig,0.1340076346,0.1340076346,,native random_forest feature_importances_,3
+numeric__orig_zero_after,orig_zero_after,0.09728848636,0.09728848636,,native random_forest feature_importances_,4
+numeric__oldbalanceOrg,oldbalanceOrg,0.07062935015,0.07062935015,,native random_forest feature_importances_,5
+categorical__type_PAYMENT,type,0.02029529283,0.02029529283,,native random_forest feature_importances_,6
+numeric__log_amount,log_amount,0.01913919566,0.01913919566,,native random_forest feature_importances_,7
+numeric__amount,amount,0.01773957846,0.01773957846,,native random_forest feature_importances_,8
+numeric__error_balance_dest,error_balance_dest,0.006337948947,0.006337948947,,native random_forest feature_importances_,9
+numeric__hour,hour,0.004393735825,0.004393735825,,native random_forest feature_importances_,10
+numeric__newbalanceDest,newbalanceDest,0.003356948831,0.003356948831,,native random_forest feature_importances_,11
+numeric__dest_balance_delta,dest_balance_delta,0.003342088177,0.003342088177,,native random_forest feature_importances_,12
+numeric__step,step,0.003134698693,0.003134698693,,native random_forest feature_importances_,13
+categorical__type_TRANSFER,type,0.002644135606,0.002644135606,,native random_forest feature_importances_,14
+numeric__oldbalanceDest,oldbalanceDest,0.001363579322,0.001363579322,,native random_forest feature_importances_,15
+categorical__type_CASH_OUT,type,0.001159607933,0.001159607933,,native random_forest feature_importances_,16
+categorical__type_DEBIT,type,0.0001604973599,0.0001604973599,,native random_forest feature_importances_,17
+categorical__type_CASH_IN,type,6.669566331e-05,6.669566331e-05,,native random_forest feature_importances_,18
