@@ -1,0 +1,46 @@
+{
+  "artifact": "models\\paysim\\feature_sets\\auth\\logistic_regression\\stage1\\best_model.joblib",
+  "compute_device": "cpu",
+  "created_utc": "2026-11-27T06:10:18.975170+00:00",
+  "dataset": "paysim",
+  "feature_importance_file": "reports\\feature_set_results\\feature_importance\\paysim_auth_logistic_regression.csv",
+  "feature_list": "configs\\features\\PaySim_auth.txt",
+  "feature_metadata": "data\\processed\\paysim\\feature_sets\\auth\\feature_metadata.json",
+  "feature_set": "auth",
+  "final_metrics_split": "test",
+  "lr_scaler": "models\\paysim\\feature_sets\\auth\\logistic_regression\\stage1\\lr_scaler.joblib",
+  "model": "logistic_regression",
+  "model_candidate_selection": "highest validation AP among the recorded candidates for this model family",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0"
+  },
+  "params": {
+    "C": 4.5705630998014515,
+    "solver": "liblinear"
+  },
+  "prediction_file": "reports\\feature_set_results\\predictions\\paysim_auth_logistic_regression_predictions.csv.gz",
+  "preprocessing_fit_split": "train",
+  "preprocessor": "models\\paysim\\feature_sets\\auth\\preprocessor.joblib",
+  "search_candidate": 3,
+  "search_validation_ap": 0.2655802865310265,
+  "seed": 42,
+  "selection_metric": "validation Average Precision (AP)",
+  "source_search_report": "reports\\paysim_auth_metrics.json",
+  "split": {
+    "stratified": true,
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  },
+  "split_manifest": "data\\processed\\paysim\\feature_sets\\auth\\split_manifest.json",
+  "strategy": "cap_smote",
+  "threshold_rule": "maximize validation recall subject to validation FPR <= 0.01",
+  "threshold_selected_on": "validation",
+  "train_only_resampling": true
+}

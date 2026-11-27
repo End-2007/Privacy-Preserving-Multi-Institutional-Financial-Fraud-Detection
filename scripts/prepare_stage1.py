@@ -21,6 +21,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from src.common.frequency_encoder import FrequencyEncoder  # noqa: E402
+from src.common.feature_sets import (  # noqa: E402
+    feature_list_path,
+    feature_set_paths,
+    load_feature_list,
+    resolve_feature_columns,
+)
 from src.common.splitting import stratified_split_codes  # noqa: E402
 
 RAW = ROOT / "data" / "raw"
@@ -122,6 +128,7 @@ def prepare_paysim() -> None:
                 raise ValueError("PaySim contains negative transaction amounts; inspect before log transform.")
 
             frame = pd.DataFrame()
+            frame["step"] = chunk["step"].astype(np.int16)
             frame["row_id"] = np.arange(offset, offset + n_rows, dtype=np.int64)
             frame["type"] = chunk["type"].astype("string")
             frame["amount"] = chunk["amount"].astype(np.float32)
@@ -246,17 +253,43 @@ def prepare_ieee() -> None:
     fit_and_transform("ieee_cis", categorical_high=sorted(IEEE_HIGH_CARD))
 
 
-def fit_and_transform(dataset: str, *, categorical_high: list[str]) -> None:
-    data_dir = PROCESSED / dataset
-    model_dir = MODELS / dataset
+def fit_and_transform(
+    dataset: str,
+    *,
+    categorical_high: list[str],
+    feature_set: str | None = None,
+) -> None:
+    source_data_dir = PROCESSED / dataset
+    data_dir, model_dir = feature_set_paths(dataset, feature_set)
+    data_dir.mkdir(parents=True, exist_ok=True)
     model_dir.mkdir(parents=True, exist_ok=True)
 
-    train = pd.read_parquet(data_dir / "train.parquet")
+    train = pd.read_parquet(source_data_dir / "train.parquet")
     excluded = {"isFraud", "row_id", "TransactionID"}
-    candidate_features = [column for column in train.columns if column not in excluded]
+    derived_features: list[str] = []
+    configured_source_features: list[str] | None = None
+    if feature_set is None:
+        # Preserve the original Stage 1 matrix; step is stored in Parquet only
+        # so the explicit full/auth configurations can use the source field.
+        if dataset == "paysim":
+            excluded.add("step")
+        candidate_features = [column for column in train.columns if column not in excluded]
+    else:
+        configured_source_features = load_feature_list(dataset, feature_set)
+        candidate_features, derived_features = resolve_feature_columns(
+            dataset, feature_set, train.columns
+        )
+        excluded.update(
+            set(train.columns)
+            .difference(candidate_features)
+            .difference({"isFraud", "row_id", "TransactionID"})
+        )
+
     train_missing = train[candidate_features].isna().mean()
     dropped = train_missing[train_missing > 0.90].index.tolist()
     feature_columns = [column for column in candidate_features if column not in dropped]
+    if not feature_columns:
+        raise ValueError(f"No model features remain for {dataset}/{feature_set or 'stage1_default'}.")
     numeric_columns = [
         column for column in feature_columns
         if pd.api.types.is_numeric_dtype(train[column].dtype)
@@ -311,7 +344,7 @@ def fit_and_transform(dataset: str, *, categorical_high: list[str]) -> None:
     feature_names = preprocessor.get_feature_names_out().tolist()
     split_shapes = {"train": list(X_train.shape)}
     for split_name in ("validation", "test"):
-        frame = pd.read_parquet(data_dir / f"{split_name}.parquet")
+        frame = pd.read_parquet(source_data_dir / f"{split_name}.parquet")
         y = frame["isFraud"].to_numpy(dtype=np.int8)
         for column in categorical_columns:
             frame[column] = frame[column].astype(object).where(frame[column].notna(), np.nan)
@@ -328,8 +361,16 @@ def fit_and_transform(dataset: str, *, categorical_high: list[str]) -> None:
         del frame, X, y
 
     joblib.dump(preprocessor, model_dir / "preprocessor.joblib", compress=3)
-    write_json(data_dir / "feature_metadata.json", {
+    feature_metadata = {
         "dataset": dataset,
+        "feature_set": feature_set or "stage1_default",
+        "feature_list": (
+            str(feature_list_path(dataset, feature_set).relative_to(ROOT))
+            if feature_set is not None else None
+        ),
+        "configured_source_features": configured_source_features,
+        "derived_features": derived_features,
+        "input_features_before_train_missingness_filter": candidate_features,
         "target": "isFraud",
         "excluded_from_predictors": sorted(excluded),
         "dropped_over_90_percent_missing_on_train": dropped,
@@ -343,9 +384,12 @@ def fit_and_transform(dataset: str, *, categorical_high: list[str]) -> None:
         "transform_output": "float32 scipy CSR; X_<split>.npz is for tree models and X_lr_<split>.npz is scaled for Logistic Regression; y_<split>.npy holds labels",
         "matrix_shapes": split_shapes,
         "lr_scaler": str((model_dir / "lr_scaler.joblib").relative_to(ROOT)),
-    })
-    train_manifest = json.loads((data_dir / "split_manifest.json").read_text(encoding="utf-8"))
+    }
+    write_json(data_dir / "feature_metadata.json", feature_metadata)
+    train_manifest = json.loads((source_data_dir / "split_manifest.json").read_text(encoding="utf-8"))
     train_manifest["preprocessing"] = {
+        "feature_set": feature_set or "stage1_default",
+        "feature_list": feature_metadata["feature_list"],
         "fit_split": "train",
         "dropped_over_90_percent_missing_on_train": dropped,
         "numeric_feature_count": len(numeric_columns),
@@ -356,11 +400,18 @@ def fit_and_transform(dataset: str, *, categorical_high: list[str]) -> None:
         "transformer_path": str((model_dir / "preprocessor.joblib").relative_to(ROOT)),
         "lr_scaler_path": str((model_dir / "lr_scaler.joblib").relative_to(ROOT)),
     }
+    if feature_set is not None:
+        train_manifest["feature_set"] = {
+            "name": feature_set,
+            "source_features": configured_source_features,
+            "model_features_before_missingness_filter": candidate_features,
+            "derived_features": derived_features,
+        }
     write_json(data_dir / "split_manifest.json", train_manifest)
     del train, X_train, y_train
     print(
         f"{dataset}: fitted on train only; dropped {len(dropped)} >90% missing columns; "
-        f"matrix shapes {split_shapes}"
+        f"feature_set={feature_set or 'stage1_default'}; matrix shapes {split_shapes}"
     )
 
 

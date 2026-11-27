@@ -1,0 +1,587 @@
+{
+  "comparison": [
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "model": "logistic_regression",
+      "params": {
+        "C": 0.0745934328572655,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.07372117880592458,
+        "fn": 25,
+        "fp": 30306,
+        "fpr": 0.031795224736193846,
+        "pr_auc": 0.6069375693142173,
+        "precision": 0.03830165328594548,
+        "recall": 0.9797077922077922,
+        "roc_auc": 0.9956135784122985,
+        "threshold": 0.5,
+        "tn": 922856,
+        "tp": 1207
+      }
+    },
+    {
+      "candidate": 3,
+      "compute_device": "cpu",
+      "model": "random_forest",
+      "params": {
+        "max_depth": 20,
+        "max_features": 0.5,
+        "min_samples_leaf": 2,
+        "n_estimators": 100
+      },
+      "resampling": {
+        "after": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.9991876523151909,
+        "fn": 2,
+        "fp": 0,
+        "fpr": 0.0,
+        "pr_auc": 0.9999413237365045,
+        "precision": 1.0,
+        "recall": 0.9983766233766234,
+        "roc_auc": 0.9999999182488624,
+        "threshold": 0.5,
+        "tn": 953162,
+        "tp": 1230
+      }
+    },
+    {
+      "candidate": 1,
+      "compute_device": "cuda",
+      "model": "xgboost",
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.12519096368575075,
+        "max_depth": 7,
+        "min_child_weight": 10,
+        "n_estimators": 200,
+        "reg_lambda": 1.5620693675639872,
+        "subsample": 0.9
+      },
+      "resampling": {
+        "after": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.9979732468585326,
+        "fn": 1,
+        "fp": 4,
+        "fpr": 4.196558402454147e-06,
+        "pr_auc": 0.9999813330998899,
+        "precision": 0.9967611336032388,
+        "recall": 0.9991883116883117,
+        "roc_auc": 0.9999999753043438,
+        "threshold": 0.5,
+        "tn": 953158,
+        "tp": 1231
+      }
+    },
+    {
+      "candidate": 4,
+      "compute_device": "cpu",
+      "model": "lightgbm",
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.06695833655111026,
+        "max_depth": 12,
+        "min_child_samples": 50,
+        "n_estimators": 500,
+        "num_leaves": 31,
+        "reg_lambda": 0.15177941306507498,
+        "subsample": 0.9
+      },
+      "resampling": {
+        "after": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.9991883116883117,
+        "fn": 1,
+        "fp": 1,
+        "fpr": 1.0491396006135368e-06,
+        "pr_auc": 0.9999838566366013,
+        "precision": 0.9991883116883117,
+        "recall": 0.9991883116883117,
+        "roc_auc": 0.9999999787106413,
+        "threshold": 0.5,
+        "tn": 953161,
+        "tp": 1231
+      }
+    },
+    {
+      "candidate": 3,
+      "compute_device": "cpu",
+      "model": "logistic_regression",
+      "params": {
+        "C": 4.5705630998014515,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 114980,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.11990383139802548,
+        "fn": 60,
+        "fp": 17145,
+        "fpr": 0.01798749845251909,
+        "pr_auc": 0.6606898499645868,
+        "precision": 0.06398427690123928,
+        "recall": 0.9512987012987013,
+        "roc_auc": 0.9961270347415356,
+        "threshold": 0.5,
+        "tn": 936017,
+        "tp": 1172
+      }
+    },
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "model": "random_forest",
+      "params": {
+        "max_depth": 16,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 150
+      },
+      "resampling": {
+        "after": {
+          "negative": 114980,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.9895498392282959,
+        "fn": 1,
+        "fp": 25,
+        "fpr": 2.6228490015338422e-05,
+        "pr_auc": 0.9999345803450281,
+        "precision": 0.9800955414012739,
+        "recall": 0.9991883116883117,
+        "roc_auc": 0.9999999080299702,
+        "threshold": 0.5,
+        "tn": 953137,
+        "tp": 1231
+      }
+    },
+    {
+      "candidate": 6,
+      "compute_device": "cuda",
+      "model": "xgboost",
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05643249446219064,
+        "max_depth": 5,
+        "min_child_weight": 1,
+        "n_estimators": 350,
+        "reg_lambda": 4.138040112561017,
+        "subsample": 0.75
+      },
+      "resampling": {
+        "after": {
+          "negative": 114980,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.9770023790642347,
+        "fn": 0,
+        "fp": 58,
+        "fpr": 6.085009683558514e-05,
+        "pr_auc": 0.9999689518132141,
+        "precision": 0.9550387596899225,
+        "recall": 1.0,
+        "roc_auc": 0.9999999582728568,
+        "threshold": 0.5,
+        "tn": 953104,
+        "tp": 1232
+      }
+    },
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "model": "lightgbm",
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.12519096368575075,
+        "max_depth": 12,
+        "min_child_samples": 100,
+        "n_estimators": 200,
+        "num_leaves": 15,
+        "reg_lambda": 0.20513382630874505,
+        "subsample": 1.0
+      },
+      "resampling": {
+        "after": {
+          "negative": 114980,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.9808917197452229,
+        "fn": 0,
+        "fp": 48,
+        "fpr": 5.0358700829449766e-05,
+        "pr_auc": 0.9999813330998898,
+        "precision": 0.9625,
+        "recall": 1.0,
+        "roc_auc": 0.9999999753043438,
+        "threshold": 0.5,
+        "tn": 953114,
+        "tp": 1232
+      }
+    },
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "model": "logistic_regression",
+      "params": {
+        "C": 0.0745934328572655,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 112228,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote_enn",
+        "seed": 42
+      },
+      "strategy": "cap_smote_enn",
+      "validation": {
+        "f1": 0.10574980923739845,
+        "fn": 54,
+        "fp": 19869,
+        "fpr": 0.020845354724590363,
+        "pr_auc": 0.6401585783900753,
+        "precision": 0.05596997196750131,
+        "recall": 0.9561688311688312,
+        "roc_auc": 0.9956369754175963,
+        "threshold": 0.5,
+        "tn": 933293,
+        "tp": 1178
+      }
+    },
+    {
+      "candidate": 5,
+      "compute_device": "cpu",
+      "model": "random_forest",
+      "params": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 5,
+        "n_estimators": 200
+      },
+      "resampling": {
+        "after": {
+          "negative": 112228,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote_enn",
+        "seed": 42
+      },
+      "strategy": "cap_smote_enn",
+      "validation": {
+        "f1": 0.9677672955974843,
+        "fn": 1,
+        "fp": 81,
+        "fpr": 8.498030764969648e-05,
+        "pr_auc": 0.999886953549697,
+        "precision": 0.9382621951219512,
+        "recall": 0.9991883116883117,
+        "roc_auc": 0.9999998305367039,
+        "threshold": 0.5,
+        "tn": 953081,
+        "tp": 1231
+      }
+    },
+    {
+      "candidate": 6,
+      "compute_device": "cuda",
+      "model": "xgboost",
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05643249446219064,
+        "max_depth": 5,
+        "min_child_weight": 1,
+        "n_estimators": 350,
+        "reg_lambda": 4.138040112561017,
+        "subsample": 0.75
+      },
+      "resampling": {
+        "after": {
+          "negative": 112228,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote_enn",
+        "seed": 42
+      },
+      "strategy": "cap_smote_enn",
+      "validation": {
+        "f1": 0.9613733905579399,
+        "fn": 0,
+        "fp": 99,
+        "fpr": 0.00010386482046074015,
+        "pr_auc": 0.999968855909928,
+        "precision": 0.9256198347107438,
+        "recall": 1.0,
+        "roc_auc": 0.9999999582728568,
+        "threshold": 0.5,
+        "tn": 953063,
+        "tp": 1232
+      }
+    },
+    {
+      "candidate": 15,
+      "compute_device": "cpu",
+      "model": "lightgbm",
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.07804189087710861,
+        "max_depth": 8,
+        "min_child_samples": 100,
+        "n_estimators": 500,
+        "num_leaves": 15,
+        "reg_lambda": 0.5832486597608726,
+        "subsample": 1.0
+      },
+      "resampling": {
+        "after": {
+          "negative": 112228,
+          "positive": 57490
+        },
+        "after_cap": {
+          "negative": 114980,
+          "positive": 5749
+        },
+        "before": {
+          "negative": 4448084,
+          "positive": 5749
+        },
+        "cap_majority_per_minority": 20,
+        "method": "cap_smote_enn",
+        "seed": 42
+      },
+      "strategy": "cap_smote_enn",
+      "validation": {
+        "f1": 0.9689343295320487,
+        "fn": 0,
+        "fp": 79,
+        "fpr": 8.288202844846941e-05,
+        "pr_auc": 0.9999533496344699,
+        "precision": 0.9397406559877955,
+        "recall": 1.0,
+        "roc_auc": 0.9999999361319237,
+        "threshold": 0.5,
+        "tn": 953083,
+        "tp": 1232
+      }
+    }
+  ],
+  "compute_device": "cpu",
+  "compute_plan": {
+    "lightgbm": "cpu, all logical threads (installed build has no GPU entry point)",
+    "logistic_regression": "cpu",
+    "random_forest": "cpu, all logical threads",
+    "xgboost": "cuda"
+  },
+  "created_utc": "2026-11-24T21:18:17.226948+00:00",
+  "dataset": "paysim",
+  "evaluated_test_once": true,
+  "feature_list": "configs\\features\\PaySim_full.txt",
+  "feature_metadata": "data\\processed\\paysim\\feature_sets\\full\\feature_metadata.json",
+  "feature_set": "full",
+  "lr_scaler": "models\\paysim\\feature_sets\\full\\lr_scaler.joblib",
+  "model": "lightgbm",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0"
+  },
+  "params": {
+    "colsample_bytree": 0.7,
+    "learning_rate": 0.06695833655111026,
+    "max_depth": 12,
+    "min_child_samples": 50,
+    "n_estimators": 500,
+    "num_leaves": 31,
+    "reg_lambda": 0.15177941306507498,
+    "subsample": 0.9
+  },
+  "preprocessor": "models\\paysim\\feature_sets\\full\\preprocessor.joblib",
+  "resampling_counts": {
+    "after": {
+      "negative": 4448084,
+      "positive": 5749
+    },
+    "before": {
+      "negative": 4448084,
+      "positive": 5749
+    },
+    "method": "class_weight"
+  },
+  "seed": 42,
+  "strategies": [
+    "class_weight",
+    "cap_smote",
+    "cap_smote_enn"
+  ],
+  "strategy": "class_weight",
+  "test_metrics": {
+    "f1": 0.9828068772491003,
+    "fn": 3,
+    "fp": 40,
+    "fpr": 4.196562805234373e-05,
+    "pr_auc": 0.9979382977898973,
+    "precision": 0.9684791174152876,
+    "recall": 0.997564935064935,
+    "roc_auc": 0.9990548677185497,
+    "threshold": 0.0027797695372263624,
+    "tn": 953121,
+    "tp": 1229
+  },
+  "threshold": 0.0027797695372263624,
+  "threshold_rule": "maximize recall subject to FPR <= 0.01",
+  "tuning_budgets": {
+    "lightgbm": 15,
+    "logistic_regression": 3,
+    "random_forest": 6,
+    "xgboost": 15
+  },
+  "validation_metric": "pr_auc",
+  "validation_metrics": {
+    "f1": 0.9899558055443953,
+    "fn": 0,
+    "fp": 25,
+    "fpr": 2.6228490015338422e-05,
+    "pr_auc": 0.9999838566366013,
+    "precision": 0.9801113762927606,
+    "recall": 1.0,
+    "roc_auc": 0.9999999787106413,
+    "threshold": 0.0027797695372263624,
+    "tn": 953137,
+    "tp": 1232
+  }
+}

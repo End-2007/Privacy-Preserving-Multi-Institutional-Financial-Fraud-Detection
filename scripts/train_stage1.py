@@ -27,6 +27,7 @@ sys.path.insert(0, str(ROOT))
 
 from src.common.config import DATASET_CONFIG, FPR_CEILING, SEED, TUNING_BUDGETS  # noqa: E402
 from src.common.evaluate import compute_metrics, pick_threshold  # noqa: E402
+from src.common.feature_sets import FEATURE_SET_NAMES, feature_list_path, feature_set_paths  # noqa: E402
 from src.common.models import build_estimator, parameter_space  # noqa: E402
 from src.common.pipeline_utils import plot_pr_curves, save_artifacts, save_json  # noqa: E402
 from src.common.resampling import resample_training_data  # noqa: E402
@@ -35,13 +36,27 @@ from src.common.tracking import finish_run, init_run, log_metrics  # noqa: E402
 MODEL_NAMES = tuple(TUNING_BUDGETS)
 
 
-def load_split(dataset: str, split: str, *, logistic: bool = False):
-    data_dir = DATASET_CONFIG[dataset]["processed_dir"]
+def load_split(
+    dataset: str,
+    split: str,
+    *,
+    logistic: bool = False,
+    feature_set: str | None = None,
+):
+    data_dir, _ = feature_set_paths(dataset, feature_set)
     matrix_name = f"X_lr_{split}.npz" if logistic else f"X_{split}.npz"
     matrix_path = data_dir / matrix_name
     label_path = data_dir / f"y_{split}.npy"
     if not matrix_path.is_file() or not label_path.is_file():
-        raise FileNotFoundError(f"Missing prepared {dataset} {split} matrix or labels; run scripts/prepare_stage1.py first.")
+        preparation_command = (
+            "scripts/prepare_feature_sets.py"
+            if feature_set is not None
+            else "scripts/prepare_stage1.py"
+        )
+        raise FileNotFoundError(
+            f"Missing prepared {dataset} {split} matrix or labels; run "
+            f"{preparation_command} first."
+        )
     X = sparse.load_npz(matrix_path).tocsr().astype(np.float32, copy=False)
     y = np.load(label_path, allow_pickle=False).astype(np.int8, copy=False)
     if X.shape[0] != y.size:
@@ -67,9 +82,16 @@ def preferred_xgboost_device() -> str:
     return "cuda" if xgboost.build_info().get("USE_CUDA", False) else "cpu"
 
 
-def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, track: bool = True) -> dict:
+def run_dataset(
+    dataset: str,
+    *,
+    strategies: tuple[str, ...] | None = None,
+    track: bool = True,
+    feature_set: str | None = None,
+) -> dict:
     """Run the predeclared search, select on validation, and touch test once."""
-    cfg = DATASET_CONFIG[dataset]
+    processed_dir, model_dir = feature_set_paths(dataset, feature_set)
+    cfg = {**DATASET_CONFIG[dataset], "processed_dir": processed_dir, "model_dir": model_dir}
     enabled_strategies = strategies or tuple(cfg["resampling_strategies"])
     if not enabled_strategies:
         raise ValueError("At least one resampling strategy must be selected.")
@@ -81,8 +103,15 @@ def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, trac
     y_validation = np.load(cfg["processed_dir"] / "y_validation.npy", allow_pickle=False).astype(np.int8, copy=False)
     result_rows = []
     curves = {}
+    config_path = (
+        str(feature_list_path(dataset, feature_set).relative_to(ROOT))
+        if feature_set is not None
+        else None
+    )
     experiment_config = {
         "dataset": dataset,
+        "feature_set": feature_set or "stage1_default",
+        "feature_list": config_path,
         "seed": SEED,
         "validation_metric": "pr_auc",
         "threshold_rule": f"maximize recall subject to FPR <= {FPR_CEILING}",
@@ -96,9 +125,10 @@ def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, trac
             "logistic_regression": "cpu",
         },
     }
+    run_name = f"{dataset}-stage1" if feature_set is None else f"{dataset}-{feature_set}-stage1"
     run = init_run(
         project="fedguard-stage1",
-        name=f"{dataset}-stage1-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
+        name=f"{run_name}-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
         config=experiment_config,
         enabled=track,
     )
@@ -111,8 +141,10 @@ def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, trac
         flush=True,
     )
     try:
-        X_train_tree, y_train = load_split(dataset, "train")
-        X_validation_tree, y_validation_check = load_split(dataset, "validation")
+        X_train_tree, y_train = load_split(dataset, "train", feature_set=feature_set)
+        X_validation_tree, y_validation_check = load_split(
+            dataset, "validation", feature_set=feature_set
+        )
         if not np.array_equal(y_validation, y_validation_check):
             raise ValueError(f"Validation labels changed while loading {dataset} matrices.")
         # Refit the LR-only scale on the already-prepared train matrix using
@@ -247,7 +279,7 @@ def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, trac
             fpr_ceiling=FPR_CEILING,
         )
         selected_validation = compute_metrics(y_validation, selected["validation_scores"], threshold)
-        X_test_tree, y_test = load_split(dataset, "test")
+        X_test_tree, y_test = load_split(dataset, "test", feature_set=feature_set)
         if selected["model"] == "logistic_regression":
             X_test = lr_scaler.transform(X_test_tree).tocsr().astype(np.float32, copy=False)
             sparse.save_npz(cfg["processed_dir"] / "X_lr_test.npz", X_test, compressed=True)
@@ -268,6 +300,7 @@ def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, trac
             "resampling_counts": selected["resampling"],
             "preprocessor": str((cfg["model_dir"] / "preprocessor.joblib").relative_to(ROOT)),
             "lr_scaler": str((cfg["model_dir"] / "lr_scaler.joblib").relative_to(ROOT)),
+            "feature_metadata": str((cfg["processed_dir"] / "feature_metadata.json").relative_to(ROOT)),
             "evaluated_test_once": True,
             "created_utc": datetime.now(timezone.utc).isoformat(),
         }
@@ -276,9 +309,13 @@ def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, trac
             **metadata,
             "comparison": result_rows,
         }
-        report_path = ROOT / "reports" / f"{dataset}_metrics.json"
+        report_suffix = "" if feature_set is None else f"_{feature_set}"
+        report_path = ROOT / "reports" / f"{dataset}{report_suffix}_metrics.json"
         save_json(report_path, report)
-        plot_pr_curves(curves, ROOT / "reports" / "figures" / f"{dataset}_pr_curves.png")
+        plot_pr_curves(
+            curves,
+            ROOT / "reports" / "figures" / f"{dataset}{report_suffix}_pr_curves.png",
+        )
         log_metrics({f"test/{key}": value for key, value in test_metrics.items()})
         return report
     finally:
@@ -288,11 +325,33 @@ def run_dataset(dataset: str, *, strategies: tuple[str, ...] | None = None, trac
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", choices=tuple(DATASET_CONFIG), required=True)
+    parser.add_argument(
+        "--feature-set",
+        choices=FEATURE_SET_NAMES,
+        help="Use Anvi's reviewed full/auth feature list; omit to preserve the original Stage 1 model.",
+    )
     parser.add_argument("--strategies", nargs="+", help="Defaults to that dataset's required Stage 1 strategies.")
     parser.add_argument("--no-wandb", action="store_true", help="Disable local W&B offline tracking.")
     args = parser.parse_args()
-    result = run_dataset(args.dataset, strategies=tuple(args.strategies) if args.strategies else None, track=not args.no_wandb)
-    print(json.dumps({"dataset": args.dataset, "selected_model": result["model"], "selected_strategy": result["strategy"], "metrics_file": str(ROOT / "reports" / f"{args.dataset}_metrics.json")}, indent=2))
+    result = run_dataset(
+        args.dataset,
+        strategies=tuple(args.strategies) if args.strategies else None,
+        track=not args.no_wandb,
+        feature_set=args.feature_set,
+    )
+    report_suffix = "" if args.feature_set is None else f"_{args.feature_set}"
+    print(
+        json.dumps(
+            {
+                "dataset": args.dataset,
+                "feature_set": args.feature_set or "stage1_default",
+                "selected_model": result["model"],
+                "selected_strategy": result["strategy"],
+                "metrics_file": str(ROOT / "reports" / f"{args.dataset}{report_suffix}_metrics.json"),
+            },
+            indent=2,
+        )
+    )
 
 
 if __name__ == "__main__":

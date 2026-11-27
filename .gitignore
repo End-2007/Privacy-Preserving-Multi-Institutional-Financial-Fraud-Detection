@@ -25,6 +25,16 @@ data/sample/*
 *.rar
 *.7z
 
+# Small reviewed feature-classification tables are project documentation.
+!docs/feature_classification_ieee_cis.csv
+!docs/feature_classification_paysim.csv
+
+# Reproducible full/auth experiment tables and transformed-feature rankings.
+!reports/feature_set_results/all_configurations_metrics.csv
+!reports/feature_set_results/model_a_vs_model_b_summary.csv
+!reports/feature_set_results/feature_importance/
+!reports/feature_set_results/feature_importance/*.csv
+
 # -------------------- Office & Binary Documents --------------------
 # Keeps local presentation and submission documents off GitHub
 *.docx

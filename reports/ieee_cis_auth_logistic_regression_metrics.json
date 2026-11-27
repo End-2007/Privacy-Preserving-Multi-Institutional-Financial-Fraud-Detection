@@ -1,0 +1,429 @@
+{
+  "artifact": "models\\ieee_cis\\feature_sets\\auth\\logistic_regression\\stage1\\best_model.joblib",
+  "candidate_search": [
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "convergence_warnings": [],
+      "fit_seconds": 7.551488999999492,
+      "iterations": [
+        10
+      ],
+      "model": "logistic_regression",
+      "params": {
+        "C": 0.0745934328572655,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "before": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.1523217866551331,
+        "fn": 1163,
+        "fp": 20396,
+        "fpr": 0.2386027304313239,
+        "pr_auc": 0.14073927295459635,
+        "precision": 0.08673263780056419,
+        "recall": 0.6248387096774194,
+        "roc_auc": 0.756476949603213,
+        "threshold": 0.5,
+        "tn": 65085,
+        "tp": 1937
+      }
+    },
+    {
+      "candidate": 2,
+      "compute_device": "cpu",
+      "convergence_warnings": [],
+      "fit_seconds": 12.637908299999253,
+      "iterations": [
+        12
+      ],
+      "model": "logistic_regression",
+      "params": {
+        "C": 56.69849511478853,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "before": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.15230382135555906,
+        "fn": 1163,
+        "fp": 20399,
+        "fpr": 0.23863782594962624,
+        "pr_auc": 0.14072786486952107,
+        "precision": 0.08672098853868195,
+        "recall": 0.6248387096774194,
+        "roc_auc": 0.7564805648189693,
+        "threshold": 0.5,
+        "tn": 65082,
+        "tp": 1937
+      }
+    },
+    {
+      "candidate": 3,
+      "compute_device": "cpu",
+      "convergence_warnings": [],
+      "fit_seconds": 12.192341500000111,
+      "iterations": [
+        11
+      ],
+      "model": "logistic_regression",
+      "params": {
+        "C": 4.5705630998014515,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "before": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.15230382135555906,
+        "fn": 1163,
+        "fp": 20399,
+        "fpr": 0.23863782594962624,
+        "pr_auc": 0.1407285655890239,
+        "precision": 0.08672098853868195,
+        "recall": 0.6248387096774194,
+        "roc_auc": 0.7564804402864852,
+        "threshold": 0.5,
+        "tn": 65082,
+        "tp": 1937
+      }
+    },
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "convergence_warnings": [],
+      "fit_seconds": 1.41911170000094,
+      "iterations": [
+        21
+      ],
+      "model": "logistic_regression",
+      "params": {
+        "C": 0.0745934328572655,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 72320,
+          "positive": 36160
+        },
+        "after_cap": {
+          "negative": 72320,
+          "positive": 14464
+        },
+        "before": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "cap_majority_per_minority": 5,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.2018010038382049,
+        "fn": 1733,
+        "fp": 9081,
+        "fpr": 0.10623413390110083,
+        "pr_auc": 0.14372035698573554,
+        "precision": 0.13083843797856048,
+        "recall": 0.4409677419354839,
+        "roc_auc": 0.7549133838834587,
+        "threshold": 0.5,
+        "tn": 76400,
+        "tp": 1367
+      }
+    },
+    {
+      "candidate": 2,
+      "compute_device": "cpu",
+      "convergence_warnings": [],
+      "fit_seconds": 2.5124660000001313,
+      "iterations": [
+        28
+      ],
+      "model": "logistic_regression",
+      "params": {
+        "C": 56.69849511478853,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 72320,
+          "positive": 36160
+        },
+        "after_cap": {
+          "negative": 72320,
+          "positive": 14464
+        },
+        "before": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "cap_majority_per_minority": 5,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.20177121771217713,
+        "fn": 1733,
+        "fp": 9083,
+        "fpr": 0.10625753091330237,
+        "pr_auc": 0.14367977388768538,
+        "precision": 0.1308133971291866,
+        "recall": 0.4409677419354839,
+        "roc_auc": 0.7549391470128619,
+        "threshold": 0.5,
+        "tn": 76398,
+        "tp": 1367
+      }
+    },
+    {
+      "candidate": 3,
+      "compute_device": "cpu",
+      "convergence_warnings": [],
+      "fit_seconds": 2.2622914999992645,
+      "iterations": [
+        27
+      ],
+      "model": "logistic_regression",
+      "params": {
+        "C": 4.5705630998014515,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 72320,
+          "positive": 36160
+        },
+        "after_cap": {
+          "negative": 72320,
+          "positive": 14464
+        },
+        "before": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "cap_majority_per_minority": 5,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.2018010038382049,
+        "fn": 1733,
+        "fp": 9081,
+        "fpr": 0.10623413390110083,
+        "pr_auc": 0.14368408722675638,
+        "precision": 0.13083843797856048,
+        "recall": 0.4409677419354839,
+        "roc_auc": 0.7549377394184181,
+        "threshold": 0.5,
+        "tn": 76400,
+        "tp": 1367
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "convergence_warnings": [],
+      "fit_seconds": 7.551488999999492,
+      "iterations": [
+        10
+      ],
+      "model": "logistic_regression",
+      "params": {
+        "C": 0.0745934328572655,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "before": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "method": "class_weight"
+      },
+      "strategy": "class_weight",
+      "validation": {
+        "f1": 0.1523217866551331,
+        "fn": 1163,
+        "fp": 20396,
+        "fpr": 0.2386027304313239,
+        "pr_auc": 0.14073927295459635,
+        "precision": 0.08673263780056419,
+        "recall": 0.6248387096774194,
+        "roc_auc": 0.756476949603213,
+        "threshold": 0.5,
+        "tn": 65085,
+        "tp": 1937
+      }
+    },
+    {
+      "candidate": 1,
+      "compute_device": "cpu",
+      "convergence_warnings": [],
+      "fit_seconds": 1.41911170000094,
+      "iterations": [
+        21
+      ],
+      "model": "logistic_regression",
+      "params": {
+        "C": 0.0745934328572655,
+        "solver": "liblinear"
+      },
+      "resampling": {
+        "after": {
+          "negative": 72320,
+          "positive": 36160
+        },
+        "after_cap": {
+          "negative": 72320,
+          "positive": 14464
+        },
+        "before": {
+          "negative": 398914,
+          "positive": 14464
+        },
+        "cap_majority_per_minority": 5,
+        "method": "cap_smote",
+        "seed": 42
+      },
+      "strategy": "cap_smote",
+      "validation": {
+        "f1": 0.2018010038382049,
+        "fn": 1733,
+        "fp": 9081,
+        "fpr": 0.10623413390110083,
+        "pr_auc": 0.14372035698573554,
+        "precision": 0.13083843797856048,
+        "recall": 0.4409677419354839,
+        "roc_auc": 0.7549133838834587,
+        "threshold": 0.5,
+        "tn": 76400,
+        "tp": 1367
+      }
+    }
+  ],
+  "compute_device": "cpu",
+  "compute_plan": "Logistic Regression with liblinear; three parallel CPU candidate workers",
+  "convergence_warnings": [],
+  "created_utc": "2026-11-26T23:27:22.079082+00:00",
+  "dataset": "ieee_cis",
+  "evaluated_test_once": true,
+  "feature_list": "configs\\features\\IEEECIS_auth.txt",
+  "feature_metadata": "data\\processed\\ieee_cis\\feature_sets\\auth\\feature_metadata.json",
+  "feature_set": "auth",
+  "fit_seconds": 1.41911170000094,
+  "hyperparameter_search": true,
+  "iterations": [
+    21
+  ],
+  "lr_scaler": "models\\ieee_cis\\feature_sets\\auth\\logistic_regression\\stage1\\lr_scaler.joblib",
+  "model": "logistic_regression",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "params": {
+    "C": 0.0745934328572655,
+    "solver": "liblinear"
+  },
+  "resampling_counts": {
+    "after": {
+      "negative": 72320,
+      "positive": 36160
+    },
+    "after_cap": {
+      "negative": 72320,
+      "positive": 14464
+    },
+    "before": {
+      "negative": 398914,
+      "positive": 14464
+    },
+    "cap_majority_per_minority": 5,
+    "method": "cap_smote",
+    "seed": 42
+  },
+  "scaler": "StandardScaler(with_mean=False), fitted on training rows only",
+  "search_candidate_fits": 6,
+  "search_seconds": 20.096276900001612,
+  "seed": 42,
+  "selected_candidate": 1,
+  "strategies": [
+    "class_weight",
+    "cap_smote"
+  ],
+  "strategy": "cap_smote",
+  "test_metrics": {
+    "f1": 0.16605839416058393,
+    "fn": 2735,
+    "fp": 921,
+    "fpr": 0.010774198076788095,
+    "pr_auc": 0.15071563103826413,
+    "precision": 0.28326848249027237,
+    "recall": 0.11745724427234591,
+    "roc_auc": 0.7569479196981355,
+    "threshold": 0.8183093429410548,
+    "tn": 84561,
+    "tp": 364
+  },
+  "threshold": 0.8183093429410548,
+  "threshold_rule": "maximize recall subject to FPR <= 0.01",
+  "training_features_after_preprocessing": 317,
+  "training_rows": 413378,
+  "tuning_budget_per_strategy": 3,
+  "validation_metric": "average_precision",
+  "validation_metrics": {
+    "f1": 0.16018626309662398,
+    "fn": 2756,
+    "fp": 851,
+    "fpr": 0.009955428691756063,
+    "pr_auc": 0.14372035698573554,
+    "precision": 0.2878661087866109,
+    "recall": 0.11096774193548387,
+    "roc_auc": 0.7549133838834587,
+    "threshold": 0.8183093429410548,
+    "tn": 84630,
+    "tp": 344
+  }
+}

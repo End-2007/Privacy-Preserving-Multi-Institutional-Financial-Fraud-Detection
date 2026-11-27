@@ -1,0 +1,1208 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+frequency__card1,card1,922,0.06146666667,,native lightgbm feature_importances_,1
+frequency__card2,card2,726,0.0484,,native lightgbm feature_importances_,2
+numeric__TransactionAmt,TransactionAmt,670,0.04466666667,,native lightgbm feature_importances_,3
+numeric__TransactionDT,TransactionDT,635,0.04233333333,,native lightgbm feature_importances_,4
+frequency__addr1,addr1,587,0.03913333333,,native lightgbm feature_importances_,5
+numeric__C13,C13,389,0.02593333333,,native lightgbm feature_importances_,6
+numeric__D15,D15,340,0.02266666667,,native lightgbm feature_importances_,7
+frequency__P_emaildomain,P_emaildomain,337,0.02246666667,,native lightgbm feature_importances_,8
+numeric__dist1,dist1,274,0.01826666667,,native lightgbm feature_importances_,9
+numeric__D10,D10,268,0.01786666667,,native lightgbm feature_importances_,10
+numeric__D1,D1,258,0.0172,,native lightgbm feature_importances_,11
+numeric__transaction_hour,transaction_hour,253,0.01686666667,,native lightgbm feature_importances_,12
+numeric__D4,D4,230,0.01533333333,,native lightgbm feature_importances_,13
+numeric__C1,C1,219,0.0146,,native lightgbm feature_importances_,14
+numeric__id_20,id_20,206,0.01373333333,,native lightgbm feature_importances_,15
+numeric__D2,D2,200,0.01333333333,,native lightgbm feature_importances_,16
+numeric__transaction_day,transaction_day,200,0.01333333333,,native lightgbm feature_importances_,17
+numeric__id_02,id_02,192,0.0128,,native lightgbm feature_importances_,18
+numeric__D11,D11,172,0.01146666667,,native lightgbm feature_importances_,19
+numeric__C14,C14,170,0.01133333333,,native lightgbm feature_importances_,20
+numeric__C2,C2,156,0.0104,,native lightgbm feature_importances_,21
+numeric__id_19,id_19,148,0.009866666667,,native lightgbm feature_importances_,22
+numeric__C6,C6,134,0.008933333333,,native lightgbm feature_importances_,23
+numeric__C11,C11,131,0.008733333333,,native lightgbm feature_importances_,24
+numeric__D8,D8,129,0.0086,,native lightgbm feature_importances_,25
+frequency__DeviceInfo,DeviceInfo,122,0.008133333333,,native lightgbm feature_importances_,26
+numeric__C9,C9,121,0.008066666667,,native lightgbm feature_importances_,27
+frequency__R_emaildomain,R_emaildomain,118,0.007866666667,,native lightgbm feature_importances_,28
+numeric__D3,D3,111,0.0074,,native lightgbm feature_importances_,29
+numeric__C5,C5,100,0.006666666667,,native lightgbm feature_importances_,30
+numeric__D5,D5,98,0.006533333333,,native lightgbm feature_importances_,31
+numeric__V315,V315,91,0.006066666667,,native lightgbm feature_importances_,32
+numeric__V313,V313,89,0.005933333333,,native lightgbm feature_importances_,33
+numeric__id_06,id_06,89,0.005933333333,,native lightgbm feature_importances_,34
+numeric__V310,V310,84,0.0056,,native lightgbm feature_importances_,35
+numeric__id_01,id_01,82,0.005466666667,,native lightgbm feature_importances_,36
+numeric__V307,V307,79,0.005266666667,,native lightgbm feature_importances_,37
+numeric__id_05,id_05,77,0.005133333333,,native lightgbm feature_importances_,38
+categorical__M5_T,M5,63,0.0042,,native lightgbm feature_importances_,39
+numeric__V314,V314,61,0.004066666667,,native lightgbm feature_importances_,40
+numeric__id_14,id_14,59,0.003933333333,,native lightgbm feature_importances_,41
+numeric__V285,V285,58,0.003866666667,,native lightgbm feature_importances_,42
+categorical__card5_226.0,card5,57,0.0038,,native lightgbm feature_importances_,43
+numeric__V82,V82,53,0.003533333333,,native lightgbm feature_importances_,44
+numeric__V294,V294,53,0.003533333333,,native lightgbm feature_importances_,45
+categorical__M6_T,M6,52,0.003466666667,,native lightgbm feature_importances_,46
+numeric__C10,C10,51,0.0034,,native lightgbm feature_importances_,47
+numeric__C12,C12,51,0.0034,,native lightgbm feature_importances_,48
+numeric__V76,V76,51,0.0034,,native lightgbm feature_importances_,49
+numeric__C8,C8,49,0.003266666667,,native lightgbm feature_importances_,50
+numeric__V53,V53,49,0.003266666667,,native lightgbm feature_importances_,51
+numeric__V83,V83,49,0.003266666667,,native lightgbm feature_importances_,52
+numeric__V320,V320,49,0.003266666667,,native lightgbm feature_importances_,53
+numeric__V62,V62,48,0.0032,,native lightgbm feature_importances_,54
+numeric__id_13,id_13,48,0.0032,,native lightgbm feature_importances_,55
+categorical__card6_credit,card6,47,0.003133333333,,native lightgbm feature_importances_,56
+categorical__M5_F,M5,47,0.003133333333,,native lightgbm feature_importances_,57
+categorical__M6_F,M6,45,0.003,,native lightgbm feature_importances_,58
+numeric__D9,D9,44,0.002933333333,,native lightgbm feature_importances_,59
+categorical__card5_166.0,card5,44,0.002933333333,,native lightgbm feature_importances_,60
+categorical__M4_M0,M4,44,0.002933333333,,native lightgbm feature_importances_,61
+numeric__V130,V130,41,0.002733333333,,native lightgbm feature_importances_,62
+numeric__V283,V283,41,0.002733333333,,native lightgbm feature_importances_,63
+numeric__V54,V54,40,0.002666666667,,native lightgbm feature_importances_,64
+numeric__V87,V87,40,0.002666666667,,native lightgbm feature_importances_,65
+numeric__V312,V312,40,0.002666666667,,native lightgbm feature_importances_,66
+categorical__ProductCD_R,ProductCD,40,0.002666666667,,native lightgbm feature_importances_,67
+categorical__card5_224.0,card5,39,0.0026,,native lightgbm feature_importances_,68
+categorical__card3_185.0,card3,38,0.002533333333,,native lightgbm feature_importances_,69
+numeric__D13,D13,37,0.002466666667,,native lightgbm feature_importances_,70
+numeric__V45,V45,37,0.002466666667,,native lightgbm feature_importances_,71
+numeric__V127,V127,37,0.002466666667,,native lightgbm feature_importances_,72
+numeric__V281,V281,37,0.002466666667,,native lightgbm feature_importances_,73
+numeric__V317,V317,36,0.0024,,native lightgbm feature_importances_,74
+numeric__V13,V13,35,0.002333333333,,native lightgbm feature_importances_,75
+numeric__V308,V308,35,0.002333333333,,native lightgbm feature_importances_,76
+categorical__card5_102.0,card5,35,0.002333333333,,native lightgbm feature_importances_,77
+numeric__V291,V291,34,0.002266666667,,native lightgbm feature_importances_,78
+numeric__D14,D14,33,0.0022,,native lightgbm feature_importances_,79
+numeric__V61,V61,33,0.0022,,native lightgbm feature_importances_,80
+numeric__V165,V165,33,0.0022,,native lightgbm feature_importances_,81
+numeric__C4,C4,32,0.002133333333,,native lightgbm feature_importances_,82
+categorical__M4_M1,M4,32,0.002133333333,,native lightgbm feature_importances_,83
+numeric__V38,V38,31,0.002066666667,,native lightgbm feature_importances_,84
+numeric__V75,V75,31,0.002066666667,,native lightgbm feature_importances_,85
+numeric__V131,V131,31,0.002066666667,,native lightgbm feature_importances_,86
+numeric__V44,V44,30,0.002,,native lightgbm feature_importances_,87
+categorical__card5_117.0,card5,30,0.002,,native lightgbm feature_importances_,88
+categorical__card4_mastercard,card4,29,0.001933333333,,native lightgbm feature_importances_,89
+numeric__C3,C3,28,0.001866666667,,native lightgbm feature_importances_,90
+numeric__D6,D6,28,0.001866666667,,native lightgbm feature_importances_,91
+numeric__V55,V55,28,0.001866666667,,native lightgbm feature_importances_,92
+numeric__V311,V311,28,0.001866666667,,native lightgbm feature_importances_,93
+categorical__card4_discover,card4,28,0.001866666667,,native lightgbm feature_importances_,94
+numeric__V5,V5,27,0.0018,,native lightgbm feature_importances_,95
+numeric__V12,V12,27,0.0018,,native lightgbm feature_importances_,96
+numeric__V35,V35,27,0.0018,,native lightgbm feature_importances_,97
+categorical__M3_F,M3,27,0.0018,,native lightgbm feature_importances_,98
+numeric__D12,D12,26,0.001733333333,,native lightgbm feature_importances_,99
+numeric__V36,V36,26,0.001733333333,,native lightgbm feature_importances_,100
+numeric__V133,V133,26,0.001733333333,,native lightgbm feature_importances_,101
+numeric__V258,V258,26,0.001733333333,,native lightgbm feature_importances_,102
+numeric__V296,V296,26,0.001733333333,,native lightgbm feature_importances_,103
+numeric__V316,V316,26,0.001733333333,,native lightgbm feature_importances_,104
+categorical__card5_126.0,card5,26,0.001733333333,,native lightgbm feature_importances_,105
+categorical__card5_195.0,card5,26,0.001733333333,,native lightgbm feature_importances_,106
+numeric__V48,V48,25,0.001666666667,,native lightgbm feature_importances_,107
+numeric__V4,V4,24,0.0016,,native lightgbm feature_importances_,108
+numeric__V20,V20,24,0.0016,,native lightgbm feature_importances_,109
+numeric__id_17,id_17,24,0.0016,,native lightgbm feature_importances_,110
+missing__missingindicator_D14,missingindicator_D14,24,0.0016,,native lightgbm feature_importances_,111
+numeric__V99,V99,23,0.001533333333,,native lightgbm feature_importances_,112
+numeric__V126,V126,23,0.001533333333,,native lightgbm feature_importances_,113
+numeric__V309,V309,23,0.001533333333,,native lightgbm feature_importances_,114
+numeric__V24,V24,22,0.001466666667,,native lightgbm feature_importances_,115
+numeric__V234,V234,22,0.001466666667,,native lightgbm feature_importances_,116
+categorical__ProductCD_H,ProductCD,22,0.001466666667,,native lightgbm feature_importances_,117
+numeric__V19,V19,21,0.0014,,native lightgbm feature_importances_,118
+numeric__V56,V56,21,0.0014,,native lightgbm feature_importances_,119
+numeric__V136,V136,21,0.0014,,native lightgbm feature_importances_,120
+numeric__V261,V261,21,0.0014,,native lightgbm feature_importances_,121
+categorical__card3_150.0,card3,21,0.0014,,native lightgbm feature_importances_,122
+categorical__card4_visa,card4,21,0.0014,,native lightgbm feature_importances_,123
+numeric__V37,V37,20,0.001333333333,,native lightgbm feature_importances_,124
+numeric__V81,V81,20,0.001333333333,,native lightgbm feature_importances_,125
+numeric__V90,V90,20,0.001333333333,,native lightgbm feature_importances_,126
+numeric__id_09,id_09,20,0.001333333333,,native lightgbm feature_importances_,127
+numeric__V6,V6,19,0.001266666667,,native lightgbm feature_importances_,128
+numeric__V10,V10,19,0.001266666667,,native lightgbm feature_importances_,129
+numeric__V66,V66,19,0.001266666667,,native lightgbm feature_importances_,130
+numeric__V78,V78,19,0.001266666667,,native lightgbm feature_importances_,131
+numeric__V156,V156,19,0.001266666667,,native lightgbm feature_importances_,132
+numeric__V160,V160,19,0.001266666667,,native lightgbm feature_importances_,133
+numeric__V282,V282,19,0.001266666667,,native lightgbm feature_importances_,134
+categorical__card6_debit,card6,19,0.001266666667,,native lightgbm feature_importances_,135
+categorical__M4_M2,M4,19,0.001266666667,,native lightgbm feature_importances_,136
+categorical__M4___MISSING__,M4,19,0.001266666667,,native lightgbm feature_importances_,137
+categorical__M9_F,M9,19,0.001266666667,,native lightgbm feature_importances_,138
+categorical__id_30_Windows 7,id,19,0.001266666667,,native lightgbm feature_importances_,139
+categorical__id_31_ie 11.0 for desktop,id,19,0.001266666667,,native lightgbm feature_importances_,140
+numeric__V67,V67,18,0.0012,,native lightgbm feature_importances_,141
+numeric__V203,V203,18,0.0012,,native lightgbm feature_importances_,142
+numeric__V306,V306,18,0.0012,,native lightgbm feature_importances_,143
+numeric__V318,V318,18,0.0012,,native lightgbm feature_importances_,144
+categorical__M3_T,M3,18,0.0012,,native lightgbm feature_importances_,145
+numeric__V49,V49,17,0.001133333333,,native lightgbm feature_importances_,146
+numeric__V77,V77,17,0.001133333333,,native lightgbm feature_importances_,147
+numeric__V139,V139,17,0.001133333333,,native lightgbm feature_importances_,148
+numeric__V166,V166,17,0.001133333333,,native lightgbm feature_importances_,149
+numeric__V221,V221,17,0.001133333333,,native lightgbm feature_importances_,150
+numeric__V301,V301,17,0.001133333333,,native lightgbm feature_importances_,151
+numeric__id_03,id_03,17,0.001133333333,,native lightgbm feature_importances_,152
+categorical__M6___MISSING__,M6,17,0.001133333333,,native lightgbm feature_importances_,153
+categorical__id_31_chrome 63.0,id,17,0.001133333333,,native lightgbm feature_importances_,154
+numeric__V23,V23,16,0.001066666667,,native lightgbm feature_importances_,155
+numeric__V29,V29,16,0.001066666667,,native lightgbm feature_importances_,156
+numeric__V124,V124,16,0.001066666667,,native lightgbm feature_importances_,157
+numeric__V135,V135,16,0.001066666667,,native lightgbm feature_importances_,158
+numeric__V164,V164,16,0.001066666667,,native lightgbm feature_importances_,159
+numeric__V264,V264,16,0.001066666667,,native lightgbm feature_importances_,160
+categorical__M5___MISSING__,M5,16,0.001066666667,,native lightgbm feature_importances_,161
+numeric__V26,V26,15,0.001,,native lightgbm feature_importances_,162
+numeric__V30,V30,15,0.001,,native lightgbm feature_importances_,163
+numeric__V96,V96,15,0.001,,native lightgbm feature_importances_,164
+numeric__V321,V321,15,0.001,,native lightgbm feature_importances_,165
+categorical__M2_F,M2,15,0.001,,native lightgbm feature_importances_,166
+categorical__M8_F,M8,15,0.001,,native lightgbm feature_importances_,167
+categorical__M8_T,M8,15,0.001,,native lightgbm feature_importances_,168
+categorical__id_31_chrome 52.0 for android,id,15,0.001,,native lightgbm feature_importances_,169
+categorical__id_31_firefox,id,15,0.001,,native lightgbm feature_importances_,170
+categorical__id_33_1366x768,id,15,0.001,,native lightgbm feature_importances_,171
+categorical__DeviceType_mobile,DeviceType,15,0.001,,native lightgbm feature_importances_,172
+numeric__V86,V86,14,0.0009333333333,,native lightgbm feature_importances_,173
+numeric__V266,V266,14,0.0009333333333,,native lightgbm feature_importances_,174
+categorical__ProductCD_S,ProductCD,14,0.0009333333333,,native lightgbm feature_importances_,175
+categorical__M9_T,M9,14,0.0009333333333,,native lightgbm feature_importances_,176
+categorical__id_31_chrome generic,id,14,0.0009333333333,,native lightgbm feature_importances_,177
+categorical__id_33_2560x1440,id,14,0.0009333333333,,native lightgbm feature_importances_,178
+numeric__V7,V7,13,0.0008666666667,,native lightgbm feature_importances_,179
+numeric__V69,V69,13,0.0008666666667,,native lightgbm feature_importances_,180
+numeric__V109,V109,13,0.0008666666667,,native lightgbm feature_importances_,181
+numeric__V128,V128,13,0.0008666666667,,native lightgbm feature_importances_,182
+numeric__V129,V129,13,0.0008666666667,,native lightgbm feature_importances_,183
+numeric__V137,V137,13,0.0008666666667,,native lightgbm feature_importances_,184
+numeric__id_04,id_04,13,0.0008666666667,,native lightgbm feature_importances_,185
+missing__missingindicator_D15,missingindicator_D15,13,0.0008666666667,,native lightgbm feature_importances_,186
+categorical__id_30_Mac OS X 10_11_6,id,13,0.0008666666667,,native lightgbm feature_importances_,187
+categorical__id_31_safari generic,id,13,0.0008666666667,,native lightgbm feature_importances_,188
+numeric__V52,V52,12,0.0008,,native lightgbm feature_importances_,189
+numeric__V70,V70,12,0.0008,,native lightgbm feature_importances_,190
+numeric__V74,V74,12,0.0008,,native lightgbm feature_importances_,191
+numeric__V91,V91,12,0.0008,,native lightgbm feature_importances_,192
+numeric__V159,V159,12,0.0008,,native lightgbm feature_importances_,193
+numeric__V187,V187,12,0.0008,,native lightgbm feature_importances_,194
+numeric__V259,V259,12,0.0008,,native lightgbm feature_importances_,195
+numeric__V271,V271,12,0.0008,,native lightgbm feature_importances_,196
+numeric__V300,V300,12,0.0008,,native lightgbm feature_importances_,197
+missing__missingindicator_D3,missingindicator_D3,12,0.0008,,native lightgbm feature_importances_,198
+categorical__id_31_ie 11.0 for tablet,id,12,0.0008,,native lightgbm feature_importances_,199
+categorical__id_33_1920x1080,id,12,0.0008,,native lightgbm feature_importances_,200
+numeric__C7,C7,11,0.0007333333333,,native lightgbm feature_importances_,201
+numeric__V73,V73,11,0.0007333333333,,native lightgbm feature_importances_,202
+numeric__V201,V201,11,0.0007333333333,,native lightgbm feature_importances_,203
+numeric__V272,V272,11,0.0007333333333,,native lightgbm feature_importances_,204
+numeric__V274,V274,11,0.0007333333333,,native lightgbm feature_importances_,205
+numeric__V292,V292,11,0.0007333333333,,native lightgbm feature_importances_,206
+missing__missingindicator_id_13,missingindicator_id_13,11,0.0007333333333,,native lightgbm feature_importances_,207
+categorical__card5_138.0,card5,11,0.0007333333333,,native lightgbm feature_importances_,208
+categorical__card5_162.0,card5,11,0.0007333333333,,native lightgbm feature_importances_,209
+categorical__card5_229.0,card5,11,0.0007333333333,,native lightgbm feature_importances_,210
+categorical__M7_F,M7,11,0.0007333333333,,native lightgbm feature_importances_,211
+categorical__M7___MISSING__,M7,11,0.0007333333333,,native lightgbm feature_importances_,212
+categorical__id_33_1280x720,id,11,0.0007333333333,,native lightgbm feature_importances_,213
+categorical__id_33_2208x1242,id,11,0.0007333333333,,native lightgbm feature_importances_,214
+categorical__id_38_F,id,11,0.0007333333333,,native lightgbm feature_importances_,215
+numeric__V2,V2,10,0.0006666666667,,native lightgbm feature_importances_,216
+numeric__V3,V3,10,0.0006666666667,,native lightgbm feature_importances_,217
+numeric__V8,V8,10,0.0006666666667,,native lightgbm feature_importances_,218
+numeric__V102,V102,10,0.0006666666667,,native lightgbm feature_importances_,219
+numeric__V149,V149,10,0.0006666666667,,native lightgbm feature_importances_,220
+numeric__V150,V150,10,0.0006666666667,,native lightgbm feature_importances_,221
+numeric__V169,V169,10,0.0006666666667,,native lightgbm feature_importances_,222
+numeric__V255,V255,10,0.0006666666667,,native lightgbm feature_importances_,223
+numeric__V270,V270,10,0.0006666666667,,native lightgbm feature_importances_,224
+numeric__V277,V277,10,0.0006666666667,,native lightgbm feature_importances_,225
+categorical__card5_137.0,card5,10,0.0006666666667,,native lightgbm feature_importances_,226
+categorical__M7_T,M7,10,0.0006666666667,,native lightgbm feature_importances_,227
+categorical__id_30_Android,id,10,0.0006666666667,,native lightgbm feature_importances_,228
+categorical__id_30_Windows 8.1,id,10,0.0006666666667,,native lightgbm feature_importances_,229
+categorical__id_31_chrome 56.0 for android,id,10,0.0006666666667,,native lightgbm feature_importances_,230
+categorical__id_31_firefox 57.0,id,10,0.0006666666667,,native lightgbm feature_importances_,231
+categorical__id_31_opera,id,10,0.0006666666667,,native lightgbm feature_importances_,232
+categorical__id_33_2732x2048,id,10,0.0006666666667,,native lightgbm feature_importances_,233
+numeric__V25,V25,9,0.0006,,native lightgbm feature_importances_,234
+numeric__V58,V58,9,0.0006,,native lightgbm feature_importances_,235
+numeric__V152,V152,9,0.0006,,native lightgbm feature_importances_,236
+numeric__V206,V206,9,0.0006,,native lightgbm feature_importances_,237
+numeric__V207,V207,9,0.0006,,native lightgbm feature_importances_,238
+numeric__V280,V280,9,0.0006,,native lightgbm feature_importances_,239
+numeric__id_11,id_11,9,0.0006,,native lightgbm feature_importances_,240
+missing__missingindicator_D4,missingindicator_D4,9,0.0006,,native lightgbm feature_importances_,241
+missing__missingindicator_D5,missingindicator_D5,9,0.0006,,native lightgbm feature_importances_,242
+categorical__card3_146.0,card3,9,0.0006,,native lightgbm feature_importances_,243
+categorical__card5_185.0,card5,9,0.0006,,native lightgbm feature_importances_,244
+categorical__id_31_mobile safari 11.0,id,9,0.0006,,native lightgbm feature_importances_,245
+categorical__id_33_1024x600,id,9,0.0006,,native lightgbm feature_importances_,246
+numeric__V43,V43,8,0.0005333333333,,native lightgbm feature_importances_,247
+numeric__V79,V79,8,0.0005333333333,,native lightgbm feature_importances_,248
+numeric__V94,V94,8,0.0005333333333,,native lightgbm feature_importances_,249
+numeric__V145,V145,8,0.0005333333333,,native lightgbm feature_importances_,250
+numeric__V158,V158,8,0.0005333333333,,native lightgbm feature_importances_,251
+numeric__V162,V162,8,0.0005333333333,,native lightgbm feature_importances_,252
+numeric__V170,V170,8,0.0005333333333,,native lightgbm feature_importances_,253
+numeric__V176,V176,8,0.0005333333333,,native lightgbm feature_importances_,254
+numeric__V205,V205,8,0.0005333333333,,native lightgbm feature_importances_,255
+numeric__V220,V220,8,0.0005333333333,,native lightgbm feature_importances_,256
+numeric__V298,V298,8,0.0005333333333,,native lightgbm feature_importances_,257
+numeric__V319,V319,8,0.0005333333333,,native lightgbm feature_importances_,258
+categorical__card5_141.0,card5,8,0.0005333333333,,native lightgbm feature_importances_,259
+categorical__card5_146.0,card5,8,0.0005333333333,,native lightgbm feature_importances_,260
+categorical__id_15_New,id,8,0.0005333333333,,native lightgbm feature_importances_,261
+categorical__id_30_Windows 8,id,8,0.0005333333333,,native lightgbm feature_importances_,262
+categorical__id_30_iOS 11.2.0,id,8,0.0005333333333,,native lightgbm feature_importances_,263
+categorical__id_31_chrome 63.0 for android,id,8,0.0005333333333,,native lightgbm feature_importances_,264
+categorical__id_31_edge 16.0,id,8,0.0005333333333,,native lightgbm feature_importances_,265
+numeric__V11,V11,7,0.0004666666667,,native lightgbm feature_importances_,266
+numeric__V64,V64,7,0.0004666666667,,native lightgbm feature_importances_,267
+numeric__V125,V125,7,0.0004666666667,,native lightgbm feature_importances_,268
+numeric__V143,V143,7,0.0004666666667,,native lightgbm feature_importances_,269
+numeric__V202,V202,7,0.0004666666667,,native lightgbm feature_importances_,270
+numeric__V212,V212,7,0.0004666666667,,native lightgbm feature_importances_,271
+numeric__V222,V222,7,0.0004666666667,,native lightgbm feature_importances_,272
+numeric__V268,V268,7,0.0004666666667,,native lightgbm feature_importances_,273
+numeric__V289,V289,7,0.0004666666667,,native lightgbm feature_importances_,274
+numeric__V303,V303,7,0.0004666666667,,native lightgbm feature_importances_,275
+missing__missingindicator_D13,missingindicator_D13,7,0.0004666666667,,native lightgbm feature_importances_,276
+categorical__card3_143.0,card3,7,0.0004666666667,,native lightgbm feature_importances_,277
+categorical__card5_118.0,card5,7,0.0004666666667,,native lightgbm feature_importances_,278
+categorical__id_16_NotFound,id,7,0.0004666666667,,native lightgbm feature_importances_,279
+categorical__id_30_Windows 10,id,7,0.0004666666667,,native lightgbm feature_importances_,280
+categorical__id_30_iOS 11.0.1,id,7,0.0004666666667,,native lightgbm feature_importances_,281
+categorical__id_31_chrome 50.0 for android,id,7,0.0004666666667,,native lightgbm feature_importances_,282
+categorical__id_31_firefox 59.0,id,7,0.0004666666667,,native lightgbm feature_importances_,283
+categorical__id_33_1334x750,id,7,0.0004666666667,,native lightgbm feature_importances_,284
+categorical__id_33_2048x1536,id,7,0.0004666666667,,native lightgbm feature_importances_,285
+categorical__id_33_3840x2160,id,7,0.0004666666667,,native lightgbm feature_importances_,286
+numeric__V42,V42,6,0.0004,,native lightgbm feature_importances_,287
+numeric__V80,V80,6,0.0004,,native lightgbm feature_importances_,288
+numeric__V123,V123,6,0.0004,,native lightgbm feature_importances_,289
+numeric__V147,V147,6,0.0004,,native lightgbm feature_importances_,290
+numeric__V151,V151,6,0.0004,,native lightgbm feature_importances_,291
+numeric__V157,V157,6,0.0004,,native lightgbm feature_importances_,292
+numeric__V208,V208,6,0.0004,,native lightgbm feature_importances_,293
+numeric__V209,V209,6,0.0004,,native lightgbm feature_importances_,294
+numeric__V216,V216,6,0.0004,,native lightgbm feature_importances_,295
+numeric__V244,V244,6,0.0004,,native lightgbm feature_importances_,296
+numeric__V245,V245,6,0.0004,,native lightgbm feature_importances_,297
+numeric__V267,V267,6,0.0004,,native lightgbm feature_importances_,298
+numeric__V273,V273,6,0.0004,,native lightgbm feature_importances_,299
+numeric__V279,V279,6,0.0004,,native lightgbm feature_importances_,300
+numeric__V287,V287,6,0.0004,,native lightgbm feature_importances_,301
+numeric__V293,V293,6,0.0004,,native lightgbm feature_importances_,302
+numeric__V323,V323,6,0.0004,,native lightgbm feature_importances_,303
+numeric__V335,V335,6,0.0004,,native lightgbm feature_importances_,304
+categorical__card3_162.0,card3,6,0.0004,,native lightgbm feature_importances_,305
+categorical__card5_129.0,card5,6,0.0004,,native lightgbm feature_importances_,306
+categorical__card5_219.0,card5,6,0.0004,,native lightgbm feature_importances_,307
+categorical__addr2_87.0,addr2,6,0.0004,,native lightgbm feature_importances_,308
+categorical__id_15_Unknown,id,6,0.0004,,native lightgbm feature_importances_,309
+categorical__id_30_Mac OS X 10_13_1,id,6,0.0004,,native lightgbm feature_importances_,310
+categorical__id_30_iOS 11.2.6,id,6,0.0004,,native lightgbm feature_importances_,311
+categorical__id_30_iOS 11.3.0,id,6,0.0004,,native lightgbm feature_importances_,312
+categorical__id_31___MISSING__,id,6,0.0004,,native lightgbm feature_importances_,313
+categorical__id_31_chrome generic for android,id,6,0.0004,,native lightgbm feature_importances_,314
+categorical__id_31_safari 11.0,id,6,0.0004,,native lightgbm feature_importances_,315
+categorical__id_33_2220x1080,id,6,0.0004,,native lightgbm feature_importances_,316
+categorical__id_33_2880x1800,id,6,0.0004,,native lightgbm feature_importances_,317
+categorical__id_33_855x480,id,6,0.0004,,native lightgbm feature_importances_,318
+categorical__id_37_F,id,6,0.0004,,native lightgbm feature_importances_,319
+categorical__id_38_T,id,6,0.0004,,native lightgbm feature_importances_,320
+categorical__DeviceType_desktop,DeviceType,6,0.0004,,native lightgbm feature_importances_,321
+numeric__V33,V33,5,0.0003333333333,,native lightgbm feature_importances_,322
+numeric__V39,V39,5,0.0003333333333,,native lightgbm feature_importances_,323
+numeric__V47,V47,5,0.0003333333333,,native lightgbm feature_importances_,324
+numeric__V51,V51,5,0.0003333333333,,native lightgbm feature_importances_,325
+numeric__V132,V132,5,0.0003333333333,,native lightgbm feature_importances_,326
+numeric__V134,V134,5,0.0003333333333,,native lightgbm feature_importances_,327
+numeric__V140,V140,5,0.0003333333333,,native lightgbm feature_importances_,328
+numeric__V144,V144,5,0.0003333333333,,native lightgbm feature_importances_,329
+numeric__V171,V171,5,0.0003333333333,,native lightgbm feature_importances_,330
+numeric__V174,V174,5,0.0003333333333,,native lightgbm feature_importances_,331
+numeric__V184,V184,5,0.0003333333333,,native lightgbm feature_importances_,332
+numeric__V215,V215,5,0.0003333333333,,native lightgbm feature_importances_,333
+numeric__V218,V218,5,0.0003333333333,,native lightgbm feature_importances_,334
+numeric__V224,V224,5,0.0003333333333,,native lightgbm feature_importances_,335
+numeric__V256,V256,5,0.0003333333333,,native lightgbm feature_importances_,336
+numeric__V265,V265,5,0.0003333333333,,native lightgbm feature_importances_,337
+numeric__V288,V288,5,0.0003333333333,,native lightgbm feature_importances_,338
+numeric__V304,V304,5,0.0003333333333,,native lightgbm feature_importances_,339
+numeric__V332,V332,5,0.0003333333333,,native lightgbm feature_importances_,340
+numeric__id_10,id_10,5,0.0003333333333,,native lightgbm feature_importances_,341
+numeric__id_32,id_32,5,0.0003333333333,,native lightgbm feature_importances_,342
+missing__missingindicator_D2,missingindicator_D2,5,0.0003333333333,,native lightgbm feature_importances_,343
+categorical__card5___MISSING__,card5,5,0.0003333333333,,native lightgbm feature_importances_,344
+categorical__id_30_Mac OS X 10_13_2,id,5,0.0003333333333,,native lightgbm feature_importances_,345
+categorical__id_30_iOS 11.0.2,id,5,0.0003333333333,,native lightgbm feature_importances_,346
+categorical__id_31_chrome 64.0,id,5,0.0003333333333,,native lightgbm feature_importances_,347
+categorical__id_31_mobile safari generic,id,5,0.0003333333333,,native lightgbm feature_importances_,348
+categorical__id_33_1600x900,id,5,0.0003333333333,,native lightgbm feature_importances_,349
+categorical__id_33_1680x1050,id,5,0.0003333333333,,native lightgbm feature_importances_,350
+categorical__id_33_2736x1824,id,5,0.0003333333333,,native lightgbm feature_importances_,351
+categorical__id_34_match_status:0,id,5,0.0003333333333,,native lightgbm feature_importances_,352
+categorical__id_34_match_status:2,id,5,0.0003333333333,,native lightgbm feature_importances_,353
+categorical__id_36_F,id,5,0.0003333333333,,native lightgbm feature_importances_,354
+numeric__V31,V31,4,0.0002666666667,,native lightgbm feature_importances_,355
+numeric__V40,V40,4,0.0002666666667,,native lightgbm feature_importances_,356
+numeric__V46,V46,4,0.0002666666667,,native lightgbm feature_importances_,357
+numeric__V60,V60,4,0.0002666666667,,native lightgbm feature_importances_,358
+numeric__V85,V85,4,0.0002666666667,,native lightgbm feature_importances_,359
+numeric__V108,V108,4,0.0002666666667,,native lightgbm feature_importances_,360
+numeric__V120,V120,4,0.0002666666667,,native lightgbm feature_importances_,361
+numeric__V189,V189,4,0.0002666666667,,native lightgbm feature_importances_,362
+numeric__V200,V200,4,0.0002666666667,,native lightgbm feature_importances_,363
+numeric__V211,V211,4,0.0002666666667,,native lightgbm feature_importances_,364
+numeric__V214,V214,4,0.0002666666667,,native lightgbm feature_importances_,365
+numeric__V230,V230,4,0.0002666666667,,native lightgbm feature_importances_,366
+numeric__V233,V233,4,0.0002666666667,,native lightgbm feature_importances_,367
+numeric__V243,V243,4,0.0002666666667,,native lightgbm feature_importances_,368
+numeric__V263,V263,4,0.0002666666667,,native lightgbm feature_importances_,369
+numeric__V275,V275,4,0.0002666666667,,native lightgbm feature_importances_,370
+numeric__V276,V276,4,0.0002666666667,,native lightgbm feature_importances_,371
+numeric__V278,V278,4,0.0002666666667,,native lightgbm feature_importances_,372
+numeric__V336,V336,4,0.0002666666667,,native lightgbm feature_importances_,373
+numeric__V338,V338,4,0.0002666666667,,native lightgbm feature_importances_,374
+missing__missingindicator_D1,missingindicator_D1,4,0.0002666666667,,native lightgbm feature_importances_,375
+missing__missingindicator_id_14,missingindicator_id_14,4,0.0002666666667,,native lightgbm feature_importances_,376
+categorical__card4_american express,card4,4,0.0002666666667,,native lightgbm feature_importances_,377
+categorical__card5_100.0,card5,4,0.0002666666667,,native lightgbm feature_importances_,378
+categorical__card5_144.0,card5,4,0.0002666666667,,native lightgbm feature_importances_,379
+categorical__card5_202.0,card5,4,0.0002666666667,,native lightgbm feature_importances_,380
+categorical__id_16___MISSING__,id,4,0.0002666666667,,native lightgbm feature_importances_,381
+categorical__id_30_Android 8.1.0,id,4,0.0002666666667,,native lightgbm feature_importances_,382
+categorical__id_30_Mac OS X 10_12_6,id,4,0.0002666666667,,native lightgbm feature_importances_,383
+categorical__id_30_Mac OS X 10_13_3,id,4,0.0002666666667,,native lightgbm feature_importances_,384
+categorical__id_31_chrome 49.0,id,4,0.0002666666667,,native lightgbm feature_importances_,385
+categorical__id_31_chrome 62.0,id,4,0.0002666666667,,native lightgbm feature_importances_,386
+categorical__id_31_chrome 66.0,id,4,0.0002666666667,,native lightgbm feature_importances_,387
+categorical__id_34_match_status:1,id,4,0.0002666666667,,native lightgbm feature_importances_,388
+numeric__V17,V17,3,0.0002,,native lightgbm feature_importances_,389
+numeric__V34,V34,3,0.0002,,native lightgbm feature_importances_,390
+numeric__V63,V63,3,0.0002,,native lightgbm feature_importances_,391
+numeric__V72,V72,3,0.0002,,native lightgbm feature_importances_,392
+numeric__V103,V103,3,0.0002,,native lightgbm feature_importances_,393
+numeric__V111,V111,3,0.0002,,native lightgbm feature_importances_,394
+numeric__V115,V115,3,0.0002,,native lightgbm feature_importances_,395
+numeric__V118,V118,3,0.0002,,native lightgbm feature_importances_,396
+numeric__V138,V138,3,0.0002,,native lightgbm feature_importances_,397
+numeric__V161,V161,3,0.0002,,native lightgbm feature_importances_,398
+numeric__V167,V167,3,0.0002,,native lightgbm feature_importances_,399
+numeric__V197,V197,3,0.0002,,native lightgbm feature_importances_,400
+numeric__V204,V204,3,0.0002,,native lightgbm feature_importances_,401
+numeric__V210,V210,3,0.0002,,native lightgbm feature_importances_,402
+numeric__V225,V225,3,0.0002,,native lightgbm feature_importances_,403
+numeric__V227,V227,3,0.0002,,native lightgbm feature_importances_,404
+numeric__V232,V232,3,0.0002,,native lightgbm feature_importances_,405
+numeric__V239,V239,3,0.0002,,native lightgbm feature_importances_,406
+numeric__V248,V248,3,0.0002,,native lightgbm feature_importances_,407
+numeric__V254,V254,3,0.0002,,native lightgbm feature_importances_,408
+numeric__V286,V286,3,0.0002,,native lightgbm feature_importances_,409
+numeric__V297,V297,3,0.0002,,native lightgbm feature_importances_,410
+numeric__V302,V302,3,0.0002,,native lightgbm feature_importances_,411
+numeric__V326,V326,3,0.0002,,native lightgbm feature_importances_,412
+numeric__V330,V330,3,0.0002,,native lightgbm feature_importances_,413
+numeric__V331,V331,3,0.0002,,native lightgbm feature_importances_,414
+missing__missingindicator_D6,missingindicator_D6,3,0.0002,,native lightgbm feature_importances_,415
+missing__missingindicator_id_05,missingindicator_id_05,3,0.0002,,native lightgbm feature_importances_,416
+categorical__card3_100.0,card3,3,0.0002,,native lightgbm feature_importances_,417
+categorical__card3_119.0,card3,3,0.0002,,native lightgbm feature_importances_,418
+categorical__card3_203.0,card3,3,0.0002,,native lightgbm feature_importances_,419
+categorical__card5_131.0,card5,3,0.0002,,native lightgbm feature_importances_,420
+categorical__card5_135.0,card5,3,0.0002,,native lightgbm feature_importances_,421
+categorical__card5_142.0,card5,3,0.0002,,native lightgbm feature_importances_,422
+categorical__id_12_NotFound,id,3,0.0002,,native lightgbm feature_importances_,423
+categorical__id_28_Found,id,3,0.0002,,native lightgbm feature_importances_,424
+categorical__id_31_android webview 4.0,id,3,0.0002,,native lightgbm feature_importances_,425
+categorical__id_31_chrome 58.0,id,3,0.0002,,native lightgbm feature_importances_,426
+categorical__id_31_chrome 64.0 for android,id,3,0.0002,,native lightgbm feature_importances_,427
+categorical__id_31_chrome 65.0 for android,id,3,0.0002,,native lightgbm feature_importances_,428
+categorical__id_31_firefox 58.0,id,3,0.0002,,native lightgbm feature_importances_,429
+categorical__id_31_mobile safari 10.0,id,3,0.0002,,native lightgbm feature_importances_,430
+categorical__id_31_samsung browser 6.2,id,3,0.0002,,native lightgbm feature_importances_,431
+categorical__id_33_2436x1125,id,3,0.0002,,native lightgbm feature_importances_,432
+categorical__id_33___MISSING__,id,3,0.0002,,native lightgbm feature_importances_,433
+categorical__id_34___MISSING__,id,3,0.0002,,native lightgbm feature_importances_,434
+categorical__id_36_T,id,3,0.0002,,native lightgbm feature_importances_,435
+categorical__id_37_T,id,3,0.0002,,native lightgbm feature_importances_,436
+numeric__V9,V9,2,0.0001333333333,,native lightgbm feature_importances_,437
+numeric__V21,V21,2,0.0001333333333,,native lightgbm feature_importances_,438
+numeric__V50,V50,2,0.0001333333333,,native lightgbm feature_importances_,439
+numeric__V57,V57,2,0.0001333333333,,native lightgbm feature_importances_,440
+numeric__V59,V59,2,0.0001333333333,,native lightgbm feature_importances_,441
+numeric__V92,V92,2,0.0001333333333,,native lightgbm feature_importances_,442
+numeric__V101,V101,2,0.0001333333333,,native lightgbm feature_importances_,443
+numeric__V105,V105,2,0.0001333333333,,native lightgbm feature_importances_,444
+numeric__V110,V110,2,0.0001333333333,,native lightgbm feature_importances_,445
+numeric__V146,V146,2,0.0001333333333,,native lightgbm feature_importances_,446
+numeric__V163,V163,2,0.0001333333333,,native lightgbm feature_importances_,447
+numeric__V178,V178,2,0.0001333333333,,native lightgbm feature_importances_,448
+numeric__V182,V182,2,0.0001333333333,,native lightgbm feature_importances_,449
+numeric__V186,V186,2,0.0001333333333,,native lightgbm feature_importances_,450
+numeric__V198,V198,2,0.0001333333333,,native lightgbm feature_importances_,451
+numeric__V213,V213,2,0.0001333333333,,native lightgbm feature_importances_,452
+numeric__V217,V217,2,0.0001333333333,,native lightgbm feature_importances_,453
+numeric__V219,V219,2,0.0001333333333,,native lightgbm feature_importances_,454
+numeric__V226,V226,2,0.0001333333333,,native lightgbm feature_importances_,455
+numeric__V228,V228,2,0.0001333333333,,native lightgbm feature_importances_,456
+numeric__V229,V229,2,0.0001333333333,,native lightgbm feature_importances_,457
+numeric__V238,V238,2,0.0001333333333,,native lightgbm feature_importances_,458
+numeric__V246,V246,2,0.0001333333333,,native lightgbm feature_importances_,459
+numeric__V249,V249,2,0.0001333333333,,native lightgbm feature_importances_,460
+numeric__V253,V253,2,0.0001333333333,,native lightgbm feature_importances_,461
+numeric__V257,V257,2,0.0001333333333,,native lightgbm feature_importances_,462
+numeric__V260,V260,2,0.0001333333333,,native lightgbm feature_importances_,463
+numeric__V290,V290,2,0.0001333333333,,native lightgbm feature_importances_,464
+numeric__V299,V299,2,0.0001333333333,,native lightgbm feature_importances_,465
+numeric__V324,V324,2,0.0001333333333,,native lightgbm feature_importances_,466
+numeric__V333,V333,2,0.0001333333333,,native lightgbm feature_importances_,467
+numeric__V334,V334,2,0.0001333333333,,native lightgbm feature_importances_,468
+numeric__V339,V339,2,0.0001333333333,,native lightgbm feature_importances_,469
+missing__missingindicator_id_01,missingindicator_id_01,2,0.0001333333333,,native lightgbm feature_importances_,470
+missing__missingindicator_id_19,missingindicator_id_19,2,0.0001333333333,,native lightgbm feature_importances_,471
+categorical__card3_117.0,card3,2,0.0001333333333,,native lightgbm feature_importances_,472
+categorical__card3_121.0,card3,2,0.0001333333333,,native lightgbm feature_importances_,473
+categorical__card3___MISSING__,card3,2,0.0001333333333,,native lightgbm feature_importances_,474
+categorical__card5_150.0,card5,2,0.0001333333333,,native lightgbm feature_importances_,475
+categorical__card5_197.0,card5,2,0.0001333333333,,native lightgbm feature_importances_,476
+categorical__M1_T,M1,2,0.0001333333333,,native lightgbm feature_importances_,477
+categorical__M2_T,M2,2,0.0001333333333,,native lightgbm feature_importances_,478
+categorical__id_29_NotFound,id,2,0.0001333333333,,native lightgbm feature_importances_,479
+categorical__id_30_Android 7.1.1,id,2,0.0001333333333,,native lightgbm feature_importances_,480
+categorical__id_30_Linux,id,2,0.0001333333333,,native lightgbm feature_importances_,481
+categorical__id_30_Mac,id,2,0.0001333333333,,native lightgbm feature_importances_,482
+categorical__id_30_Mac OS X 10.12,id,2,0.0001333333333,,native lightgbm feature_importances_,483
+categorical__id_30_Mac OS X 10_10_5,id,2,0.0001333333333,,native lightgbm feature_importances_,484
+categorical__id_30_Mac OS X 10_12_5,id,2,0.0001333333333,,native lightgbm feature_importances_,485
+categorical__id_31_chrome 62.0 for android,id,2,0.0001333333333,,native lightgbm feature_importances_,486
+categorical__id_31_chrome 65.0,id,2,0.0001333333333,,native lightgbm feature_importances_,487
+categorical__id_31_edge 15.0,id,2,0.0001333333333,,native lightgbm feature_importances_,488
+categorical__id_31_samsung browser 7.0,id,2,0.0001333333333,,native lightgbm feature_importances_,489
+categorical__id_33_1360x768,id,2,0.0001333333333,,native lightgbm feature_importances_,490
+categorical__id_33_1440x900,id,2,0.0001333333333,,native lightgbm feature_importances_,491
+categorical__id_33_2560x1600,id,2,0.0001333333333,,native lightgbm feature_importances_,492
+numeric__V18,V18,1,6.666666667e-05,,native lightgbm feature_importances_,493
+numeric__V84,V84,1,6.666666667e-05,,native lightgbm feature_importances_,494
+numeric__V95,V95,1,6.666666667e-05,,native lightgbm feature_importances_,495
+numeric__V97,V97,1,6.666666667e-05,,native lightgbm feature_importances_,496
+numeric__V98,V98,1,6.666666667e-05,,native lightgbm feature_importances_,497
+numeric__V100,V100,1,6.666666667e-05,,native lightgbm feature_importances_,498
+numeric__V114,V114,1,6.666666667e-05,,native lightgbm feature_importances_,499
+numeric__V142,V142,1,6.666666667e-05,,native lightgbm feature_importances_,500
+numeric__V154,V154,1,6.666666667e-05,,native lightgbm feature_importances_,501
+numeric__V168,V168,1,6.666666667e-05,,native lightgbm feature_importances_,502
+numeric__V181,V181,1,6.666666667e-05,,native lightgbm feature_importances_,503
+numeric__V185,V185,1,6.666666667e-05,,native lightgbm feature_importances_,504
+numeric__V188,V188,1,6.666666667e-05,,native lightgbm feature_importances_,505
+numeric__V190,V190,1,6.666666667e-05,,native lightgbm feature_importances_,506
+numeric__V192,V192,1,6.666666667e-05,,native lightgbm feature_importances_,507
+numeric__V193,V193,1,6.666666667e-05,,native lightgbm feature_importances_,508
+numeric__V199,V199,1,6.666666667e-05,,native lightgbm feature_importances_,509
+numeric__V223,V223,1,6.666666667e-05,,native lightgbm feature_importances_,510
+numeric__V235,V235,1,6.666666667e-05,,native lightgbm feature_importances_,511
+numeric__V236,V236,1,6.666666667e-05,,native lightgbm feature_importances_,512
+numeric__V247,V247,1,6.666666667e-05,,native lightgbm feature_importances_,513
+numeric__V262,V262,1,6.666666667e-05,,native lightgbm feature_importances_,514
+numeric__V284,V284,1,6.666666667e-05,,native lightgbm feature_importances_,515
+numeric__V295,V295,1,6.666666667e-05,,native lightgbm feature_importances_,516
+numeric__V327,V327,1,6.666666667e-05,,native lightgbm feature_importances_,517
+numeric__V328,V328,1,6.666666667e-05,,native lightgbm feature_importances_,518
+numeric__V329,V329,1,6.666666667e-05,,native lightgbm feature_importances_,519
+missing__missingindicator_D8,missingindicator_D8,1,6.666666667e-05,,native lightgbm feature_importances_,520
+missing__missingindicator_id_03,missingindicator_id_03,1,6.666666667e-05,,native lightgbm feature_importances_,521
+categorical__ProductCD_W,ProductCD,1,6.666666667e-05,,native lightgbm feature_importances_,522
+categorical__card3_106.0,card3,1,6.666666667e-05,,native lightgbm feature_importances_,523
+categorical__card3_131.0,card3,1,6.666666667e-05,,native lightgbm feature_importances_,524
+categorical__card3_144.0,card3,1,6.666666667e-05,,native lightgbm feature_importances_,525
+categorical__card5_183.0,card5,1,6.666666667e-05,,native lightgbm feature_importances_,526
+categorical__card5_198.0,card5,1,6.666666667e-05,,native lightgbm feature_importances_,527
+categorical__card5_223.0,card5,1,6.666666667e-05,,native lightgbm feature_importances_,528
+categorical__card5_232.0,card5,1,6.666666667e-05,,native lightgbm feature_importances_,529
+categorical__addr2_60.0,addr2,1,6.666666667e-05,,native lightgbm feature_importances_,530
+categorical__id_16_Found,id,1,6.666666667e-05,,native lightgbm feature_importances_,531
+categorical__id_28_New,id,1,6.666666667e-05,,native lightgbm feature_importances_,532
+categorical__id_30_Android 7.0,id,1,6.666666667e-05,,native lightgbm feature_importances_,533
+categorical__id_30_Mac OS X 10.13,id,1,6.666666667e-05,,native lightgbm feature_importances_,534
+categorical__id_30_Mac OS X 10_13_4,id,1,6.666666667e-05,,native lightgbm feature_importances_,535
+categorical__id_30_Windows Vista,id,1,6.666666667e-05,,native lightgbm feature_importances_,536
+categorical__id_30_iOS 10.3.2,id,1,6.666666667e-05,,native lightgbm feature_importances_,537
+categorical__id_30_iOS 11.0.3,id,1,6.666666667e-05,,native lightgbm feature_importances_,538
+categorical__id_30_iOS 11.1.2,id,1,6.666666667e-05,,native lightgbm feature_importances_,539
+categorical__id_30_iOS 11.2.5,id,1,6.666666667e-05,,native lightgbm feature_importances_,540
+categorical__id_31_Generic/Android 7.0,id,1,6.666666667e-05,,native lightgbm feature_importances_,541
+categorical__id_31_chrome 55.0 for android,id,1,6.666666667e-05,,native lightgbm feature_importances_,542
+categorical__id_31_chrome 59.0 for android,id,1,6.666666667e-05,,native lightgbm feature_importances_,543
+categorical__id_31_chrome 60.0,id,1,6.666666667e-05,,native lightgbm feature_importances_,544
+categorical__id_31_chrome 60.0 for android,id,1,6.666666667e-05,,native lightgbm feature_importances_,545
+categorical__id_31_chrome 61.0,id,1,6.666666667e-05,,native lightgbm feature_importances_,546
+categorical__id_31_chrome 61.0 for android,id,1,6.666666667e-05,,native lightgbm feature_importances_,547
+categorical__id_31_chrome 66.0 for android,id,1,6.666666667e-05,,native lightgbm feature_importances_,548
+categorical__id_31_edge 14.0,id,1,6.666666667e-05,,native lightgbm feature_importances_,549
+categorical__id_31_firefox 48.0,id,1,6.666666667e-05,,native lightgbm feature_importances_,550
+categorical__id_33_1024x768,id,1,6.666666667e-05,,native lightgbm feature_importances_,551
+categorical__id_33_1280x1024,id,1,6.666666667e-05,,native lightgbm feature_importances_,552
+categorical__id_33_1920x1200,id,1,6.666666667e-05,,native lightgbm feature_importances_,553
+categorical__id_33_2001x1125,id,1,6.666666667e-05,,native lightgbm feature_importances_,554
+categorical__id_33_2160x1440,id,1,6.666666667e-05,,native lightgbm feature_importances_,555
+numeric__V1,V1,0,0,,native lightgbm feature_importances_,556
+numeric__V14,V14,0,0,,native lightgbm feature_importances_,557
+numeric__V15,V15,0,0,,native lightgbm feature_importances_,558
+numeric__V16,V16,0,0,,native lightgbm feature_importances_,559
+numeric__V22,V22,0,0,,native lightgbm feature_importances_,560
+numeric__V27,V27,0,0,,native lightgbm feature_importances_,561
+numeric__V28,V28,0,0,,native lightgbm feature_importances_,562
+numeric__V32,V32,0,0,,native lightgbm feature_importances_,563
+numeric__V41,V41,0,0,,native lightgbm feature_importances_,564
+numeric__V65,V65,0,0,,native lightgbm feature_importances_,565
+numeric__V68,V68,0,0,,native lightgbm feature_importances_,566
+numeric__V71,V71,0,0,,native lightgbm feature_importances_,567
+numeric__V88,V88,0,0,,native lightgbm feature_importances_,568
+numeric__V89,V89,0,0,,native lightgbm feature_importances_,569
+numeric__V93,V93,0,0,,native lightgbm feature_importances_,570
+numeric__V104,V104,0,0,,native lightgbm feature_importances_,571
+numeric__V106,V106,0,0,,native lightgbm feature_importances_,572
+numeric__V107,V107,0,0,,native lightgbm feature_importances_,573
+numeric__V112,V112,0,0,,native lightgbm feature_importances_,574
+numeric__V113,V113,0,0,,native lightgbm feature_importances_,575
+numeric__V116,V116,0,0,,native lightgbm feature_importances_,576
+numeric__V117,V117,0,0,,native lightgbm feature_importances_,577
+numeric__V119,V119,0,0,,native lightgbm feature_importances_,578
+numeric__V121,V121,0,0,,native lightgbm feature_importances_,579
+numeric__V122,V122,0,0,,native lightgbm feature_importances_,580
+numeric__V141,V141,0,0,,native lightgbm feature_importances_,581
+numeric__V148,V148,0,0,,native lightgbm feature_importances_,582
+numeric__V153,V153,0,0,,native lightgbm feature_importances_,583
+numeric__V155,V155,0,0,,native lightgbm feature_importances_,584
+numeric__V172,V172,0,0,,native lightgbm feature_importances_,585
+numeric__V173,V173,0,0,,native lightgbm feature_importances_,586
+numeric__V175,V175,0,0,,native lightgbm feature_importances_,587
+numeric__V177,V177,0,0,,native lightgbm feature_importances_,588
+numeric__V179,V179,0,0,,native lightgbm feature_importances_,589
+numeric__V180,V180,0,0,,native lightgbm feature_importances_,590
+numeric__V183,V183,0,0,,native lightgbm feature_importances_,591
+numeric__V191,V191,0,0,,native lightgbm feature_importances_,592
+numeric__V194,V194,0,0,,native lightgbm feature_importances_,593
+numeric__V195,V195,0,0,,native lightgbm feature_importances_,594
+numeric__V196,V196,0,0,,native lightgbm feature_importances_,595
+numeric__V231,V231,0,0,,native lightgbm feature_importances_,596
+numeric__V237,V237,0,0,,native lightgbm feature_importances_,597
+numeric__V240,V240,0,0,,native lightgbm feature_importances_,598
+numeric__V241,V241,0,0,,native lightgbm feature_importances_,599
+numeric__V242,V242,0,0,,native lightgbm feature_importances_,600
+numeric__V250,V250,0,0,,native lightgbm feature_importances_,601
+numeric__V251,V251,0,0,,native lightgbm feature_importances_,602
+numeric__V252,V252,0,0,,native lightgbm feature_importances_,603
+numeric__V269,V269,0,0,,native lightgbm feature_importances_,604
+numeric__V305,V305,0,0,,native lightgbm feature_importances_,605
+numeric__V322,V322,0,0,,native lightgbm feature_importances_,606
+numeric__V325,V325,0,0,,native lightgbm feature_importances_,607
+numeric__V337,V337,0,0,,native lightgbm feature_importances_,608
+numeric__log_amt,log_amt,0,0,,native lightgbm feature_importances_,609
+missing__missingindicator_D9,missingindicator_D9,0,0,,native lightgbm feature_importances_,610
+missing__missingindicator_D10,missingindicator_D10,0,0,,native lightgbm feature_importances_,611
+missing__missingindicator_D11,missingindicator_D11,0,0,,native lightgbm feature_importances_,612
+missing__missingindicator_D12,missingindicator_D12,0,0,,native lightgbm feature_importances_,613
+missing__missingindicator_id_02,missingindicator_id_02,0,0,,native lightgbm feature_importances_,614
+missing__missingindicator_id_04,missingindicator_id_04,0,0,,native lightgbm feature_importances_,615
+missing__missingindicator_id_06,missingindicator_id_06,0,0,,native lightgbm feature_importances_,616
+missing__missingindicator_id_09,missingindicator_id_09,0,0,,native lightgbm feature_importances_,617
+missing__missingindicator_id_10,missingindicator_id_10,0,0,,native lightgbm feature_importances_,618
+missing__missingindicator_id_11,missingindicator_id_11,0,0,,native lightgbm feature_importances_,619
+missing__missingindicator_id_17,missingindicator_id_17,0,0,,native lightgbm feature_importances_,620
+missing__missingindicator_id_20,missingindicator_id_20,0,0,,native lightgbm feature_importances_,621
+missing__missingindicator_id_32,missingindicator_id_32,0,0,,native lightgbm feature_importances_,622
+categorical__ProductCD_C,ProductCD,0,0,,native lightgbm feature_importances_,623
+categorical__card3_101.0,card3,0,0,,native lightgbm feature_importances_,624
+categorical__card3_102.0,card3,0,0,,native lightgbm feature_importances_,625
+categorical__card3_105.0,card3,0,0,,native lightgbm feature_importances_,626
+categorical__card3_107.0,card3,0,0,,native lightgbm feature_importances_,627
+categorical__card3_108.0,card3,0,0,,native lightgbm feature_importances_,628
+categorical__card3_109.0,card3,0,0,,native lightgbm feature_importances_,629
+categorical__card3_111.0,card3,0,0,,native lightgbm feature_importances_,630
+categorical__card3_116.0,card3,0,0,,native lightgbm feature_importances_,631
+categorical__card3_118.0,card3,0,0,,native lightgbm feature_importances_,632
+categorical__card3_120.0,card3,0,0,,native lightgbm feature_importances_,633
+categorical__card3_122.0,card3,0,0,,native lightgbm feature_importances_,634
+categorical__card3_123.0,card3,0,0,,native lightgbm feature_importances_,635
+categorical__card3_124.0,card3,0,0,,native lightgbm feature_importances_,636
+categorical__card3_125.0,card3,0,0,,native lightgbm feature_importances_,637
+categorical__card3_126.0,card3,0,0,,native lightgbm feature_importances_,638
+categorical__card3_127.0,card3,0,0,,native lightgbm feature_importances_,639
+categorical__card3_128.0,card3,0,0,,native lightgbm feature_importances_,640
+categorical__card3_129.0,card3,0,0,,native lightgbm feature_importances_,641
+categorical__card3_130.0,card3,0,0,,native lightgbm feature_importances_,642
+categorical__card3_133.0,card3,0,0,,native lightgbm feature_importances_,643
+categorical__card3_134.0,card3,0,0,,native lightgbm feature_importances_,644
+categorical__card3_135.0,card3,0,0,,native lightgbm feature_importances_,645
+categorical__card3_137.0,card3,0,0,,native lightgbm feature_importances_,646
+categorical__card3_138.0,card3,0,0,,native lightgbm feature_importances_,647
+categorical__card3_139.0,card3,0,0,,native lightgbm feature_importances_,648
+categorical__card3_141.0,card3,0,0,,native lightgbm feature_importances_,649
+categorical__card3_142.0,card3,0,0,,native lightgbm feature_importances_,650
+categorical__card3_147.0,card3,0,0,,native lightgbm feature_importances_,651
+categorical__card3_148.0,card3,0,0,,native lightgbm feature_importances_,652
+categorical__card3_149.0,card3,0,0,,native lightgbm feature_importances_,653
+categorical__card3_151.0,card3,0,0,,native lightgbm feature_importances_,654
+categorical__card3_152.0,card3,0,0,,native lightgbm feature_importances_,655
+categorical__card3_153.0,card3,0,0,,native lightgbm feature_importances_,656
+categorical__card3_155.0,card3,0,0,,native lightgbm feature_importances_,657
+categorical__card3_156.0,card3,0,0,,native lightgbm feature_importances_,658
+categorical__card3_157.0,card3,0,0,,native lightgbm feature_importances_,659
+categorical__card3_159.0,card3,0,0,,native lightgbm feature_importances_,660
+categorical__card3_160.0,card3,0,0,,native lightgbm feature_importances_,661
+categorical__card3_161.0,card3,0,0,,native lightgbm feature_importances_,662
+categorical__card3_163.0,card3,0,0,,native lightgbm feature_importances_,663
+categorical__card3_164.0,card3,0,0,,native lightgbm feature_importances_,664
+categorical__card3_166.0,card3,0,0,,native lightgbm feature_importances_,665
+categorical__card3_167.0,card3,0,0,,native lightgbm feature_importances_,666
+categorical__card3_168.0,card3,0,0,,native lightgbm feature_importances_,667
+categorical__card3_169.0,card3,0,0,,native lightgbm feature_importances_,668
+categorical__card3_170.0,card3,0,0,,native lightgbm feature_importances_,669
+categorical__card3_171.0,card3,0,0,,native lightgbm feature_importances_,670
+categorical__card3_172.0,card3,0,0,,native lightgbm feature_importances_,671
+categorical__card3_173.0,card3,0,0,,native lightgbm feature_importances_,672
+categorical__card3_174.0,card3,0,0,,native lightgbm feature_importances_,673
+categorical__card3_175.0,card3,0,0,,native lightgbm feature_importances_,674
+categorical__card3_176.0,card3,0,0,,native lightgbm feature_importances_,675
+categorical__card3_177.0,card3,0,0,,native lightgbm feature_importances_,676
+categorical__card3_179.0,card3,0,0,,native lightgbm feature_importances_,677
+categorical__card3_180.0,card3,0,0,,native lightgbm feature_importances_,678
+categorical__card3_181.0,card3,0,0,,native lightgbm feature_importances_,679
+categorical__card3_182.0,card3,0,0,,native lightgbm feature_importances_,680
+categorical__card3_183.0,card3,0,0,,native lightgbm feature_importances_,681
+categorical__card3_184.0,card3,0,0,,native lightgbm feature_importances_,682
+categorical__card3_186.0,card3,0,0,,native lightgbm feature_importances_,683
+categorical__card3_188.0,card3,0,0,,native lightgbm feature_importances_,684
+categorical__card3_189.0,card3,0,0,,native lightgbm feature_importances_,685
+categorical__card3_190.0,card3,0,0,,native lightgbm feature_importances_,686
+categorical__card3_191.0,card3,0,0,,native lightgbm feature_importances_,687
+categorical__card3_193.0,card3,0,0,,native lightgbm feature_importances_,688
+categorical__card3_194.0,card3,0,0,,native lightgbm feature_importances_,689
+categorical__card3_195.0,card3,0,0,,native lightgbm feature_importances_,690
+categorical__card3_197.0,card3,0,0,,native lightgbm feature_importances_,691
+categorical__card3_198.0,card3,0,0,,native lightgbm feature_importances_,692
+categorical__card3_200.0,card3,0,0,,native lightgbm feature_importances_,693
+categorical__card3_201.0,card3,0,0,,native lightgbm feature_importances_,694
+categorical__card3_202.0,card3,0,0,,native lightgbm feature_importances_,695
+categorical__card3_204.0,card3,0,0,,native lightgbm feature_importances_,696
+categorical__card3_205.0,card3,0,0,,native lightgbm feature_importances_,697
+categorical__card3_206.0,card3,0,0,,native lightgbm feature_importances_,698
+categorical__card3_207.0,card3,0,0,,native lightgbm feature_importances_,699
+categorical__card3_208.0,card3,0,0,,native lightgbm feature_importances_,700
+categorical__card3_209.0,card3,0,0,,native lightgbm feature_importances_,701
+categorical__card3_210.0,card3,0,0,,native lightgbm feature_importances_,702
+categorical__card3_211.0,card3,0,0,,native lightgbm feature_importances_,703
+categorical__card3_212.0,card3,0,0,,native lightgbm feature_importances_,704
+categorical__card3_213.0,card3,0,0,,native lightgbm feature_importances_,705
+categorical__card3_214.0,card3,0,0,,native lightgbm feature_importances_,706
+categorical__card3_215.0,card3,0,0,,native lightgbm feature_importances_,707
+categorical__card3_217.0,card3,0,0,,native lightgbm feature_importances_,708
+categorical__card3_219.0,card3,0,0,,native lightgbm feature_importances_,709
+categorical__card3_220.0,card3,0,0,,native lightgbm feature_importances_,710
+categorical__card3_221.0,card3,0,0,,native lightgbm feature_importances_,711
+categorical__card3_222.0,card3,0,0,,native lightgbm feature_importances_,712
+categorical__card3_223.0,card3,0,0,,native lightgbm feature_importances_,713
+categorical__card3_224.0,card3,0,0,,native lightgbm feature_importances_,714
+categorical__card3_225.0,card3,0,0,,native lightgbm feature_importances_,715
+categorical__card3_226.0,card3,0,0,,native lightgbm feature_importances_,716
+categorical__card3_227.0,card3,0,0,,native lightgbm feature_importances_,717
+categorical__card3_228.0,card3,0,0,,native lightgbm feature_importances_,718
+categorical__card3_229.0,card3,0,0,,native lightgbm feature_importances_,719
+categorical__card3_231.0,card3,0,0,,native lightgbm feature_importances_,720
+categorical__card4___MISSING__,card4,0,0,,native lightgbm feature_importances_,721
+categorical__card5_101.0,card5,0,0,,native lightgbm feature_importances_,722
+categorical__card5_104.0,card5,0,0,,native lightgbm feature_importances_,723
+categorical__card5_105.0,card5,0,0,,native lightgbm feature_importances_,724
+categorical__card5_106.0,card5,0,0,,native lightgbm feature_importances_,725
+categorical__card5_107.0,card5,0,0,,native lightgbm feature_importances_,726
+categorical__card5_109.0,card5,0,0,,native lightgbm feature_importances_,727
+categorical__card5_111.0,card5,0,0,,native lightgbm feature_importances_,728
+categorical__card5_112.0,card5,0,0,,native lightgbm feature_importances_,729
+categorical__card5_113.0,card5,0,0,,native lightgbm feature_importances_,730
+categorical__card5_114.0,card5,0,0,,native lightgbm feature_importances_,731
+categorical__card5_116.0,card5,0,0,,native lightgbm feature_importances_,732
+categorical__card5_119.0,card5,0,0,,native lightgbm feature_importances_,733
+categorical__card5_120.0,card5,0,0,,native lightgbm feature_importances_,734
+categorical__card5_121.0,card5,0,0,,native lightgbm feature_importances_,735
+categorical__card5_122.0,card5,0,0,,native lightgbm feature_importances_,736
+categorical__card5_123.0,card5,0,0,,native lightgbm feature_importances_,737
+categorical__card5_125.0,card5,0,0,,native lightgbm feature_importances_,738
+categorical__card5_127.0,card5,0,0,,native lightgbm feature_importances_,739
+categorical__card5_128.0,card5,0,0,,native lightgbm feature_importances_,740
+categorical__card5_130.0,card5,0,0,,native lightgbm feature_importances_,741
+categorical__card5_132.0,card5,0,0,,native lightgbm feature_importances_,742
+categorical__card5_133.0,card5,0,0,,native lightgbm feature_importances_,743
+categorical__card5_134.0,card5,0,0,,native lightgbm feature_importances_,744
+categorical__card5_136.0,card5,0,0,,native lightgbm feature_importances_,745
+categorical__card5_139.0,card5,0,0,,native lightgbm feature_importances_,746
+categorical__card5_143.0,card5,0,0,,native lightgbm feature_importances_,747
+categorical__card5_145.0,card5,0,0,,native lightgbm feature_importances_,748
+categorical__card5_147.0,card5,0,0,,native lightgbm feature_importances_,749
+categorical__card5_148.0,card5,0,0,,native lightgbm feature_importances_,750
+categorical__card5_149.0,card5,0,0,,native lightgbm feature_importances_,751
+categorical__card5_151.0,card5,0,0,,native lightgbm feature_importances_,752
+categorical__card5_152.0,card5,0,0,,native lightgbm feature_importances_,753
+categorical__card5_156.0,card5,0,0,,native lightgbm feature_importances_,754
+categorical__card5_157.0,card5,0,0,,native lightgbm feature_importances_,755
+categorical__card5_158.0,card5,0,0,,native lightgbm feature_importances_,756
+categorical__card5_159.0,card5,0,0,,native lightgbm feature_importances_,757
+categorical__card5_160.0,card5,0,0,,native lightgbm feature_importances_,758
+categorical__card5_163.0,card5,0,0,,native lightgbm feature_importances_,759
+categorical__card5_164.0,card5,0,0,,native lightgbm feature_importances_,760
+categorical__card5_167.0,card5,0,0,,native lightgbm feature_importances_,761
+categorical__card5_168.0,card5,0,0,,native lightgbm feature_importances_,762
+categorical__card5_169.0,card5,0,0,,native lightgbm feature_importances_,763
+categorical__card5_171.0,card5,0,0,,native lightgbm feature_importances_,764
+categorical__card5_172.0,card5,0,0,,native lightgbm feature_importances_,765
+categorical__card5_173.0,card5,0,0,,native lightgbm feature_importances_,766
+categorical__card5_177.0,card5,0,0,,native lightgbm feature_importances_,767
+categorical__card5_180.0,card5,0,0,,native lightgbm feature_importances_,768
+categorical__card5_182.0,card5,0,0,,native lightgbm feature_importances_,769
+categorical__card5_184.0,card5,0,0,,native lightgbm feature_importances_,770
+categorical__card5_187.0,card5,0,0,,native lightgbm feature_importances_,771
+categorical__card5_188.0,card5,0,0,,native lightgbm feature_importances_,772
+categorical__card5_189.0,card5,0,0,,native lightgbm feature_importances_,773
+categorical__card5_190.0,card5,0,0,,native lightgbm feature_importances_,774
+categorical__card5_191.0,card5,0,0,,native lightgbm feature_importances_,775
+categorical__card5_194.0,card5,0,0,,native lightgbm feature_importances_,776
+categorical__card5_196.0,card5,0,0,,native lightgbm feature_importances_,777
+categorical__card5_199.0,card5,0,0,,native lightgbm feature_importances_,778
+categorical__card5_200.0,card5,0,0,,native lightgbm feature_importances_,779
+categorical__card5_201.0,card5,0,0,,native lightgbm feature_importances_,780
+categorical__card5_203.0,card5,0,0,,native lightgbm feature_importances_,781
+categorical__card5_204.0,card5,0,0,,native lightgbm feature_importances_,782
+categorical__card5_205.0,card5,0,0,,native lightgbm feature_importances_,783
+categorical__card5_206.0,card5,0,0,,native lightgbm feature_importances_,784
+categorical__card5_207.0,card5,0,0,,native lightgbm feature_importances_,785
+categorical__card5_209.0,card5,0,0,,native lightgbm feature_importances_,786
+categorical__card5_210.0,card5,0,0,,native lightgbm feature_importances_,787
+categorical__card5_211.0,card5,0,0,,native lightgbm feature_importances_,788
+categorical__card5_212.0,card5,0,0,,native lightgbm feature_importances_,789
+categorical__card5_213.0,card5,0,0,,native lightgbm feature_importances_,790
+categorical__card5_214.0,card5,0,0,,native lightgbm feature_importances_,791
+categorical__card5_215.0,card5,0,0,,native lightgbm feature_importances_,792
+categorical__card5_216.0,card5,0,0,,native lightgbm feature_importances_,793
+categorical__card5_217.0,card5,0,0,,native lightgbm feature_importances_,794
+categorical__card5_222.0,card5,0,0,,native lightgbm feature_importances_,795
+categorical__card5_225.0,card5,0,0,,native lightgbm feature_importances_,796
+categorical__card5_228.0,card5,0,0,,native lightgbm feature_importances_,797
+categorical__card5_230.0,card5,0,0,,native lightgbm feature_importances_,798
+categorical__card5_231.0,card5,0,0,,native lightgbm feature_importances_,799
+categorical__card5_233.0,card5,0,0,,native lightgbm feature_importances_,800
+categorical__card5_234.0,card5,0,0,,native lightgbm feature_importances_,801
+categorical__card5_235.0,card5,0,0,,native lightgbm feature_importances_,802
+categorical__card5_236.0,card5,0,0,,native lightgbm feature_importances_,803
+categorical__card5_237.0,card5,0,0,,native lightgbm feature_importances_,804
+categorical__card6___MISSING__,card6,0,0,,native lightgbm feature_importances_,805
+categorical__card6_charge card,card6,0,0,,native lightgbm feature_importances_,806
+categorical__card6_debit or credit,card6,0,0,,native lightgbm feature_importances_,807
+categorical__addr2_10.0,addr2,0,0,,native lightgbm feature_importances_,808
+categorical__addr2_100.0,addr2,0,0,,native lightgbm feature_importances_,809
+categorical__addr2_101.0,addr2,0,0,,native lightgbm feature_importances_,810
+categorical__addr2_102.0,addr2,0,0,,native lightgbm feature_importances_,811
+categorical__addr2_13.0,addr2,0,0,,native lightgbm feature_importances_,812
+categorical__addr2_15.0,addr2,0,0,,native lightgbm feature_importances_,813
+categorical__addr2_16.0,addr2,0,0,,native lightgbm feature_importances_,814
+categorical__addr2_17.0,addr2,0,0,,native lightgbm feature_importances_,815
+categorical__addr2_18.0,addr2,0,0,,native lightgbm feature_importances_,816
+categorical__addr2_19.0,addr2,0,0,,native lightgbm feature_importances_,817
+categorical__addr2_20.0,addr2,0,0,,native lightgbm feature_importances_,818
+categorical__addr2_21.0,addr2,0,0,,native lightgbm feature_importances_,819
+categorical__addr2_22.0,addr2,0,0,,native lightgbm feature_importances_,820
+categorical__addr2_23.0,addr2,0,0,,native lightgbm feature_importances_,821
+categorical__addr2_24.0,addr2,0,0,,native lightgbm feature_importances_,822
+categorical__addr2_25.0,addr2,0,0,,native lightgbm feature_importances_,823
+categorical__addr2_26.0,addr2,0,0,,native lightgbm feature_importances_,824
+categorical__addr2_27.0,addr2,0,0,,native lightgbm feature_importances_,825
+categorical__addr2_28.0,addr2,0,0,,native lightgbm feature_importances_,826
+categorical__addr2_29.0,addr2,0,0,,native lightgbm feature_importances_,827
+categorical__addr2_30.0,addr2,0,0,,native lightgbm feature_importances_,828
+categorical__addr2_31.0,addr2,0,0,,native lightgbm feature_importances_,829
+categorical__addr2_32.0,addr2,0,0,,native lightgbm feature_importances_,830
+categorical__addr2_34.0,addr2,0,0,,native lightgbm feature_importances_,831
+categorical__addr2_35.0,addr2,0,0,,native lightgbm feature_importances_,832
+categorical__addr2_36.0,addr2,0,0,,native lightgbm feature_importances_,833
+categorical__addr2_38.0,addr2,0,0,,native lightgbm feature_importances_,834
+categorical__addr2_39.0,addr2,0,0,,native lightgbm feature_importances_,835
+categorical__addr2_40.0,addr2,0,0,,native lightgbm feature_importances_,836
+categorical__addr2_43.0,addr2,0,0,,native lightgbm feature_importances_,837
+categorical__addr2_46.0,addr2,0,0,,native lightgbm feature_importances_,838
+categorical__addr2_47.0,addr2,0,0,,native lightgbm feature_importances_,839
+categorical__addr2_48.0,addr2,0,0,,native lightgbm feature_importances_,840
+categorical__addr2_49.0,addr2,0,0,,native lightgbm feature_importances_,841
+categorical__addr2_50.0,addr2,0,0,,native lightgbm feature_importances_,842
+categorical__addr2_51.0,addr2,0,0,,native lightgbm feature_importances_,843
+categorical__addr2_52.0,addr2,0,0,,native lightgbm feature_importances_,844
+categorical__addr2_54.0,addr2,0,0,,native lightgbm feature_importances_,845
+categorical__addr2_55.0,addr2,0,0,,native lightgbm feature_importances_,846
+categorical__addr2_57.0,addr2,0,0,,native lightgbm feature_importances_,847
+categorical__addr2_59.0,addr2,0,0,,native lightgbm feature_importances_,848
+categorical__addr2_61.0,addr2,0,0,,native lightgbm feature_importances_,849
+categorical__addr2_62.0,addr2,0,0,,native lightgbm feature_importances_,850
+categorical__addr2_63.0,addr2,0,0,,native lightgbm feature_importances_,851
+categorical__addr2_65.0,addr2,0,0,,native lightgbm feature_importances_,852
+categorical__addr2_66.0,addr2,0,0,,native lightgbm feature_importances_,853
+categorical__addr2_68.0,addr2,0,0,,native lightgbm feature_importances_,854
+categorical__addr2_69.0,addr2,0,0,,native lightgbm feature_importances_,855
+categorical__addr2_71.0,addr2,0,0,,native lightgbm feature_importances_,856
+categorical__addr2_72.0,addr2,0,0,,native lightgbm feature_importances_,857
+categorical__addr2_73.0,addr2,0,0,,native lightgbm feature_importances_,858
+categorical__addr2_74.0,addr2,0,0,,native lightgbm feature_importances_,859
+categorical__addr2_76.0,addr2,0,0,,native lightgbm feature_importances_,860
+categorical__addr2_77.0,addr2,0,0,,native lightgbm feature_importances_,861
+categorical__addr2_78.0,addr2,0,0,,native lightgbm feature_importances_,862
+categorical__addr2_82.0,addr2,0,0,,native lightgbm feature_importances_,863
+categorical__addr2_84.0,addr2,0,0,,native lightgbm feature_importances_,864
+categorical__addr2_86.0,addr2,0,0,,native lightgbm feature_importances_,865
+categorical__addr2_88.0,addr2,0,0,,native lightgbm feature_importances_,866
+categorical__addr2_89.0,addr2,0,0,,native lightgbm feature_importances_,867
+categorical__addr2_92.0,addr2,0,0,,native lightgbm feature_importances_,868
+categorical__addr2_93.0,addr2,0,0,,native lightgbm feature_importances_,869
+categorical__addr2_96.0,addr2,0,0,,native lightgbm feature_importances_,870
+categorical__addr2_98.0,addr2,0,0,,native lightgbm feature_importances_,871
+categorical__addr2___MISSING__,addr2,0,0,,native lightgbm feature_importances_,872
+categorical__M1_F,M1,0,0,,native lightgbm feature_importances_,873
+categorical__M1___MISSING__,M1,0,0,,native lightgbm feature_importances_,874
+categorical__M2___MISSING__,M2,0,0,,native lightgbm feature_importances_,875
+categorical__M3___MISSING__,M3,0,0,,native lightgbm feature_importances_,876
+categorical__M8___MISSING__,M8,0,0,,native lightgbm feature_importances_,877
+categorical__M9___MISSING__,M9,0,0,,native lightgbm feature_importances_,878
+categorical__id_12_Found,id,0,0,,native lightgbm feature_importances_,879
+categorical__id_12___MISSING__,id,0,0,,native lightgbm feature_importances_,880
+categorical__id_15_Found,id,0,0,,native lightgbm feature_importances_,881
+categorical__id_15___MISSING__,id,0,0,,native lightgbm feature_importances_,882
+categorical__id_28___MISSING__,id,0,0,,native lightgbm feature_importances_,883
+categorical__id_29_Found,id,0,0,,native lightgbm feature_importances_,884
+categorical__id_29___MISSING__,id,0,0,,native lightgbm feature_importances_,885
+categorical__id_30_Android 4.4.2,id,0,0,,native lightgbm feature_importances_,886
+categorical__id_30_Android 5.0,id,0,0,,native lightgbm feature_importances_,887
+categorical__id_30_Android 5.0.2,id,0,0,,native lightgbm feature_importances_,888
+categorical__id_30_Android 5.1.1,id,0,0,,native lightgbm feature_importances_,889
+categorical__id_30_Android 6.0,id,0,0,,native lightgbm feature_importances_,890
+categorical__id_30_Android 6.0.1,id,0,0,,native lightgbm feature_importances_,891
+categorical__id_30_Android 7.1.2,id,0,0,,native lightgbm feature_importances_,892
+categorical__id_30_Android 8.0.0,id,0,0,,native lightgbm feature_importances_,893
+categorical__id_30_Mac OS X 10.10,id,0,0,,native lightgbm feature_importances_,894
+categorical__id_30_Mac OS X 10.11,id,0,0,,native lightgbm feature_importances_,895
+categorical__id_30_Mac OS X 10.6,id,0,0,,native lightgbm feature_importances_,896
+categorical__id_30_Mac OS X 10.9,id,0,0,,native lightgbm feature_importances_,897
+categorical__id_30_Mac OS X 10_11_3,id,0,0,,native lightgbm feature_importances_,898
+categorical__id_30_Mac OS X 10_11_4,id,0,0,,native lightgbm feature_importances_,899
+categorical__id_30_Mac OS X 10_11_5,id,0,0,,native lightgbm feature_importances_,900
+categorical__id_30_Mac OS X 10_12,id,0,0,,native lightgbm feature_importances_,901
+categorical__id_30_Mac OS X 10_12_1,id,0,0,,native lightgbm feature_importances_,902
+categorical__id_30_Mac OS X 10_12_2,id,0,0,,native lightgbm feature_importances_,903
+categorical__id_30_Mac OS X 10_12_3,id,0,0,,native lightgbm feature_importances_,904
+categorical__id_30_Mac OS X 10_12_4,id,0,0,,native lightgbm feature_importances_,905
+categorical__id_30_Mac OS X 10_13_5,id,0,0,,native lightgbm feature_importances_,906
+categorical__id_30_Mac OS X 10_6_8,id,0,0,,native lightgbm feature_importances_,907
+categorical__id_30_Mac OS X 10_7_5,id,0,0,,native lightgbm feature_importances_,908
+categorical__id_30_Mac OS X 10_8_5,id,0,0,,native lightgbm feature_importances_,909
+categorical__id_30_Mac OS X 10_9_5,id,0,0,,native lightgbm feature_importances_,910
+categorical__id_30_Windows,id,0,0,,native lightgbm feature_importances_,911
+categorical__id_30_Windows XP,id,0,0,,native lightgbm feature_importances_,912
+categorical__id_30___MISSING__,id,0,0,,native lightgbm feature_importances_,913
+categorical__id_30_func,id,0,0,,native lightgbm feature_importances_,914
+categorical__id_30_iOS,id,0,0,,native lightgbm feature_importances_,915
+categorical__id_30_iOS 10.0.2,id,0,0,,native lightgbm feature_importances_,916
+categorical__id_30_iOS 10.1.1,id,0,0,,native lightgbm feature_importances_,917
+categorical__id_30_iOS 10.2.0,id,0,0,,native lightgbm feature_importances_,918
+categorical__id_30_iOS 10.2.1,id,0,0,,native lightgbm feature_importances_,919
+categorical__id_30_iOS 10.3.1,id,0,0,,native lightgbm feature_importances_,920
+categorical__id_30_iOS 10.3.3,id,0,0,,native lightgbm feature_importances_,921
+categorical__id_30_iOS 11.0.0,id,0,0,,native lightgbm feature_importances_,922
+categorical__id_30_iOS 11.1.0,id,0,0,,native lightgbm feature_importances_,923
+categorical__id_30_iOS 11.1.1,id,0,0,,native lightgbm feature_importances_,924
+categorical__id_30_iOS 11.2.1,id,0,0,,native lightgbm feature_importances_,925
+categorical__id_30_iOS 11.2.2,id,0,0,,native lightgbm feature_importances_,926
+categorical__id_30_iOS 11.3.1,id,0,0,,native lightgbm feature_importances_,927
+categorical__id_30_iOS 11.4.0,id,0,0,,native lightgbm feature_importances_,928
+categorical__id_30_iOS 11.4.1,id,0,0,,native lightgbm feature_importances_,929
+categorical__id_30_iOS 9.3.5,id,0,0,,native lightgbm feature_importances_,930
+categorical__id_30_other,id,0,0,,native lightgbm feature_importances_,931
+categorical__id_31_BLU/Dash,id,0,0,,native lightgbm feature_importances_,932
+categorical__id_31_Generic/Android,id,0,0,,native lightgbm feature_importances_,933
+categorical__id_31_Lanix/Ilium,id,0,0,,native lightgbm feature_importances_,934
+categorical__id_31_M4Tel/M4,id,0,0,,native lightgbm feature_importances_,935
+categorical__id_31_Microsoft/Windows,id,0,0,,native lightgbm feature_importances_,936
+categorical__id_31_Mozilla/Firefox,id,0,0,,native lightgbm feature_importances_,937
+categorical__id_31_Samsung/SM-G531H,id,0,0,,native lightgbm feature_importances_,938
+categorical__id_31_Samsung/SM-G532M,id,0,0,,native lightgbm feature_importances_,939
+categorical__id_31_ZTE/Blade,id,0,0,,native lightgbm feature_importances_,940
+categorical__id_31_android,id,0,0,,native lightgbm feature_importances_,941
+categorical__id_31_android browser 4.0,id,0,0,,native lightgbm feature_importances_,942
+categorical__id_31_aol,id,0,0,,native lightgbm feature_importances_,943
+categorical__id_31_chrome,id,0,0,,native lightgbm feature_importances_,944
+categorical__id_31_chrome 43.0 for android,id,0,0,,native lightgbm feature_importances_,945
+categorical__id_31_chrome 46.0 for android,id,0,0,,native lightgbm feature_importances_,946
+categorical__id_31_chrome 49.0 for android,id,0,0,,native lightgbm feature_importances_,947
+categorical__id_31_chrome 51.0,id,0,0,,native lightgbm feature_importances_,948
+categorical__id_31_chrome 51.0 for android,id,0,0,,native lightgbm feature_importances_,949
+categorical__id_31_chrome 53.0 for android,id,0,0,,native lightgbm feature_importances_,950
+categorical__id_31_chrome 54.0 for android,id,0,0,,native lightgbm feature_importances_,951
+categorical__id_31_chrome 55.0,id,0,0,,native lightgbm feature_importances_,952
+categorical__id_31_chrome 56.0,id,0,0,,native lightgbm feature_importances_,953
+categorical__id_31_chrome 57.0,id,0,0,,native lightgbm feature_importances_,954
+categorical__id_31_chrome 57.0 for android,id,0,0,,native lightgbm feature_importances_,955
+categorical__id_31_chrome 58.0 for android,id,0,0,,native lightgbm feature_importances_,956
+categorical__id_31_chrome 59.0,id,0,0,,native lightgbm feature_importances_,957
+categorical__id_31_chrome 62.0 for ios,id,0,0,,native lightgbm feature_importances_,958
+categorical__id_31_chrome 63.0 for ios,id,0,0,,native lightgbm feature_importances_,959
+categorical__id_31_chrome 64.0 for ios,id,0,0,,native lightgbm feature_importances_,960
+categorical__id_31_chrome 65.0 for ios,id,0,0,,native lightgbm feature_importances_,961
+categorical__id_31_chrome 66.0 for ios,id,0,0,,native lightgbm feature_importances_,962
+categorical__id_31_chrome 67.0,id,0,0,,native lightgbm feature_importances_,963
+categorical__id_31_chrome 67.0 for android,id,0,0,,native lightgbm feature_importances_,964
+categorical__id_31_chrome 69.0,id,0,0,,native lightgbm feature_importances_,965
+categorical__id_31_chromium,id,0,0,,native lightgbm feature_importances_,966
+categorical__id_31_comodo,id,0,0,,native lightgbm feature_importances_,967
+categorical__id_31_cyberfox,id,0,0,,native lightgbm feature_importances_,968
+categorical__id_31_edge,id,0,0,,native lightgbm feature_importances_,969
+categorical__id_31_edge 13.0,id,0,0,,native lightgbm feature_importances_,970
+categorical__id_31_edge 17.0,id,0,0,,native lightgbm feature_importances_,971
+categorical__id_31_facebook,id,0,0,,native lightgbm feature_importances_,972
+categorical__id_31_firefox 47.0,id,0,0,,native lightgbm feature_importances_,973
+categorical__id_31_firefox 52.0,id,0,0,,native lightgbm feature_importances_,974
+categorical__id_31_firefox 55.0,id,0,0,,native lightgbm feature_importances_,975
+categorical__id_31_firefox 56.0,id,0,0,,native lightgbm feature_importances_,976
+categorical__id_31_firefox 60.0,id,0,0,,native lightgbm feature_importances_,977
+categorical__id_31_firefox generic,id,0,0,,native lightgbm feature_importances_,978
+categorical__id_31_google,id,0,0,,native lightgbm feature_importances_,979
+categorical__id_31_google search application 48.0,id,0,0,,native lightgbm feature_importances_,980
+categorical__id_31_google search application 49.0,id,0,0,,native lightgbm feature_importances_,981
+categorical__id_31_icedragon,id,0,0,,native lightgbm feature_importances_,982
+categorical__id_31_ie,id,0,0,,native lightgbm feature_importances_,983
+categorical__id_31_iron,id,0,0,,native lightgbm feature_importances_,984
+categorical__id_31_line,id,0,0,,native lightgbm feature_importances_,985
+categorical__id_31_maxthon,id,0,0,,native lightgbm feature_importances_,986
+categorical__id_31_mobile,id,0,0,,native lightgbm feature_importances_,987
+categorical__id_31_mobile safari 8.0,id,0,0,,native lightgbm feature_importances_,988
+categorical__id_31_mobile safari 9.0,id,0,0,,native lightgbm feature_importances_,989
+categorical__id_31_mobile safari uiwebview,id,0,0,,native lightgbm feature_importances_,990
+categorical__id_31_opera 49.0,id,0,0,,native lightgbm feature_importances_,991
+categorical__id_31_opera 51.0,id,0,0,,native lightgbm feature_importances_,992
+categorical__id_31_opera 52.0,id,0,0,,native lightgbm feature_importances_,993
+categorical__id_31_opera 53.0,id,0,0,,native lightgbm feature_importances_,994
+categorical__id_31_opera generic,id,0,0,,native lightgbm feature_importances_,995
+categorical__id_31_other,id,0,0,,native lightgbm feature_importances_,996
+categorical__id_31_palemoon,id,0,0,,native lightgbm feature_importances_,997
+categorical__id_31_puffin,id,0,0,,native lightgbm feature_importances_,998
+categorical__id_31_safari,id,0,0,,native lightgbm feature_importances_,999
+categorical__id_31_safari 10.0,id,0,0,,native lightgbm feature_importances_,1000
+categorical__id_31_safari 9.0,id,0,0,,native lightgbm feature_importances_,1001
+categorical__id_31_samsung,id,0,0,,native lightgbm feature_importances_,1002
+categorical__id_31_samsung browser 3.3,id,0,0,,native lightgbm feature_importances_,1003
+categorical__id_31_samsung browser 4.0,id,0,0,,native lightgbm feature_importances_,1004
+categorical__id_31_samsung browser 4.2,id,0,0,,native lightgbm feature_importances_,1005
+categorical__id_31_samsung browser 5.2,id,0,0,,native lightgbm feature_importances_,1006
+categorical__id_31_samsung browser 5.4,id,0,0,,native lightgbm feature_importances_,1007
+categorical__id_31_samsung browser 6.4,id,0,0,,native lightgbm feature_importances_,1008
+categorical__id_31_samsung browser generic,id,0,0,,native lightgbm feature_importances_,1009
+categorical__id_31_seamonkey,id,0,0,,native lightgbm feature_importances_,1010
+categorical__id_31_silk,id,0,0,,native lightgbm feature_importances_,1011
+categorical__id_31_waterfox,id,0,0,,native lightgbm feature_importances_,1012
+categorical__id_33_0x0,id,0,0,,native lightgbm feature_importances_,1013
+categorical__id_33_1023x767,id,0,0,,native lightgbm feature_importances_,1014
+categorical__id_33_1023x768,id,0,0,,native lightgbm feature_importances_,1015
+categorical__id_33_1024x552,id,0,0,,native lightgbm feature_importances_,1016
+categorical__id_33_1024x640,id,0,0,,native lightgbm feature_importances_,1017
+categorical__id_33_1024x767,id,0,0,,native lightgbm feature_importances_,1018
+categorical__id_33_1024x819,id,0,0,,native lightgbm feature_importances_,1019
+categorical__id_33_1062x630,id,0,0,,native lightgbm feature_importances_,1020
+categorical__id_33_1093x615,id,0,0,,native lightgbm feature_importances_,1021
+categorical__id_33_1136x640,id,0,0,,native lightgbm feature_importances_,1022
+categorical__id_33_1138x640,id,0,0,,native lightgbm feature_importances_,1023
+categorical__id_33_1152x648,id,0,0,,native lightgbm feature_importances_,1024
+categorical__id_33_1152x720,id,0,0,,native lightgbm feature_importances_,1025
+categorical__id_33_1152x864,id,0,0,,native lightgbm feature_importances_,1026
+categorical__id_33_1184x720,id,0,0,,native lightgbm feature_importances_,1027
+categorical__id_33_1188x720,id,0,0,,native lightgbm feature_importances_,1028
+categorical__id_33_1200x675,id,0,0,,native lightgbm feature_importances_,1029
+categorical__id_33_1200x720,id,0,0,,native lightgbm feature_importances_,1030
+categorical__id_33_1239x697,id,0,0,,native lightgbm feature_importances_,1031
+categorical__id_33_1272x960,id,0,0,,native lightgbm feature_importances_,1032
+categorical__id_33_1279x1023,id,0,0,,native lightgbm feature_importances_,1033
+categorical__id_33_1279x1024,id,0,0,,native lightgbm feature_importances_,1034
+categorical__id_33_1280x1023,id,0,0,,native lightgbm feature_importances_,1035
+categorical__id_33_1280x1025,id,0,0,,native lightgbm feature_importances_,1036
+categorical__id_33_1280x600,id,0,0,,native lightgbm feature_importances_,1037
+categorical__id_33_1280x712,id,0,0,,native lightgbm feature_importances_,1038
+categorical__id_33_1280x732,id,0,0,,native lightgbm feature_importances_,1039
+categorical__id_33_1280x768,id,0,0,,native lightgbm feature_importances_,1040
+categorical__id_33_1280x800,id,0,0,,native lightgbm feature_importances_,1041
+categorical__id_33_1280x900,id,0,0,,native lightgbm feature_importances_,1042
+categorical__id_33_1280x960,id,0,0,,native lightgbm feature_importances_,1043
+categorical__id_33_1281x720,id,0,0,,native lightgbm feature_importances_,1044
+categorical__id_33_1281x721,id,0,0,,native lightgbm feature_importances_,1045
+categorical__id_33_1281x800,id,0,0,,native lightgbm feature_importances_,1046
+categorical__id_33_1281x801,id,0,0,,native lightgbm feature_importances_,1047
+categorical__id_33_1296x774,id,0,0,,native lightgbm feature_importances_,1048
+categorical__id_33_1344x756,id,0,0,,native lightgbm feature_importances_,1049
+categorical__id_33_1344x840,id,0,0,,native lightgbm feature_importances_,1050
+categorical__id_33_1356x900,id,0,0,,native lightgbm feature_importances_,1051
+categorical__id_33_1359x768,id,0,0,,native lightgbm feature_importances_,1052
+categorical__id_33_1364x768,id,0,0,,native lightgbm feature_importances_,1053
+categorical__id_33_1365x767,id,0,0,,native lightgbm feature_importances_,1054
+categorical__id_33_1365x768,id,0,0,,native lightgbm feature_importances_,1055
+categorical__id_33_1366x767,id,0,0,,native lightgbm feature_importances_,1056
+categorical__id_33_1368x768,id,0,0,,native lightgbm feature_importances_,1057
+categorical__id_33_1371x857,id,0,0,,native lightgbm feature_importances_,1058
+categorical__id_33_1400x1050,id,0,0,,native lightgbm feature_importances_,1059
+categorical__id_33_1408x880,id,0,0,,native lightgbm feature_importances_,1060
+categorical__id_33_1422x889,id,0,0,,native lightgbm feature_importances_,1061
+categorical__id_33_1439x899,id,0,0,,native lightgbm feature_importances_,1062
+categorical__id_33_1439x900,id,0,0,,native lightgbm feature_importances_,1063
+categorical__id_33_1440x720,id,0,0,,native lightgbm feature_importances_,1064
+categorical__id_33_1440x803,id,0,0,,native lightgbm feature_importances_,1065
+categorical__id_33_1440x810,id,0,0,,native lightgbm feature_importances_,1066
+categorical__id_33_1440x960,id,0,0,,native lightgbm feature_importances_,1067
+categorical__id_33_1480x720,id,0,0,,native lightgbm feature_importances_,1068
+categorical__id_33_1502x844,id,0,0,,native lightgbm feature_importances_,1069
+categorical__id_33_1502x845,id,0,0,,native lightgbm feature_importances_,1070
+categorical__id_33_1536x1152,id,0,0,,native lightgbm feature_importances_,1071
+categorical__id_33_1536x864,id,0,0,,native lightgbm feature_importances_,1072
+categorical__id_33_1536x960,id,0,0,,native lightgbm feature_importances_,1073
+categorical__id_33_1584x990,id,0,0,,native lightgbm feature_importances_,1074
+categorical__id_33_1599x899,id,0,0,,native lightgbm feature_importances_,1075
+categorical__id_33_1599x900,id,0,0,,native lightgbm feature_importances_,1076
+categorical__id_33_1600x1000,id,0,0,,native lightgbm feature_importances_,1077
+categorical__id_33_1600x1200,id,0,0,,native lightgbm feature_importances_,1078
+categorical__id_33_1600x837,id,0,0,,native lightgbm feature_importances_,1079
+categorical__id_33_1600x899,id,0,0,,native lightgbm feature_importances_,1080
+categorical__id_33_1624x1080,id,0,0,,native lightgbm feature_importances_,1081
+categorical__id_33_1638x922,id,0,0,,native lightgbm feature_importances_,1082
+categorical__id_33_1679x1049,id,0,0,,native lightgbm feature_importances_,1083
+categorical__id_33_1680x1049,id,0,0,,native lightgbm feature_importances_,1084
+categorical__id_33_1680x1051,id,0,0,,native lightgbm feature_importances_,1085
+categorical__id_33_1680x945,id,0,0,,native lightgbm feature_importances_,1086
+categorical__id_33_1684x947,id,0,0,,native lightgbm feature_importances_,1087
+categorical__id_33_1707x960,id,0,0,,native lightgbm feature_importances_,1088
+categorical__id_33_1727x971,id,0,0,,native lightgbm feature_importances_,1089
+categorical__id_33_1728x972,id,0,0,,native lightgbm feature_importances_,1090
+categorical__id_33_1760x990,id,0,0,,native lightgbm feature_importances_,1091
+categorical__id_33_1768x992,id,0,0,,native lightgbm feature_importances_,1092
+categorical__id_33_1776x1000,id,0,0,,native lightgbm feature_importances_,1093
+categorical__id_33_1776x1080,id,0,0,,native lightgbm feature_importances_,1094
+categorical__id_33_1800x1125,id,0,0,,native lightgbm feature_importances_,1095
+categorical__id_33_1824x1026,id,0,0,,native lightgbm feature_importances_,1096
+categorical__id_33_1888x941,id,0,0,,native lightgbm feature_importances_,1097
+categorical__id_33_1912x1025,id,0,0,,native lightgbm feature_importances_,1098
+categorical__id_33_1916x901,id,0,0,,native lightgbm feature_importances_,1099
+categorical__id_33_1919x1079,id,0,0,,native lightgbm feature_importances_,1100
+categorical__id_33_1919x1080,id,0,0,,native lightgbm feature_importances_,1101
+categorical__id_33_1919x1199,id,0,0,,native lightgbm feature_importances_,1102
+categorical__id_33_1919x1200,id,0,0,,native lightgbm feature_importances_,1103
+categorical__id_33_1920x1079,id,0,0,,native lightgbm feature_importances_,1104
+categorical__id_33_1920x1081,id,0,0,,native lightgbm feature_importances_,1105
+categorical__id_33_1920x1279,id,0,0,,native lightgbm feature_importances_,1106
+categorical__id_33_1920x1280,id,0,0,,native lightgbm feature_importances_,1107
+categorical__id_33_1920x1281,id,0,0,,native lightgbm feature_importances_,1108
+categorical__id_33_1920x975,id,0,0,,native lightgbm feature_importances_,1109
+categorical__id_33_1921x1080,id,0,0,,native lightgbm feature_importances_,1110
+categorical__id_33_1921x1081,id,0,0,,native lightgbm feature_importances_,1111
+categorical__id_33_2000x1125,id,0,0,,native lightgbm feature_importances_,1112
+categorical__id_33_2048x1080,id,0,0,,native lightgbm feature_importances_,1113
+categorical__id_33_2048x1152,id,0,0,,native lightgbm feature_importances_,1114
+categorical__id_33_2048x1278,id,0,0,,native lightgbm feature_importances_,1115
+categorical__id_33_2048x1280,id,0,0,,native lightgbm feature_importances_,1116
+categorical__id_33_2049x1152,id,0,0,,native lightgbm feature_importances_,1117
+categorical__id_33_2049x1536,id,0,0,,native lightgbm feature_importances_,1118
+categorical__id_33_2076x1080,id,0,0,,native lightgbm feature_importances_,1119
+categorical__id_33_2100x1312,id,0,0,,native lightgbm feature_importances_,1120
+categorical__id_33_2112x1188,id,0,0,,native lightgbm feature_importances_,1121
+categorical__id_33_2159x1439,id,0,0,,native lightgbm feature_importances_,1122
+categorical__id_33_2159x1440,id,0,0,,native lightgbm feature_importances_,1123
+categorical__id_33_2160x1080,id,0,0,,native lightgbm feature_importances_,1124
+categorical__id_33_2160x1081,id,0,0,,native lightgbm feature_importances_,1125
+categorical__id_33_2160x1215,id,0,0,,native lightgbm feature_importances_,1126
+categorical__id_33_2160x1350,id,0,0,,native lightgbm feature_importances_,1127
+categorical__id_33_2160x1439,id,0,0,,native lightgbm feature_importances_,1128
+categorical__id_33_2220x1081,id,0,0,,native lightgbm feature_importances_,1129
+categorical__id_33_2224x1668,id,0,0,,native lightgbm feature_importances_,1130
+categorical__id_33_2255x1503,id,0,0,,native lightgbm feature_importances_,1131
+categorical__id_33_2256x1504,id,0,0,,native lightgbm feature_importances_,1132
+categorical__id_33_2304x1296,id,0,0,,native lightgbm feature_importances_,1133
+categorical__id_33_2304x1440,id,0,0,,native lightgbm feature_importances_,1134
+categorical__id_33_2368x1440,id,0,0,,native lightgbm feature_importances_,1135
+categorical__id_33_2392x1440,id,0,0,,native lightgbm feature_importances_,1136
+categorical__id_33_2400x1350,id,0,0,,native lightgbm feature_importances_,1137
+categorical__id_33_2400x1500,id,0,0,,native lightgbm feature_importances_,1138
+categorical__id_33_2400x1600,id,0,0,,native lightgbm feature_importances_,1139
+categorical__id_33_2520x1575,id,0,0,,native lightgbm feature_importances_,1140
+categorical__id_33_2559x1439,id,0,0,,native lightgbm feature_importances_,1141
+categorical__id_33_2560x1080,id,0,0,,native lightgbm feature_importances_,1142
+categorical__id_33_2560x1700,id,0,0,,native lightgbm feature_importances_,1143
+categorical__id_33_2560x1800,id,0,0,,native lightgbm feature_importances_,1144
+categorical__id_33_2561x1442,id,0,0,,native lightgbm feature_importances_,1145
+categorical__id_33_2562x1442,id,0,0,,native lightgbm feature_importances_,1146
+categorical__id_33_2672x1440,id,0,0,,native lightgbm feature_importances_,1147
+categorical__id_33_2700x1800,id,0,0,,native lightgbm feature_importances_,1148
+categorical__id_33_2710x1440,id,0,0,,native lightgbm feature_importances_,1149
+categorical__id_33_2735x1823,id,0,0,,native lightgbm feature_importances_,1150
+categorical__id_33_2735x1825,id,0,0,,native lightgbm feature_importances_,1151
+categorical__id_33_2736x1823,id,0,0,,native lightgbm feature_importances_,1152
+categorical__id_33_2737x1825,id,0,0,,native lightgbm feature_importances_,1153
+categorical__id_33_2800x1575,id,0,0,,native lightgbm feature_importances_,1154
+categorical__id_33_2816x1584,id,0,0,,native lightgbm feature_importances_,1155
+categorical__id_33_2816x1760,id,0,0,,native lightgbm feature_importances_,1156
+categorical__id_33_2880x1440,id,0,0,,native lightgbm feature_importances_,1157
+categorical__id_33_2880x1442,id,0,0,,native lightgbm feature_importances_,1158
+categorical__id_33_2880x1620,id,0,0,,native lightgbm feature_importances_,1159
+categorical__id_33_2882x1442,id,0,0,,native lightgbm feature_importances_,1160
+categorical__id_33_2960x1440,id,0,0,,native lightgbm feature_importances_,1161
+categorical__id_33_2961x1440,id,0,0,,native lightgbm feature_importances_,1162
+categorical__id_33_2961x1442,id,0,0,,native lightgbm feature_importances_,1163
+categorical__id_33_3000x2000,id,0,0,,native lightgbm feature_importances_,1164
+categorical__id_33_3072x1728,id,0,0,,native lightgbm feature_importances_,1165
+categorical__id_33_3200x1800,id,0,0,,native lightgbm feature_importances_,1166
+categorical__id_33_3200x2000,id,0,0,,native lightgbm feature_importances_,1167
+categorical__id_33_3201x1800,id,0,0,,native lightgbm feature_importances_,1168
+categorical__id_33_3240x2160,id,0,0,,native lightgbm feature_importances_,1169
+categorical__id_33_3360x1890,id,0,0,,native lightgbm feature_importances_,1170
+categorical__id_33_3360x2100,id,0,0,,native lightgbm feature_importances_,1171
+categorical__id_33_3440x1440,id,0,0,,native lightgbm feature_importances_,1172
+categorical__id_33_3441x1440,id,0,0,,native lightgbm feature_importances_,1173
+categorical__id_33_3520x1980,id,0,0,,native lightgbm feature_importances_,1174
+categorical__id_33_3600x2250,id,0,0,,native lightgbm feature_importances_,1175
+categorical__id_33_3838x2158,id,0,0,,native lightgbm feature_importances_,1176
+categorical__id_33_3838x2160,id,0,0,,native lightgbm feature_importances_,1177
+categorical__id_33_3839x2160,id,0,0,,native lightgbm feature_importances_,1178
+categorical__id_33_3840x1080,id,0,0,,native lightgbm feature_importances_,1179
+categorical__id_33_3840x1600,id,0,0,,native lightgbm feature_importances_,1180
+categorical__id_33_3840x2162,id,0,0,,native lightgbm feature_importances_,1181
+categorical__id_33_3840x2400,id,0,0,,native lightgbm feature_importances_,1182
+categorical__id_33_3841x2161,id,0,0,,native lightgbm feature_importances_,1183
+categorical__id_33_4096x2304,id,0,0,,native lightgbm feature_importances_,1184
+categorical__id_33_4200x2625,id,0,0,,native lightgbm feature_importances_,1185
+categorical__id_33_4499x2999,id,0,0,,native lightgbm feature_importances_,1186
+categorical__id_33_4500x3000,id,0,0,,native lightgbm feature_importances_,1187
+categorical__id_33_480x320,id,0,0,,native lightgbm feature_importances_,1188
+categorical__id_33_5040x3150,id,0,0,,native lightgbm feature_importances_,1189
+categorical__id_33_5120x2880,id,0,0,,native lightgbm feature_importances_,1190
+categorical__id_33_5760x3240,id,0,0,,native lightgbm feature_importances_,1191
+categorical__id_33_6016x3384,id,0,0,,native lightgbm feature_importances_,1192
+categorical__id_33_640x360,id,0,0,,native lightgbm feature_importances_,1193
+categorical__id_33_6720x3780,id,0,0,,native lightgbm feature_importances_,1194
+categorical__id_33_800x600,id,0,0,,native lightgbm feature_importances_,1195
+categorical__id_33_801x480,id,0,0,,native lightgbm feature_importances_,1196
+categorical__id_33_921x691,id,0,0,,native lightgbm feature_importances_,1197
+categorical__id_33_960x540,id,0,0,,native lightgbm feature_importances_,1198
+categorical__id_33_960x640,id,0,0,,native lightgbm feature_importances_,1199
+categorical__id_34_match_status:-1,id,0,0,,native lightgbm feature_importances_,1200
+categorical__id_35_F,id,0,0,,native lightgbm feature_importances_,1201
+categorical__id_35_T,id,0,0,,native lightgbm feature_importances_,1202
+categorical__id_35___MISSING__,id,0,0,,native lightgbm feature_importances_,1203
+categorical__id_36___MISSING__,id,0,0,,native lightgbm feature_importances_,1204
+categorical__id_37___MISSING__,id,0,0,,native lightgbm feature_importances_,1205
+categorical__id_38___MISSING__,id,0,0,,native lightgbm feature_importances_,1206
+categorical__DeviceType___MISSING__,DeviceType,0,0,,native lightgbm feature_importances_,1207

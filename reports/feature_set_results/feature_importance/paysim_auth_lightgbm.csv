@@ -1,0 +1,12 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+numeric__oldbalanceOrg,oldbalanceOrg,2207,0.2106116996,,native lightgbm feature_importances_,1
+numeric__amount,amount,2080,0.1984922225,,native lightgbm feature_importances_,2
+numeric__step,step,1865,0.1779749976,,native lightgbm feature_importances_,3
+numeric__oldbalanceDest,oldbalanceDest,1579,0.150682317,,native lightgbm feature_importances_,4
+numeric__hour,hour,1182,0.1127970226,,native lightgbm feature_importances_,5
+numeric__log_amount,log_amount,1182,0.1127970226,,native lightgbm feature_importances_,6
+categorical__type_CASH_OUT,type,135,0.01288290867,,native lightgbm feature_importances_,7
+categorical__type_TRANSFER,type,133,0.01269205077,,native lightgbm feature_importances_,8
+categorical__type_PAYMENT,type,53,0.005057734517,,native lightgbm feature_importances_,9
+categorical__type_CASH_IN,type,47,0.004485160798,,native lightgbm feature_importances_,10
+categorical__type_DEBIT,type,16,0.00152686325,,native lightgbm feature_importances_,11

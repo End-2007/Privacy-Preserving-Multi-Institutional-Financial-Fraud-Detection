@@ -1,0 +1,98 @@
+{
+  "artifact": "models\\paysim\\feature_sets\\auth\\logistic_regression\\stage1\\best_model.joblib",
+  "compute_device": "cpu",
+  "confusion_figure": "reports\\feature_set_results\\figures\\paysim_auth_logistic_regression_confusion.png",
+  "created_utc": "2026-11-27T06:10:18.975170+00:00",
+  "dataset": "paysim",
+  "feature_importance_file": "reports\\feature_set_results\\feature_importance\\paysim_auth_logistic_regression.csv",
+  "feature_list": "configs\\features\\PaySim_auth.txt",
+  "feature_metadata": "data\\processed\\paysim\\feature_sets\\auth\\feature_metadata.json",
+  "feature_set": "auth",
+  "final_metrics_split": "test",
+  "fit_seconds": 0.0,
+  "lr_scaler": "models\\paysim\\feature_sets\\auth\\logistic_regression\\stage1\\lr_scaler.joblib",
+  "metrics_file": "reports\\feature_set_results\\metrics\\paysim_auth_logistic_regression_metrics.json",
+  "model": "logistic_regression",
+  "model_candidate_selection": "highest validation AP among the recorded candidates for this model family",
+  "package_versions": {
+    "imbalanced-learn": "0.14.2",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "xgboost": "3.2.0"
+  },
+  "params": {
+    "C": 4.5705630998014515,
+    "solver": "liblinear"
+  },
+  "pr_figure": "reports\\feature_set_results\\figures\\paysim_auth_logistic_regression_pr.png",
+  "prediction_file": "reports\\feature_set_results\\predictions\\paysim_auth_logistic_regression_predictions.csv.gz",
+  "preprocessing_fit_split": "train",
+  "preprocessor": "models\\paysim\\feature_sets\\auth\\preprocessor.joblib",
+  "resampling_counts": {
+    "after": {
+      "negative": 114980,
+      "positive": 57490
+    },
+    "after_cap": {
+      "negative": 114980,
+      "positive": 5749
+    },
+    "before": {
+      "negative": 4448084,
+      "positive": 5749
+    },
+    "cap_majority_per_minority": 20,
+    "method": "cap_smote",
+    "seed": 42
+  },
+  "search_candidate": 3,
+  "search_validation_ap": 0.2655802865310265,
+  "seed": 42,
+  "selection_metric": "validation Average Precision (AP)",
+  "source_search_report": "reports\\paysim_auth_metrics.json",
+  "split": {
+    "stratified": true,
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  },
+  "split_manifest": "data\\processed\\paysim\\feature_sets\\auth\\split_manifest.json",
+  "strategy": "cap_smote",
+  "test_metrics": {
+    "f1": 0.14085983921705697,
+    "fn": 426,
+    "fp": 9406,
+    "fpr": 0.009868217436508628,
+    "pr_auc": 0.2597015597574664,
+    "precision": 0.07892675283979632,
+    "recall": 0.6542207792207793,
+    "roc_auc": 0.9778504235708017,
+    "threshold": 0.8495633316244335,
+    "tn": 943755,
+    "tp": 806
+  },
+  "test_rows": 954393,
+  "test_scored_once_for_this_export": true,
+  "threshold": 0.8495633316244335,
+  "threshold_rule": "maximize validation recall subject to validation FPR <= 0.01",
+  "threshold_selected_on": "validation",
+  "train_only_resampling": true,
+  "train_rows": 4453833,
+  "validation_metrics": {
+    "f1": 0.14372189553787618,
+    "fn": 401,
+    "fp": 9501,
+    "fpr": 0.009967875345429214,
+    "pr_auc": 0.2655802865310265,
+    "precision": 0.08042973286875726,
+    "recall": 0.674512987012987,
+    "roc_auc": 0.980326284272223,
+    "threshold": 0.8495633316244335,
+    "tn": 943661,
+    "tp": 831
+  },
+  "validation_rows": 954394
+}

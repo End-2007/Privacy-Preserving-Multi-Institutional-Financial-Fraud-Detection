@@ -1,0 +1,19 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+numeric__newbalanceDest,newbalanceDest,2000,0.1333955846,,native lightgbm feature_importances_,1
+numeric__oldbalanceDest,oldbalanceDest,1906,0.1271259921,,native lightgbm feature_importances_,2
+numeric__step,step,1898,0.1265924098,,native lightgbm feature_importances_,3
+numeric__error_balance_orig,error_balance_orig,1647,0.1098512639,,native lightgbm feature_importances_,4
+numeric__dest_balance_delta,dest_balance_delta,1395,0.09304342026,,native lightgbm feature_importances_,5
+numeric__hour,hour,1321,0.08810778363,,native lightgbm feature_importances_,6
+numeric__amount,amount,1098,0.07323417595,,native lightgbm feature_importances_,7
+numeric__error_balance_dest,error_balance_dest,857,0.057160008,,native lightgbm feature_importances_,8
+numeric__log_amount,log_amount,764,0.05095711332,,native lightgbm feature_importances_,9
+numeric__oldbalanceOrg,oldbalanceOrg,653,0.04355365837,,native lightgbm feature_importances_,10
+numeric__orig_balance_delta,orig_balance_delta,572,0.0381511372,,native lightgbm feature_importances_,11
+numeric__newbalanceOrig,newbalanceOrig,467,0.03114786901,,native lightgbm feature_importances_,12
+categorical__type_CASH_OUT,type,128,0.008537317415,,native lightgbm feature_importances_,13
+categorical__type_TRANSFER,type,109,0.007270059361,,native lightgbm feature_importances_,14
+numeric__orig_zero_after,orig_zero_after,82,0.005469218969,,native lightgbm feature_importances_,15
+categorical__type_PAYMENT,type,58,0.003868471954,,native lightgbm feature_importances_,16
+categorical__type_CASH_IN,type,35,0.002334422731,,native lightgbm feature_importances_,17
+categorical__type_DEBIT,type,3,0.0002000933769,,native lightgbm feature_importances_,18

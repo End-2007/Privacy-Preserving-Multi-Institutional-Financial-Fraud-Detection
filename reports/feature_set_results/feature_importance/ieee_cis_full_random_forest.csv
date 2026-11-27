@@ -1,0 +1,1208 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+numeric__V258,V258,0.08944977392,0.08944977392,,native random_forest feature_importances_,1
+numeric__C14,C14,0.04131854547,0.04131854547,,native random_forest feature_importances_,2
+numeric__V317,V317,0.03521980493,0.03521980493,,native random_forest feature_importances_,3
+numeric__V264,V264,0.03519894416,0.03519894416,,native random_forest feature_importances_,4
+numeric__C13,C13,0.03424730735,0.03424730735,,native random_forest feature_importances_,5
+numeric__V70,V70,0.02803285351,0.02803285351,,native random_forest feature_importances_,6
+numeric__V294,V294,0.02738926856,0.02738926856,,native random_forest feature_importances_,7
+frequency__card1,card1,0.02612018087,0.02612018087,,native random_forest feature_importances_,8
+numeric__D2,D2,0.02418041918,0.02418041918,,native random_forest feature_importances_,9
+numeric__TransactionDT,TransactionDT,0.02209903806,0.02209903806,,native random_forest feature_importances_,10
+frequency__card2,card2,0.01939602869,0.01939602869,,native random_forest feature_importances_,11
+numeric__V218,V218,0.01890417895,0.01890417895,,native random_forest feature_importances_,12
+numeric__C1,C1,0.01863564946,0.01863564946,,native random_forest feature_importances_,13
+numeric__TransactionAmt,TransactionAmt,0.01805432125,0.01805432125,,native random_forest feature_importances_,14
+numeric__log_amt,log_amt,0.01803874894,0.01803874894,,native random_forest feature_importances_,15
+numeric__V91,V91,0.01700758692,0.01700758692,,native random_forest feature_importances_,16
+frequency__addr1,addr1,0.01481200144,0.01481200144,,native random_forest feature_importances_,17
+numeric__D15,D15,0.01436003832,0.01436003832,,native random_forest feature_importances_,18
+numeric__transaction_day,transaction_day,0.01356534603,0.01356534603,,native random_forest feature_importances_,19
+numeric__C8,C8,0.01194612413,0.01194612413,,native random_forest feature_importances_,20
+frequency__P_emaildomain,P_emaildomain,0.01119370317,0.01119370317,,native random_forest feature_importances_,21
+numeric__D1,D1,0.01117121482,0.01117121482,,native random_forest feature_importances_,22
+numeric__V69,V69,0.009808330401,0.009808330401,,native random_forest feature_importances_,23
+numeric__transaction_hour,transaction_hour,0.009773273694,0.009773273694,,native random_forest feature_importances_,24
+numeric__C2,C2,0.009576929989,0.009576929989,,native random_forest feature_importances_,25
+numeric__C11,C11,0.009560697219,0.009560697219,,native random_forest feature_importances_,26
+numeric__V90,V90,0.009007628775,0.009007628775,,native random_forest feature_importances_,27
+numeric__D10,D10,0.008987796707,0.008987796707,,native random_forest feature_importances_,28
+numeric__D4,D4,0.008520829705,0.008520829705,,native random_forest feature_importances_,29
+numeric__C10,C10,0.008433327444,0.008433327444,,native random_forest feature_importances_,30
+numeric__C4,C4,0.008007238579,0.008007238579,,native random_forest feature_importances_,31
+numeric__dist1,dist1,0.007713809034,0.007713809034,,native random_forest feature_importances_,32
+categorical__card6_credit,card6,0.007564679097,0.007564679097,,native random_forest feature_importances_,33
+numeric__V265,V265,0.007475200687,0.007475200687,,native random_forest feature_importances_,34
+numeric__V283,V283,0.006934502275,0.006934502275,,native random_forest feature_importances_,35
+numeric__C6,C6,0.00686219374,0.00686219374,,native random_forest feature_importances_,36
+numeric__D3,D3,0.006844082293,0.006844082293,,native random_forest feature_importances_,37
+numeric__C5,C5,0.006646718272,0.006646718272,,native random_forest feature_importances_,38
+numeric__id_02,id_02,0.006636587457,0.006636587457,,native random_forest feature_importances_,39
+categorical__card6_debit,card6,0.006208338316,0.006208338316,,native random_forest feature_importances_,40
+numeric__D11,D11,0.006126154741,0.006126154741,,native random_forest feature_importances_,41
+numeric__D5,D5,0.005544442724,0.005544442724,,native random_forest feature_importances_,42
+numeric__V310,V310,0.005484175093,0.005484175093,,native random_forest feature_importances_,43
+numeric__D8,D8,0.005378021767,0.005378021767,,native random_forest feature_importances_,44
+numeric__V219,V219,0.005187497602,0.005187497602,,native random_forest feature_importances_,45
+numeric__V307,V307,0.004784732627,0.004784732627,,native random_forest feature_importances_,46
+numeric__V318,V318,0.00478125683,0.00478125683,,native random_forest feature_importances_,47
+numeric__V312,V312,0.004629385197,0.004629385197,,native random_forest feature_importances_,48
+numeric__V308,V308,0.004494702333,0.004494702333,,native random_forest feature_importances_,49
+frequency__R_emaildomain,R_emaildomain,0.004383248483,0.004383248483,,native random_forest feature_importances_,50
+numeric__C9,C9,0.004345628256,0.004345628256,,native random_forest feature_importances_,51
+numeric__V29,V29,0.004337840693,0.004337840693,,native random_forest feature_importances_,52
+numeric__V285,V285,0.00352599158,0.00352599158,,native random_forest feature_importances_,53
+numeric__id_20,id_20,0.003368819504,0.003368819504,,native random_forest feature_importances_,54
+categorical__addr2_87.0,addr2,0.003359902214,0.003359902214,,native random_forest feature_importances_,55
+numeric__V315,V315,0.003270521784,0.003270521784,,native random_forest feature_importances_,56
+categorical__M4___MISSING__,M4,0.003070559722,0.003070559722,,native random_forest feature_importances_,57
+numeric__V130,V130,0.003068310805,0.003068310805,,native random_forest feature_importances_,58
+numeric__V314,V314,0.002978588653,0.002978588653,,native random_forest feature_importances_,59
+numeric__V313,V313,0.002947300892,0.002947300892,,native random_forest feature_importances_,60
+numeric__V320,V320,0.002885175717,0.002885175717,,native random_forest feature_importances_,61
+numeric__V127,V127,0.002874562464,0.002874562464,,native random_forest feature_importances_,62
+frequency__DeviceInfo,DeviceInfo,0.002870084036,0.002870084036,,native random_forest feature_importances_,63
+categorical__card5_166.0,card5,0.002792020855,0.002792020855,,native random_forest feature_importances_,64
+numeric__V128,V128,0.002785634639,0.002785634639,,native random_forest feature_importances_,65
+numeric__id_19,id_19,0.002747222687,0.002747222687,,native random_forest feature_importances_,66
+numeric__id_01,id_01,0.002683407462,0.002683407462,,native random_forest feature_importances_,67
+numeric__V131,V131,0.002559347046,0.002559347046,,native random_forest feature_importances_,68
+numeric__V96,V96,0.002536116215,0.002536116215,,native random_forest feature_importances_,69
+numeric__C12,C12,0.002472218004,0.002472218004,,native random_forest feature_importances_,70
+numeric__V309,V309,0.002470825504,0.002470825504,,native random_forest feature_importances_,71
+categorical__M5_T,M5,0.002433080643,0.002433080643,,native random_forest feature_importances_,72
+numeric__V257,V257,0.002345916728,0.002345916728,,native random_forest feature_importances_,73
+numeric__V295,V295,0.002269723864,0.002269723864,,native random_forest feature_importances_,74
+categorical__card5_226.0,card5,0.002256891231,0.002256891231,,native random_forest feature_importances_,75
+numeric__V62,V62,0.002184117733,0.002184117733,,native random_forest feature_importances_,76
+numeric__V133,V133,0.002151533252,0.002151533252,,native random_forest feature_importances_,77
+numeric__id_06,id_06,0.002100852855,0.002100852855,,native random_forest feature_importances_,78
+numeric__V129,V129,0.002098774858,0.002098774858,,native random_forest feature_importances_,79
+numeric__C7,C7,0.002070208798,0.002070208798,,native random_forest feature_importances_,80
+numeric__id_05,id_05,0.002052476227,0.002052476227,,native random_forest feature_importances_,81
+categorical__M6_F,M6,0.002046437736,0.002046437736,,native random_forest feature_importances_,82
+numeric__V54,V54,0.002025549253,0.002025549253,,native random_forest feature_importances_,83
+numeric__V102,V102,0.002006864055,0.002006864055,,native random_forest feature_importances_,84
+numeric__V83,V83,0.001855273525,0.001855273525,,native random_forest feature_importances_,85
+numeric__V311,V311,0.001804932863,0.001804932863,,native random_forest feature_importances_,86
+numeric__V20,V20,0.001777264706,0.001777264706,,native random_forest feature_importances_,87
+numeric__V306,V306,0.001777030684,0.001777030684,,native random_forest feature_importances_,88
+numeric__V76,V76,0.001771050437,0.001771050437,,native random_forest feature_importances_,89
+categorical__M4_M1,M4,0.001692787167,0.001692787167,,native random_forest feature_importances_,90
+categorical__M5_F,M5,0.001686993893,0.001686993893,,native random_forest feature_importances_,91
+categorical__card3_185.0,card3,0.001661505863,0.001661505863,,native random_forest feature_importances_,92
+categorical__M6_T,M6,0.001659947957,0.001659947957,,native random_forest feature_importances_,93
+categorical__M4_M2,M4,0.001563067175,0.001563067175,,native random_forest feature_importances_,94
+categorical__M4_M0,M4,0.001489853296,0.001489853296,,native random_forest feature_importances_,95
+numeric__V53,V53,0.001421275741,0.001421275741,,native random_forest feature_importances_,96
+missing__missingindicator_id_14,missingindicator_id_14,0.001419033026,0.001419033026,,native random_forest feature_importances_,97
+numeric__V99,V99,0.001418042985,0.001418042985,,native random_forest feature_importances_,98
+categorical__card4_mastercard,card4,0.001417702441,0.001417702441,,native random_forest feature_importances_,99
+numeric__D6,D6,0.001391167978,0.001391167978,,native random_forest feature_importances_,100
+categorical__card5_224.0,card5,0.001388524144,0.001388524144,,native random_forest feature_importances_,101
+numeric__id_17,id_17,0.001368723293,0.001368723293,,native random_forest feature_importances_,102
+numeric__D9,D9,0.00135695759,0.00135695759,,native random_forest feature_importances_,103
+numeric__id_13,id_13,0.001328577761,0.001328577761,,native random_forest feature_importances_,104
+categorical__ProductCD_C,ProductCD,0.001311682628,0.001311682628,,native random_forest feature_importances_,105
+numeric__V38,V38,0.001311447046,0.001311447046,,native random_forest feature_importances_,106
+numeric__V263,V263,0.001308959664,0.001308959664,,native random_forest feature_importances_,107
+numeric__V45,V45,0.001308004015,0.001308004015,,native random_forest feature_importances_,108
+numeric__V61,V61,0.001300525113,0.001300525113,,native random_forest feature_importances_,109
+numeric__V87,V87,0.001295973089,0.001295973089,,native random_forest feature_importances_,110
+numeric__V126,V126,0.001287598526,0.001287598526,,native random_forest feature_importances_,111
+numeric__V291,V291,0.001278218848,0.001278218848,,native random_forest feature_importances_,112
+numeric__V136,V136,0.001244224393,0.001244224393,,native random_forest feature_importances_,113
+numeric__V36,V36,0.001195580383,0.001195580383,,native random_forest feature_importances_,114
+numeric__V82,V82,0.001180774364,0.001180774364,,native random_forest feature_importances_,115
+numeric__V35,V35,0.001163171999,0.001163171999,,native random_forest feature_importances_,116
+numeric__V30,V30,0.001160302934,0.001160302934,,native random_forest feature_importances_,117
+numeric__V217,V217,0.001157615742,0.001157615742,,native random_forest feature_importances_,118
+numeric__V56,V56,0.001150189283,0.001150189283,,native random_forest feature_importances_,119
+numeric__V13,V13,0.001136091955,0.001136091955,,native random_forest feature_importances_,120
+categorical__id_31_chrome 63.0,id,0.001125452446,0.001125452446,,native random_forest feature_importances_,121
+categorical__ProductCD_R,ProductCD,0.001114474674,0.001114474674,,native random_forest feature_importances_,122
+numeric__V75,V75,0.001109866349,0.001109866349,,native random_forest feature_importances_,123
+numeric__V12,V12,0.001105305073,0.001105305073,,native random_forest feature_importances_,124
+numeric__V78,V78,0.001065737382,0.001065737382,,native random_forest feature_importances_,125
+numeric__V282,V282,0.001064619624,0.001064619624,,native random_forest feature_importances_,126
+numeric__V296,V296,0.00105839725,0.00105839725,,native random_forest feature_importances_,127
+numeric__D12,D12,0.001047425058,0.001047425058,,native random_forest feature_importances_,128
+numeric__V281,V281,0.00104650326,0.00104650326,,native random_forest feature_importances_,129
+categorical__card4_visa,card4,0.001043218116,0.001043218116,,native random_forest feature_importances_,130
+missing__missingindicator_D5,missingindicator_D5,0.001042702567,0.001042702567,,native random_forest feature_importances_,131
+categorical__M3_T,M3,0.001028531806,0.001028531806,,native random_forest feature_importances_,132
+numeric__V5,V5,0.0009801304626,0.0009801304626,,native random_forest feature_importances_,133
+numeric__D13,D13,0.0009780288308,0.0009780288308,,native random_forest feature_importances_,134
+categorical__M3_F,M3,0.0009689707373,0.0009689707373,,native random_forest feature_importances_,135
+categorical__ProductCD_H,ProductCD,0.0009607771735,0.0009607771735,,native random_forest feature_importances_,136
+numeric__V280,V280,0.0009239668923,0.0009239668923,,native random_forest feature_importances_,137
+categorical__card5_102.0,card5,0.0009018676478,0.0009018676478,,native random_forest feature_importances_,138
+numeric__id_14,id_14,0.0008679516574,0.0008679516574,,native random_forest feature_importances_,139
+numeric__V19,V19,0.0008413937853,0.0008413937853,,native random_forest feature_importances_,140
+categorical__card5_195.0,card5,0.0008251031566,0.0008251031566,,native random_forest feature_importances_,141
+categorical__M8_T,M8,0.0008008464077,0.0008008464077,,native random_forest feature_importances_,142
+missing__missingindicator_D2,missingindicator_D2,0.0007983527175,0.0007983527175,,native random_forest feature_importances_,143
+categorical__card5_117.0,card5,0.0007839453286,0.0007839453286,,native random_forest feature_importances_,144
+categorical__addr2___MISSING__,addr2,0.0007723324689,0.0007723324689,,native random_forest feature_importances_,145
+categorical__M2_F,M2,0.0007714159603,0.0007714159603,,native random_forest feature_importances_,146
+numeric__V67,V67,0.0007658087222,0.0007658087222,,native random_forest feature_importances_,147
+categorical__M8_F,M8,0.0007545599868,0.0007545599868,,native random_forest feature_importances_,148
+numeric__V86,V86,0.0007519857912,0.0007519857912,,native random_forest feature_importances_,149
+categorical__M9_F,M9,0.0007359513604,0.0007359513604,,native random_forest feature_importances_,150
+categorical__M9_T,M9,0.000721434494,0.000721434494,,native random_forest feature_importances_,151
+numeric__V333,V333,0.0007139738787,0.0007139738787,,native random_forest feature_importances_,152
+numeric__V37,V37,0.0007095294131,0.0007095294131,,native random_forest feature_importances_,153
+missing__missingindicator_D3,missingindicator_D3,0.0007075089899,0.0007075089899,,native random_forest feature_importances_,154
+numeric__V134,V134,0.0007030895874,0.0007030895874,,native random_forest feature_importances_,155
+numeric__D14,D14,0.000693586066,0.000693586066,,native random_forest feature_importances_,156
+numeric__V44,V44,0.0006898270543,0.0006898270543,,native random_forest feature_importances_,157
+numeric__V55,V55,0.0006760497142,0.0006760497142,,native random_forest feature_importances_,158
+categorical__card3_150.0,card3,0.0006736945114,0.0006736945114,,native random_forest feature_importances_,159
+numeric__V124,V124,0.0006587679652,0.0006587679652,,native random_forest feature_importances_,160
+numeric__V323,V323,0.0006467639699,0.0006467639699,,native random_forest feature_importances_,161
+categorical__DeviceType_desktop,DeviceType,0.000640117018,0.000640117018,,native random_forest feature_importances_,162
+categorical__id_33_1920x1080,id,0.000634589456,0.000634589456,,native random_forest feature_importances_,163
+numeric__V287,V287,0.0006198151575,0.0006198151575,,native random_forest feature_importances_,164
+numeric__V97,V97,0.000599574758,0.000599574758,,native random_forest feature_importances_,165
+categorical__card4_discover,card4,0.0005984479592,0.0005984479592,,native random_forest feature_importances_,166
+numeric__V298,V298,0.0005936148798,0.0005936148798,,native random_forest feature_importances_,167
+numeric__V26,V26,0.0005928003193,0.0005928003193,,native random_forest feature_importances_,168
+numeric__V4,V4,0.0005835936458,0.0005835936458,,native random_forest feature_importances_,169
+numeric__V77,V77,0.0005801419249,0.0005801419249,,native random_forest feature_importances_,170
+numeric__V332,V332,0.0005789378694,0.0005789378694,,native random_forest feature_importances_,171
+categorical__M2_T,M2,0.0005694181565,0.0005694181565,,native random_forest feature_importances_,172
+numeric__V66,V66,0.0005642587966,0.0005642587966,,native random_forest feature_importances_,173
+numeric__V132,V132,0.0005612448331,0.0005612448331,,native random_forest feature_importances_,174
+numeric__V316,V316,0.0005499963267,0.0005499963267,,native random_forest feature_importances_,175
+numeric__V289,V289,0.0005465124705,0.0005465124705,,native random_forest feature_importances_,176
+numeric__V103,V103,0.0005411295517,0.0005411295517,,native random_forest feature_importances_,177
+numeric__V137,V137,0.0005407878134,0.0005407878134,,native random_forest feature_importances_,178
+numeric__V165,V165,0.0005390766896,0.0005390766896,,native random_forest feature_importances_,179
+numeric__id_03,id_03,0.0005373479079,0.0005373479079,,native random_forest feature_importances_,180
+numeric__V321,V321,0.0005363024644,0.0005363024644,,native random_forest feature_importances_,181
+numeric__V160,V160,0.0005351962506,0.0005351962506,,native random_forest feature_importances_,182
+categorical__DeviceType_mobile,DeviceType,0.0005204824838,0.0005204824838,,native random_forest feature_importances_,183
+numeric__V7,V7,0.0005162241031,0.0005162241031,,native random_forest feature_importances_,184
+categorical__card5_126.0,card5,0.0005136910158,0.0005136910158,,native random_forest feature_importances_,185
+numeric__V206,V206,0.0004998718335,0.0004998718335,,native random_forest feature_importances_,186
+numeric__V262,V262,0.0004956094967,0.0004956094967,,native random_forest feature_importances_,187
+numeric__V292,V292,0.0004902411205,0.0004902411205,,native random_forest feature_importances_,188
+numeric__V74,V74,0.0004812877585,0.0004812877585,,native random_forest feature_importances_,189
+numeric__V268,V268,0.0004803687544,0.0004803687544,,native random_forest feature_importances_,190
+numeric__V203,V203,0.0004760147431,0.0004760147431,,native random_forest feature_importances_,191
+categorical__M6___MISSING__,M6,0.0004692722865,0.0004692722865,,native random_forest feature_importances_,192
+numeric__V24,V24,0.0004619311128,0.0004619311128,,native random_forest feature_importances_,193
+categorical__M7_T,M7,0.0004610601794,0.0004610601794,,native random_forest feature_importances_,194
+categorical__card5_219.0,card5,0.0004603060234,0.0004603060234,,native random_forest feature_importances_,195
+categorical__M7_F,M7,0.0004579683111,0.0004579683111,,native random_forest feature_importances_,196
+numeric__id_09,id_09,0.0004520614519,0.0004520614519,,native random_forest feature_importances_,197
+numeric__V267,V267,0.0004498621054,0.0004498621054,,native random_forest feature_importances_,198
+numeric__V135,V135,0.000442587274,0.000442587274,,native random_forest feature_importances_,199
+numeric__V324,V324,0.0004404167002,0.0004404167002,,native random_forest feature_importances_,200
+missing__missingindicator_D4,missingindicator_D4,0.0004368769847,0.0004368769847,,native random_forest feature_importances_,201
+numeric__V47,V47,0.0004312239705,0.0004312239705,,native random_forest feature_importances_,202
+categorical__card4_american express,card4,0.0004262336706,0.0004262336706,,native random_forest feature_importances_,203
+numeric__V49,V49,0.000420750467,0.000420750467,,native random_forest feature_importances_,204
+categorical__id_31_ie 11.0 for desktop,id,0.0004172540846,0.0004172540846,,native random_forest feature_importances_,205
+numeric__V300,V300,0.0004095561244,0.0004095561244,,native random_forest feature_importances_,206
+numeric__V3,V3,0.0004079243749,0.0004079243749,,native random_forest feature_importances_,207
+numeric__V209,V209,0.000400467109,0.000400467109,,native random_forest feature_importances_,208
+numeric__V266,V266,0.0003918895218,0.0003918895218,,native random_forest feature_importances_,209
+numeric__V115,V115,0.0003857624172,0.0003857624172,,native random_forest feature_importances_,210
+numeric__V319,V319,0.000374290344,0.000374290344,,native random_forest feature_importances_,211
+numeric__V105,V105,0.0003716884398,0.0003716884398,,native random_forest feature_importances_,212
+numeric__V143,V143,0.0003633615529,0.0003633615529,,native random_forest feature_importances_,213
+numeric__V234,V234,0.0003619064312,0.0003619064312,,native random_forest feature_importances_,214
+numeric__V81,V81,0.0003531480621,0.0003531480621,,native random_forest feature_importances_,215
+numeric__V279,V279,0.0003521208289,0.0003521208289,,native random_forest feature_importances_,216
+numeric__V290,V290,0.0003495276065,0.0003495276065,,native random_forest feature_importances_,217
+numeric__V244,V244,0.0003420406385,0.0003420406385,,native random_forest feature_importances_,218
+numeric__V48,V48,0.000340130766,0.000340130766,,native random_forest feature_importances_,219
+numeric__V164,V164,0.0003387122465,0.0003387122465,,native random_forest feature_importances_,220
+numeric__V25,V25,0.0003350040532,0.0003350040532,,native random_forest feature_importances_,221
+categorical__M5___MISSING__,M5,0.000330244042,0.000330244042,,native random_forest feature_importances_,222
+categorical__id_35_F,id,0.000327482391,0.000327482391,,native random_forest feature_importances_,223
+numeric__V6,V6,0.0003224993527,0.0003224993527,,native random_forest feature_importances_,224
+numeric__V145,V145,0.0003181030915,0.0003181030915,,native random_forest feature_importances_,225
+numeric__V288,V288,0.0003176232515,0.0003176232515,,native random_forest feature_importances_,226
+categorical__id_31_chrome 64.0 for android,id,0.0003147555616,0.0003147555616,,native random_forest feature_importances_,227
+numeric__id_11,id_11,0.0003131026176,0.0003131026176,,native random_forest feature_importances_,228
+categorical__id_38_T,id,0.0003129857934,0.0003129857934,,native random_forest feature_importances_,229
+numeric__V246,V246,0.0003121097231,0.0003121097231,,native random_forest feature_importances_,230
+numeric__V199,V199,0.0003117852269,0.0003117852269,,native random_forest feature_importances_,231
+numeric__V204,V204,0.0003117579392,0.0003117579392,,native random_forest feature_importances_,232
+missing__missingindicator_D15,missingindicator_D15,0.0003112248935,0.0003112248935,,native random_forest feature_importances_,233
+categorical__id_30_Windows 7,id,0.0003110717828,0.0003110717828,,native random_forest feature_importances_,234
+numeric__V286,V286,0.0003087358665,0.0003087358665,,native random_forest feature_importances_,235
+numeric__V33,V33,0.0003047535654,0.0003047535654,,native random_forest feature_importances_,236
+numeric__V187,V187,0.000304137144,0.000304137144,,native random_forest feature_importances_,237
+missing__missingindicator_D14,missingindicator_D14,0.0003014902661,0.0003014902661,,native random_forest feature_importances_,238
+categorical__id_34_match_status:2,id,0.0002995278847,0.0002995278847,,native random_forest feature_importances_,239
+numeric__V331,V331,0.0002987056688,0.0002987056688,,native random_forest feature_importances_,240
+numeric__V336,V336,0.0002965541264,0.0002965541264,,native random_forest feature_importances_,241
+categorical__id_15_New,id,0.0002936132981,0.0002936132981,,native random_forest feature_importances_,242
+numeric__V149,V149,0.0002921346702,0.0002921346702,,native random_forest feature_importances_,243
+numeric__V23,V23,0.0002907054057,0.0002907054057,,native random_forest feature_importances_,244
+numeric__V301,V301,0.0002866969315,0.0002866969315,,native random_forest feature_importances_,245
+numeric__V100,V100,0.0002830936391,0.0002830936391,,native random_forest feature_importances_,246
+categorical__card5_137.0,card5,0.0002807064034,0.0002807064034,,native random_forest feature_importances_,247
+numeric__V171,V171,0.0002777255817,0.0002777255817,,native random_forest feature_importances_,248
+numeric__V172,V172,0.0002757222797,0.0002757222797,,native random_forest feature_importances_,249
+numeric__V34,V34,0.0002748664234,0.0002748664234,,native random_forest feature_importances_,250
+numeric__V208,V208,0.0002739935463,0.0002739935463,,native random_forest feature_importances_,251
+categorical__id_31_chrome 65.0,id,0.0002719763531,0.0002719763531,,native random_forest feature_importances_,252
+categorical__card5_202.0,card5,0.0002653786333,0.0002653786333,,native random_forest feature_importances_,253
+numeric__V261,V261,0.000265004869,0.000265004869,,native random_forest feature_importances_,254
+numeric__V303,V303,0.0002644159556,0.0002644159556,,native random_forest feature_importances_,255
+categorical__id_34___MISSING__,id,0.0002634880943,0.0002634880943,,native random_forest feature_importances_,256
+categorical__M7___MISSING__,M7,0.0002627310597,0.0002627310597,,native random_forest feature_importances_,257
+numeric__V207,V207,0.0002625152919,0.0002625152919,,native random_forest feature_importances_,258
+missing__missingindicator_id_13,missingindicator_id_13,0.0002591672349,0.0002591672349,,native random_forest feature_importances_,259
+missing__missingindicator_D10,missingindicator_D10,0.0002582316414,0.0002582316414,,native random_forest feature_importances_,260
+numeric__V166,V166,0.0002534334722,0.0002534334722,,native random_forest feature_importances_,261
+numeric__V205,V205,0.000252733231,0.000252733231,,native random_forest feature_importances_,262
+categorical__id_38_F,id,0.0002516217856,0.0002516217856,,native random_forest feature_importances_,263
+numeric__V293,V293,0.000249873122,0.000249873122,,native random_forest feature_importances_,264
+categorical__M8___MISSING__,M8,0.0002497932487,0.0002497932487,,native random_forest feature_importances_,265
+numeric__V95,V95,0.0002484198219,0.0002484198219,,native random_forest feature_importances_,266
+numeric__V10,V10,0.0002438862193,0.0002438862193,,native random_forest feature_importances_,267
+numeric__V210,V210,0.0002413938852,0.0002413938852,,native random_forest feature_importances_,268
+categorical__card5_138.0,card5,0.0002402489818,0.0002402489818,,native random_forest feature_importances_,269
+categorical__M9___MISSING__,M9,0.0002397740281,0.0002397740281,,native random_forest feature_importances_,270
+missing__missingindicator_id_32,missingindicator_id_32,0.0002394764591,0.0002394764591,,native random_forest feature_importances_,271
+categorical__ProductCD_W,ProductCD,0.0002391653721,0.0002391653721,,native random_forest feature_importances_,272
+numeric__V11,V11,0.000234618222,0.000234618222,,native random_forest feature_importances_,273
+numeric__V322,V322,0.0002344047588,0.0002344047588,,native random_forest feature_importances_,274
+numeric__V202,V202,0.0002336658682,0.0002336658682,,native random_forest feature_importances_,275
+numeric__V274,V274,0.0002336524707,0.0002336524707,,native random_forest feature_importances_,276
+numeric__V2,V2,0.0002308527491,0.0002308527491,,native random_forest feature_importances_,277
+numeric__V170,V170,0.0002285528008,0.0002285528008,,native random_forest feature_importances_,278
+numeric__V271,V271,0.000226741692,0.000226741692,,native random_forest feature_importances_,279
+numeric__V212,V212,0.0002253685581,0.0002253685581,,native random_forest feature_importances_,280
+categorical__id_35_T,id,0.0002246262457,0.0002246262457,,native random_forest feature_importances_,281
+categorical__id_31_chrome 64.0,id,0.0002213103296,0.0002213103296,,native random_forest feature_importances_,282
+categorical__id_33_2208x1242,id,0.0002212013536,0.0002212013536,,native random_forest feature_importances_,283
+categorical__id_31_safari generic,id,0.0002204300407,0.0002204300407,,native random_forest feature_importances_,284
+numeric__V159,V159,0.0002199722962,0.0002199722962,,native random_forest feature_importances_,285
+numeric__id_32,id_32,0.0002174429909,0.0002174429909,,native random_forest feature_importances_,286
+numeric__V304,V304,0.000217112357,0.000217112357,,native random_forest feature_importances_,287
+categorical__id_30___MISSING__,id,0.0002166038982,0.0002166038982,,native random_forest feature_importances_,288
+numeric__V224,V224,0.0002160039247,0.0002160039247,,native random_forest feature_importances_,289
+numeric__V229,V229,0.0002150001801,0.0002150001801,,native random_forest feature_importances_,290
+categorical__id_31_mobile safari 11.0,id,0.0002130457998,0.0002130457998,,native random_forest feature_importances_,291
+numeric__V139,V139,0.0002129963704,0.0002129963704,,native random_forest feature_importances_,292
+numeric__V94,V94,0.0002128348453,0.0002128348453,,native random_forest feature_importances_,293
+numeric__V284,V284,0.0002089381878,0.0002089381878,,native random_forest feature_importances_,294
+numeric__V226,V226,0.0002081316788,0.0002081316788,,native random_forest feature_importances_,295
+numeric__V243,V243,0.0002061970052,0.0002061970052,,native random_forest feature_importances_,296
+numeric__V52,V52,0.0002040605579,0.0002040605579,,native random_forest feature_importances_,297
+categorical__id_33_1334x750,id,0.0002037206439,0.0002037206439,,native random_forest feature_importances_,298
+numeric__V156,V156,0.0002029609025,0.0002029609025,,native random_forest feature_importances_,299
+numeric__V109,V109,0.0002001001484,0.0002001001484,,native random_forest feature_importances_,300
+categorical__id_30_Windows 10,id,0.0001991082304,0.0001991082304,,native random_forest feature_importances_,301
+categorical__id_31_firefox,id,0.0001985019826,0.0001985019826,,native random_forest feature_importances_,302
+categorical__card5_162.0,card5,0.0001979067304,0.0001979067304,,native random_forest feature_importances_,303
+numeric__V51,V51,0.0001970981708,0.0001970981708,,native random_forest feature_importances_,304
+categorical__id_36_F,id,0.0001966653334,0.0001966653334,,native random_forest feature_importances_,305
+numeric__V40,V40,0.0001962224196,0.0001962224196,,native random_forest feature_importances_,306
+numeric__V222,V222,0.0001961903258,0.0001961903258,,native random_forest feature_importances_,307
+numeric__V270,V270,0.0001930211159,0.0001930211159,,native random_forest feature_importances_,308
+numeric__V152,V152,0.0001919514785,0.0001919514785,,native random_forest feature_importances_,309
+categorical__id_31_chrome generic,id,0.0001914434349,0.0001914434349,,native random_forest feature_importances_,310
+categorical__id_33_1280x720,id,0.0001913251668,0.0001913251668,,native random_forest feature_importances_,311
+numeric__V260,V260,0.0001904166657,0.0001904166657,,native random_forest feature_importances_,312
+numeric__V150,V150,0.0001885151759,0.0001885151759,,native random_forest feature_importances_,313
+categorical__id_31_mobile safari generic,id,0.0001883017476,0.0001883017476,,native random_forest feature_importances_,314
+categorical__id_16_NotFound,id,0.0001882407848,0.0001882407848,,native random_forest feature_importances_,315
+numeric__V98,V98,0.0001839872196,0.0001839872196,,native random_forest feature_importances_,316
+numeric__V169,V169,0.0001829867781,0.0001829867781,,native random_forest feature_importances_,317
+numeric__V272,V272,0.0001828284584,0.0001828284584,,native random_forest feature_importances_,318
+numeric__V85,V85,0.0001822151941,0.0001822151941,,native random_forest feature_importances_,319
+numeric__V43,V43,0.0001816823244,0.0001816823244,,native random_forest feature_importances_,320
+categorical__id_31_chrome 66.0,id,0.0001813784501,0.0001813784501,,native random_forest feature_importances_,321
+numeric__V221,V221,0.0001808738465,0.0001808738465,,native random_forest feature_importances_,322
+numeric__V73,V73,0.0001787527893,0.0001787527893,,native random_forest feature_importances_,323
+numeric__V140,V140,0.0001786310343,0.0001786310343,,native random_forest feature_importances_,324
+categorical__id_31_chrome 63.0 for android,id,0.0001777793707,0.0001777793707,,native random_forest feature_importances_,325
+numeric__V327,V327,0.0001762776545,0.0001762776545,,native random_forest feature_importances_,326
+numeric__V93,V93,0.0001758148868,0.0001758148868,,native random_forest feature_importances_,327
+categorical__M1_T,M1,0.0001737300494,0.0001737300494,,native random_forest feature_importances_,328
+numeric__V277,V277,0.0001731696547,0.0001731696547,,native random_forest feature_importances_,329
+missing__missingindicator_D11,missingindicator_D11,0.0001726867049,0.0001726867049,,native random_forest feature_importances_,330
+numeric__V245,V245,0.0001720996199,0.0001720996199,,native random_forest feature_importances_,331
+numeric__V46,V46,0.0001720113155,0.0001720113155,,native random_forest feature_importances_,332
+numeric__V225,V225,0.0001692186561,0.0001692186561,,native random_forest feature_importances_,333
+categorical__card5___MISSING__,card5,0.0001675783139,0.0001675783139,,native random_forest feature_importances_,334
+numeric__V125,V125,0.0001668576239,0.0001668576239,,native random_forest feature_importances_,335
+numeric__V275,V275,0.0001656623328,0.0001656623328,,native random_forest feature_importances_,336
+numeric__V173,V173,0.0001644048724,0.0001644048724,,native random_forest feature_importances_,337
+missing__missingindicator_D1,missingindicator_D1,0.0001628685675,0.0001628685675,,native random_forest feature_importances_,338
+numeric__V213,V213,0.0001626289791,0.0001626289791,,native random_forest feature_importances_,339
+numeric__V335,V335,0.000161158188,0.000161158188,,native random_forest feature_importances_,340
+numeric__V64,V64,0.0001604007273,0.0001604007273,,native random_forest feature_importances_,341
+numeric__V220,V220,0.0001585914821,0.0001585914821,,native random_forest feature_importances_,342
+numeric__V59,V59,0.0001578837932,0.0001578837932,,native random_forest feature_importances_,343
+categorical__id_30_Windows 8.1,id,0.0001556731619,0.0001556731619,,native random_forest feature_importances_,344
+numeric__V168,V168,0.0001550233332,0.0001550233332,,native random_forest feature_importances_,345
+numeric__V215,V215,0.0001547892141,0.0001547892141,,native random_forest feature_importances_,346
+categorical__id_31_chrome 65.0 for android,id,0.0001543604747,0.0001543604747,,native random_forest feature_importances_,347
+numeric__V211,V211,0.0001534614105,0.0001534614105,,native random_forest feature_importances_,348
+numeric__V273,V273,0.0001529227383,0.0001529227383,,native random_forest feature_importances_,349
+numeric__V101,V101,0.0001515608825,0.0001515608825,,native random_forest feature_importances_,350
+categorical__M3___MISSING__,M3,0.0001501076929,0.0001501076929,,native random_forest feature_importances_,351
+categorical__id_31_edge 16.0,id,0.0001481234486,0.0001481234486,,native random_forest feature_importances_,352
+numeric__V175,V175,0.0001469138292,0.0001469138292,,native random_forest feature_importances_,353
+categorical__card3_143.0,card3,0.0001448075186,0.0001448075186,,native random_forest feature_importances_,354
+numeric__V230,V230,0.0001447066764,0.0001447066764,,native random_forest feature_importances_,355
+numeric__V162,V162,0.0001442622114,0.0001442622114,,native random_forest feature_importances_,356
+numeric__V42,V42,0.0001421329801,0.0001421329801,,native random_forest feature_importances_,357
+numeric__V8,V8,0.0001410384394,0.0001410384394,,native random_forest feature_importances_,358
+numeric__V72,V72,0.0001410253044,0.0001410253044,,native random_forest feature_importances_,359
+numeric__V9,V9,0.0001397958805,0.0001397958805,,native random_forest feature_importances_,360
+categorical__id_16___MISSING__,id,0.0001363465368,0.0001363465368,,native random_forest feature_importances_,361
+numeric__V299,V299,0.0001355305884,0.0001355305884,,native random_forest feature_importances_,362
+categorical__id_37_T,id,0.0001345925661,0.0001345925661,,native random_forest feature_importances_,363
+categorical__id_33_1366x768,id,0.0001332201408,0.0001332201408,,native random_forest feature_importances_,364
+numeric__V176,V176,0.0001315359011,0.0001315359011,,native random_forest feature_importances_,365
+categorical__id_37_F,id,0.0001310764891,0.0001310764891,,native random_forest feature_importances_,366
+categorical__id_30_iOS 11.3.0,id,0.0001294630126,0.0001294630126,,native random_forest feature_importances_,367
+numeric__V216,V216,0.0001285422261,0.0001285422261,,native random_forest feature_importances_,368
+numeric__V60,V60,0.0001265495238,0.0001265495238,,native random_forest feature_importances_,369
+numeric__V106,V106,0.0001264471054,0.0001264471054,,native random_forest feature_importances_,370
+categorical__id_15_Unknown,id,0.0001260742118,0.0001260742118,,native random_forest feature_importances_,371
+numeric__V201,V201,0.0001252397482,0.0001252397482,,native random_forest feature_importances_,372
+numeric__V302,V302,0.0001212475555,0.0001212475555,,native random_forest feature_importances_,373
+numeric__V151,V151,0.0001196974617,0.0001196974617,,native random_forest feature_importances_,374
+numeric__V80,V80,0.0001185940153,0.0001185940153,,native random_forest feature_importances_,375
+numeric__V188,V188,0.0001184310801,0.0001184310801,,native random_forest feature_importances_,376
+numeric__V104,V104,0.0001181640935,0.0001181640935,,native random_forest feature_importances_,377
+numeric__V79,V79,0.0001157064543,0.0001157064543,,native random_forest feature_importances_,378
+categorical__id_33___MISSING__,id,0.0001140113886,0.0001140113886,,native random_forest feature_importances_,379
+categorical__id_31_chrome 62.0,id,0.0001135939481,0.0001135939481,,native random_forest feature_importances_,380
+categorical__M1___MISSING__,M1,0.0001130225656,0.0001130225656,,native random_forest feature_importances_,381
+numeric__V178,V178,0.0001113399506,0.0001113399506,,native random_forest feature_importances_,382
+numeric__V326,V326,0.0001109618327,0.0001109618327,,native random_forest feature_importances_,383
+categorical__addr2_60.0,addr2,0.0001093248988,0.0001093248988,,native random_forest feature_importances_,384
+numeric__V63,V63,0.0001093083908,0.0001093083908,,native random_forest feature_importances_,385
+categorical__id_33_2560x1600,id,0.0001086994868,0.0001086994868,,native random_forest feature_importances_,386
+numeric__V108,V108,0.0001076225757,0.0001076225757,,native random_forest feature_importances_,387
+numeric__V123,V123,0.0001075192015,0.0001075192015,,native random_forest feature_importances_,388
+categorical__M2___MISSING__,M2,0.0001069057618,0.0001069057618,,native random_forest feature_importances_,389
+categorical__id_28_New,id,0.0001064653353,0.0001064653353,,native random_forest feature_importances_,390
+numeric__V144,V144,0.000105900897,0.000105900897,,native random_forest feature_importances_,391
+numeric__V39,V39,0.000104973276,0.000104973276,,native random_forest feature_importances_,392
+categorical__id_15_Found,id,0.0001039201401,0.0001039201401,,native random_forest feature_importances_,393
+numeric__V259,V259,0.0001038354162,0.0001038354162,,native random_forest feature_importances_,394
+categorical__id_34_match_status:1,id,0.0001019958195,0.0001019958195,,native random_forest feature_importances_,395
+numeric__V116,V116,0.0001011769659,0.0001011769659,,native random_forest feature_importances_,396
+numeric__V214,V214,9.96558363e-05,9.96558363e-05,,native random_forest feature_importances_,397
+numeric__V148,V148,9.962980502e-05,9.962980502e-05,,native random_forest feature_importances_,398
+categorical__id_36_T,id,9.912387108e-05,9.912387108e-05,,native random_forest feature_importances_,399
+categorical__id_29_NotFound,id,9.873351823e-05,9.873351823e-05,,native random_forest feature_importances_,400
+numeric__V338,V338,9.808671338e-05,9.808671338e-05,,native random_forest feature_importances_,401
+missing__missingindicator_D12,missingindicator_D12,9.7384396e-05,9.7384396e-05,,native random_forest feature_importances_,402
+categorical__id_12_NotFound,id,9.548927054e-05,9.548927054e-05,,native random_forest feature_importances_,403
+numeric__V231,V231,9.511718046e-05,9.511718046e-05,,native random_forest feature_importances_,404
+categorical__id_33_2048x1536,id,9.509829677e-05,9.509829677e-05,,native random_forest feature_importances_,405
+numeric__V297,V297,9.490088379e-05,9.490088379e-05,,native random_forest feature_importances_,406
+categorical__card5_197.0,card5,9.407668374e-05,9.407668374e-05,,native random_forest feature_importances_,407
+numeric__V233,V233,9.398367137e-05,9.398367137e-05,,native random_forest feature_importances_,408
+numeric__V197,V197,9.301821372e-05,9.301821372e-05,,native random_forest feature_importances_,409
+numeric__V278,V278,9.191600254e-05,9.191600254e-05,,native random_forest feature_importances_,410
+categorical__card5_129.0,card5,9.172109767e-05,9.172109767e-05,,native random_forest feature_importances_,411
+numeric__V223,V223,9.146921293e-05,9.146921293e-05,,native random_forest feature_importances_,412
+numeric__V232,V232,9.059474377e-05,9.059474377e-05,,native random_forest feature_importances_,413
+categorical__id_31_firefox 59.0,id,9.016406623e-05,9.016406623e-05,,native random_forest feature_importances_,414
+categorical__card3_144.0,card3,9.00053074e-05,9.00053074e-05,,native random_forest feature_importances_,415
+numeric__V228,V228,8.971451211e-05,8.971451211e-05,,native random_forest feature_importances_,416
+numeric__V269,V269,8.959415203e-05,8.959415203e-05,,native random_forest feature_importances_,417
+missing__missingindicator_D13,missingindicator_D13,8.884626653e-05,8.884626653e-05,,native random_forest feature_importances_,418
+numeric__V177,V177,8.864813743e-05,8.864813743e-05,,native random_forest feature_importances_,419
+numeric__V110,V110,8.841221867e-05,8.841221867e-05,,native random_forest feature_importances_,420
+categorical__id_31_chrome 52.0 for android,id,8.784214744e-05,8.784214744e-05,,native random_forest feature_importances_,421
+numeric__V158,V158,8.766565291e-05,8.766565291e-05,,native random_forest feature_importances_,422
+categorical__card3_119.0,card3,8.764266795e-05,8.764266795e-05,,native random_forest feature_importances_,423
+categorical__ProductCD_S,ProductCD,8.717436191e-05,8.717436191e-05,,native random_forest feature_importances_,424
+numeric__V200,V200,8.674565161e-05,8.674565161e-05,,native random_forest feature_importances_,425
+numeric__V163,V163,8.652264412e-05,8.652264412e-05,,native random_forest feature_importances_,426
+numeric__V189,V189,8.600941255e-05,8.600941255e-05,,native random_forest feature_importances_,427
+numeric__V256,V256,8.468167457e-05,8.468167457e-05,,native random_forest feature_importances_,428
+numeric__V22,V22,8.432683074e-05,8.432683074e-05,,native random_forest feature_importances_,429
+categorical__id_31_firefox 57.0,id,8.421984318e-05,8.421984318e-05,,native random_forest feature_importances_,430
+numeric__V167,V167,8.36622714e-05,8.36622714e-05,,native random_forest feature_importances_,431
+numeric__V276,V276,8.311091706e-05,8.311091706e-05,,native random_forest feature_importances_,432
+categorical__id_30_Linux,id,8.231099319e-05,8.231099319e-05,,native random_forest feature_importances_,433
+categorical__id_12___MISSING__,id,8.201270037e-05,8.201270037e-05,,native random_forest feature_importances_,434
+numeric__V161,V161,8.130733428e-05,8.130733428e-05,,native random_forest feature_importances_,435
+categorical__id_33_1360x768,id,8.058426698e-05,8.058426698e-05,,native random_forest feature_importances_,436
+categorical__id_30_Mac OS X 10_11_6,id,7.994821003e-05,7.994821003e-05,,native random_forest feature_importances_,437
+numeric__V92,V92,7.987806508e-05,7.987806508e-05,,native random_forest feature_importances_,438
+numeric__V71,V71,7.92325462e-05,7.92325462e-05,,native random_forest feature_importances_,439
+categorical__id_33_1440x900,id,7.920771132e-05,7.920771132e-05,,native random_forest feature_importances_,440
+categorical__id_31_chrome 62.0 for android,id,7.879039741e-05,7.879039741e-05,,native random_forest feature_importances_,441
+numeric__V251,V251,7.8408049e-05,7.8408049e-05,,native random_forest feature_importances_,442
+numeric__V114,V114,7.801412233e-05,7.801412233e-05,,native random_forest feature_importances_,443
+categorical__id_28_Found,id,7.670121744e-05,7.670121744e-05,,native random_forest feature_importances_,444
+categorical__id_31_chrome 49.0,id,7.451780458e-05,7.451780458e-05,,native random_forest feature_importances_,445
+numeric__V179,V179,7.413507066e-05,7.413507066e-05,,native random_forest feature_importances_,446
+categorical__id_30_Android,id,7.297787587e-05,7.297787587e-05,,native random_forest feature_importances_,447
+numeric__V253,V253,7.287389567e-05,7.287389567e-05,,native random_forest feature_importances_,448
+numeric__V255,V255,7.121111211e-05,7.121111211e-05,,native random_forest feature_importances_,449
+numeric__V58,V58,7.089668299e-05,7.089668299e-05,,native random_forest feature_importances_,450
+categorical__id_30_Mac OS X 10_12_6,id,7.067702361e-05,7.067702361e-05,,native random_forest feature_importances_,451
+numeric__V32,V32,6.976745245e-05,6.976745245e-05,,native random_forest feature_importances_,452
+categorical__card5_185.0,card5,6.867376602e-05,6.867376602e-05,,native random_forest feature_importances_,453
+numeric__V250,V250,6.850464011e-05,6.850464011e-05,,native random_forest feature_importances_,454
+categorical__id_33_1600x900,id,6.839147241e-05,6.839147241e-05,,native random_forest feature_importances_,455
+numeric__V227,V227,6.825439685e-05,6.825439685e-05,,native random_forest feature_importances_,456
+missing__missingindicator_D6,missingindicator_D6,6.815673585e-05,6.815673585e-05,,native random_forest feature_importances_,457
+numeric__V122,V122,6.777570842e-05,6.777570842e-05,,native random_forest feature_importances_,458
+categorical__id_30_iOS 11.2.6,id,6.66600536e-05,6.66600536e-05,,native random_forest feature_importances_,459
+categorical__id_33_3840x2160,id,6.615107332e-05,6.615107332e-05,,native random_forest feature_importances_,460
+categorical__card5_135.0,card5,6.598117055e-05,6.598117055e-05,,native random_forest feature_importances_,461
+categorical__id_30_Windows 8,id,6.595496993e-05,6.595496993e-05,,native random_forest feature_importances_,462
+categorical__card3_106.0,card3,6.526608398e-05,6.526608398e-05,,native random_forest feature_importances_,463
+categorical__id_33_2560x1440,id,6.504598654e-05,6.504598654e-05,,native random_forest feature_importances_,464
+missing__missingindicator_id_04,missingindicator_id_04,6.483078486e-05,6.483078486e-05,,native random_forest feature_importances_,465
+categorical__card5_223.0,card5,6.475110946e-05,6.475110946e-05,,native random_forest feature_importances_,466
+numeric__id_10,id_10,6.4673778e-05,6.4673778e-05,,native random_forest feature_importances_,467
+numeric__V18,V18,6.466760068e-05,6.466760068e-05,,native random_forest feature_importances_,468
+categorical__id_31_mobile safari 10.0,id,6.459425144e-05,6.459425144e-05,,native random_forest feature_importances_,469
+missing__missingindicator_id_06,missingindicator_id_06,6.407027833e-05,6.407027833e-05,,native random_forest feature_importances_,470
+categorical__id_33_855x480,id,6.3307291e-05,6.3307291e-05,,native random_forest feature_importances_,471
+categorical__id_31_chrome 66.0 for android,id,6.298942778e-05,6.298942778e-05,,native random_forest feature_importances_,472
+numeric__V84,V84,6.262733192e-05,6.262733192e-05,,native random_forest feature_importances_,473
+numeric__V248,V248,6.228581077e-05,6.228581077e-05,,native random_forest feature_importances_,474
+missing__missingindicator_id_03,missingindicator_id_03,6.221221973e-05,6.221221973e-05,,native random_forest feature_importances_,475
+missing__missingindicator_id_05,missingindicator_id_05,6.220045261e-05,6.220045261e-05,,native random_forest feature_importances_,476
+numeric__V21,V21,6.144294675e-05,6.144294675e-05,,native random_forest feature_importances_,477
+numeric__V180,V180,6.140269001e-05,6.140269001e-05,,native random_forest feature_importances_,478
+categorical__id_30_iOS 11.2.1,id,6.043973691e-05,6.043973691e-05,,native random_forest feature_importances_,479
+categorical__id_30_iOS 11.1.2,id,6.020248147e-05,6.020248147e-05,,native random_forest feature_importances_,480
+categorical__id_33_960x540,id,5.995888723e-05,5.995888723e-05,,native random_forest feature_importances_,481
+categorical__id_30_iOS 11.2.0,id,5.977482977e-05,5.977482977e-05,,native random_forest feature_importances_,482
+categorical__id_16_Found,id,5.967608538e-05,5.967608538e-05,,native random_forest feature_importances_,483
+categorical__id_31_samsung browser 6.2,id,5.958485696e-05,5.958485696e-05,,native random_forest feature_importances_,484
+categorical__id_30_iOS 10.2.1,id,5.954113629e-05,5.954113629e-05,,native random_forest feature_importances_,485
+numeric__V153,V153,5.861070631e-05,5.861070631e-05,,native random_forest feature_importances_,486
+categorical__id_30_Mac OS X 10_13_1,id,5.596866604e-05,5.596866604e-05,,native random_forest feature_importances_,487
+numeric__V192,V192,5.58617409e-05,5.58617409e-05,,native random_forest feature_importances_,488
+numeric__V249,V249,5.578769676e-05,5.578769676e-05,,native random_forest feature_importances_,489
+numeric__V337,V337,5.546270343e-05,5.546270343e-05,,native random_forest feature_importances_,490
+categorical__card3_146.0,card3,5.5437911e-05,5.5437911e-05,,native random_forest feature_importances_,491
+numeric__V121,V121,5.449935928e-05,5.449935928e-05,,native random_forest feature_importances_,492
+categorical__id_31_chrome 56.0 for android,id,5.407632577e-05,5.407632577e-05,,native random_forest feature_importances_,493
+numeric__V185,V185,5.39776922e-05,5.39776922e-05,,native random_forest feature_importances_,494
+numeric__V339,V339,5.361151564e-05,5.361151564e-05,,native random_forest feature_importances_,495
+numeric__V112,V112,5.270490219e-05,5.270490219e-05,,native random_forest feature_importances_,496
+categorical__id_31_edge 13.0,id,5.189432999e-05,5.189432999e-05,,native random_forest feature_importances_,497
+categorical__id_30_iOS 11.0.3,id,5.132227555e-05,5.132227555e-05,,native random_forest feature_importances_,498
+numeric__V184,V184,5.091821333e-05,5.091821333e-05,,native random_forest feature_importances_,499
+numeric__V155,V155,5.083989557e-05,5.083989557e-05,,native random_forest feature_importances_,500
+numeric__V57,V57,5.014520209e-05,5.014520209e-05,,native random_forest feature_importances_,501
+missing__missingindicator_id_01,missingindicator_id_01,4.953637245e-05,4.953637245e-05,,native random_forest feature_importances_,502
+numeric__V334,V334,4.949368049e-05,4.949368049e-05,,native random_forest feature_importances_,503
+numeric__V194,V194,4.923176381e-05,4.923176381e-05,,native random_forest feature_importances_,504
+missing__missingindicator_D9,missingindicator_D9,4.834432529e-05,4.834432529e-05,,native random_forest feature_importances_,505
+numeric__V182,V182,4.807264472e-05,4.807264472e-05,,native random_forest feature_importances_,506
+categorical__card5_194.0,card5,4.797421818e-05,4.797421818e-05,,native random_forest feature_importances_,507
+categorical__DeviceType___MISSING__,DeviceType,4.700465631e-05,4.700465631e-05,,native random_forest feature_importances_,508
+categorical__card5_146.0,card5,4.697425897e-05,4.697425897e-05,,native random_forest feature_importances_,509
+numeric__V17,V17,4.655290443e-05,4.655290443e-05,,native random_forest feature_importances_,510
+categorical__id_31___MISSING__,id,4.548137013e-05,4.548137013e-05,,native random_forest feature_importances_,511
+numeric__V254,V254,4.541244989e-05,4.541244989e-05,,native random_forest feature_importances_,512
+numeric__V138,V138,4.512453584e-05,4.512453584e-05,,native random_forest feature_importances_,513
+numeric__V157,V157,4.475713651e-05,4.475713651e-05,,native random_forest feature_importances_,514
+categorical__id_30_iOS 10.3.2,id,4.436688928e-05,4.436688928e-05,,native random_forest feature_importances_,515
+numeric__V239,V239,4.387542393e-05,4.387542393e-05,,native random_forest feature_importances_,516
+categorical__id_30_iOS 10.3.3,id,4.362837949e-05,4.362837949e-05,,native random_forest feature_importances_,517
+numeric__V181,V181,4.35403846e-05,4.35403846e-05,,native random_forest feature_importances_,518
+categorical__id_33_2436x1125,id,4.336654824e-05,4.336654824e-05,,native random_forest feature_importances_,519
+categorical__id_29_Found,id,4.285829786e-05,4.285829786e-05,,native random_forest feature_importances_,520
+categorical__id_30_iOS 11.2.2,id,4.259832938e-05,4.259832938e-05,,native random_forest feature_importances_,521
+numeric__C3,C3,4.241515511e-05,4.241515511e-05,,native random_forest feature_importances_,522
+categorical__card5_229.0,card5,4.186817644e-05,4.186817644e-05,,native random_forest feature_importances_,523
+categorical__id_31_chrome generic for android,id,4.133772546e-05,4.133772546e-05,,native random_forest feature_importances_,524
+numeric__V236,V236,4.127011341e-05,4.127011341e-05,,native random_forest feature_importances_,525
+categorical__id_33_1280x800,id,4.125675363e-05,4.125675363e-05,,native random_forest feature_importances_,526
+categorical__id_31_chrome 58.0 for android,id,4.122095647e-05,4.122095647e-05,,native random_forest feature_importances_,527
+categorical__card3___MISSING__,card3,4.06553129e-05,4.06553129e-05,,native random_forest feature_importances_,528
+numeric__V186,V186,4.038048798e-05,4.038048798e-05,,native random_forest feature_importances_,529
+categorical__id_30_iOS 11.0.1,id,3.998885048e-05,3.998885048e-05,,native random_forest feature_importances_,530
+categorical__card5_118.0,card5,3.947315349e-05,3.947315349e-05,,native random_forest feature_importances_,531
+numeric__V190,V190,3.91048321e-05,3.91048321e-05,,native random_forest feature_importances_,532
+numeric__V147,V147,3.83879419e-05,3.83879419e-05,,native random_forest feature_importances_,533
+numeric__V16,V16,3.718443343e-05,3.718443343e-05,,native random_forest feature_importances_,534
+categorical__card5_228.0,card5,3.717699312e-05,3.717699312e-05,,native random_forest feature_importances_,535
+missing__missingindicator_D8,missingindicator_D8,3.707775894e-05,3.707775894e-05,,native random_forest feature_importances_,536
+numeric__V146,V146,3.662892601e-05,3.662892601e-05,,native random_forest feature_importances_,537
+categorical__id_31_samsung browser generic,id,3.654634004e-05,3.654634004e-05,,native random_forest feature_importances_,538
+categorical__card6___MISSING__,card6,3.652882363e-05,3.652882363e-05,,native random_forest feature_importances_,539
+categorical__id_31_android browser 4.0,id,3.644446676e-05,3.644446676e-05,,native random_forest feature_importances_,540
+categorical__id_31_android webview 4.0,id,3.620429517e-05,3.620429517e-05,,native random_forest feature_importances_,541
+categorical__card5_150.0,card5,3.588848696e-05,3.588848696e-05,,native random_forest feature_importances_,542
+categorical__id_31_edge 15.0,id,3.563424408e-05,3.563424408e-05,,native random_forest feature_importances_,543
+numeric__V142,V142,3.540617284e-05,3.540617284e-05,,native random_forest feature_importances_,544
+categorical__id_30_Mac OS X 10_13_4,id,3.512662295e-05,3.512662295e-05,,native random_forest feature_importances_,545
+numeric__V141,V141,3.406824887e-05,3.406824887e-05,,native random_forest feature_importances_,546
+numeric__V183,V183,3.40152506e-05,3.40152506e-05,,native random_forest feature_importances_,547
+categorical__id_33_1920x1200,id,3.358873639e-05,3.358873639e-05,,native random_forest feature_importances_,548
+missing__missingindicator_id_10,missingindicator_id_10,3.329492404e-05,3.329492404e-05,,native random_forest feature_importances_,549
+categorical__card4___MISSING__,card4,3.278451264e-05,3.278451264e-05,,native random_forest feature_importances_,550
+numeric__V238,V238,3.269364874e-05,3.269364874e-05,,native random_forest feature_importances_,551
+categorical__id_12_Found,id,3.260510346e-05,3.260510346e-05,,native random_forest feature_importances_,552
+categorical__id_30_iOS 11.0.2,id,3.231446303e-05,3.231446303e-05,,native random_forest feature_importances_,553
+numeric__V31,V31,3.208430506e-05,3.208430506e-05,,native random_forest feature_importances_,554
+missing__missingindicator_id_09,missingindicator_id_09,3.085796355e-05,3.085796355e-05,,native random_forest feature_importances_,555
+categorical__id_31_chrome 60.0 for android,id,3.017587444e-05,3.017587444e-05,,native random_forest feature_importances_,556
+categorical__id_33_1136x640,id,3.003313853e-05,3.003313853e-05,,native random_forest feature_importances_,557
+numeric__V235,V235,2.97762192e-05,2.97762192e-05,,native random_forest feature_importances_,558
+numeric__V193,V193,2.964801799e-05,2.964801799e-05,,native random_forest feature_importances_,559
+categorical__id_31_chrome 50.0 for android,id,2.935960939e-05,2.935960939e-05,,native random_forest feature_importances_,560
+numeric__V242,V242,2.91419544e-05,2.91419544e-05,,native random_forest feature_importances_,561
+numeric__V154,V154,2.903251496e-05,2.903251496e-05,,native random_forest feature_importances_,562
+categorical__id_30_Mac OS X 10_10_5,id,2.859363435e-05,2.859363435e-05,,native random_forest feature_importances_,563
+numeric__V329,V329,2.850886932e-05,2.850886932e-05,,native random_forest feature_importances_,564
+categorical__id_33_2220x1081,id,2.78308104e-05,2.78308104e-05,,native random_forest feature_importances_,565
+categorical__id_33_1680x1050,id,2.771765953e-05,2.771765953e-05,,native random_forest feature_importances_,566
+categorical__card3_212.0,card3,2.74025523e-05,2.74025523e-05,,native random_forest feature_importances_,567
+numeric__V195,V195,2.697837028e-05,2.697837028e-05,,native random_forest feature_importances_,568
+categorical__id_30_iOS,id,2.694633094e-05,2.694633094e-05,,native random_forest feature_importances_,569
+numeric__V111,V111,2.669678216e-05,2.669678216e-05,,native random_forest feature_importances_,570
+categorical__id_30_Android 7.0,id,2.65227643e-05,2.65227643e-05,,native random_forest feature_importances_,571
+categorical__id_30_iOS 11.2.5,id,2.6371981e-05,2.6371981e-05,,native random_forest feature_importances_,572
+missing__missingindicator_id_19,missingindicator_id_19,2.630967628e-05,2.630967628e-05,,native random_forest feature_importances_,573
+categorical__id_31_chrome 55.0 for android,id,2.626125444e-05,2.626125444e-05,,native random_forest feature_importances_,574
+numeric__V237,V237,2.625582084e-05,2.625582084e-05,,native random_forest feature_importances_,575
+categorical__id_31_chrome 61.0 for android,id,2.564771161e-05,2.564771161e-05,,native random_forest feature_importances_,576
+categorical__id_30_iOS 10.3.1,id,2.521353116e-05,2.521353116e-05,,native random_forest feature_importances_,577
+categorical__card3_117.0,card3,2.505428478e-05,2.505428478e-05,,native random_forest feature_importances_,578
+numeric__V118,V118,2.492276698e-05,2.492276698e-05,,native random_forest feature_importances_,579
+categorical__id_31_chrome 57.0,id,2.480502245e-05,2.480502245e-05,,native random_forest feature_importances_,580
+categorical__id_33_2160x1440,id,2.478386116e-05,2.478386116e-05,,native random_forest feature_importances_,581
+numeric__V113,V113,2.473324307e-05,2.473324307e-05,,native random_forest feature_importances_,582
+categorical__id_30_Mac OS X 10_13_3,id,2.438380512e-05,2.438380512e-05,,native random_forest feature_importances_,583
+categorical__card5_236.0,card5,2.419120277e-05,2.419120277e-05,,native random_forest feature_importances_,584
+numeric__V247,V247,2.340573088e-05,2.340573088e-05,,native random_forest feature_importances_,585
+numeric__V252,V252,2.324496303e-05,2.324496303e-05,,native random_forest feature_importances_,586
+categorical__id_33_2220x1080,id,2.303668774e-05,2.303668774e-05,,native random_forest feature_importances_,587
+categorical__id_31_Samsung/SM-G531H,id,2.294702657e-05,2.294702657e-05,,native random_forest feature_importances_,588
+categorical__id_31_chrome 61.0,id,2.286524893e-05,2.286524893e-05,,native random_forest feature_importances_,589
+categorical__card5_133.0,card5,2.279824284e-05,2.279824284e-05,,native random_forest feature_importances_,590
+categorical__id_31_firefox 58.0,id,2.27269638e-05,2.27269638e-05,,native random_forest feature_importances_,591
+categorical__card5_198.0,card5,2.268928044e-05,2.268928044e-05,,native random_forest feature_importances_,592
+categorical__id_30_Mac OS X 10.12,id,2.262394768e-05,2.262394768e-05,,native random_forest feature_importances_,593
+numeric__V174,V174,2.212253198e-05,2.212253198e-05,,native random_forest feature_importances_,594
+categorical__id_30_Android 7.1.1,id,2.147900036e-05,2.147900036e-05,,native random_forest feature_importances_,595
+categorical__id_34_match_status:0,id,2.113939182e-05,2.113939182e-05,,native random_forest feature_importances_,596
+categorical__id_33_2880x1800,id,2.080676391e-05,2.080676391e-05,,native random_forest feature_importances_,597
+categorical__id_31_samsung browser 6.4,id,2.040406384e-05,2.040406384e-05,,native random_forest feature_importances_,598
+numeric__V198,V198,1.989591282e-05,1.989591282e-05,,native random_forest feature_importances_,599
+categorical__card5_232.0,card5,1.987654848e-05,1.987654848e-05,,native random_forest feature_importances_,600
+categorical__card5_141.0,card5,1.986094195e-05,1.986094195e-05,,native random_forest feature_importances_,601
+categorical__id_31_safari 11.0,id,1.968323585e-05,1.968323585e-05,,native random_forest feature_importances_,602
+categorical__id_30_iOS 10.2.0,id,1.878718157e-05,1.878718157e-05,,native random_forest feature_importances_,603
+numeric__V50,V50,1.803846511e-05,1.803846511e-05,,native random_forest feature_importances_,604
+numeric__V196,V196,1.792144498e-05,1.792144498e-05,,native random_forest feature_importances_,605
+numeric__id_04,id_04,1.781599836e-05,1.781599836e-05,,native random_forest feature_importances_,606
+categorical__id_33_1024x768,id,1.767863482e-05,1.767863482e-05,,native random_forest feature_importances_,607
+categorical__id_33_2001x1125,id,1.74444159e-05,1.74444159e-05,,native random_forest feature_importances_,608
+categorical__addr2_65.0,addr2,1.666546615e-05,1.666546615e-05,,native random_forest feature_importances_,609
+categorical__id_30_Mac OS X 10_13_2,id,1.653409716e-05,1.653409716e-05,,native random_forest feature_importances_,610
+categorical__id_30_iOS 11.1.1,id,1.59270635e-05,1.59270635e-05,,native random_forest feature_importances_,611
+categorical__id_30_Android 6.0.1,id,1.589437841e-05,1.589437841e-05,,native random_forest feature_importances_,612
+numeric__V15,V15,1.582081092e-05,1.582081092e-05,,native random_forest feature_importances_,613
+categorical__card5_147.0,card5,1.57674907e-05,1.57674907e-05,,native random_forest feature_importances_,614
+categorical__id_33_2224x1668,id,1.483817109e-05,1.483817109e-05,,native random_forest feature_importances_,615
+numeric__V328,V328,1.474317848e-05,1.474317848e-05,,native random_forest feature_importances_,616
+categorical__id_31_edge 14.0,id,1.465162494e-05,1.465162494e-05,,native random_forest feature_importances_,617
+categorical__card3_177.0,card3,1.462107572e-05,1.462107572e-05,,native random_forest feature_importances_,618
+categorical__id_30_Android 5.1.1,id,1.445786519e-05,1.445786519e-05,,native random_forest feature_importances_,619
+numeric__V330,V330,1.421285785e-05,1.421285785e-05,,native random_forest feature_importances_,620
+numeric__V191,V191,1.394786726e-05,1.394786726e-05,,native random_forest feature_importances_,621
+categorical__card3_121.0,card3,1.389901879e-05,1.389901879e-05,,native random_forest feature_importances_,622
+categorical__id_30_Windows Vista,id,1.364299327e-05,1.364299327e-05,,native random_forest feature_importances_,623
+categorical__id_31_ie 11.0 for tablet,id,1.34517461e-05,1.34517461e-05,,native random_forest feature_importances_,624
+categorical__id_33_1280x1024,id,1.337040169e-05,1.337040169e-05,,native random_forest feature_importances_,625
+categorical__id_30_iOS 9.3.5,id,1.327660837e-05,1.327660837e-05,,native random_forest feature_importances_,626
+categorical__id_30_Android 4.4.2,id,1.30798798e-05,1.30798798e-05,,native random_forest feature_importances_,627
+categorical__card3_188.0,card3,1.278503587e-05,1.278503587e-05,,native random_forest feature_importances_,628
+numeric__V240,V240,1.277830457e-05,1.277830457e-05,,native random_forest feature_importances_,629
+categorical__card5_203.0,card5,1.270612605e-05,1.270612605e-05,,native random_forest feature_importances_,630
+categorical__card3_102.0,card3,1.244362947e-05,1.244362947e-05,,native random_forest feature_importances_,631
+categorical__id_33_1536x864,id,1.223206591e-05,1.223206591e-05,,native random_forest feature_importances_,632
+categorical__card5_144.0,card5,1.219739496e-05,1.219739496e-05,,native random_forest feature_importances_,633
+categorical__id_30_Android 8.0.0,id,1.181439018e-05,1.181439018e-05,,native random_forest feature_importances_,634
+categorical__id_30_Mac OS X 10_9_5,id,1.145133849e-05,1.145133849e-05,,native random_forest feature_importances_,635
+categorical__id_30_iOS 11.1.0,id,1.145077087e-05,1.145077087e-05,,native random_forest feature_importances_,636
+categorical__id_31_chrome 58.0,id,1.136519208e-05,1.136519208e-05,,native random_forest feature_importances_,637
+categorical__id_31_other,id,1.112084713e-05,1.112084713e-05,,native random_forest feature_importances_,638
+categorical__card3_131.0,card3,1.072994123e-05,1.072994123e-05,,native random_forest feature_importances_,639
+categorical__id_31_mobile safari 9.0,id,1.053997332e-05,1.053997332e-05,,native random_forest feature_importances_,640
+categorical__id_37___MISSING__,id,1.034258514e-05,1.034258514e-05,,native random_forest feature_importances_,641
+missing__missingindicator_id_20,missingindicator_id_20,1.025070722e-05,1.025070722e-05,,native random_forest feature_importances_,642
+categorical__id_33_1440x810,id,9.603735583e-06,9.603735583e-06,,native random_forest feature_importances_,643
+categorical__id_31_edge,id,9.524689282e-06,9.524689282e-06,,native random_forest feature_importances_,644
+categorical__id_38___MISSING__,id,9.219960859e-06,9.219960859e-06,,native random_forest feature_importances_,645
+categorical__id_31_firefox 55.0,id,9.080562256e-06,9.080562256e-06,,native random_forest feature_importances_,646
+categorical__id_28___MISSING__,id,8.884511549e-06,8.884511549e-06,,native random_forest feature_importances_,647
+categorical__id_31_firefox 56.0,id,8.836627885e-06,8.836627885e-06,,native random_forest feature_importances_,648
+categorical__card5_190.0,card5,8.817923022e-06,8.817923022e-06,,native random_forest feature_importances_,649
+categorical__id_31_google search application 49.0,id,8.603039455e-06,8.603039455e-06,,native random_forest feature_importances_,650
+categorical__card3_127.0,card3,8.533030308e-06,8.533030308e-06,,native random_forest feature_importances_,651
+categorical__card5_100.0,card5,8.21298757e-06,8.21298757e-06,,native random_forest feature_importances_,652
+categorical__card5_183.0,card5,7.984392883e-06,7.984392883e-06,,native random_forest feature_importances_,653
+categorical__card3_213.0,card3,7.97859695e-06,7.97859695e-06,,native random_forest feature_importances_,654
+categorical__id_33_1365x768,id,7.951320805e-06,7.951320805e-06,,native random_forest feature_importances_,655
+numeric__V117,V117,7.925214076e-06,7.925214076e-06,,native random_forest feature_importances_,656
+missing__missingindicator_id_17,missingindicator_id_17,7.677232505e-06,7.677232505e-06,,native random_forest feature_importances_,657
+categorical__id_33_2560x1080,id,7.619356691e-06,7.619356691e-06,,native random_forest feature_importances_,658
+categorical__id_30_Mac OS X 10.13,id,7.613567888e-06,7.613567888e-06,,native random_forest feature_importances_,659
+categorical__id_31_mobile safari uiwebview,id,7.530873349e-06,7.530873349e-06,,native random_forest feature_importances_,660
+categorical__id_31_firefox generic,id,7.511214535e-06,7.511214535e-06,,native random_forest feature_importances_,661
+numeric__V65,V65,7.219075718e-06,7.219075718e-06,,native random_forest feature_importances_,662
+categorical__id_36___MISSING__,id,7.184927585e-06,7.184927585e-06,,native random_forest feature_importances_,663
+missing__missingindicator_id_11,missingindicator_id_11,6.871461544e-06,6.871461544e-06,,native random_forest feature_importances_,664
+numeric__V120,V120,6.870420731e-06,6.870420731e-06,,native random_forest feature_importances_,665
+categorical__id_33_5120x2880,id,6.716739841e-06,6.716739841e-06,,native random_forest feature_importances_,666
+categorical__id_35___MISSING__,id,6.62442939e-06,6.62442939e-06,,native random_forest feature_importances_,667
+categorical__card3_147.0,card3,6.376034766e-06,6.376034766e-06,,native random_forest feature_importances_,668
+categorical__id_31_mobile,id,6.324045269e-06,6.324045269e-06,,native random_forest feature_importances_,669
+categorical__id_31_chrome,id,6.03378791e-06,6.03378791e-06,,native random_forest feature_importances_,670
+missing__missingindicator_id_02,missingindicator_id_02,5.658303642e-06,5.658303642e-06,,native random_forest feature_importances_,671
+categorical__id_31_chrome 59.0 for android,id,5.564754795e-06,5.564754795e-06,,native random_forest feature_importances_,672
+numeric__V119,V119,5.500902699e-06,5.500902699e-06,,native random_forest feature_importances_,673
+numeric__V325,V325,5.4359404e-06,5.4359404e-06,,native random_forest feature_importances_,674
+categorical__id_31_Generic/Android 7.0,id,5.3472543e-06,5.3472543e-06,,native random_forest feature_importances_,675
+categorical__id_33_3360x2100,id,5.253847134e-06,5.253847134e-06,,native random_forest feature_importances_,676
+categorical__card3_162.0,card3,4.947793116e-06,4.947793116e-06,,native random_forest feature_importances_,677
+categorical__id_31_firefox 52.0,id,4.673266275e-06,4.673266275e-06,,native random_forest feature_importances_,678
+categorical__id_29___MISSING__,id,4.461907106e-06,4.461907106e-06,,native random_forest feature_importances_,679
+categorical__addr2_96.0,addr2,4.206411552e-06,4.206411552e-06,,native random_forest feature_importances_,680
+categorical__id_31_chrome 67.0,id,3.867618716e-06,3.867618716e-06,,native random_forest feature_importances_,681
+categorical__card5_119.0,card5,3.627575982e-06,3.627575982e-06,,native random_forest feature_importances_,682
+categorical__id_31_chrome 63.0 for ios,id,3.527327011e-06,3.527327011e-06,,native random_forest feature_importances_,683
+categorical__id_33_1280x768,id,3.502579521e-06,3.502579521e-06,,native random_forest feature_importances_,684
+categorical__id_33_801x480,id,3.319922534e-06,3.319922534e-06,,native random_forest feature_importances_,685
+categorical__id_31_chrome 60.0,id,3.227248396e-06,3.227248396e-06,,native random_forest feature_importances_,686
+categorical__id_31_opera,id,3.002888352e-06,3.002888352e-06,,native random_forest feature_importances_,687
+categorical__card5_142.0,card5,2.869707716e-06,2.869707716e-06,,native random_forest feature_importances_,688
+categorical__id_33_1920x975,id,2.826612959e-06,2.826612959e-06,,native random_forest feature_importances_,689
+categorical__card3_214.0,card3,2.815829861e-06,2.815829861e-06,,native random_forest feature_importances_,690
+numeric__V107,V107,2.725201029e-06,2.725201029e-06,,native random_forest feature_importances_,691
+categorical__id_30_Mac OS X 10_11_5,id,2.427950412e-06,2.427950412e-06,,native random_forest feature_importances_,692
+categorical__card3_134.0,card3,2.337466063e-06,2.337466063e-06,,native random_forest feature_importances_,693
+categorical__id_33_2732x2048,id,2.325796669e-06,2.325796669e-06,,native random_forest feature_importances_,694
+categorical__id_33_1024x600,id,2.312626788e-06,2.312626788e-06,,native random_forest feature_importances_,695
+categorical__id_31_firefox 60.0,id,2.256572276e-06,2.256572276e-06,,native random_forest feature_importances_,696
+categorical__id_31_Samsung/SM-G532M,id,2.225575197e-06,2.225575197e-06,,native random_forest feature_importances_,697
+categorical__card3_229.0,card3,2.173062888e-06,2.173062888e-06,,native random_forest feature_importances_,698
+categorical__id_33_3201x1800,id,2.154500446e-06,2.154500446e-06,,native random_forest feature_importances_,699
+categorical__id_31_chrome 65.0 for ios,id,2.117163199e-06,2.117163199e-06,,native random_forest feature_importances_,700
+categorical__id_31_ie,id,2.009141499e-06,2.009141499e-06,,native random_forest feature_importances_,701
+categorical__id_33_1364x768,id,1.969148307e-06,1.969148307e-06,,native random_forest feature_importances_,702
+categorical__card5_132.0,card5,1.949528185e-06,1.949528185e-06,,native random_forest feature_importances_,703
+categorical__addr2_32.0,addr2,1.949074077e-06,1.949074077e-06,,native random_forest feature_importances_,704
+categorical__id_31_chrome 56.0,id,1.869402357e-06,1.869402357e-06,,native random_forest feature_importances_,705
+categorical__card3_133.0,card3,1.688985689e-06,1.688985689e-06,,native random_forest feature_importances_,706
+categorical__id_31_chrome 66.0 for ios,id,1.685338886e-06,1.685338886e-06,,native random_forest feature_importances_,707
+numeric__V14,V14,1.606191252e-06,1.606191252e-06,,native random_forest feature_importances_,708
+categorical__card3_118.0,card3,1.483262071e-06,1.483262071e-06,,native random_forest feature_importances_,709
+categorical__id_31_opera 49.0,id,1.454066014e-06,1.454066014e-06,,native random_forest feature_importances_,710
+categorical__card3_100.0,card3,1.427088081e-06,1.427088081e-06,,native random_forest feature_importances_,711
+categorical__id_33_2960x1440,id,1.405910761e-06,1.405910761e-06,,native random_forest feature_importances_,712
+categorical__id_33_1916x901,id,1.351422936e-06,1.351422936e-06,,native random_forest feature_importances_,713
+categorical__card5_149.0,card5,1.33588333e-06,1.33588333e-06,,native random_forest feature_importances_,714
+categorical__id_31_google search application 48.0,id,1.291152784e-06,1.291152784e-06,,native random_forest feature_importances_,715
+categorical__id_31_Generic/Android,id,1.131398401e-06,1.131398401e-06,,native random_forest feature_importances_,716
+categorical__id_31_samsung browser 5.4,id,1.034822552e-06,1.034822552e-06,,native random_forest feature_importances_,717
+categorical__card3_203.0,card3,1.008528653e-06,1.008528653e-06,,native random_forest feature_importances_,718
+numeric__V89,V89,1.004656369e-06,1.004656369e-06,,native random_forest feature_importances_,719
+categorical__id_30_Android 6.0,id,9.900676316e-07,9.900676316e-07,,native random_forest feature_importances_,720
+numeric__V241,V241,9.205094792e-07,9.205094792e-07,,native random_forest feature_importances_,721
+categorical__card3_210.0,card3,9.076952063e-07,9.076952063e-07,,native random_forest feature_importances_,722
+categorical__id_30_iOS 11.3.1,id,8.716771597e-07,8.716771597e-07,,native random_forest feature_importances_,723
+categorical__id_30_iOS 10.0.2,id,8.552532323e-07,8.552532323e-07,,native random_forest feature_importances_,724
+categorical__id_15___MISSING__,id,8.342896279e-07,8.342896279e-07,,native random_forest feature_importances_,725
+categorical__id_31_chrome 49.0 for android,id,8.170377802e-07,8.170377802e-07,,native random_forest feature_importances_,726
+categorical__card3_182.0,card3,6.827522209e-07,6.827522209e-07,,native random_forest feature_importances_,727
+categorical__id_31_firefox 48.0,id,6.473234418e-07,6.473234418e-07,,native random_forest feature_importances_,728
+categorical__id_31_chrome 57.0 for android,id,6.439094278e-07,6.439094278e-07,,native random_forest feature_importances_,729
+categorical__id_30_iOS 11.0.0,id,6.321280174e-07,6.321280174e-07,,native random_forest feature_importances_,730
+categorical__card5_212.0,card5,5.71120445e-07,5.71120445e-07,,native random_forest feature_importances_,731
+categorical__id_31_silk,id,5.577675628e-07,5.577675628e-07,,native random_forest feature_importances_,732
+categorical__card3_149.0,card3,5.503090038e-07,5.503090038e-07,,native random_forest feature_importances_,733
+categorical__card3_191.0,card3,4.957374359e-07,4.957374359e-07,,native random_forest feature_importances_,734
+categorical__id_33_2736x1824,id,4.845227724e-07,4.845227724e-07,,native random_forest feature_importances_,735
+categorical__card3_204.0,card3,4.799975028e-07,4.799975028e-07,,native random_forest feature_importances_,736
+categorical__card3_195.0,card3,4.699445549e-07,4.699445549e-07,,native random_forest feature_importances_,737
+categorical__id_31_chrome 51.0 for android,id,4.546225203e-07,4.546225203e-07,,native random_forest feature_importances_,738
+categorical__card5_139.0,card5,4.508522713e-07,4.508522713e-07,,native random_forest feature_importances_,739
+categorical__card3_200.0,card3,4.348753747e-07,4.348753747e-07,,native random_forest feature_importances_,740
+categorical__id_30_Mac OS X 10_12_5,id,4.32089868e-07,4.32089868e-07,,native random_forest feature_importances_,741
+categorical__card5_131.0,card5,4.178696478e-07,4.178696478e-07,,native random_forest feature_importances_,742
+categorical__id_33_3440x1440,id,3.89499253e-07,3.89499253e-07,,native random_forest feature_importances_,743
+categorical__id_30_Android 8.1.0,id,3.730758939e-07,3.730758939e-07,,native random_forest feature_importances_,744
+categorical__addr2_57.0,addr2,3.301522224e-07,3.301522224e-07,,native random_forest feature_importances_,745
+categorical__id_33_1921x1081,id,3.237891964e-07,3.237891964e-07,,native random_forest feature_importances_,746
+categorical__card5_111.0,card5,3.125810987e-07,3.125810987e-07,,native random_forest feature_importances_,747
+categorical__id_31_opera generic,id,3.101398566e-07,3.101398566e-07,,native random_forest feature_importances_,748
+categorical__id_30_Mac OS X 10_12,id,2.878934222e-07,2.878934222e-07,,native random_forest feature_importances_,749
+categorical__id_33_1023x767,id,2.750693069e-07,2.750693069e-07,,native random_forest feature_importances_,750
+categorical__card5_136.0,card5,2.693969751e-07,2.693969751e-07,,native random_forest feature_importances_,751
+categorical__card3_142.0,card3,2.600995573e-07,2.600995573e-07,,native random_forest feature_importances_,752
+categorical__card5_189.0,card5,2.509644752e-07,2.509644752e-07,,native random_forest feature_importances_,753
+categorical__addr2_68.0,addr2,2.426717289e-07,2.426717289e-07,,native random_forest feature_importances_,754
+categorical__card5_199.0,card5,2.416664361e-07,2.416664361e-07,,native random_forest feature_importances_,755
+categorical__id_31_line,id,2.366183154e-07,2.366183154e-07,,native random_forest feature_importances_,756
+categorical__addr2_20.0,addr2,2.296072004e-07,2.296072004e-07,,native random_forest feature_importances_,757
+categorical__card3_197.0,card3,2.125454376e-07,2.125454376e-07,,native random_forest feature_importances_,758
+categorical__id_33_2961x1442,id,1.986441466e-07,1.986441466e-07,,native random_forest feature_importances_,759
+categorical__addr2_19.0,addr2,1.915996013e-07,1.915996013e-07,,native random_forest feature_importances_,760
+categorical__card5_205.0,card5,1.641408985e-07,1.641408985e-07,,native random_forest feature_importances_,761
+categorical__id_33_2400x1600,id,1.632485325e-07,1.632485325e-07,,native random_forest feature_importances_,762
+categorical__id_31_safari 10.0,id,1.55805471e-07,1.55805471e-07,,native random_forest feature_importances_,763
+categorical__id_33_4096x2304,id,1.534430214e-07,1.534430214e-07,,native random_forest feature_importances_,764
+categorical__id_31_opera 51.0,id,1.482295303e-07,1.482295303e-07,,native random_forest feature_importances_,765
+categorical__id_33_1502x844,id,1.268380422e-07,1.268380422e-07,,native random_forest feature_importances_,766
+categorical__id_31_chrome 46.0 for android,id,1.214851683e-07,1.214851683e-07,,native random_forest feature_importances_,767
+categorical__card3_135.0,card3,1.207583266e-07,1.207583266e-07,,native random_forest feature_importances_,768
+categorical__id_31_chrome 62.0 for ios,id,1.204754843e-07,1.204754843e-07,,native random_forest feature_importances_,769
+categorical__id_33_1152x864,id,1.177961507e-07,1.177961507e-07,,native random_forest feature_importances_,770
+numeric__V28,V28,8.134822769e-08,8.134822769e-08,,native random_forest feature_importances_,771
+categorical__card5_225.0,card5,7.503826301e-08,7.503826301e-08,,native random_forest feature_importances_,772
+categorical__id_31_chrome 43.0 for android,id,3.137612553e-09,3.137612553e-09,,native random_forest feature_importances_,773
+numeric__V88,V88,3.351562258e-17,3.351562258e-17,,native random_forest feature_importances_,774
+categorical__card5_180.0,card5,4.402608204e-19,4.402608204e-19,,native random_forest feature_importances_,775
+categorical__id_31_opera 52.0,id,3.74002823e-19,3.74002823e-19,,native random_forest feature_importances_,776
+numeric__V27,V27,3.336191689e-19,3.336191689e-19,,native random_forest feature_importances_,777
+numeric__V68,V68,2.437183252e-19,2.437183252e-19,,native random_forest feature_importances_,778
+categorical__addr2_69.0,addr2,2.214683965e-19,2.214683965e-19,,native random_forest feature_importances_,779
+numeric__V41,V41,2.040227851e-19,2.040227851e-19,,native random_forest feature_importances_,780
+categorical__card5_184.0,card5,1.782099334e-19,1.782099334e-19,,native random_forest feature_importances_,781
+categorical__id_33_3441x1440,id,1.410894668e-19,1.410894668e-19,,native random_forest feature_importances_,782
+categorical__id_30_Android 5.0.2,id,1.035552973e-19,1.035552973e-19,,native random_forest feature_importances_,783
+categorical__card5_177.0,card5,6.637002938e-20,6.637002938e-20,,native random_forest feature_importances_,784
+categorical__id_33_1280x960,id,5.35389805e-20,5.35389805e-20,,native random_forest feature_importances_,785
+categorical__card5_207.0,card5,3.307108618e-20,3.307108618e-20,,native random_forest feature_importances_,786
+categorical__id_33_1919x1079,id,3.201549156e-20,3.201549156e-20,,native random_forest feature_importances_,787
+categorical__id_30_Mac OS X 10_12_4,id,3.163232807e-20,3.163232807e-20,,native random_forest feature_importances_,788
+categorical__card5_134.0,card5,2.913231284e-20,2.913231284e-20,,native random_forest feature_importances_,789
+categorical__card5_213.0,card5,2.798570074e-20,2.798570074e-20,,native random_forest feature_importances_,790
+categorical__id_33_1280x1025,id,1.946365468e-20,1.946365468e-20,,native random_forest feature_importances_,791
+categorical__id_30_Mac OS X 10.11,id,1.658052374e-20,1.658052374e-20,,native random_forest feature_importances_,792
+categorical__card5_121.0,card5,1.616179987e-20,1.616179987e-20,,native random_forest feature_importances_,793
+categorical__card3_138.0,card3,1.449366745e-20,1.449366745e-20,,native random_forest feature_importances_,794
+categorical__id_33_2961x1440,id,1.151756448e-20,1.151756448e-20,,native random_forest feature_importances_,795
+categorical__id_30_Windows XP,id,9.2555235e-21,9.2555235e-21,,native random_forest feature_importances_,796
+categorical__id_30_Mac,id,8.777203777e-21,8.777203777e-21,,native random_forest feature_importances_,797
+categorical__id_31_chrome 59.0,id,7.726052133e-21,7.726052133e-21,,native random_forest feature_importances_,798
+categorical__id_31_chrome 64.0 for ios,id,6.832618903e-21,6.832618903e-21,,native random_forest feature_importances_,799
+categorical__card3_223.0,card3,5.919360576e-21,5.919360576e-21,,native random_forest feature_importances_,800
+categorical__card3_148.0,card3,4.183363949e-21,4.183363949e-21,,native random_forest feature_importances_,801
+categorical__id_33_1600x1200,id,1.509726479e-21,1.509726479e-21,,native random_forest feature_importances_,802
+categorical__card3_163.0,card3,1.283277201e-21,1.283277201e-21,,native random_forest feature_importances_,803
+categorical__card3_161.0,card3,1.106364443e-21,1.106364443e-21,,native random_forest feature_importances_,804
+categorical__addr2_17.0,addr2,2.002401157e-22,2.002401157e-22,,native random_forest feature_importances_,805
+numeric__V1,V1,0,0,,native random_forest feature_importances_,806
+numeric__V305,V305,0,0,,native random_forest feature_importances_,807
+categorical__card3_101.0,card3,0,0,,native random_forest feature_importances_,808
+categorical__card3_105.0,card3,0,0,,native random_forest feature_importances_,809
+categorical__card3_107.0,card3,0,0,,native random_forest feature_importances_,810
+categorical__card3_108.0,card3,0,0,,native random_forest feature_importances_,811
+categorical__card3_109.0,card3,0,0,,native random_forest feature_importances_,812
+categorical__card3_111.0,card3,0,0,,native random_forest feature_importances_,813
+categorical__card3_116.0,card3,0,0,,native random_forest feature_importances_,814
+categorical__card3_120.0,card3,0,0,,native random_forest feature_importances_,815
+categorical__card3_122.0,card3,0,0,,native random_forest feature_importances_,816
+categorical__card3_123.0,card3,0,0,,native random_forest feature_importances_,817
+categorical__card3_124.0,card3,0,0,,native random_forest feature_importances_,818
+categorical__card3_125.0,card3,0,0,,native random_forest feature_importances_,819
+categorical__card3_126.0,card3,0,0,,native random_forest feature_importances_,820
+categorical__card3_128.0,card3,0,0,,native random_forest feature_importances_,821
+categorical__card3_129.0,card3,0,0,,native random_forest feature_importances_,822
+categorical__card3_130.0,card3,0,0,,native random_forest feature_importances_,823
+categorical__card3_137.0,card3,0,0,,native random_forest feature_importances_,824
+categorical__card3_139.0,card3,0,0,,native random_forest feature_importances_,825
+categorical__card3_141.0,card3,0,0,,native random_forest feature_importances_,826
+categorical__card3_151.0,card3,0,0,,native random_forest feature_importances_,827
+categorical__card3_152.0,card3,0,0,,native random_forest feature_importances_,828
+categorical__card3_153.0,card3,0,0,,native random_forest feature_importances_,829
+categorical__card3_155.0,card3,0,0,,native random_forest feature_importances_,830
+categorical__card3_156.0,card3,0,0,,native random_forest feature_importances_,831
+categorical__card3_157.0,card3,0,0,,native random_forest feature_importances_,832
+categorical__card3_159.0,card3,0,0,,native random_forest feature_importances_,833
+categorical__card3_160.0,card3,0,0,,native random_forest feature_importances_,834
+categorical__card3_164.0,card3,0,0,,native random_forest feature_importances_,835
+categorical__card3_166.0,card3,0,0,,native random_forest feature_importances_,836
+categorical__card3_167.0,card3,0,0,,native random_forest feature_importances_,837
+categorical__card3_168.0,card3,0,0,,native random_forest feature_importances_,838
+categorical__card3_169.0,card3,0,0,,native random_forest feature_importances_,839
+categorical__card3_170.0,card3,0,0,,native random_forest feature_importances_,840
+categorical__card3_171.0,card3,0,0,,native random_forest feature_importances_,841
+categorical__card3_172.0,card3,0,0,,native random_forest feature_importances_,842
+categorical__card3_173.0,card3,0,0,,native random_forest feature_importances_,843
+categorical__card3_174.0,card3,0,0,,native random_forest feature_importances_,844
+categorical__card3_175.0,card3,0,0,,native random_forest feature_importances_,845
+categorical__card3_176.0,card3,0,0,,native random_forest feature_importances_,846
+categorical__card3_179.0,card3,0,0,,native random_forest feature_importances_,847
+categorical__card3_180.0,card3,0,0,,native random_forest feature_importances_,848
+categorical__card3_181.0,card3,0,0,,native random_forest feature_importances_,849
+categorical__card3_183.0,card3,0,0,,native random_forest feature_importances_,850
+categorical__card3_184.0,card3,0,0,,native random_forest feature_importances_,851
+categorical__card3_186.0,card3,0,0,,native random_forest feature_importances_,852
+categorical__card3_189.0,card3,0,0,,native random_forest feature_importances_,853
+categorical__card3_190.0,card3,0,0,,native random_forest feature_importances_,854
+categorical__card3_193.0,card3,0,0,,native random_forest feature_importances_,855
+categorical__card3_194.0,card3,0,0,,native random_forest feature_importances_,856
+categorical__card3_198.0,card3,0,0,,native random_forest feature_importances_,857
+categorical__card3_201.0,card3,0,0,,native random_forest feature_importances_,858
+categorical__card3_202.0,card3,0,0,,native random_forest feature_importances_,859
+categorical__card3_205.0,card3,0,0,,native random_forest feature_importances_,860
+categorical__card3_206.0,card3,0,0,,native random_forest feature_importances_,861
+categorical__card3_207.0,card3,0,0,,native random_forest feature_importances_,862
+categorical__card3_208.0,card3,0,0,,native random_forest feature_importances_,863
+categorical__card3_209.0,card3,0,0,,native random_forest feature_importances_,864
+categorical__card3_211.0,card3,0,0,,native random_forest feature_importances_,865
+categorical__card3_215.0,card3,0,0,,native random_forest feature_importances_,866
+categorical__card3_217.0,card3,0,0,,native random_forest feature_importances_,867
+categorical__card3_219.0,card3,0,0,,native random_forest feature_importances_,868
+categorical__card3_220.0,card3,0,0,,native random_forest feature_importances_,869
+categorical__card3_221.0,card3,0,0,,native random_forest feature_importances_,870
+categorical__card3_222.0,card3,0,0,,native random_forest feature_importances_,871
+categorical__card3_224.0,card3,0,0,,native random_forest feature_importances_,872
+categorical__card3_225.0,card3,0,0,,native random_forest feature_importances_,873
+categorical__card3_226.0,card3,0,0,,native random_forest feature_importances_,874
+categorical__card3_227.0,card3,0,0,,native random_forest feature_importances_,875
+categorical__card3_228.0,card3,0,0,,native random_forest feature_importances_,876
+categorical__card3_231.0,card3,0,0,,native random_forest feature_importances_,877
+categorical__card5_101.0,card5,0,0,,native random_forest feature_importances_,878
+categorical__card5_104.0,card5,0,0,,native random_forest feature_importances_,879
+categorical__card5_105.0,card5,0,0,,native random_forest feature_importances_,880
+categorical__card5_106.0,card5,0,0,,native random_forest feature_importances_,881
+categorical__card5_107.0,card5,0,0,,native random_forest feature_importances_,882
+categorical__card5_109.0,card5,0,0,,native random_forest feature_importances_,883
+categorical__card5_112.0,card5,0,0,,native random_forest feature_importances_,884
+categorical__card5_113.0,card5,0,0,,native random_forest feature_importances_,885
+categorical__card5_114.0,card5,0,0,,native random_forest feature_importances_,886
+categorical__card5_116.0,card5,0,0,,native random_forest feature_importances_,887
+categorical__card5_120.0,card5,0,0,,native random_forest feature_importances_,888
+categorical__card5_122.0,card5,0,0,,native random_forest feature_importances_,889
+categorical__card5_123.0,card5,0,0,,native random_forest feature_importances_,890
+categorical__card5_125.0,card5,0,0,,native random_forest feature_importances_,891
+categorical__card5_127.0,card5,0,0,,native random_forest feature_importances_,892
+categorical__card5_128.0,card5,0,0,,native random_forest feature_importances_,893
+categorical__card5_130.0,card5,0,0,,native random_forest feature_importances_,894
+categorical__card5_143.0,card5,0,0,,native random_forest feature_importances_,895
+categorical__card5_145.0,card5,0,0,,native random_forest feature_importances_,896
+categorical__card5_148.0,card5,0,0,,native random_forest feature_importances_,897
+categorical__card5_151.0,card5,0,0,,native random_forest feature_importances_,898
+categorical__card5_152.0,card5,0,0,,native random_forest feature_importances_,899
+categorical__card5_156.0,card5,0,0,,native random_forest feature_importances_,900
+categorical__card5_157.0,card5,0,0,,native random_forest feature_importances_,901
+categorical__card5_158.0,card5,0,0,,native random_forest feature_importances_,902
+categorical__card5_159.0,card5,0,0,,native random_forest feature_importances_,903
+categorical__card5_160.0,card5,0,0,,native random_forest feature_importances_,904
+categorical__card5_163.0,card5,0,0,,native random_forest feature_importances_,905
+categorical__card5_164.0,card5,0,0,,native random_forest feature_importances_,906
+categorical__card5_167.0,card5,0,0,,native random_forest feature_importances_,907
+categorical__card5_168.0,card5,0,0,,native random_forest feature_importances_,908
+categorical__card5_169.0,card5,0,0,,native random_forest feature_importances_,909
+categorical__card5_171.0,card5,0,0,,native random_forest feature_importances_,910
+categorical__card5_172.0,card5,0,0,,native random_forest feature_importances_,911
+categorical__card5_173.0,card5,0,0,,native random_forest feature_importances_,912
+categorical__card5_182.0,card5,0,0,,native random_forest feature_importances_,913
+categorical__card5_187.0,card5,0,0,,native random_forest feature_importances_,914
+categorical__card5_188.0,card5,0,0,,native random_forest feature_importances_,915
+categorical__card5_191.0,card5,0,0,,native random_forest feature_importances_,916
+categorical__card5_196.0,card5,0,0,,native random_forest feature_importances_,917
+categorical__card5_200.0,card5,0,0,,native random_forest feature_importances_,918
+categorical__card5_201.0,card5,0,0,,native random_forest feature_importances_,919
+categorical__card5_204.0,card5,0,0,,native random_forest feature_importances_,920
+categorical__card5_206.0,card5,0,0,,native random_forest feature_importances_,921
+categorical__card5_209.0,card5,0,0,,native random_forest feature_importances_,922
+categorical__card5_210.0,card5,0,0,,native random_forest feature_importances_,923
+categorical__card5_211.0,card5,0,0,,native random_forest feature_importances_,924
+categorical__card5_214.0,card5,0,0,,native random_forest feature_importances_,925
+categorical__card5_215.0,card5,0,0,,native random_forest feature_importances_,926
+categorical__card5_216.0,card5,0,0,,native random_forest feature_importances_,927
+categorical__card5_217.0,card5,0,0,,native random_forest feature_importances_,928
+categorical__card5_222.0,card5,0,0,,native random_forest feature_importances_,929
+categorical__card5_230.0,card5,0,0,,native random_forest feature_importances_,930
+categorical__card5_231.0,card5,0,0,,native random_forest feature_importances_,931
+categorical__card5_233.0,card5,0,0,,native random_forest feature_importances_,932
+categorical__card5_234.0,card5,0,0,,native random_forest feature_importances_,933
+categorical__card5_235.0,card5,0,0,,native random_forest feature_importances_,934
+categorical__card5_237.0,card5,0,0,,native random_forest feature_importances_,935
+categorical__card6_charge card,card6,0,0,,native random_forest feature_importances_,936
+categorical__card6_debit or credit,card6,0,0,,native random_forest feature_importances_,937
+categorical__addr2_10.0,addr2,0,0,,native random_forest feature_importances_,938
+categorical__addr2_100.0,addr2,0,0,,native random_forest feature_importances_,939
+categorical__addr2_101.0,addr2,0,0,,native random_forest feature_importances_,940
+categorical__addr2_102.0,addr2,0,0,,native random_forest feature_importances_,941
+categorical__addr2_13.0,addr2,0,0,,native random_forest feature_importances_,942
+categorical__addr2_15.0,addr2,0,0,,native random_forest feature_importances_,943
+categorical__addr2_16.0,addr2,0,0,,native random_forest feature_importances_,944
+categorical__addr2_18.0,addr2,0,0,,native random_forest feature_importances_,945
+categorical__addr2_21.0,addr2,0,0,,native random_forest feature_importances_,946
+categorical__addr2_22.0,addr2,0,0,,native random_forest feature_importances_,947
+categorical__addr2_23.0,addr2,0,0,,native random_forest feature_importances_,948
+categorical__addr2_24.0,addr2,0,0,,native random_forest feature_importances_,949
+categorical__addr2_25.0,addr2,0,0,,native random_forest feature_importances_,950
+categorical__addr2_26.0,addr2,0,0,,native random_forest feature_importances_,951
+categorical__addr2_27.0,addr2,0,0,,native random_forest feature_importances_,952
+categorical__addr2_28.0,addr2,0,0,,native random_forest feature_importances_,953
+categorical__addr2_29.0,addr2,0,0,,native random_forest feature_importances_,954
+categorical__addr2_30.0,addr2,0,0,,native random_forest feature_importances_,955
+categorical__addr2_31.0,addr2,0,0,,native random_forest feature_importances_,956
+categorical__addr2_34.0,addr2,0,0,,native random_forest feature_importances_,957
+categorical__addr2_35.0,addr2,0,0,,native random_forest feature_importances_,958
+categorical__addr2_36.0,addr2,0,0,,native random_forest feature_importances_,959
+categorical__addr2_38.0,addr2,0,0,,native random_forest feature_importances_,960
+categorical__addr2_39.0,addr2,0,0,,native random_forest feature_importances_,961
+categorical__addr2_40.0,addr2,0,0,,native random_forest feature_importances_,962
+categorical__addr2_43.0,addr2,0,0,,native random_forest feature_importances_,963
+categorical__addr2_46.0,addr2,0,0,,native random_forest feature_importances_,964
+categorical__addr2_47.0,addr2,0,0,,native random_forest feature_importances_,965
+categorical__addr2_48.0,addr2,0,0,,native random_forest feature_importances_,966
+categorical__addr2_49.0,addr2,0,0,,native random_forest feature_importances_,967
+categorical__addr2_50.0,addr2,0,0,,native random_forest feature_importances_,968
+categorical__addr2_51.0,addr2,0,0,,native random_forest feature_importances_,969
+categorical__addr2_52.0,addr2,0,0,,native random_forest feature_importances_,970
+categorical__addr2_54.0,addr2,0,0,,native random_forest feature_importances_,971
+categorical__addr2_55.0,addr2,0,0,,native random_forest feature_importances_,972
+categorical__addr2_59.0,addr2,0,0,,native random_forest feature_importances_,973
+categorical__addr2_61.0,addr2,0,0,,native random_forest feature_importances_,974
+categorical__addr2_62.0,addr2,0,0,,native random_forest feature_importances_,975
+categorical__addr2_63.0,addr2,0,0,,native random_forest feature_importances_,976
+categorical__addr2_66.0,addr2,0,0,,native random_forest feature_importances_,977
+categorical__addr2_71.0,addr2,0,0,,native random_forest feature_importances_,978
+categorical__addr2_72.0,addr2,0,0,,native random_forest feature_importances_,979
+categorical__addr2_73.0,addr2,0,0,,native random_forest feature_importances_,980
+categorical__addr2_74.0,addr2,0,0,,native random_forest feature_importances_,981
+categorical__addr2_76.0,addr2,0,0,,native random_forest feature_importances_,982
+categorical__addr2_77.0,addr2,0,0,,native random_forest feature_importances_,983
+categorical__addr2_78.0,addr2,0,0,,native random_forest feature_importances_,984
+categorical__addr2_82.0,addr2,0,0,,native random_forest feature_importances_,985
+categorical__addr2_84.0,addr2,0,0,,native random_forest feature_importances_,986
+categorical__addr2_86.0,addr2,0,0,,native random_forest feature_importances_,987
+categorical__addr2_88.0,addr2,0,0,,native random_forest feature_importances_,988
+categorical__addr2_89.0,addr2,0,0,,native random_forest feature_importances_,989
+categorical__addr2_92.0,addr2,0,0,,native random_forest feature_importances_,990
+categorical__addr2_93.0,addr2,0,0,,native random_forest feature_importances_,991
+categorical__addr2_98.0,addr2,0,0,,native random_forest feature_importances_,992
+categorical__M1_F,M1,0,0,,native random_forest feature_importances_,993
+categorical__id_30_Android 5.0,id,0,0,,native random_forest feature_importances_,994
+categorical__id_30_Android 7.1.2,id,0,0,,native random_forest feature_importances_,995
+categorical__id_30_Mac OS X 10.10,id,0,0,,native random_forest feature_importances_,996
+categorical__id_30_Mac OS X 10.6,id,0,0,,native random_forest feature_importances_,997
+categorical__id_30_Mac OS X 10.9,id,0,0,,native random_forest feature_importances_,998
+categorical__id_30_Mac OS X 10_11_3,id,0,0,,native random_forest feature_importances_,999
+categorical__id_30_Mac OS X 10_11_4,id,0,0,,native random_forest feature_importances_,1000
+categorical__id_30_Mac OS X 10_12_1,id,0,0,,native random_forest feature_importances_,1001
+categorical__id_30_Mac OS X 10_12_2,id,0,0,,native random_forest feature_importances_,1002
+categorical__id_30_Mac OS X 10_12_3,id,0,0,,native random_forest feature_importances_,1003
+categorical__id_30_Mac OS X 10_13_5,id,0,0,,native random_forest feature_importances_,1004
+categorical__id_30_Mac OS X 10_6_8,id,0,0,,native random_forest feature_importances_,1005
+categorical__id_30_Mac OS X 10_7_5,id,0,0,,native random_forest feature_importances_,1006
+categorical__id_30_Mac OS X 10_8_5,id,0,0,,native random_forest feature_importances_,1007
+categorical__id_30_Windows,id,0,0,,native random_forest feature_importances_,1008
+categorical__id_30_func,id,0,0,,native random_forest feature_importances_,1009
+categorical__id_30_iOS 10.1.1,id,0,0,,native random_forest feature_importances_,1010
+categorical__id_30_iOS 11.4.0,id,0,0,,native random_forest feature_importances_,1011
+categorical__id_30_iOS 11.4.1,id,0,0,,native random_forest feature_importances_,1012
+categorical__id_30_other,id,0,0,,native random_forest feature_importances_,1013
+categorical__id_31_BLU/Dash,id,0,0,,native random_forest feature_importances_,1014
+categorical__id_31_Lanix/Ilium,id,0,0,,native random_forest feature_importances_,1015
+categorical__id_31_M4Tel/M4,id,0,0,,native random_forest feature_importances_,1016
+categorical__id_31_Microsoft/Windows,id,0,0,,native random_forest feature_importances_,1017
+categorical__id_31_Mozilla/Firefox,id,0,0,,native random_forest feature_importances_,1018
+categorical__id_31_ZTE/Blade,id,0,0,,native random_forest feature_importances_,1019
+categorical__id_31_android,id,0,0,,native random_forest feature_importances_,1020
+categorical__id_31_aol,id,0,0,,native random_forest feature_importances_,1021
+categorical__id_31_chrome 51.0,id,0,0,,native random_forest feature_importances_,1022
+categorical__id_31_chrome 53.0 for android,id,0,0,,native random_forest feature_importances_,1023
+categorical__id_31_chrome 54.0 for android,id,0,0,,native random_forest feature_importances_,1024
+categorical__id_31_chrome 55.0,id,0,0,,native random_forest feature_importances_,1025
+categorical__id_31_chrome 67.0 for android,id,0,0,,native random_forest feature_importances_,1026
+categorical__id_31_chrome 69.0,id,0,0,,native random_forest feature_importances_,1027
+categorical__id_31_chromium,id,0,0,,native random_forest feature_importances_,1028
+categorical__id_31_comodo,id,0,0,,native random_forest feature_importances_,1029
+categorical__id_31_cyberfox,id,0,0,,native random_forest feature_importances_,1030
+categorical__id_31_edge 17.0,id,0,0,,native random_forest feature_importances_,1031
+categorical__id_31_facebook,id,0,0,,native random_forest feature_importances_,1032
+categorical__id_31_firefox 47.0,id,0,0,,native random_forest feature_importances_,1033
+categorical__id_31_google,id,0,0,,native random_forest feature_importances_,1034
+categorical__id_31_icedragon,id,0,0,,native random_forest feature_importances_,1035
+categorical__id_31_iron,id,0,0,,native random_forest feature_importances_,1036
+categorical__id_31_maxthon,id,0,0,,native random_forest feature_importances_,1037
+categorical__id_31_mobile safari 8.0,id,0,0,,native random_forest feature_importances_,1038
+categorical__id_31_opera 53.0,id,0,0,,native random_forest feature_importances_,1039
+categorical__id_31_palemoon,id,0,0,,native random_forest feature_importances_,1040
+categorical__id_31_puffin,id,0,0,,native random_forest feature_importances_,1041
+categorical__id_31_safari,id,0,0,,native random_forest feature_importances_,1042
+categorical__id_31_safari 9.0,id,0,0,,native random_forest feature_importances_,1043
+categorical__id_31_samsung,id,0,0,,native random_forest feature_importances_,1044
+categorical__id_31_samsung browser 3.3,id,0,0,,native random_forest feature_importances_,1045
+categorical__id_31_samsung browser 4.0,id,0,0,,native random_forest feature_importances_,1046
+categorical__id_31_samsung browser 4.2,id,0,0,,native random_forest feature_importances_,1047
+categorical__id_31_samsung browser 5.2,id,0,0,,native random_forest feature_importances_,1048
+categorical__id_31_samsung browser 7.0,id,0,0,,native random_forest feature_importances_,1049
+categorical__id_31_seamonkey,id,0,0,,native random_forest feature_importances_,1050
+categorical__id_31_waterfox,id,0,0,,native random_forest feature_importances_,1051
+categorical__id_33_0x0,id,0,0,,native random_forest feature_importances_,1052
+categorical__id_33_1023x768,id,0,0,,native random_forest feature_importances_,1053
+categorical__id_33_1024x552,id,0,0,,native random_forest feature_importances_,1054
+categorical__id_33_1024x640,id,0,0,,native random_forest feature_importances_,1055
+categorical__id_33_1024x767,id,0,0,,native random_forest feature_importances_,1056
+categorical__id_33_1024x819,id,0,0,,native random_forest feature_importances_,1057
+categorical__id_33_1062x630,id,0,0,,native random_forest feature_importances_,1058
+categorical__id_33_1093x615,id,0,0,,native random_forest feature_importances_,1059
+categorical__id_33_1138x640,id,0,0,,native random_forest feature_importances_,1060
+categorical__id_33_1152x648,id,0,0,,native random_forest feature_importances_,1061
+categorical__id_33_1152x720,id,0,0,,native random_forest feature_importances_,1062
+categorical__id_33_1184x720,id,0,0,,native random_forest feature_importances_,1063
+categorical__id_33_1188x720,id,0,0,,native random_forest feature_importances_,1064
+categorical__id_33_1200x675,id,0,0,,native random_forest feature_importances_,1065
+categorical__id_33_1200x720,id,0,0,,native random_forest feature_importances_,1066
+categorical__id_33_1239x697,id,0,0,,native random_forest feature_importances_,1067
+categorical__id_33_1272x960,id,0,0,,native random_forest feature_importances_,1068
+categorical__id_33_1279x1023,id,0,0,,native random_forest feature_importances_,1069
+categorical__id_33_1279x1024,id,0,0,,native random_forest feature_importances_,1070
+categorical__id_33_1280x1023,id,0,0,,native random_forest feature_importances_,1071
+categorical__id_33_1280x600,id,0,0,,native random_forest feature_importances_,1072
+categorical__id_33_1280x712,id,0,0,,native random_forest feature_importances_,1073
+categorical__id_33_1280x732,id,0,0,,native random_forest feature_importances_,1074
+categorical__id_33_1280x900,id,0,0,,native random_forest feature_importances_,1075
+categorical__id_33_1281x720,id,0,0,,native random_forest feature_importances_,1076
+categorical__id_33_1281x721,id,0,0,,native random_forest feature_importances_,1077
+categorical__id_33_1281x800,id,0,0,,native random_forest feature_importances_,1078
+categorical__id_33_1281x801,id,0,0,,native random_forest feature_importances_,1079
+categorical__id_33_1296x774,id,0,0,,native random_forest feature_importances_,1080
+categorical__id_33_1344x756,id,0,0,,native random_forest feature_importances_,1081
+categorical__id_33_1344x840,id,0,0,,native random_forest feature_importances_,1082
+categorical__id_33_1356x900,id,0,0,,native random_forest feature_importances_,1083
+categorical__id_33_1359x768,id,0,0,,native random_forest feature_importances_,1084
+categorical__id_33_1365x767,id,0,0,,native random_forest feature_importances_,1085
+categorical__id_33_1366x767,id,0,0,,native random_forest feature_importances_,1086
+categorical__id_33_1368x768,id,0,0,,native random_forest feature_importances_,1087
+categorical__id_33_1371x857,id,0,0,,native random_forest feature_importances_,1088
+categorical__id_33_1400x1050,id,0,0,,native random_forest feature_importances_,1089
+categorical__id_33_1408x880,id,0,0,,native random_forest feature_importances_,1090
+categorical__id_33_1422x889,id,0,0,,native random_forest feature_importances_,1091
+categorical__id_33_1439x899,id,0,0,,native random_forest feature_importances_,1092
+categorical__id_33_1439x900,id,0,0,,native random_forest feature_importances_,1093
+categorical__id_33_1440x720,id,0,0,,native random_forest feature_importances_,1094
+categorical__id_33_1440x803,id,0,0,,native random_forest feature_importances_,1095
+categorical__id_33_1440x960,id,0,0,,native random_forest feature_importances_,1096
+categorical__id_33_1480x720,id,0,0,,native random_forest feature_importances_,1097
+categorical__id_33_1502x845,id,0,0,,native random_forest feature_importances_,1098
+categorical__id_33_1536x1152,id,0,0,,native random_forest feature_importances_,1099
+categorical__id_33_1536x960,id,0,0,,native random_forest feature_importances_,1100
+categorical__id_33_1584x990,id,0,0,,native random_forest feature_importances_,1101
+categorical__id_33_1599x899,id,0,0,,native random_forest feature_importances_,1102
+categorical__id_33_1599x900,id,0,0,,native random_forest feature_importances_,1103
+categorical__id_33_1600x1000,id,0,0,,native random_forest feature_importances_,1104
+categorical__id_33_1600x837,id,0,0,,native random_forest feature_importances_,1105
+categorical__id_33_1600x899,id,0,0,,native random_forest feature_importances_,1106
+categorical__id_33_1624x1080,id,0,0,,native random_forest feature_importances_,1107
+categorical__id_33_1638x922,id,0,0,,native random_forest feature_importances_,1108
+categorical__id_33_1679x1049,id,0,0,,native random_forest feature_importances_,1109
+categorical__id_33_1680x1049,id,0,0,,native random_forest feature_importances_,1110
+categorical__id_33_1680x1051,id,0,0,,native random_forest feature_importances_,1111
+categorical__id_33_1680x945,id,0,0,,native random_forest feature_importances_,1112
+categorical__id_33_1684x947,id,0,0,,native random_forest feature_importances_,1113
+categorical__id_33_1707x960,id,0,0,,native random_forest feature_importances_,1114
+categorical__id_33_1727x971,id,0,0,,native random_forest feature_importances_,1115
+categorical__id_33_1728x972,id,0,0,,native random_forest feature_importances_,1116
+categorical__id_33_1760x990,id,0,0,,native random_forest feature_importances_,1117
+categorical__id_33_1768x992,id,0,0,,native random_forest feature_importances_,1118
+categorical__id_33_1776x1000,id,0,0,,native random_forest feature_importances_,1119
+categorical__id_33_1776x1080,id,0,0,,native random_forest feature_importances_,1120
+categorical__id_33_1800x1125,id,0,0,,native random_forest feature_importances_,1121
+categorical__id_33_1824x1026,id,0,0,,native random_forest feature_importances_,1122
+categorical__id_33_1888x941,id,0,0,,native random_forest feature_importances_,1123
+categorical__id_33_1912x1025,id,0,0,,native random_forest feature_importances_,1124
+categorical__id_33_1919x1080,id,0,0,,native random_forest feature_importances_,1125
+categorical__id_33_1919x1199,id,0,0,,native random_forest feature_importances_,1126
+categorical__id_33_1919x1200,id,0,0,,native random_forest feature_importances_,1127
+categorical__id_33_1920x1079,id,0,0,,native random_forest feature_importances_,1128
+categorical__id_33_1920x1081,id,0,0,,native random_forest feature_importances_,1129
+categorical__id_33_1920x1279,id,0,0,,native random_forest feature_importances_,1130
+categorical__id_33_1920x1280,id,0,0,,native random_forest feature_importances_,1131
+categorical__id_33_1920x1281,id,0,0,,native random_forest feature_importances_,1132
+categorical__id_33_1921x1080,id,0,0,,native random_forest feature_importances_,1133
+categorical__id_33_2000x1125,id,0,0,,native random_forest feature_importances_,1134
+categorical__id_33_2048x1080,id,0,0,,native random_forest feature_importances_,1135
+categorical__id_33_2048x1152,id,0,0,,native random_forest feature_importances_,1136
+categorical__id_33_2048x1278,id,0,0,,native random_forest feature_importances_,1137
+categorical__id_33_2048x1280,id,0,0,,native random_forest feature_importances_,1138
+categorical__id_33_2049x1152,id,0,0,,native random_forest feature_importances_,1139
+categorical__id_33_2049x1536,id,0,0,,native random_forest feature_importances_,1140
+categorical__id_33_2076x1080,id,0,0,,native random_forest feature_importances_,1141
+categorical__id_33_2100x1312,id,0,0,,native random_forest feature_importances_,1142
+categorical__id_33_2112x1188,id,0,0,,native random_forest feature_importances_,1143
+categorical__id_33_2159x1439,id,0,0,,native random_forest feature_importances_,1144
+categorical__id_33_2159x1440,id,0,0,,native random_forest feature_importances_,1145
+categorical__id_33_2160x1080,id,0,0,,native random_forest feature_importances_,1146
+categorical__id_33_2160x1081,id,0,0,,native random_forest feature_importances_,1147
+categorical__id_33_2160x1215,id,0,0,,native random_forest feature_importances_,1148
+categorical__id_33_2160x1350,id,0,0,,native random_forest feature_importances_,1149
+categorical__id_33_2160x1439,id,0,0,,native random_forest feature_importances_,1150
+categorical__id_33_2255x1503,id,0,0,,native random_forest feature_importances_,1151
+categorical__id_33_2256x1504,id,0,0,,native random_forest feature_importances_,1152
+categorical__id_33_2304x1296,id,0,0,,native random_forest feature_importances_,1153
+categorical__id_33_2304x1440,id,0,0,,native random_forest feature_importances_,1154
+categorical__id_33_2368x1440,id,0,0,,native random_forest feature_importances_,1155
+categorical__id_33_2392x1440,id,0,0,,native random_forest feature_importances_,1156
+categorical__id_33_2400x1350,id,0,0,,native random_forest feature_importances_,1157
+categorical__id_33_2400x1500,id,0,0,,native random_forest feature_importances_,1158
+categorical__id_33_2520x1575,id,0,0,,native random_forest feature_importances_,1159
+categorical__id_33_2559x1439,id,0,0,,native random_forest feature_importances_,1160
+categorical__id_33_2560x1700,id,0,0,,native random_forest feature_importances_,1161
+categorical__id_33_2560x1800,id,0,0,,native random_forest feature_importances_,1162
+categorical__id_33_2561x1442,id,0,0,,native random_forest feature_importances_,1163
+categorical__id_33_2562x1442,id,0,0,,native random_forest feature_importances_,1164
+categorical__id_33_2672x1440,id,0,0,,native random_forest feature_importances_,1165
+categorical__id_33_2700x1800,id,0,0,,native random_forest feature_importances_,1166
+categorical__id_33_2710x1440,id,0,0,,native random_forest feature_importances_,1167
+categorical__id_33_2735x1823,id,0,0,,native random_forest feature_importances_,1168
+categorical__id_33_2735x1825,id,0,0,,native random_forest feature_importances_,1169
+categorical__id_33_2736x1823,id,0,0,,native random_forest feature_importances_,1170
+categorical__id_33_2737x1825,id,0,0,,native random_forest feature_importances_,1171
+categorical__id_33_2800x1575,id,0,0,,native random_forest feature_importances_,1172
+categorical__id_33_2816x1584,id,0,0,,native random_forest feature_importances_,1173
+categorical__id_33_2816x1760,id,0,0,,native random_forest feature_importances_,1174
+categorical__id_33_2880x1440,id,0,0,,native random_forest feature_importances_,1175
+categorical__id_33_2880x1442,id,0,0,,native random_forest feature_importances_,1176
+categorical__id_33_2880x1620,id,0,0,,native random_forest feature_importances_,1177
+categorical__id_33_2882x1442,id,0,0,,native random_forest feature_importances_,1178
+categorical__id_33_3000x2000,id,0,0,,native random_forest feature_importances_,1179
+categorical__id_33_3072x1728,id,0,0,,native random_forest feature_importances_,1180
+categorical__id_33_3200x1800,id,0,0,,native random_forest feature_importances_,1181
+categorical__id_33_3200x2000,id,0,0,,native random_forest feature_importances_,1182
+categorical__id_33_3240x2160,id,0,0,,native random_forest feature_importances_,1183
+categorical__id_33_3360x1890,id,0,0,,native random_forest feature_importances_,1184
+categorical__id_33_3520x1980,id,0,0,,native random_forest feature_importances_,1185
+categorical__id_33_3600x2250,id,0,0,,native random_forest feature_importances_,1186
+categorical__id_33_3838x2158,id,0,0,,native random_forest feature_importances_,1187
+categorical__id_33_3838x2160,id,0,0,,native random_forest feature_importances_,1188
+categorical__id_33_3839x2160,id,0,0,,native random_forest feature_importances_,1189
+categorical__id_33_3840x1080,id,0,0,,native random_forest feature_importances_,1190
+categorical__id_33_3840x1600,id,0,0,,native random_forest feature_importances_,1191
+categorical__id_33_3840x2162,id,0,0,,native random_forest feature_importances_,1192
+categorical__id_33_3840x2400,id,0,0,,native random_forest feature_importances_,1193
+categorical__id_33_3841x2161,id,0,0,,native random_forest feature_importances_,1194
+categorical__id_33_4200x2625,id,0,0,,native random_forest feature_importances_,1195
+categorical__id_33_4499x2999,id,0,0,,native random_forest feature_importances_,1196
+categorical__id_33_4500x3000,id,0,0,,native random_forest feature_importances_,1197
+categorical__id_33_480x320,id,0,0,,native random_forest feature_importances_,1198
+categorical__id_33_5040x3150,id,0,0,,native random_forest feature_importances_,1199
+categorical__id_33_5760x3240,id,0,0,,native random_forest feature_importances_,1200
+categorical__id_33_6016x3384,id,0,0,,native random_forest feature_importances_,1201
+categorical__id_33_640x360,id,0,0,,native random_forest feature_importances_,1202
+categorical__id_33_6720x3780,id,0,0,,native random_forest feature_importances_,1203
+categorical__id_33_800x600,id,0,0,,native random_forest feature_importances_,1204
+categorical__id_33_921x691,id,0,0,,native random_forest feature_importances_,1205
+categorical__id_33_960x640,id,0,0,,native random_forest feature_importances_,1206
+categorical__id_34_match_status:-1,id,0,0,,native random_forest feature_importances_,1207

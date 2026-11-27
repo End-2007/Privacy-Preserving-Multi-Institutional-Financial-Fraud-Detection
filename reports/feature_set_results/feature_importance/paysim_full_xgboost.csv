@@ -1,0 +1,19 @@
+transformed_feature,source_feature,importance,normalized_importance,signed_coefficient,importance_method,rank
+numeric__error_balance_orig,error_balance_orig,0.5106193423,0.5106193706,,native xgboost feature_importances_,1
+numeric__newbalanceOrig,newbalanceOrig,0.4048601091,0.4048601315,,native xgboost feature_importances_,2
+numeric__log_amount,log_amount,0.02996679768,0.02996679934,,native xgboost feature_importances_,3
+numeric__orig_balance_delta,orig_balance_delta,0.01407752931,0.01407753009,,native xgboost feature_importances_,4
+numeric__error_balance_dest,error_balance_dest,0.009792833589,0.009792834132,,native xgboost feature_importances_,5
+categorical__type_PAYMENT,type,0.00822818093,0.008228181386,,native xgboost feature_importances_,6
+numeric__dest_balance_delta,dest_balance_delta,0.004780027084,0.004780027349,,native xgboost feature_importances_,7
+numeric__amount,amount,0.003725119401,0.003725119607,,native xgboost feature_importances_,8
+numeric__oldbalanceDest,oldbalanceDest,0.00339527172,0.003395271909,,native xgboost feature_importances_,9
+numeric__oldbalanceOrg,oldbalanceOrg,0.002791472711,0.002791472865,,native xgboost feature_importances_,10
+numeric__step,step,0.002012019744,0.002012019856,,native xgboost feature_importances_,11
+categorical__type_TRANSFER,type,0.001978453249,0.001978453358,,native xgboost feature_importances_,12
+numeric__hour,hour,0.001299115364,0.001299115436,,native xgboost feature_importances_,13
+numeric__newbalanceDest,newbalanceDest,0.001229829504,0.001229829572,,native xgboost feature_importances_,14
+categorical__type_CASH_OUT,type,0.00121523079,0.001215230857,,native xgboost feature_importances_,15
+numeric__orig_zero_after,orig_zero_after,2.861205758e-05,2.861205916e-05,,native xgboost feature_importances_,16
+categorical__type_CASH_IN,type,0,0,,native xgboost feature_importances_,17
+categorical__type_DEBIT,type,0,0,,native xgboost feature_importances_,18
